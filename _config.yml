@@ -6,8 +6,8 @@
 name: docs-next
 description: Dwolla Developer Portal
 author:
-  name: Gordon Zheng
-  email: technix1@gmail.com
+  name: Dwolla
+  email: api@dwolla.com
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
@@ -17,10 +17,13 @@ include: ['.htaccess']
 
 # _config.build.yml sets future and show_drafts to false on `grunt build`
 future: true
-show_drafts: true
+show_drafts: false
 
 # Markdown library
 markdown: redcarpet
 #   extensions: ['fenced_code_blocks', 'smart']
 
 highlighter: rouge
+
+gems:
+  - jekyll-sitemap
