@@ -3,9 +3,10 @@ layout: default
 title: Your New Jekyll Site
 ---
 
-<section class="home posts">
-  <h1>Blog Posts</h1>
-  {% for house in site.houses %}
-    <article><time>{{ house.date | date_to_string }}</time> &raquo; <a href="{{ house.url }}">{{ house.title }}</a></article>
-  {% endfor %}
-</section>
+<h1>Blog Posts</h1>
+
+{% for house in site.houses %}
+  <article><time>{{ house.date | date_to_string }}</time> &raquo; <a href="{{ house.url }}">{{ house.title }}</a></article>
+{% endfor %}
+
+Lorem ipsum!!!  

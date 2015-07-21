@@ -1,5 +1,83 @@
 @import "base";
 
+body {
+  font-family: "Open Sans";
+}
+
+h1 {
+  font-family: "Roboto Slab", serif;
+}
+
+header {
+  background-color: #ff7404;
+  width: 100%;
+  height: 100px;
+
+  .wrap {
+    width: 1024px;
+    padding: 25px 0 80px 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 50%;
+    margin-left: -512px;
+  }
+
+  .logo {
+    width: 135px;
+    height: 26px;
+    margin-top: 6px;
+    display: inline-block;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: url("/img/logo-dwolla.svg");
+    float: left;
+  }
+
+  nav {
+    float: right;
+    transition: height 0.8s;
+
+    a {
+      margin-right: 30px;
+      text-decoration: none;
+      opacity: 0.5;
+      font-weight: 600;
+    }
+
+    a:last-child {
+      margin: 0;
+    }
+
+    a.btn {
+      opacity: 1;
+    }
+  }
+}
+
+nav.super-sections {
+  background-color: #FAF;
+  padding: 10px;
+
+  a {
+    display: block;
+    width: 100px;
+    padding: 10px;
+  }
+}
+
+.navigation {
+  float: left;
+  width: 100px;
+}
+
+.content {
+  padding-left: 20px;
+  float: left;
+  width: 80%;
+}
+
 .page {
   width: 90%;
   padding-left: 20px;

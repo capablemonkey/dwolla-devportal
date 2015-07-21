@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/syntax.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/application.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab:300|Open+Sans:300,400,600,700">
     <!-- endbuild -->
 
     <!-- build:js(app) /js/head-scripts.js -->
@@ -25,8 +26,13 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    {{ content }}
+    {% include header.html %}
+    {% include navigation.html %}
 
+    <div class="content">
+        {{ content }}
+    </div>
+    
     {% include scripts.html %}
     {% include googleanalytics.html %}
 
