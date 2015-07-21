@@ -6,3 +6,5 @@ title:  "Guides"
 # hello
 
 Whyfore are thou
+
+`var hello = 'fewfhwef';`

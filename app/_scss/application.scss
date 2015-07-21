@@ -59,6 +59,21 @@ header {
 nav.super-sections {
   background-color: #FAF;
   padding: 10px;
+  float: left;
+  height: 900px;
+
+  a {
+    display: block;
+    width: 100px;
+    padding: 10px;
+  }
+}
+
+nav.sub-sections {
+  background-color: #FAA;
+  padding: 10px;
+  float: left;
+  height: 900px;
 
   a {
     display: block;
@@ -69,12 +84,12 @@ nav.super-sections {
 
 .navigation {
   float: left;
-  width: 100px;
+  width: 300px;
+  height: 900px;
 }
 
 .content {
   padding-left: 20px;
-  float: left;
   width: 80%;
 }
 
