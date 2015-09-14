@@ -16,7 +16,7 @@ header {
   .wrap {
     width: 1024px;
     padding: 35px 0 80px 0;
-    position: fixed;
+    position: absolute;
     z-index: 5;
     top: 0;
     left: 50%;
@@ -62,7 +62,7 @@ header {
 
   .wrap {
     width: 1024px;
-    position: fixed;
+    position: absolute;
     z-index: 5;
     top: 100px;
     left: 50%;
@@ -92,7 +92,6 @@ header {
 }
 
 .content {
-  
 }
 
 .reference-list-item {
@@ -103,15 +102,13 @@ header {
   }
 
   p.item-description {
-    
+
   }
 }
 
 .page {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 iframe#iframe_slate {
