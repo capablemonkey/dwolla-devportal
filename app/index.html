@@ -1,12 +1,12 @@
 ---
-layout: default
-title: Dwolla
+layout: page
+title: Dwolla | Developers
 ---
 
-<h1>Blog Posts</h1>
+<h1>Simple and powerful API for ACH transfers with no per transaction fees</h1>
+
+<p>Get up and running in fifteen minutes to start sending and receiving ACH bank transfers in your application.</p>
 
 {% for house in site.houses %}
   <article><time>{{ house.date | date_to_string }}</time> &raquo; <a href="{{ house.url }}">{{ house.title }}</a></article>
 {% endfor %}
-
-Lorem ipsum!!!
