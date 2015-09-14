@@ -21,7 +21,9 @@ show_drafts: false
 
 # Markdown library
 markdown: redcarpet
-#   extensions: ['fenced_code_blocks', 'smart']
+
+redcarpet:
+  extensions: ['fenced_code_blocks', 'smart', 'tables']
 
 highlighter: rouge
 
