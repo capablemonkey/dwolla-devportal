@@ -3,7 +3,7 @@
 
 // Directory reference:
 //   css: css
-//   compass: _scss
+//   sass: _scss
 //   javascript: js
 //   images: img
 //   fonts: fonts
@@ -21,9 +21,9 @@ module.exports = function (grunt) {
       dist: 'dist'
     },
     watch: {
-      compass: {
+      sass: {
         files: ['<%= yeoman.app %>/_scss/**/*.{scss,sass}'],
-        tasks: ['compass:server', 'autoprefixer:dist']
+        tasks: ['sass', 'autoprefixer:dist']
       },
       autoprefixer: {
         files: ['<%= yeoman.app %>/css/**/*.css'],
@@ -106,30 +106,18 @@ module.exports = function (grunt) {
         '.jekyll'
       ]
     },
-    compass: {
-      options: {
-        // If you're using global Sass gems, require them here.
-        // require: ['singularity', 'jacket'],
-        sassDir: '<%= yeoman.app %>/_scss',
-        cssDir: '.tmp/css',
-        imagesDir: '<%= yeoman.app %>/img',
-        javascriptsDir: '<%= yeoman.app %>/js',
-        relativeAssets: false,
-        httpImagesPath: '/img',
-        httpGeneratedImagesPath: '/img/generated',
-        outputStyle: 'expanded',
-        raw: 'extensions_dir = "<%= yeoman.app %>/_bower_components"\n'
-      },
+    sass: {
       dist: {
         options: {
-          generatedImagesDir: '<%= yeoman.dist %>/img/generated'
-        }
-      },
-      server: {
-        options: {
-          debugInfo: true,
-          generatedImagesDir: '.tmp/img/generated'
-        }
+          style: 'expanded'
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.app %>/_scss/',
+          src: ['**/*.scss'],
+          dest: '.tmp/css/',
+          ext: '.css'
+        }]
       }
     },
     autoprefixer: {
@@ -317,12 +305,12 @@ module.exports = function (grunt) {
     // },
     concurrent: {
       server: [
-        'compass:server',
+        'sass',
         'copy:stageCss',
         'jekyll:server'
       ],
       dist: [
-        'compass:dist',
+        'sass',
         'copy:dist'
       ]
     }
@@ -358,7 +346,7 @@ module.exports = function (grunt) {
   grunt.registerTask('check', [
     'clean:server',
     'jekyll:check',
-    'compass:server',
+    'sass',
     'jshint:all',
     'csslint:check'
     // 'scsslint'
