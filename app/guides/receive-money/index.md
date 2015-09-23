@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Dwolla | Receiving money"
+title:  "Receiving money"
 ---
 
 # Receive money

@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Guides"
+title:  "Getting Started Guides"
 ---
 
 # Guides

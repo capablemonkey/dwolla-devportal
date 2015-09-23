@@ -1,6 +1,7 @@
 ---
 layout: page
-title:  "Dwolla | ACH Clearing Times"
+title:  "ACH Clearing Times"
+description: "Learn more about ACH clearing times on Dwolla."
 ---
 
 # ACH Clearing Times

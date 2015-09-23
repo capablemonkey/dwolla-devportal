@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Dwolla | Step 2: Fetch funding sources"
+title:  "Step 2: Fetch funding sources | Sending Money"
 ---
 
 # Step 2: Fetch funding sources

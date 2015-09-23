@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Dwolla | Transfer money between users"
+title:  "Transfer money between users"
 ---
 
 # Transfer money between users

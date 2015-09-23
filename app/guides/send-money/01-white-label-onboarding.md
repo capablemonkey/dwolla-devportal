@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Dwolla | Step 1: White Label onboarding"
+title:  "Step 1: White Label onboarding | Sending Money"
 ---
 
 # Step 1: White Label onboarding

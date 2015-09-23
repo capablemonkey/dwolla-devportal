@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Dwolla | Sending money"
+title:  "Sending money"
 ---
 
 # Send Money

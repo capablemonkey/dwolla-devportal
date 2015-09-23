@@ -1,6 +1,7 @@
 ---
 layout: page
-title:  "Dwolla | SDKs"
+title:  "SDKs"
+description: "Find official SDKs for Node.JS, Java, Python, Ruby, and PHP."
 ---
 
 # SDKs
