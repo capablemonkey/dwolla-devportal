@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: twoColumn
 title:  "Step 1: White Label onboarding | Sending Money"
 ---
 

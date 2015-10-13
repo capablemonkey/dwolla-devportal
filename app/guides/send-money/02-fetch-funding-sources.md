@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: twoColumn
 title:  "Step 2: Fetch funding sources | Sending Money"
 ---
 

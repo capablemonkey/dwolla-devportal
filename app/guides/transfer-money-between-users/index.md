@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: twoColumn
 title:  "Transfer money between users"
 ---
 

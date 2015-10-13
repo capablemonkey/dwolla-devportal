@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: twoColumn
 title:  "Getting Started Guides"
 ---
 

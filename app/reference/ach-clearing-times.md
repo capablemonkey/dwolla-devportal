@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: twoColumn
 title:  "ACH Clearing Times"
 description: "Learn more about ACH clearing times on Dwolla."
 ---

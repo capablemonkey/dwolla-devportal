@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: twoColumn
 title:  "Reference"
 description: "In-depth articles on Dwolla features and integration patterns."
 ---
