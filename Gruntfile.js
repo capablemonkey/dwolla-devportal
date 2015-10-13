@@ -14,7 +14,8 @@ module.exports = function (grunt) {
   // Load all Grunt tasks
   require('jit-grunt')(grunt, {
     useminPrepare: 'grunt-usemin',
-    buildcontrol: 'grunt-build-control'
+    buildcontrol: 'grunt-build-control',
+    bower: 'grunt-bower-task'
   });
 
   grunt.initConfig({
@@ -38,6 +39,13 @@ module.exports = function (grunt) {
           '!<%= yeoman.app %>/_bower_components/**/*'
         ],
         tasks: ['jekyll:server']
+      }
+    },
+    bower: {
+      install: {
+        options: {
+          copy: false
+        }
       }
     },
     browserSync: {
@@ -360,6 +368,7 @@ module.exports = function (grunt) {
     // Jekyll cleans files from the target directory, so must run first
     'jekyll:dist',
     'concurrent:dist',
+    'bower',
     'useminPrepare',
     'concat',
     'cssmin',
