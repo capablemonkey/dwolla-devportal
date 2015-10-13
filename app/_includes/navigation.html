@@ -1,9 +1,9 @@
 <nav class="header__secondary js-two-col-nav-toggle">
     <div class="page-wrap">
-        <a href="/guides/" class="active">Guides</a>
-        <a href="/reference/">Reference</a>
-        <a href="/pages/api-docs.html">API Docs</a>
-        <a href="/pages/sdks.html" class="no-nav js-two-col-no-toggle">SDKs</a>
+        <a href="/guides/" {% if page.url contains '/guides/' %} class="active"{% endif %}>Guides</a>
+        <a href="/reference/" {% if page.url contains '/reference/' %} class="active"{% endif %}>Reference</a>
+        <a href="/pages/api-docs.html" {% if page.url contains '/pages/api-docs.html' %} class="active"{% endif %}>API Docs</a>
+        <a href="/pages/sdks.html" class="no-nav js-two-col-no-toggle{% if page.url contains '/pages/sdks.html' %} active{% endif %}">SDKs</a>
         <div class="custom-select custom-select--blue">
             <select name="select" id="select">
                 <option value="json">json</option> 
