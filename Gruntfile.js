@@ -280,7 +280,7 @@ module.exports = function (grunt) {
     buildcontrol: {
       dist: {
         options: {
-          remote: 'git@github.com:capablemonkey/dwolla-devportal.git',
+          remote: 'git@github.com:Dwolla/developer-portal.git',
           branch: 'gh-pages',
           commit: true,
           push: true
