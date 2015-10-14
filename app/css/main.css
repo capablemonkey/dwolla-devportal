@@ -274,3 +274,8 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+/* Do not display code blocks by default */
+[class*="language-"] {
+    display: none;
+}

@@ -12,3 +12,31 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam enim mauris, sagitt
 [Receive money guide &raquo;](/guides/receive-money)
 
 [Transfer money between users guide &raquo;](/guides/transfer-money-between-users)
+
+# Test snippet switcher
+```ruby
+p "ruby is the best"
+```
+```javascript
+console.log("i'm a nightmare to read and parallelize");
+```
+```python
+def function:
+ def does:
+  def this:
+    def look: 
+      def pythonic:
+        def yet:
+```
+```java
+AbstractSingletonProxyFactoryBean lookSoEnterprise = new AbstractSingletonProxyFactoryBean();
+```
+```raw
+HTTP 403 Unauthorized
+```
+```php
+<?php
+// I am a horrible programming language
+// because this doesn't work as expected
+$foo = $dep || "value";
+```
