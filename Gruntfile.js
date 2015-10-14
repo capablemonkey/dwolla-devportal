@@ -120,7 +120,8 @@ module.exports = function (grunt) {
     sass: {
       dist: {
         options: {
-          style: 'expanded'
+          style: 'expanded',
+          loadPath: '<%= yeoman.app %>/_bower_components/'
         },
         files: [{
           expand: true,
