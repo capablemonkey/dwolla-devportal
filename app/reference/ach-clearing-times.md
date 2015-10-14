@@ -6,8 +6,6 @@ description: "Learn more about ACH clearing times on Dwolla."
 
 # ACH Clearing Times
 
-HELLO WORLD!
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam enim mauris, sagittis sit amet tincidunt quis, cursus id justo. Etiam malesuada nunc nisi, sed pretium diam finibus id. Vivamus auctor ligula at euismod varius. Ut justo neque, pharetra ut lorem quis, accumsan cursus est. Nulla facilisi. Duis molestie laoreet cursus. Proin commodo ac felis scelerisque venenatis. Nunc eget dui venenatis, egestas tellus non, blandit magna. Donec vel magna justo.
 
 In hac habitasse platea dictumst. Integer vehicula felis a varius fermentum. In erat augue, convallis at augue at, posuere faucibus libero. Integer id varius lectus. Aliquam malesuada ipsum at justo commodo, eu egestas augue vulputate. Duis convallis pulvinar sodales. Sed accumsan eget risus a hendrerit. Vivamus sollicitudin dictum aliquam. Aliquam sed pretium leo. Aliquam dapibus lorem nec lacus iaculis venenatis. Aliquam dapibus, lacus nec porta tincidunt, dui lorem tincidunt lorem, nec varius est erat sagittis dolor. Curabitur eu purus eget est bibendum consequat. Mauris nec felis tempor erat molestie pellentesque quis eget velit. Phasellus a leo dui.
