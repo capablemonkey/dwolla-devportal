@@ -15,12 +15,11 @@ module Jekyll
             # Selector
             selector = "<div class=\"code-snippet__selector language-#{lang}\">
               <nav>
-                  <button class=\"active\">json</button>
-                  <button>raw</button>
-                  <button>php</button>
-                  <button>ruby</button>
-                  <button>python</button>
-                  <button>javascript</button>
+                  <button class=\"selector_switch\" id=\"raw\">raw</button>
+                  <button class=\"selector_switch\" id=\"php\">php</button>
+                  <button class=\"selector_switch\" id=\"ruby\">ruby</button>
+                  <button class=\"selector_switch\" id=\"python\">python</button>
+                  <button class=\"selector_switch\" id=\"javascript\">javascript</button>
               </nav>
             </div>"            
 

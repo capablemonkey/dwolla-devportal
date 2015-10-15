@@ -40,3 +40,13 @@ HTTP 403 Unauthorized
 // because this doesn't work as expected
 $foo = $dep || "value";
 ```
+
+# Make another selector
+```ruby
+[1, 2, 3, 4].each do |element|
+  p element
+end
+```
+```php
+$sorry_I_ate_all_your_glue = 1;
+```

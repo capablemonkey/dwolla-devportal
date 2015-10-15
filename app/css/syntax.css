@@ -163,6 +163,7 @@
 }
 .highlight {
   color: #ffffff;
+  font-family: monospace;
 }
 .highlight .n, .highlight .py, .highlight .nx {
   color: #ffffff;
