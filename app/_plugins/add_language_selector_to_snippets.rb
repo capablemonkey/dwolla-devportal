@@ -21,9 +21,9 @@ module Jekyll
               </nav>
             </div>"            
 
-            output = selector + "<div class=\"code-snippet__cnt highlight language-#{lang}\">"
+            output = "<div class=\"code-snippet #{lang}-code-snippet\">" + selector + "<div class=\"code-snippet__cnt highlight language-#{lang}\">"
             output << add_code_tags(code, lang)
-            output << "</div>"
+            output << "</div></div>"
           end
 
           protected
