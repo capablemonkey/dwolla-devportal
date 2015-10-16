@@ -1,11 +1,9 @@
 module Jekyll
   module Converters
     class Markdown
-
       # In Jekyll, RedcarpetParser is the OOB lexer configuration
       # shell. We need to monkeypatch it.
       class RedcarpetParser
-
         # We are using Rouge, so let's piggyback on the lexed data
         # provided to WithRouge#block_code
         module WithRouge

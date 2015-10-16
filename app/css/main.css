@@ -275,7 +275,9 @@ textarea {
     }
 }
 
-/* Do not display code blocks by default */
+/* Do not display code blocks by default,
+   and add the padding Troy included in his
+   SASS */
 [class*="language-"] {
     display: none;
 }

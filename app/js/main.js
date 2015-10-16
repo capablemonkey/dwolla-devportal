@@ -17,15 +17,9 @@ function updateSnippets(show) {
 } 
 
 function updateBodySelectors(show) {
-  console.log(show);
-  [
-    '#ruby',
-    '#python',
-    '#javascript',
-    '#php',
-    '#raw'
-  ].forEach(function(lang) {
-    $('[id=' + lang + ']').toggleClass('active', lang.indexOf(show) > -1);
+  $('.selector_switch').toggleClass('active', false);
+  $('.selector_switch').each(function(i, element) {
+    $(element).toggleClass('active', element.id.indexOf(show) > -1);
   });
 }
 
@@ -40,11 +34,11 @@ $(document).ready(function() {
       var current_language = sessionStorage.getItem('current_language');
       updateSnippets(current_language);
       $('#language_select').val(current_language);
+      updateBodySelectors(current_language);
     }
 
     // Update value of language selector on change
     $('#language_select').change(function () {
-      // Fade old language out, fade new language in
       sessionStorage.setItem('current_language', $('#language_select :selected').val());
       updateSnippets($('#language_select :selected').val());
       updateBodySelectors($('#language_select :selected').val());
