@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Dwolla Developers | Dwolla</title>
+
+    <link href="../../../assets/css/header-footer.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/jquery.qtip.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/sh/shCore.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/sh/shCoreEclipse.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/highlight.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+
+    <meta http-equiv="Content-Language" content="en-us">
+    <meta name="description" content="Dwolla Developers's Portal">
+    <meta name="keywords" content="dwolla, api, dwolla api, money api, dwolla example code, dwolla examples, dwolla sample code, dwolla documentation, dwolla api documentation">
+    <meta name="robots" content="all">
+
+    <link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" />
+
+	  <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
+  </head>
+
+  <body>
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7TKTN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-K7TKTN');</script>
+    <!-- End Google Tag Manager -->
+
+    <div class="header">
+      <div class="inner-wrap">
+        <h1 class="logo-main"><a href="https://www.dwolla.com">Dwolla</a></h1>
+
+          <ul class="nav nav-primary">
+            <li><a href="http://blog.dwolla.com">Blog</a></li>
+            <li><a href="http://help.dwolla.com">Support</a></li>
+            <li><a href="https://www.dwolla.com/applications">Log in</a></li>
+            <li><a href="https://www.dwolla.com/applications/create" class="btn orange">Get API Key</a></li>
+          </ul>
+      </div>
+    </div>
+
+    <div id="wrap">
+      <div class="container">
+          
+<h2><span>Getting Started</span></h2>
+<h4></h4>
+
+
+<div id="docs" class="doc_page">
+	<div class="sidebar">
+	<div class="well" style="padding: 8px 0;">
+		<ul class="nav nav-list">
+			<li class="nav-header">
+				Developer Newsletter 
+			</li>
+			<li>
+			<!-- Begin MailChimp Signup Form -->
+			<div id="mc_embed_signup">
+			<form action="https://dwolla.us3.list-manage.com/subscribe/post?u=bd010d6cd015c558a27b4a232&amp;id=4e85ae585c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<div id="mc_embed_signup_scroll">
+
+			<div class="mc-field-group">
+			<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your e-mail!">
+			</div>
+			<div id="mce-responses" class="clear">
+			<div class="response" id="mce-error-response" style="display:none"></div>
+			<div class="response" id="mce-success-response" style="display:none"></div>
+			</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+			<div style="position: absolute; left: -5000px;"><input type="text" name="b_bd010d6cd015c558a27b4a232_4e85ae585c" tabindex="-1" value=""></div>
+			<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn orange"></div>
+			</div>
+			</form>
+			</div>
+			<script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+			<!--End mc_embed_signup-->
+			</li>
+		</ul>
+	</div>
+	<div class="well" style="padding: 8px 0;">
+		<ul class="nav nav-list">
+			<li class="nav-header">
+				Topics
+			</li>
+			<li 
+>
+				<a href="../../../index.html">
+					<i class="icon-screenshot"></i>
+					Getting Started
+				</a>
+			</li>
+			<li 
+>
+				<a href="../../docs/users/account" target="_blank">
+					<i class="icon-list-alt"></i>
+					API Documentation
+				</a>
+			</li>
+			<li>
+				<a href="http://status.dwolla.com" target="_blank">
+				    <i class="icon-fire"></i>
+				    API Status
+				</a>
+			</li>
+			<li 
+>
+				<a href="http://discuss.dwolla.com/category/api-support" target="_blank">
+					<i class="icon-comment"></i>
+					Help / Forum
+				</a>
+			</li>
+			<li>
+				<a href="https://www.dwolla.com/tos/dev" target="_blank">
+					<i class="icon-check"></i>
+					Developer TOS
+				</a>
+			</li>
+
+			<li class="nav-header">
+				Guides
+			</li>
+			<li 
+>
+				<a href="white_label">
+					<i class="icon-check"></i>
+					White Label: Transfer funds
+				</a>
+			</li>
+			<li 
+>
+				<a href="create_application">
+					<i class="icon-check"></i>
+					Generate API Credentials
+				</a>
+			</li>
+			<li 
+>
+				<a href="receiving_money">
+					<i class="icon-check"></i>
+					Accepting Payments
+				</a>
+			</li>
+			<li 
+>
+				<a href="sending_money">
+					<i class="icon-check"></i>
+					Sending Money
+				</a>
+			</li>
+			<li 
+>
+				<a href="masspay">
+					<i class="icon-check"></i>
+					Sending Batch Payments
+				</a>
+			</li>
+			<li 
+>
+				<a href="facilitator_fee">
+					<i class="icon-check"></i>
+					Setting Facilitator Fees
+				</a>
+			</li>
+			<li class="active"
+>
+				<a href="offsite_gateway">
+					<i class="icon-check"></i>
+					Off-Site Gateway Checkout
+				</a>
+			</li>
+			<li 
+>
+				<a href="sandbox">
+					<i class="icon-check"></i>
+					Sandbox: Getting Started
+				</a>
+			</li>
+			<li 
+>
+				<a href="using_webhooks">
+					<i class="icon-check"></i>
+					Using Webhooks
+				</a>
+			</li>
+
+			<li class="nav-header">
+				Integration Options
+			</li>
+			<li 
+>
+				<a href="../gateway">
+					<i class="icon-shopping-cart"></i>
+					Off-Site Gateway
+				</a>
+			</li>
+			<li 
+>
+				<a href="../auth">
+					<i class="icon-user"></i>
+					OAuth + REST API
+				</a>
+			</li>
+
+			<li class="nav-header">
+				Reference
+			</li>
+			<li 
+>
+				<a href="direct_limitations">
+					<i class="icon-download-alt"></i>
+					Direct Account Limitatons
+				</a>
+			</li>
+			<li 
+>
+				<a href="correlate_transactions">
+					<i class="icon-download-alt"></i>
+					Correlate Transaction IDs
+				</a>
+			</li>
+			<li 
+>
+				<a href="oauth_account_creation">
+					<i class="icon-bell"></i>
+					OAuth Account Creation
+				</a>
+			</li>
+			<li 
+>
+				<a href="../../docs/gateway/direct">
+					<i class="icon-arrow-right"></i>
+					Dwolla Direct
+				</a>
+			</li>
+			<li 
+>
+				<a href="../sandbox">
+					<i class="icon-hdd"></i>
+					Sandbox
+				</a>
+			</li>
+			
+			<li class="nav-header">
+				Tools
+			</li>
+			<li 
+>
+				<a href="../sandbox/admin">
+					<i class="icon-asterisk"></i>
+					Sandbox Admin
+				</a>
+			</li>
+			<li 
+>
+				<a href="../testing">
+					<i class="icon-road"></i>
+					Reflector Account
+				</a>
+			</li>
+			<li 
+>
+				<a href="../../token">
+					<i class="icon-pencil"></i>
+					Token Generator
+				</a>
+			</li>
+
+			<li>
+				<a href="../../docs/users/account">Looking for API Docs? &raquo;</a>
+			</li>
+
+		</ul>
+	</div>
+</div>
+
+
+	<div class="content">
+		<div class="guide">
+			<h2 id="off-site-gateway-checkout">Off-Site Gateway Checkout</h2>
+<h4 id="overview">Overview</h4>
+<p>The Off-Site Gateway API is a way to seamlessly pay for goods or services online utilizing Dwolla&#39;s API. Using a Dwolla-provided checkout experience, customers can authenticate and authorize payment of a purchase order utilizing Dwolla as the processing platform. Currently, there are two available checkout flows which provide (slightly) different user experiences, the <a href="../gateway#pay-immediately">pay now flow</a>, or the <a href="../gateway#pay-later">pay later</a> flow. For the purpose of this guide we will only cover the pay now flow, which is a checkout flow that can be initiated via one of the follow methods:</p>
+<ul>
+<li><a href="offsite_gateway#direct-submission">Direct submission</a>: Submit a form that contains the checkout details (products, amount, total, etc) directly from the client to the Dwolla server.</li>
+<li><a href="offsite_gateway#server-to-server-submission">Server-to server submission</a>: Create a checkout session by communicating the checkout information from your server to the Dwolla server directly.</li>
+</ul>
+<h3 id="using-the-dwolla-libraries">Using the Dwolla Libraries</h3>
+<p>The Dwolla <a href="../../docs/users/account#helper-libraries">libraries</a> available on GitHub have implemented the server-to-server checkout flow. The code samples below are designed to help get you started immediately. In order to customize data sent and used by the library, use the <a href="offsite_gateway#server-to-server-submission">server-to-server</a> specification and follow the <a href="offsite_gateway#pay-now-flow">pay now flow</a>.</p>
+<p><div class="codeContainer"></p>
+<pre><code class="lang-php">&lt;?php
+/**
+ * The following is a quick-start example for the Checkouts class,
+ * which encapsulates methods for all offsite-gateway related endpoints.
+ */
+// We need the Checkouts class in order to do anything
+require &#39;../lib/checkouts.php&#39;;
+$Checkouts = new Dwolla\Checkouts();
+/**
+ * Optional: DwollaPHP has a very rudimentary shopping-cart
+ * function. You can &quot;make&quot; your own cart and the
+ * library will automatically calculate totals for you.
+ * For the purpose of this example, we will add two
+ * cups of coffee to our cart.
+ */
+$Checkouts-&gt;addToCart(&quot;Coffee 1&quot;, &quot;Mmm, fresh!&quot;, 2.25, 1);
+$Checkouts-&gt;addToCart(&quot;Coffee 2&quot;, &quot;Another coffee!&quot;, 2.25, 1);
+/**
+ * Step 1: Create a checkout session with the cart you have just created.
+ * The array passed in contains members of the
+ * `purchaseOrder` parameter. The second array marks this as a
+ * `test` in order to...well...test.
+ */
+$test = $Checkouts-&gt;create(
+    [ &#39;destinationId&#39; =&gt; &#39;812-111-7219&#39; ],
+    [ &#39;redirect&#39; =&gt; &#39;http://requestb.in/1fglpx81&#39; ]
+);
+print_r($test);
+/**
+ * Step 2: Verify gateway signature
+ */
+print_r($Checkouts-&gt;verify(&#39;YOUR SIGNATURE HERE&#39;, &#39;YOUR CHECKOUT ID HERE&#39;, 4.50));
+?&gt;
+</code></pre>
+<pre><code class="lang-ruby"># Include the Dwolla gem
+require &#39;rubygems&#39;
+require &#39;pp&#39;
+require &#39;dwolla&#39;
+
+# Include any required keys
+require &#39;./_keys.rb&#39;
+
+# Instantiate a new Dwolla User client
+Dwolla::api_key = @api_key
+Dwolla::api_secret = @api_secret
+
+# Clear out any previous session data
+Dwolla::OffsiteGateway.clear_session
+
+# Optional Settings
+Dwolla::OffsiteGateway.redirect = &#39;http://dwolla.com/payment_redirect&#39;
+Dwolla::OffsiteGateway.callback = &#39;http://dwolla.com/payment_callback&#39;
+Dwolla::OffsiteGateway.set_customer_info(&#39;Michael&#39;, &#39;Schonfeld&#39;, &#39;michael@dwolla.com&#39;, &#39;New York&#39;, &#39;NY&#39;, &#39;10001&#39;)
+Dwolla::OffsiteGateway.discount = 4.95
+Dwolla::OffsiteGateway.notes = &#39;This is just an offsite gateway test...&#39;
+
+# Add products
+Dwolla::OffsiteGateway.add_product(&#39;Macbook Air&#39;, &#39;13&quot; Macbook Air; Model #0001&#39;, 499.99, 1)
+
+# Generate a checkout sesssion
+pp Dwolla::OffsiteGateway.get_checkout_url(&#39;812-734-7288&#39;)
+
+# Verify and parse gateway callback
+data = Dwolla::OffsiteGateway.read_callback(&#39;{&quot;Amount&quot;:0.01,&quot;OrderId&quot;:null,&quot;Status&quot;:&quot;Completed&quot;,&quot;Error&quot;:null,&quot;TransactionId&quot;:3396300,&quot;CheckoutId&quot;:&quot;51f9dfaa-20ed-41a7-8874-00a47c19c655&quot;,&quot;Signature&quot;:&quot;8be03dfd0e95c567b2855f5876acfc98992f6402&quot;,&quot;TestMode&quot;:&quot;false&quot;,&quot;ClearingDate&quot;:&quot;7/22/2013 8:42:18 PM&quot;}&#39;)
+pp data
+</code></pre>
+<pre><code class="lang-python">from dwolla import checkouts
+
+# Step 1: Create checkout session with items from
+# http://docs.dwolla.com/#checkouts
+
+test = checkouts.create({
+    &#39;orderItems&#39;: {
+        frozenset({
+            &#39;name&#39;: &#39;Prime Rib Sandwich&#39;,
+            &#39;description&#39;: &#39;A somewhat tasty non-vegetarian sandwich&#39;,
+            &#39;quantity&#39;: &#39;1&#39;,
+            &#39;price&#39;: &#39;15.00&#39;
+        })
+    },
+    &#39;destinationId&#39;: &#39;812-740-4294&#39;,
+    &#39;total&#39;: 15.00,
+    &#39;notes&#39;: &#39;blahhh&#39;,
+    &#39;metadata&#39;: frozenset({
+        &#39;key1&#39;: &#39;something&#39;,
+        &#39;key2&#39;: &#39;another thing&#39;
+    })})
+
+# Step 2: Verify the recently created checkout
+
+checkouts.get(test[&#39;CheckoutId&#39;])
+
+# Step 3: Complete the checkout
+
+checkouts.complete(&#39;Order ID here&#39;)
+
+# Step 4: Verify gateway signature
+
+checkouts.verify(&#39;YOUR SIGNATURE HERE&#39;, &#39;YOUR CHECKOUT ID HERE&#39;, 4.50)
+</code></pre>
+<pre><code class="lang-node">var cfg = require(&#39;./_config&#39;)                            // Include any required keys
+    , dwolla = require(&#39;dwolla-node&#39;)(cfg.apiKey, cfg.apiSecret)   // Include the Dwolla REST Client
+    , $ = require(&#39;seq&#39;)
+    , express = require(&#39;express&#39;)
+    , app = express()
+    , util = require(&#39;util&#39;)
+    ;
+
+// Some constants...
+var redirect_uri = &#39;http://localhost:3000/redirect&#39;;
+
+// Use Dwolla Sandbox API
+dwolla.sandbox = true;
+
+/**
+ * EXAMPLE 1: (simple example) 
+ *   Create a new standard offsite gateway checkout
+ **/
+app.get(&#39;/&#39;, function(req, res) {
+    var purchaseOrder = {
+     destinationId: &#39;812-740-4294&#39;,
+     total: &#39;5.00&#39;
+    };
+
+    var params = {
+     allowFundingSources: true,
+     orderId: &#39;blah&#39;,
+    };
+
+    dwolla.createCheckout(redirect_uri, purchaseOrder, params, function(err, checkout) {
+     if (err) console.log(err);
+
+      // example checkout result:
+      // { checkoutURL: &#39;https://uat.dwolla.com/payment/checkout/d0429a55-c338-4139-b273-48d2f8c45693&#39;,
+      //   checkoutId: &#39;d0429a55-c338-4139-b273-48d2f8c45693&#39; }
+
+     res.send(util.format(&#39;Checkout created.  Click to continue: &lt;a href=&quot;%s&quot;&gt;%s&lt;/a&gt;&#39;, checkout.checkoutURL, checkout.checkoutURL));
+    });
+});
+</code></pre>
+<p></div></p>
+<h3 id="user-experience">User experience</h3>
+<h4 id="pay-immediately">Pay Immediately</h4>
+<p>Unlike the <a href="../gateway#pay-later">Pay Later flow</a>, the checkout process is completed when the user clicks &quot;Submit Payment&quot; on the Gateway and the payment is sent immediately to the merchant. This flow does not require any action after the user is returned from the gateway to the merchant site.</p>
+<ol>
+<li><p>User is prompted to create a <a href="../../docs/gateway/direct">Dwolla Direct</a> account (If <code>allowGuestCheckout</code> and <code>AllowFundingSources</code> were enabled in the request), or they will log in using existing account.</p>
+<p> <img src="../../../assets/images/dev/gateway/createDirect.png" alt="Create"></p>
+<ul>
+<li><p>If the user is already has a Dwolla account, they will be prompted to log in providing their email and password. Once the user successfully authenticates, they will be presented with the purchase order provided during the request.</p>
+<p><img src="../../../assets/images/dev/gateway/login.png" alt="Login"></p>
+</li>
+<li><p>If the user clicks the &#39;Cancel&#39; button rather than logging in, they&#39;re redirected to the redirect URL with an error. If no redirect parameter was provided &amp; no default Payment Redirect URL was set for the consumer application, they&#39;re redirected to dwolla.com.</p>
+</li>
+</ul>
+</li>
+<li><p>User checks out/places order.</p>
+<p> <img src="../../../assets/images/dev/gateway/checkout.png" alt="Checkout"></p>
+<ul>
+<li>The user will then need to provide their PIN number and click the &#39;Submit&#39; button to complete the checkout. The payment is sent immediately to the merchant. If there are any errors, the payment will cancel and no funds will be transferred.</li>
+</ul>
+</li>
+<li><p>Transaction completion, server callback, and user redirect.</p>
+<p> <img src="../../../assets/images/dev/gateway/paynow_complete.png" alt="Completed"></p>
+<p> If the callback URL was provided during the request, the transaction details will be POSTed to the URL in a JSON-encoded string (Described below, in submission methods). This is completely transparent to the customer. </p>
+</li>
+</ol>
+<h3 id="direct-submission">Direct submission</h3>
+<p>This option is great for cases where there is only one item that needs to be purchased. Common use cases are: donation purposes, paying a one-time subscription fee, or buying a single product. In order to initiate direct submission, a form must be directly submitted to the off-site gateway endpoint <code>payment/pay</code> with all required checkout information. The user will be redirected to Dwolla where the checkout process will be completed. If <code>checkoutWithApi</code> is marked <code>true</code>, the Pay Later flow will be used, otherwise, it defaults to <code>false</code> and Pay Immediately (this happens if the parameter isn&#39;t passed as it is optional).</p>
+<h5 id="endpoint">Endpoint</h5>
+<p><code>https://www.dwolla.com/payment/pay</code></p>
+<h5 id="request-parameters">Request Parameters</h5>
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<th>Required</th>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yes</td>
+<td>key</td>
+<td>Application Key</td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>signature</td>
+<td>HMAC-SHA1 hex hash of the app key, timestamp, and order ID.</td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>timestamp</td>
+<td>Timestamp of the generated purchase order. Represented as the UNIX epoch time.</td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>destinationId</td>
+<td>Dwolla ID of the account receiving the funds. Format will always match <code>812-xxx-xxxx</code>.</td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>amount</td>
+<td>Amount of order. Must be at least $0.01.</td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>name</td>
+<td>Name of the item (100 character limit)</td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>description</td>
+<td>Description of the item (200 character limit)</td>
+</tr>
+<tr>
+<td>No</td>
+<td>callback</td>
+<td>URL to POST the transaction response to after the user authorizes the purchase. If not provided, will default to the Payment Callback URL set for the consumer application. If a URL could not be found in the application settings and this parameter is not set, a postback error will be induced. Only applies if <code>checkoutWithApi</code> is false (Pay Later flow).</td>
+</tr>
+<tr>
+<td>No</td>
+<td>redirect</td>
+<td>URL to return the user to after they authorize or cancel a purchase. If not provided, the URL will default to the Payment Redirect URL set in the application&#39;s settings. If no URL could be found, an error will be induced.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>assumeCosts</td>
+<td>Deprecated</td>
+</tr>
+<tr>
+<td>No</td>
+<td>allowFundingSources</td>
+<td>Defaults to <code>false</code>, set to <code>true</code> to enable guest checkout and bank-funded payments. This would allow users without a Dwolla account to pass through the checkout flow.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>checkoutWithApi</td>
+<td>Defaults to <code>false</code> (and the Pay Now flow), set to <code>true</code> to use the Pay Later flow.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>orderId</td>
+<td>Optional string to identify the transaction (255 character limit).</td>
+</tr>
+<tr>
+<td>No</td>
+<td>test</td>
+<td>Defaults to <code>false</code>, set to <code>true</code> to flag the PO for testing. Does not affect account balances nor are any e-mails sent. The transaction ID returned from a PO with <code>test</code> flagged will always be <code>1</code>.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>tax</td>
+<td>Tax applied to the order. Must be $0 or greater.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>shipping</td>
+<td>Shipping total for the order. Must be $0.00 or more.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>facilitatorAmount</td>
+<td>Amount of the facilitator fee (will override the amount in the application&#39;s settings). If set to <code>0</code>, the fee will be disabled. Must not exceed 25% of the transaction total.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>notes</td>
+<td>Note to attach to transaction (250 character limit).</td>
+</tr>
+<tr>
+<td>No</td>
+<td>metadata</td>
+<td>A JSON object of maximum 10 key-value pairs with which to store metadata in. Keys and values must be strings of max length 255.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="hmac-sha1-hashing-required">HMAC-SHA1 Hashing - Required</h5>
+<p>The hexadecimal hash is generated from the ampersand delimited text of the consumer key, <a href="http://en.wikipedia.org/wiki/Unix_time">Unix timestamp</a>, and orderId, even if an order ID is not provided. The text is then hashed using the consumer secret for the application as the hash key. The signature must be unique per request, so a new timestamp will need to be provided for each request. Below are examples on how to generate HMAC-SHA1 hashes in languages commonly used with web-stack development:</p>
+<p><div class="codeContainer"></p>
+<pre><code class="lang-php">&lt;?php
+$key        = &quot;YOUR_APPLICATION_KEY&quot;;
+$secret     = &quot;YOUR_APPLICATION_SECRET&quot;;
+$timestamp  = time(); // example: 1390408833
+$order_id   = 1;
+
+$signature  = hash_hmac(&#39;sha1&#39;, &quot;{$key}&amp;{$timestamp}&amp;{$order_id}&quot;, $secret);
+?&gt;
+</code></pre>
+<pre><code class="lang-ruby">require &#39;rubygems&#39;
+require &#39;base64&#39;
+require &#39;cgi&#39;
+require &#39;hmac-sha1&#39;
+
+key       = &#39;YOUR_APPLICATION_KEY&#39;
+secret    = &#39;YOUR_APPLICATION_SECRET&#39;
+timestamp = Time.now.to_i
+order_id  = 1
+
+signature = &quot;#{key}&amp;#{timestamp}&amp;#{order_id}&quot;
+
+hmac = HMAC::SHA1.new(secret)
+hmac.update(signature)
+hash = CGI.escape(Base64.encode64(&quot;#{hmac.digest}\n&quot;))
+</code></pre>
+<pre><code class="lang-python">def sign_request():
+  from hashlib import sha1
+  import hmac
+  import binascii
+  import time
+
+  key       = &#39;YOUR_APPLICATION_KEY&#39;
+  secret    = &#39;YOUR_APPLICATION_SECRET&#39;
+  timestamp = int(time.time())
+  order_id  = 1
+  text      = key + &#39;&amp;&#39; + timestamp + &#39;&amp;&#39; + order_id
+
+  hash = hmac.new(secret, text, sha1)
+
+  # We format the string to exclude the last character which is a newline delimiter. 
+  return binascii.b2a_base64(hashed.digest())[:-1]
+</code></pre>
+<pre><code class="lang-js">var crypto    = require(&#39;crypto&#39;)
+  , key       = &#39;abcdeg&#39;
+  , secret    = &#39;YOUR_APPLICAITON_SECRET&#39;
+  , order_id  = 1
+  , timestamp = (new Date).getTime()
+  , text      = key + &#39;&amp;&#39; + timestamp + &#39;&amp;&#39; + order_id
+  , hash;
+
+hash = crypto.createHmac(&#39;sha1&#39;, secret).update(text).digest(&#39;hex&#39;);
+</code></pre>
+<p></div></p>
+<h5 id="example-form">Example form</h5>
+<h6 id="html">HTML</h6>
+<pre><code class="lang-html">&lt;form accept-charset=&quot;UTF-8&quot; action=&quot;https://www.dwolla.com/payment/pay&quot; method=&quot;post&quot;&gt;
+
+&lt;input id=&quot;key&quot; name=&quot;key&quot; type=&quot;hidden&quot; value=&quot;abcdefg&quot; /&gt;
+&lt;input id=&quot;signature&quot; name=&quot;signature&quot; type=&quot;hidden&quot; value=&quot;abcd&quot; /&gt;
+&lt;input id=&quot;timestamp&quot; name=&quot;timestamp&quot; type=&quot;hidden&quot; value=&quot;1323302400&quot; /&gt;
+&lt;input id=&quot;callback&quot; name=&quot;callback&quot; type=&quot;hidden&quot; value=&quot;http://www.mywebsite.com/callback.aspx&quot; /&gt;
+&lt;input id=&quot;redirect&quot; name=&quot;redirect&quot; type=&quot;hidden&quot; value=&quot;http://www.mywebsite.com/redirect.aspx&quot; /&gt;
+&lt;input id=&quot;test&quot; name=&quot;test&quot; type=&quot;hidden&quot; value=&quot;false&quot; /&gt;
+&lt;input id=&quot;name&quot; name=&quot;name&quot; type=&quot;hidden&quot; value=&quot;Purchase&quot; /&gt;
+&lt;input id=&quot;description&quot; name=&quot;description&quot; type=&quot;hidden&quot; value=&quot;Description&quot; /&gt;
+&lt;input id=&quot;destinationid&quot; name=&quot;destinationid&quot; type=&quot;hidden&quot; value=&quot;812-713-9234&quot; /&gt;
+&lt;input id=&quot;amount&quot; name=&quot;amount&quot; type=&quot;hidden&quot; value=&quot;1.00&quot; /&gt;
+&lt;input id=&quot;shipping&quot; name=&quot;shipping&quot; type=&quot;hidden&quot; value=&quot;0.00&quot; /&gt;
+&lt;input id=&quot;tax&quot; name=&quot;tax&quot; type=&quot;hidden&quot; value=&quot;0.00&quot; /&gt;
+&lt;input id=&quot;orderid&quot; name=&quot;orderid&quot; type=&quot;hidden&quot; value=&quot;188375&quot; /&gt;
+
+&lt;button type=&quot;submit&quot;&gt;Submit Order&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+<p>Depending on the checkout flow utilized, the user will be redirected to the <code>redirect</code> URL with either completed transaction details or a confirmation page on the merchant&#39;s webpage wherein they will complete their transaction.</p>
+<p>If any errors incur, they will be passed as parameters to the redirect URL:</p>
+<h6 id="url-example">URL Example</h6>
+<p><div class="codeContainer"></p>
+<pre><code class="lang-success">Format: https://www.myurl.com/redirect?signature={}&amp;orderId={}&amp;amount={}&amp;checkoutId={}&amp;status={}&amp;clearingDate={}&amp;transaction={}&amp;postback={}
+
+Example: https://www.myurl.com/redirect?signature=c50e4b2a4c50ad795c3ee31370aec1a563565aa4&amp;orderId=&amp;amount=0.01&amp;checkoutId=f32b1e55-9612-4b6d-90f9-1c1519e588da&amp;status=Completed&amp;clearingDate=8/28/2012%203:17:18%20PM&amp;transaction=1312616&amp;postback=success
+</code></pre>
+<pre><code class="lang-failure">Format: https://www.myurl.com/redirect?checkoutId={}&amp;error=failure&amp;error_description={}
+
+Example: https://www.myurl.com/redirect?checkoutId=694e6bcb-349f-451d-bf5d-8aa16530c960&amp;error=failure&amp;error_description=There+are+insufficient+funds+for+this+transaction
+
+Possible error_descriptions:
+&quot;Payment has already been generated for application, timestamp, and order ID.&quot;
+&quot;Invalid callback URL&quot;
+&quot;Invalid application signature.&quot;
+&quot;Invalid timestamp.&quot;
+&quot;Invalid application credentials.&quot;
+&quot;There are insufficient funds for this transaction.&quot;
+&quot;User Cancelled&quot;
+&quot;Invalid destination user.&quot;
+</code></pre>
+<p></div></p>
+<h5 id="example-return">Example Return</h5>
+<p><div class="codeContainer"></p>
+<pre><code class="lang-php">&lt;?php
+
+// First, check for any errors
+if (array_key_exists(&quot;error&quot;, $_GET)) {
+    // find out what happened:
+    $error_description = $_GET[&#39;error_description&#39;]; // &quot;User Cancelled&quot;
+    exit($error_description);
+}
+
+// Create a function that verifies offsite-gateway signature hash against server-provided hash.
+function verifyGatewaySignature($proposedSignature, $checkoutId, $amount) {
+    global $secret;
+    $key        = &quot;Your key here&quot;;
+    $secret     = &quot;Your secret here&quot;;
+    $amount = number_format($amount, 2);
+    $signature = hash_hmac(&quot;sha1&quot;, &quot;{$checkoutId}&amp;{$amount}&quot;, $secret);
+    return $signature == $proposedSignature;
+}
+
+// Second, extract the checkoutId, amount, and signature of the checkout:
+$checkoutId = $_GET[&#39;checkoutId&#39;];
+$amount = $_GET[&#39;amount&#39;];
+$signature = $_GET[&#39;signature&#39;];
+
+// Third, validate the signature before you do anything with the data.
+$signatureValid = verifyGatewaySignature($signature, $checkoutId, $amount);
+if (!$signatureValid) {
+    exit(&quot;Signature is not valid!&quot;);
+}
+
+$status = $_GET[&#39;status&#39;];
+if ($status == &quot;Completed&quot;) {
+    // do something useful with the checkout results:
+    echo $status;
+}
+
+?&gt;
+</code></pre>
+<p></div></p>
+<h3 id="server-to-server-submission">Server-to-server submission</h3>
+<p>In order to initialize server-to-server submission, the merchant website must POST a request to the Off-Site Gateway API providing a JSON formatted purchase order placed in the body of the request. </p>
+<p>Only requests with <code>Content-Type: application/json</code> will be accepted. </p>
+<h4 id="creating-a-request">Creating a request</h4>
+<h5 id="request-url">Request URL</h5>
+<p><code>https://www.dwolla.com/oauth/rest/offsitegateway/checkouts</code></p>
+<h5 id="request-parameters">Request Parameters</h5>
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<th>Required</th>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yes</td>
+<td>client_id</td>
+<td>Application Key.</td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>client_secret</td>
+<td>Application Secret.</td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>purchaseOrder</td>
+<td>JSON object with purchase order information.</td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>--&gt; total</td>
+<td>Total of the order. Must be $1 or more, calculated as <code>(item cost * quantity) + tax + shipping + discount</code>.</td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>--&gt; destinationId</td>
+<td>Dwolla ID of the account receiving funds. Format must match <code>812-xxx-xxxx</code>.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>--&gt; customerInfo</td>
+<td>JSON object with customer&#39;s contact information. If <code>allowFundingSources</code> is <code>true</code>, information from this array will be filled in the gateway and editable.</td>
+</tr>
+<tr>
+<td></td>
+<td>----&gt; firstName</td>
+<td>Customer&#39;s first name.</td>
+</tr>
+<tr>
+<td></td>
+<td>----&gt; lastName</td>
+<td>Customer&#39;s last name.</td>
+</tr>
+<tr>
+<td></td>
+<td>----&gt; email</td>
+<td>Customer&#39;s e-mail address.</td>
+</tr>
+<tr>
+<td></td>
+<td>----&gt; city</td>
+<td>Customer&#39;s city.</td>
+</tr>
+<tr>
+<td></td>
+<td>----&gt; state</td>
+<td>Customer&#39;s state (two letter abbreviation from ISO-3166:2 standard).</td>
+</tr>
+<tr>
+<td></td>
+<td>----&gt; zip</td>
+<td>Customer&#39;s zip code.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>--&gt; discount</td>
+<td>Discount applied to the order. Cannot exceed order total. Should be negative to remove amount from total.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>--&gt; shipping</td>
+<td>Shipping total of the order. Must be $0 or greater.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>--&gt; tax</td>
+<td>Tax applied to the order. Must be $0 or greater.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>--&gt; facilitatorAmount</td>
+<td>Amount of the facilitator fee (will override the amount in the application&#39;s settings). If set to <code>0</code>, the fee will be disabled. Must not exceed 25% of the transaction total.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>--&gt; notes</td>
+<td>Note to attach to transaction (250 character limit).</td>
+</tr>
+<tr>
+<td>No</td>
+<td>--&gt; metadata</td>
+<td>A JSON object of maximum 10 key-value pairs with which to store metadata in. Keys and values must be strings of max length 255.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>--&gt; orderItems</td>
+<td>Array of line items for the purchase order to display to the user. Optional; if omitted, no purchase order breakdown is shown.</td>
+</tr>
+<tr>
+<td></td>
+<td>----&gt; name</td>
+<td>Name of item (100 character limit).</td>
+</tr>
+<tr>
+<td></td>
+<td>----&gt; description</td>
+<td>Description of item (200 character limit).</td>
+</tr>
+<tr>
+<td></td>
+<td>----&gt; price</td>
+<td>Price of item ($0 or more).</td>
+</tr>
+<tr>
+<td></td>
+<td>----&gt; quantity</td>
+<td>Quantity of item (1 or more).</td>
+</tr>
+</tbody>
+</table>
+<h5 id="request-and-response">Request and Response</h5>
+<p>An example request and success/fail response(s) are below:</p>
+<h6 id="http-request-json-object-responses-">HTTP Request, JSON object responses.</h6>
+<p><div class="codeContainer"></p>
+<pre><code class="lang-request">POST /oauth/rest/offsitegateway/checkouts
+Content-Type: application/json
+
+{
+  &quot;client_id&quot;: &quot;JCGQXLrlfuOqdUYdTcLz3rBiCZQDRvdWIUPkw++GMuGhkem9Bo&quot;,
+  &quot;client_secret&quot;: &quot;g7QLwvO37aN2HoKx1amekWi8a2g7AIuPbD5C/JSLqXIcDOxfTr&quot;,
+  &quot;callback&quot;: &quot;http://www.something.com/callback&quot;,
+  &quot;redirect&quot;: &quot;http://www.something.com/return&quot;,
+  &quot;allowGuestCheckout&quot;: &quot;true&quot;,
+  &quot;checkoutWithApi&quot;: &quot;false&quot;,
+  &quot;orderId&quot;: &quot;foo123&quot;,
+  &quot;allowFundingSources&quot;: &quot;true&quot;,
+  &quot;additionalFundingSources&quot;: &quot;true&quot;,
+  &quot;purchaseOrder&quot;: {
+        &quot;orderItems&quot;: [
+            {
+                &quot;name&quot;: &quot;T-Shirt&quot;, 
+                &quot;description&quot;: &quot;Size: Large - Graphic Tee&quot;, 
+                &quot;quantity&quot;: &quot;1&quot;, 
+                &quot;price&quot;: &quot;15.00&quot;
+            }
+        ],
+    &quot;destinationId&quot;: &quot;812-740-4294&quot;,
+    &quot;total&quot;: 15.00,
+    &quot;tax&quot;: 1.00,
+    &quot;shipping&quot;: 3.00,
+    &quot;discount&quot;: -4.00,
+    &quot;notes&quot;: &quot;blahhh&quot;,
+    &quot;facilitatorAmount&quot;: 0,
+    &quot;metadata&quot;: {
+        &quot;orderNum&quot;: &quot;363498639&quot;,
+        &quot;category&quot;: &quot;thing2&quot;
+    }
+  }
+}
+</code></pre>
+<pre><code class="lang-success">{
+  &quot;Success&quot;: true,
+  &quot;Message&quot;: &quot;Success&quot;,
+  &quot;Response&quot;: {
+    &quot;CheckoutId&quot;: &quot;a1472cfc-3dc7-4928-904b-65bd41d57525&quot;
+  }
+}
+</code></pre>
+<pre><code class="lang-fail">{
+  &quot;Success&quot;: false,
+  &quot;Message&quot;: &quot;Invalid total.&quot;,
+  &quot;Response&quot;: null
+}
+</code></pre>
+<p></div></p>
+<h4 id="finishing-checkout">Finishing Checkout</h4>
+<h5 id="request-url">Request URL</h5>
+<p><code>https://www.dwolla.com/payment/checkout/{CheckoutId}</code></p>
+<p>The merchant&#39;s website will now need to redirect the user to the checkout endpoint providing the unique <code>checkoutID</code> within 5 minutes. After 5 minutes, the checkout ID will expire and a new request will need to be generated. Depending on the checkout flow used, the user will either complete the transaction on the Dwolla gateway and be redirected to a confirmation page on the merchant&#39;s site, or will be redirected to the merchant&#39;s site in order to complete the order and fulfill payment. </p>
+<h3 id="implementing-checkout-flows">Implementing Checkout Flows</h3>
+<p>Implementation is dependent on which checkout flow is used. We&#39;re going to walk you through what you need to do to get started with the pay now flow. For more information on the pay later flow, navigate <a href="../gateway#pay-later">here</a>.</p>
+<h4 id="pay-now-flow">Pay Now Flow</h4>
+<p>With the Pay Now flow, the user logs in and proceeds to complete the transaction on the Dwolla gateway. </p>
+<h5 id="1-handling-callback-">1. Handling <code>callback</code>.</h5>
+<p>If <code>callback</code> is set with a callback URL, Dwolla will POST an <code>application/json</code> request to your URL with some information:</p>
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Amount</td>
+<td>Total amount of purchase formatted to two decimal places.</td>
+</tr>
+<tr>
+<td>CheckoutID</td>
+<td>Unique purchase order ID generated by the off-site gateway.</td>
+</tr>
+<tr>
+<td>ClearingDate</td>
+<td>Date and time in which the funds are to be cleared into the destination account.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>NOTE:</strong> As of As of 8/4/2014 09:00 EST, ClearingDate will return a ISO-8601 formatted timestamp. <a href="https://discuss.dwolla.com/t/api-update-new-timestamp-format-for-clearingdate-parameter/401">Read more here.</a></td>
+</tr>
+<tr>
+<td>Error</td>
+<td>Any error(s) that occurred during checkout.</td>
+</tr>
+<tr>
+<td>OrderId</td>
+<td>Order ID provided during the request.</td>
+</tr>
+<tr>
+<td>Signature</td>
+<td>HMAC-SHA1 hexadecimal hash of the checkoutId and amount ampersand separated using the consumer secret of the application as the hash key.</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>Status of the checkout session. Possible values: Completed, and Failed.</td>
+</tr>
+<tr>
+<td>TestMode</td>
+<td>Set to &#39;true&#39; if purchase order is for testing purposes only, otherwise &#39;false&#39;.</td>
+</tr>
+<tr>
+<td>TransactionId</td>
+<td>Dwolla transaction ID to identify the successful transaction. If in test mode, the transaction ID has a value of &#39;null&#39;.</td>
+</tr>
+</tbody>
+</table>
+<h6 id="example-http-post">Example HTTP Post</h6>
+<pre><code>POST https://www.example.com/payment_callback HTTP/1.1
+Content-Type: application/json
+Content-Length: 252
+
+{
+  &quot;Amount&quot;: 0.01,
+  &quot;CheckoutId&quot;: &quot;f32b1e55-9612-4b6d-90f9-1c1519e588da&quot;,
+  &quot;ClearingDate&quot;: &quot;8/28/2012 3:17:18 PM&quot;,
+  &quot;Error&quot;: null,
+  &quot;OrderId&quot;: null,
+  &quot;Signature&quot;: &quot;c50e4b2a4c50ad795c3ee31370aec1a563565aa4&quot;,
+  &quot;Status&quot;: &quot;Completed&quot;,
+  &quot;TestMode&quot;: &quot;false&quot;,
+  &quot;TransactionId&quot;: 1312616
+}
+</code></pre><h5 id="2-handling-user-redirect-">2. Handling user redirect.</h5>
+<p>When the user is redirected back to the specified merchant&#39;s website in <code>redirect</code>, information will be included in the redirect URL&#39;s querystring parameters:</p>
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>checkoutId</td>
+<td>Unique purchase order ID generated by Off-Site Gateway.</td>
+</tr>
+<tr>
+<td>orderId</td>
+<td>Order ID provided during the request.</td>
+</tr>
+<tr>
+<td>test</td>
+<td>Flagged to &#39;true&#39; if purchase order is for testing purposes only, absent otherwise.</td>
+</tr>
+<tr>
+<td>transaction</td>
+<td>Dwolla transaction ID to identify the successful transaction. If in test mode, the transaction ID has a value of &#39;null&#39;.</td>
+</tr>
+<tr>
+<td>postback</td>
+<td>If the callback URL provided and the postback response completed succesfully, a value of &quot;success&quot;. If the callback URL provided is not valid and the postback response completed unsuccessfully, a value of &quot;failed&quot;.</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>Total amount of the purchase formatted to two decimal places.</td>
+</tr>
+<tr>
+<td>signature</td>
+<td>HMAC-SHA1 hexadecimal hash of the checkoutId and amount ampersand separated using the consumer secret of the application as the hash key.</td>
+</tr>
+<tr>
+<td>clearingDate</td>
+<td>Date and time in which the funds are to be cleared into the destination account.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>NOTE:</strong> As of 8/4/2014 09:00 EST, ClearingDate will return a ISO-8601 formatted timestamp. <a href="https://discuss.dwolla.com/t/api-update-new-timestamp-format-for-clearingdate-parameter/401">Read more here.</a></td>
+</tr>
+<tr>
+<td>status</td>
+<td>Status of the checkout session. Possible values: Completed, and Failed.</td>
+</tr>
+</tbody>
+</table>
+<p>This is what the URLs will look like in the event of success or failure:</p>
+<h6 id="url-example">URL Example</h6>
+<p><div class="codeContainer"></p>
+<pre><code class="lang-success">Format: https://www.myurl.com/redirect?signature={}&amp;orderId={}&amp;amount={}&amp;checkoutId={}&amp;status={}&amp;clearingDate={}&amp;transaction={}&amp;postback={}
+
+Example: https://www.myurl.com/redirect?signature=c50e4b2a4c50ad795c3ee31370aec1a563565aa4&amp;orderId=&amp;amount=0.01&amp;checkoutId=f32b1e55-9612-4b6d-90f9-1c1519e588da&amp;status=Completed&amp;clearingDate=8/28/2012%203:17:18%20PM&amp;transaction=1312616&amp;postback=success
+</code></pre>
+<pre><code class="lang-failure">Format: https://www.myurl.com/redirect?checkoutId={}&amp;error=failure&amp;error_description={}
+
+Example: https://www.myurl.com/redirect?checkoutId=694e6bcb-349f-451d-bf5d-8aa16530c960&amp;error=failure&amp;error_description=There+are+insufficient+funds+for+this+transaction
+</code></pre>
+<p></div></p>
+<h5 id="3-handling-verification-security">3. Handling Verification / Security</h5>
+<p>In both the user redirect querystring, and the callback POST request, Dwolla includes a signature that can be used to authenticate Dwolla&#39;s server identity. It is not required to do this, but highly recommended in order to ensure the safety of both you, the merchant, and the customer. The signature is an HMAC-SHA1 hexadecimal hash of the checkoutId and amount ampersand separated using the consumer secret of the application as the hash key. </p>
+<p>Here&#39;s an example of a signature validation in some common languages:</p>
+<h6 id="signature-verification">Signature Verification</h6>
+<p><div class="codeContainer"></p>
+<pre><code class="lang-php">function verifyGatewaySignature($proposedSignature, $checkoutId, $amount) {
+    $amount = number_format($amount, 2);
+    $signature = hash_hmac(&quot;sha1&quot;, &quot;{$checkoutId}&amp;{$amount}&quot;, $apiSecret);
+
+    return $signature == $proposedSignature;
+}
+</code></pre>
+<pre><code class="lang-ruby">def self.valid_dwolla_signature?(proposed_signature, checkout_id, amount)
+  require &#39;base64&#39;
+  require &#39;openssl&#39;
+
+  raw = &quot;#{checkout_id}&amp;#{amount}&quot;
+  digest  = OpenSSL::Digest::Digest.new(&#39;sha1&#39;)
+  signature = OpenSSL::HMAC.hexdigest(digest, client_secret, raw)
+  return (signature == proposed_signature)
+end
+</code></pre>
+<pre><code class="lang-python">def verify_gateway_signature(proposed_signature, checkout_id, amount):
+  import hmac
+  import hashlib
+
+  raw = &#39;%s&amp;%.2f&#39; % (checkout_id, amount)
+  signature = hmac.new(client_secret, raw, hashlib.sha1).hexdigest()
+
+  return True if (signature == proposed_signature) else False
+</code></pre>
+<pre><code class="lang-js">var verifyGatewaySignature = function(proposed_signature, checkout_id, amount) {
+  var crypto    = require(&#39;crypto&#39;)
+  , secret      = &#39;API_SECRET_HERE&#39;
+  , text        = checkout_id + &#39;&amp;&#39; + amount + &#39;&amp;&#39; + order_id
+  , hash;
+
+hash = crypto.createHmac(&#39;sha1&#39;, secret).update(text).digest(&#39;hex&#39;);
+
+return proposed_signature === hash;
+}
+</code></pre>
+<p></div></p>
+
+		</div>
+
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dwolladevelopers'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</div>
+</div>
+
+      </div>
+
+      <div class="page-footer">
+        <div class="inner-wrap">
+          <ul>
+            <li><a href="https://www.dwolla.com/about">About</a></li>
+            <li><a href="http://help.dwolla.com/">Support</a></li>
+            <li><a href="https://www.dwolla.com/individuals">Individuals</li>
+            <li><a href="https://www.dwolla.com/businesses">Businesses</a></li>
+            <li><a href="../../../index.html">Developers</a></li>
+            <li><a href="https://www.dwolla.com/fees">Fees</a></li>
+            <li><a href="https://www.dwolla.com/security">Security</a></li>
+            <li><a href="https://press.dwolla.com/">Press</a></li>
+            <li><a href="https://blog.dwolla.com/">Blog</a></li>
+            <li><a href="https://jobs.dwolla.com/">Careers</a></li>
+          </ul>
+          <p>&copy; <script>document.write(new Date().getFullYear())</script> Dwolla Inc. &nbsp;<a href="https://www.dwolla.com/privacy">Privacy</a>
+           <a href="https://www.dwolla.com/legal/tos/">Legal</a>
+           <a href="https://www.dwolla.com/legal/about-our-financial-institution-partner/">Dwolla, Inc. is an agent of its Financial Institution Partner(s)</a>
+           </p>
+        </div>
+      </div>
+    </div>
+
+		<script src="../../../assets/js/common.js"></script>
+
+		
+			
+			
+		<script src="../../../assets/js/dev.js"></script>
+			
+		
+
+    <!-- Chartbeat -->
+		<script type="text/javascript">
+		  var _sf_async_config = { uid: 22842, domain: 'developers.dwolla.com' };
+		  (function() {
+		    function loadChartbeat() {
+		      window._sf_endpt = (new Date()).getTime();
+		      var e = document.createElement('script');
+		      e.setAttribute('language', 'javascript');
+		      e.setAttribute('type', 'text/javascript');
+		      e.setAttribute('src',
+		        (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+		        "js/chartbeat.js");
+		      document.body.appendChild(e);
+		    };
+		    var oldonload = window.onload;
+		    window.onload = (typeof window.onload != 'function') ?
+		      loadChartbeat : function() { oldonload(); loadChartbeat(); };
+		  })();
+		</script>
+
+    <!-- adroll -->
+    <script type="text/javascript">
+    adroll_adv_id = "M574VFZAGJHU7MWRNRQZWP";
+    adroll_pix_id = "3L6XRQ72VVHLJPYJWIZGCE";
+    (function () {
+    var oldonload = window.onload;
+    window.onload = function(){
+       __adroll_loaded=true;
+       var scr = document.createElement("script");
+       var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+       scr.setAttribute('async', 'true');
+       scr.type = "text/javascript";
+       scr.src = host + "/j/roundtrip.js";
+       ((document.getElementsByTagName('head') || [null])[0] ||
+        document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+       if(oldonload){oldonload()}};
+    }());
+    </script>
+
+    <!-- google analytics -->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-30404064-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>

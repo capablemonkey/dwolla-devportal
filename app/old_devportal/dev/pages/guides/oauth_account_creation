@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Dwolla Developers | Dwolla</title>
+
+    <link href="../../../assets/css/header-footer.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/jquery.qtip.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/sh/shCore.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/sh/shCoreEclipse.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/highlight.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+
+    <meta http-equiv="Content-Language" content="en-us">
+    <meta name="description" content="Dwolla Developers's Portal">
+    <meta name="keywords" content="dwolla, api, dwolla api, money api, dwolla example code, dwolla examples, dwolla sample code, dwolla documentation, dwolla api documentation">
+    <meta name="robots" content="all">
+
+    <link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" />
+
+	  <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
+  </head>
+
+  <body>
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7TKTN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-K7TKTN');</script>
+    <!-- End Google Tag Manager -->
+
+    <div class="header">
+      <div class="inner-wrap">
+        <h1 class="logo-main"><a href="https://www.dwolla.com">Dwolla</a></h1>
+
+          <ul class="nav nav-primary">
+            <li><a href="http://blog.dwolla.com">Blog</a></li>
+            <li><a href="http://help.dwolla.com">Support</a></li>
+            <li><a href="https://www.dwolla.com/applications">Log in</a></li>
+            <li><a href="https://www.dwolla.com/applications/create" class="btn orange">Get API Key</a></li>
+          </ul>
+      </div>
+    </div>
+
+    <div id="wrap">
+      <div class="container">
+          
+<h2><span>Getting Started</span></h2>
+<h4></h4>
+
+
+<div id="docs" class="doc_page">
+	<div class="sidebar">
+	<div class="well" style="padding: 8px 0;">
+		<ul class="nav nav-list">
+			<li class="nav-header">
+				Developer Newsletter 
+			</li>
+			<li>
+			<!-- Begin MailChimp Signup Form -->
+			<div id="mc_embed_signup">
+			<form action="https://dwolla.us3.list-manage.com/subscribe/post?u=bd010d6cd015c558a27b4a232&amp;id=4e85ae585c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<div id="mc_embed_signup_scroll">
+
+			<div class="mc-field-group">
+			<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your e-mail!">
+			</div>
+			<div id="mce-responses" class="clear">
+			<div class="response" id="mce-error-response" style="display:none"></div>
+			<div class="response" id="mce-success-response" style="display:none"></div>
+			</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+			<div style="position: absolute; left: -5000px;"><input type="text" name="b_bd010d6cd015c558a27b4a232_4e85ae585c" tabindex="-1" value=""></div>
+			<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn orange"></div>
+			</div>
+			</form>
+			</div>
+			<script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+			<!--End mc_embed_signup-->
+			</li>
+		</ul>
+	</div>
+	<div class="well" style="padding: 8px 0;">
+		<ul class="nav nav-list">
+			<li class="nav-header">
+				Topics
+			</li>
+			<li 
+>
+				<a href="../../../index.html">
+					<i class="icon-screenshot"></i>
+					Getting Started
+				</a>
+			</li>
+			<li 
+>
+				<a href="../../docs/users/account" target="_blank">
+					<i class="icon-list-alt"></i>
+					API Documentation
+				</a>
+			</li>
+			<li>
+				<a href="http://status.dwolla.com" target="_blank">
+				    <i class="icon-fire"></i>
+				    API Status
+				</a>
+			</li>
+			<li 
+>
+				<a href="http://discuss.dwolla.com/category/api-support" target="_blank">
+					<i class="icon-comment"></i>
+					Help / Forum
+				</a>
+			</li>
+			<li>
+				<a href="https://www.dwolla.com/tos/dev" target="_blank">
+					<i class="icon-check"></i>
+					Developer TOS
+				</a>
+			</li>
+
+			<li class="nav-header">
+				Guides
+			</li>
+			<li 
+>
+				<a href="white_label">
+					<i class="icon-check"></i>
+					White Label: Transfer funds
+				</a>
+			</li>
+			<li 
+>
+				<a href="create_application">
+					<i class="icon-check"></i>
+					Generate API Credentials
+				</a>
+			</li>
+			<li 
+>
+				<a href="receiving_money">
+					<i class="icon-check"></i>
+					Accepting Payments
+				</a>
+			</li>
+			<li 
+>
+				<a href="sending_money">
+					<i class="icon-check"></i>
+					Sending Money
+				</a>
+			</li>
+			<li 
+>
+				<a href="masspay">
+					<i class="icon-check"></i>
+					Sending Batch Payments
+				</a>
+			</li>
+			<li 
+>
+				<a href="facilitator_fee">
+					<i class="icon-check"></i>
+					Setting Facilitator Fees
+				</a>
+			</li>
+			<li 
+>
+				<a href="offsite_gateway">
+					<i class="icon-check"></i>
+					Off-Site Gateway Checkout
+				</a>
+			</li>
+			<li 
+>
+				<a href="sandbox">
+					<i class="icon-check"></i>
+					Sandbox: Getting Started
+				</a>
+			</li>
+			<li 
+>
+				<a href="using_webhooks">
+					<i class="icon-check"></i>
+					Using Webhooks
+				</a>
+			</li>
+
+			<li class="nav-header">
+				Integration Options
+			</li>
+			<li 
+>
+				<a href="../gateway">
+					<i class="icon-shopping-cart"></i>
+					Off-Site Gateway
+				</a>
+			</li>
+			<li 
+>
+				<a href="../auth">
+					<i class="icon-user"></i>
+					OAuth + REST API
+				</a>
+			</li>
+
+			<li class="nav-header">
+				Reference
+			</li>
+			<li 
+>
+				<a href="direct_limitations">
+					<i class="icon-download-alt"></i>
+					Direct Account Limitatons
+				</a>
+			</li>
+			<li 
+>
+				<a href="correlate_transactions">
+					<i class="icon-download-alt"></i>
+					Correlate Transaction IDs
+				</a>
+			</li>
+			<li 
+>
+				<a href="oauth_account_creation">
+					<i class="icon-bell"></i>
+					OAuth Account Creation
+				</a>
+			</li>
+			<li 
+>
+				<a href="../../docs/gateway/direct">
+					<i class="icon-arrow-right"></i>
+					Dwolla Direct
+				</a>
+			</li>
+			<li 
+>
+				<a href="../sandbox">
+					<i class="icon-hdd"></i>
+					Sandbox
+				</a>
+			</li>
+			
+			<li class="nav-header">
+				Tools
+			</li>
+			<li 
+>
+				<a href="../sandbox/admin">
+					<i class="icon-asterisk"></i>
+					Sandbox Admin
+				</a>
+			</li>
+			<li 
+>
+				<a href="../testing">
+					<i class="icon-road"></i>
+					Reflector Account
+				</a>
+			</li>
+			<li 
+>
+				<a href="../../token">
+					<i class="icon-pencil"></i>
+					Token Generator
+				</a>
+			</li>
+
+			<li>
+				<a href="../../docs/users/account">Looking for API Docs? &raquo;</a>
+			</li>
+
+		</ul>
+	</div>
+</div>
+
+
+	<div class="content">
+		<div class="guide">
+			<h2 id="oauth-account-creation">OAuth Account Creation</h2>
+<h4 id="overview">Overview</h4>
+<p>Dwolla has simplified the user on-boarding process by building account creation into the OAuth flow. Now your users can create a Dwolla account and attach a bank funding source inline with the capture of the user&#39;s permission, without abandoning your application flow.</p>
+<p>There are three ways to onboard new users, each with varying levels of required verification:</p>
+<ul>
+<li>Create a Dwolla Direct account with non-verified, receive-only bank funding source</li>
+<li>Create a Dwolla Direct account with instant bank account verification</li>
+<li>Create a Full Dwolla account with both identity and bank verification</li>
+</ul>
+<p>Dwolla Direct accounts were designed to provide a lightweight registration experience. In contrast to Full Dwolla accounts, full identity verification is not required for Dwolla Direct accounts. Because of this, they have certain restrictions within the Dwolla platform, e.g. Dwolla Direct accounts cannot hold a Dwolla balance. Read more about Direct account <a href="direct_limitations">limitations</a>. </p>
+<p>Give the experience a try:</p>
+<p><a class="btn orange" href="oauth_account_creation#" onclick="window.open('https://uat.dwolla.com/oauth/v2/authenticate?client_id=eM5d1vO1vqQTRRwKOeO%2B0p%2FiKc7nnSX1iDPaPzm4WisBVHuhKR&response_type=code&redirect_uri=https%3A%2F%2Fdwollademo.herokuapp.com%2Fapi%2Foauth%2Freturn&scope=AccountInfoFull%7CFunding%7CSend', '', 'width=700,height=700')" style="color:white; margin:auto; width:200px; display:block;" data-toggle="tooltip" data-placement="right" title="hint: make sure you're logged out of any account on uat.dwolla.com">Direct account w/ verified bank</a></p>
+<p>For more live examples see this <a href="https://dwollademo.herokuapp.com/api/oauth">sample application</a>. </p>
+<p><p class="section_header pad_top">User experience - Direct account</p>
+<div class="section" id="ux-direct"></p>
+<p><strong>Step 1</strong> From your application, the user is presented with Dwolla OAuth in a pop-up, or their window is redirected.</p>
+<p><strong>Step 2</strong> User is prompted to create a Dwolla Direct account (or log in with an existing Dwolla account). If Dwolla detects no prior user sessions from dwolla.com (checks cookies), the main call to action will be to create a new account. </p>
+<p><img src="../../../assets/images/dev/account-creation/1-CreateDirectAcct.png" alt="screenshot 1"></p>
+<p><strong>Step 3</strong> - User is asked to grant requested permissions to the application.</p>
+<p><img src="../../../assets/images/dev/account-creation/2-GrantPermissions.png" alt="screenshot 2"></p>
+<p><strong>Step 4</strong> - Adding a funding source
+There are two flows available for adding a funding source. If the user needs to be able to send money, be sure to request the <strong>Send</strong> scope, which will trigger the Instant Account Verification (IAV) process and allow the user to verify and connect a  funding source by entering their online banking credentials. Alternatively, if the user only needs to receive money, do not request the Send scope, but do request the Funding scope. This will trigger a flow where the user will add their bank or credit union account and routing numbers, but the IAV process will not be included.</p>
+<ul>
+<li>If <strong>Funding</strong> scope is requested but Send scope is <strong>not</strong>, send user through the flow to add a non-verified bank account.</li>
+</ul>
+<p><img src="../../../assets/images/dev/account-creation/3-AddNonVerifiedFS.png" alt="screenshot 3"></p>
+<ul>
+<li>If <strong>Send</strong> scope is requested, send the user through the IAV flow to add a verified bank.</li>
+</ul>
+<p><img src="../../../assets/images/dev/account-creation/4-BankSearch.png" alt="screenshot 4"></p>
+<p><strong>Note:</strong> An extensive list of popular U.S. financial institutions are supported by IAV. In the case that a user&#39;s bank account is not supported, they&#39;ll be unable to complete account creation.</p>
+<p><img src="../../../assets/images/dev/account-creation/5-BankLogin.png" alt="screenshot 5"></p>
+<p><img src="../../../assets/images/dev/account-creation/6-VerifyBank.png" alt="screenshot 6"></p>
+<p><strong>Note:</strong> there may be multifactor authentication (MFA) in this step, depending on the financial institution. Different kinds of MFA include:</p>
+<ul>
+<li>Question and answer</li>
+<li>Token (SMS or email verification code)</li>
+<li>CAPTCHA or security image</li>
+</ul>
+<p><img src="../../../assets/images/dev/account-creation/7-SelectBankAcct.jpg" alt="screenshot 7"></p>
+<p><strong>Step 5</strong> - Submit and verify bank information 
+Once the user selects submit and verify on their bank information, they are then redirected back to your site where you will receive an access token and refresh token pair.</p>
+<p><strong>Step 6</strong> - Redirect user back to application</p>
+<p></div></p>
+<p><p class="section_header pad_top">User experience - full Dwolla account</p>
+<div class="section" style="display:none" id="ux-full"></p>
+<p><strong>Step 1</strong> - From your application, the user is presented with Dwolla OAuth in a pop-up, or their window is redirected.</p>
+<p><strong>Step 2</strong> - User is prompted to create a Dwolla account (or log in with an existing Dwolla account). If Dwolla detects no prior user sessions from dwolla.com (checks cookies), the main call to action will be to create a new account.</p>
+<p><img src="../../../assets/images/dev/account-creation/8-CreateAcct.png" alt="screenshot 8"> </p>
+<p><strong>Step 3</strong> - The user will then be prompted to select the type of account to create (Personal, Business, Government, Non-Profit). </p>
+<p><img src="../../../assets/images/dev/account-creation/9-SelectAcctType.png" alt="screenshot 9"></p>
+<p><strong>Step 4</strong> - The user will then be required to enter information that will be used to verify their identity. </p>
+<p><img src="../../../assets/images/dev/account-creation/10-BizReg.png" alt="screenshot 10"></p>
+<p><strong>Step 4-1</strong> - Business users may be asked for additional information to complete verification, depending on our ability to verify the information provided until this point. </p>
+<p><img src="../../../assets/images/dev/account-creation/12-Document.png" alt="screenshot 12"></p>
+<p><strong>Step 5</strong> - After completing account registration, the user will be asked to grant permissions to the application. If the Send scope is requested, they will be prompted to add a verified bank account via IAV. (This step can be skipped, and the user can choose to add a funding source later on dwolla.com.)</p>
+<p><img src="../../../assets/images/dev/account-creation/14-GrantPermissions.png" alt="screenshot 14"></p>
+<p><strong>Step 6</strong> - Add a bank or skip to complete the OAuth process</p>
+<p><img src="../../../assets/images/dev/account-creation/15-VerifiedBankSearch.png" alt="screenshot 15"></p>
+<p></div></p>
+<p><p class="section_header pad_top">Configuration</p>
+<div class="section" style="display:none" id="config"></p>
+<p>By default, Dwolla Direct account creation is enabled. Read more about Direct account <a href="direct_limitations">limitations</a>. </p>
+<p>If you request the <code>Send</code> scope in the request authorization URL, the user will be prompted to add a verified bank.</p>
+<p>If you request the <code>Funding</code> scope but not the <code>Send</code> scope, the user will be prompted to connect an unverified bank account eligible to receive funds but not send funds to other users.  </p>
+<h4 id="requiring-full-account-creation-">Requiring Full account creation:</h4>
+<p>To trigger full Dwolla account creation within the OAuth flow instead, set the parameter <code>verified_account</code> to <code>true</code> in the initial request for authorization. If you request the <code>Send</code> scope then the user will be prompted to add a verified bank after granting permissions to the application.</p>
+<p>Example URL format:</p>
+<p><code>https://www.dwolla.com/oauth/v2/authenticate?client_id={client_id}&amp;response_type=code&amp;redirect_uri={redirect_uri}&amp;scope={scope}&amp;verified_account=true</code></p>
+<p></div></p>
+
+		</div>
+
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dwolladevelopers'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</div>
+</div>
+
+      </div>
+
+      <div class="page-footer">
+        <div class="inner-wrap">
+          <ul>
+            <li><a href="https://www.dwolla.com/about">About</a></li>
+            <li><a href="http://help.dwolla.com/">Support</a></li>
+            <li><a href="https://www.dwolla.com/individuals">Individuals</li>
+            <li><a href="https://www.dwolla.com/businesses">Businesses</a></li>
+            <li><a href="../../../index.html">Developers</a></li>
+            <li><a href="https://www.dwolla.com/fees">Fees</a></li>
+            <li><a href="https://www.dwolla.com/security">Security</a></li>
+            <li><a href="https://press.dwolla.com/">Press</a></li>
+            <li><a href="https://blog.dwolla.com/">Blog</a></li>
+            <li><a href="https://jobs.dwolla.com/">Careers</a></li>
+          </ul>
+          <p>&copy; <script>document.write(new Date().getFullYear())</script> Dwolla Inc. &nbsp;<a href="https://www.dwolla.com/privacy">Privacy</a>
+           <a href="https://www.dwolla.com/legal/tos/">Legal</a>
+           <a href="https://www.dwolla.com/legal/about-our-financial-institution-partner/">Dwolla, Inc. is an agent of its Financial Institution Partner(s)</a>
+           </p>
+        </div>
+      </div>
+    </div>
+
+		<script src="../../../assets/js/common.js"></script>
+
+		
+			
+			
+		<script src="../../../assets/js/dev.js"></script>
+			
+		
+
+    <!-- Chartbeat -->
+		<script type="text/javascript">
+		  var _sf_async_config = { uid: 22842, domain: 'developers.dwolla.com' };
+		  (function() {
+		    function loadChartbeat() {
+		      window._sf_endpt = (new Date()).getTime();
+		      var e = document.createElement('script');
+		      e.setAttribute('language', 'javascript');
+		      e.setAttribute('type', 'text/javascript');
+		      e.setAttribute('src',
+		        (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+		        "js/chartbeat.js");
+		      document.body.appendChild(e);
+		    };
+		    var oldonload = window.onload;
+		    window.onload = (typeof window.onload != 'function') ?
+		      loadChartbeat : function() { oldonload(); loadChartbeat(); };
+		  })();
+		</script>
+
+    <!-- adroll -->
+    <script type="text/javascript">
+    adroll_adv_id = "M574VFZAGJHU7MWRNRQZWP";
+    adroll_pix_id = "3L6XRQ72VVHLJPYJWIZGCE";
+    (function () {
+    var oldonload = window.onload;
+    window.onload = function(){
+       __adroll_loaded=true;
+       var scr = document.createElement("script");
+       var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+       scr.setAttribute('async', 'true');
+       scr.type = "text/javascript";
+       scr.src = host + "/j/roundtrip.js";
+       ((document.getElementsByTagName('head') || [null])[0] ||
+        document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+       if(oldonload){oldonload()}};
+    }());
+    </script>
+
+    <!-- google analytics -->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-30404064-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>
