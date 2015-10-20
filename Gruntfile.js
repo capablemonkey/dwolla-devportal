@@ -119,17 +119,12 @@ module.exports = function (grunt) {
     },
     sass: {
       dist: {
-        options: {
-          style: 'expanded',
-          loadPath: '<%= yeoman.app %>/_bower_components/'
-        },
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.app %>/_scss/',
-          src: ['**/*.scss'],
-          dest: '.tmp/css/',
-          ext: '.css'
-        }]
+        expand: true,
+        cwd: '<%= yeoman.app %>/_scss/',
+        src: ['**/*.scss'],
+        dest: '.tmp/css/',
+        ext: '.css',
+        extDot: 'last'
       }
     },
     autoprefixer: {
