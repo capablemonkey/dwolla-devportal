@@ -6,9 +6,9 @@
     "jquery": "~1.11.1",
     "modernizr": "~2.8.3",
     "style-tiles": "https://stash.dwolla.net/scm/fe/style-tiles.git#master",
-    "icons": "https://stash.dwolla.net/scm/fe/icons.git#a875001f856f4b7c9ee95e4d1302523388422575"
+    "icons": "https://stash.dwolla.net/scm/fe/icons.git#213dc1ca6cc7ba19c9f181a88838df30c1ba6ca3"
   },
   "resolutions": {
-    "icons": "a875001f856f4b7c9ee95e4d1302523388422575"
+    "icons": "213dc1ca6cc7ba19c9f181a88838df30c1ba6ca3"
   }
 }
