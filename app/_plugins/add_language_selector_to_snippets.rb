@@ -11,7 +11,7 @@ module Jekyll
             code = "<pre>#{super}</pre>"
 
             # Selector
-            selector = "<div class=\"code-snippet__selector language-#{lang}\">
+            selector = "<div class=\"code-snippet__selector\">
               <nav>
                   <button class=\"selector_switch\" id=\"raw\">raw</button>
                   <button class=\"selector_switch\" id=\"php\">php</button>
@@ -19,9 +19,12 @@ module Jekyll
                   <button class=\"selector_switch\" id=\"python\">python</button>
                   <button class=\"selector_switch\" id=\"javascript\">javascript</button>
               </nav>
-            </div>"            
+            </div>"
 
-            output = "<div class=\"code-snippet #{lang}-code-snippet\">" + selector + "<div class=\"code-snippet__cnt highlight language-#{lang}\">"
+            # Button
+            button = "<button class=\"btn alternative\">copy</button>"         
+
+            output = "<div class=\"code-snippet js-code-snippet language-#{lang}\">" + button + selector + "<div class=\"code-snippet__cnt highlight\">"
             output << add_code_tags(code, lang)
             output << "</div></div>"
           end
