@@ -4,19 +4,33 @@ title:  "Resources"
 description: "In-depth articles on Dwolla features and integration patterns."
 ---
 
-# Resources
-
-<div class="reference-list-item">
-<a class="item-title" href="/reference/ach-clearing-times.html" title="ACH Clearing Times">ACH Clearing Times</a>
-<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam enim mauris, sagittis sit amet tincidunt quis, cursus id justo. Etiam malesuada nunc nisi, sed pretium diam finibus id.</p>
-</div>
-
-<div class="reference-list-item">
-<a class="item-title" href="/reference/ach-clearing-times.html" title="ACH Clearing Times">ACH Clearing Times</a>
-<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam enim mauris, sagittis sit amet tincidunt quis, cursus id justo. Etiam malesuada nunc nisi, sed pretium diam finibus id.</p>
-</div>
-
-<div class="reference-list-item">
-<a class="item-title" href="/reference/ach-clearing-times.html" title="ACH Clearing Times">ACH Clearing Times</a>
-<p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam enim mauris, sagittis sit amet tincidunt quis, cursus id justo. Etiam malesuada nunc nisi, sed pretium diam finibus id.</p>
-</div>
+<h1>Tools</h1>
+<ul class="icon-links">
+    <li><a href="" class="icon-tools-sandbox">Sandbox</a></li>
+    <li><a href="" class="icon-tools-token-generator">Token generator</a></li>
+    <li><a href="" class="icon-tools-change-log">Change log</a></li>
+    <li><a href="" class="icon-tools-status">Status</a></li>
+</ul>
+<h1>Articles</h1>
+<ul class="article-list">
+    <li>
+        <h3><a>Account types</a></h3>
+        <p>The different types of Dwolla accounts and their respective setup workflows.</p>
+    </li>
+    <li>
+        <h3><a>oAuth refresh strategies</a></h3>
+        <p>Best practices and recommendations for managing your tokens.</p>
+    </li>
+    <li>
+        <h3><a>Customer verifications</a></h3>
+        <p>Account verification states and possible reasons why an account could be placed in a given state.</p>
+    </li>
+    <li>
+        <h3><a>Transaction workflow</a></h3>
+        <p>A walkthrough of the ACH transfer process, including transactin states and processing times.</p>
+    </li>
+    <li>
+        <h3><a>Account types</a></h3>
+        <p>The different types of Dwolla accounts and their respective setup workflows.</p>
+    </li>
+</ul>
