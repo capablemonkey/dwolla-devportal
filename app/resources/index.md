@@ -1,10 +1,10 @@
 ---
 layout: twoColumn
-title:  "Reference"
+title:  "Resources"
 description: "In-depth articles on Dwolla features and integration patterns."
 ---
 
-# Reference
+# Resources
 
 <div class="reference-list-item">
 <a class="item-title" href="/reference/ach-clearing-times.html" title="ACH Clearing Times">ACH Clearing Times</a>
