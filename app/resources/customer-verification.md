@@ -52,7 +52,7 @@ You’ll need to provide the customer’s full name, email address, home address
 
 Once you submit this request, Dwolla will perform some initial validation to check for formatting issues such as an invalid date of birth, invalid email format, etc. If successful, the response will be a HTTP 201/Created with the URL of the new customer resource contained in the `Location` header.
 
-```
+```raw
 HTTP/1.1 201 Created
 Location: https://api.dwolla.com/customers/FC451A7A-AE30-4404-AB95-E3553FCD733F
 ```
@@ -63,7 +63,7 @@ The successful creation of a customer doesn’t necessarily mean the customer is
 
 Let’s check to see if the customer was successfully verified or not:
 
-```
+```raw
 GET https://api.dwolla.com/customers/FC451A7A-AE30-4404-AB95-E3553FCD733F
 Content-Type: application/vnd.dwolla.v1.hal+json
 Accept: application/vnd.dwolla.v1.hal+json
@@ -72,7 +72,7 @@ Authorization: Bearer pBA9fVDBEyYZCEsLf/wKehyh1RTpzjUj5KzIRfDi0wKTii7DqY
 
 Response: 
 
-```
+```raw
 {
   "_links": {
     "self": {
@@ -107,7 +107,7 @@ Our customer was successfully verified! Other customers, however, may require ad
 
 If the customer has a status of `retry`, some information may have been miskeyed. You have one more opportunity to correct any mistakes. This time, you’ll need to provide the customer’s full SSN.
 
-```
+```raw
 POST /customers/132681FA-1B4D-4181-8FF2-619CA46235B1
 Content-Type: application/vnd.dwolla.v1.hal+json
 Accept: application/vnd.dwolla.v1.hal+json
@@ -135,7 +135,7 @@ Check the customer’s status again. The customer will either be verified or in 
 
 If the customer has a status of `document`, then you'll need to upload a photo of the customer's passport, driver's license, or other government-issued photo ID. Use the Create a document endpoint for that. The document will then be reviewed by Dwolla.  
 
-```
+```raw
 curl -X POST 
 \ -H "Authorization: Bearer tJlyMNW6e3QVbzHjeJ9JvAPsRglFjwnba4NdfCzsYJm7XbckcR" 
 \ -H "Accept: application/vnd.dwolla.v1.hal+json" 
@@ -148,7 +148,7 @@ curl -X POST
 
 If the document was successfully uploaded, the response will be a HTTP 201/Created with the URL of the new document resource contained in the Location header.
 
-```
+```raw
 HTTP/1.1 201 Created
 Location: https://api-uat.dwolla.com/documents/11fe0bab-39bd-42ee-bb39-275afcc050d0
 ```
