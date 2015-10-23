@@ -47,6 +47,18 @@ Authorization: Bearer pBA9fVDBEyYZCEsLf/wKehyh1RTpzjUj5KzIRfDi0wKTii7DqY
   "tin": "1516"
 }
 ```
+```ruby
+# No example for this language yet.
+```
+```javascript
+// No example for this language yet.
+```
+```python
+# No example for this language yet.
+```
+```php
+// No example for this language yet.
+```
 
 You’ll need to provide the customer’s full name, email address, home address, date of birth, and the last four digits of their taxpayer identification number (for individuals, this is their Social Security Number).
 
@@ -55,6 +67,18 @@ Once you submit this request, Dwolla will perform some initial validation to che
 ```raw
 HTTP/1.1 201 Created
 Location: https://api.dwolla.com/customers/FC451A7A-AE30-4404-AB95-E3553FCD733F
+```
+```ruby
+# No example for this language yet.
+```
+```javascript
+// No example for this language yet.
+```
+```python
+# No example for this language yet.
+```
+```php
+// No example for this language yet.
 ```
 
 ### Check the status of the personal customer
@@ -68,6 +92,18 @@ GET https://api.dwolla.com/customers/FC451A7A-AE30-4404-AB95-E3553FCD733F
 Content-Type: application/vnd.dwolla.v1.hal+json
 Accept: application/vnd.dwolla.v1.hal+json
 Authorization: Bearer pBA9fVDBEyYZCEsLf/wKehyh1RTpzjUj5KzIRfDi0wKTii7DqY
+```
+```ruby
+# No example for this language yet.
+```
+```javascript
+// No example for this language yet.
+```
+```python
+# No example for this language yet.
+```
+```php
+// No example for this language yet.
 ```
 
 Response: 
@@ -100,6 +136,18 @@ Response:
   "created": "2015-09-29T19:47:28.920Z"
 }
 ```
+```ruby
+# No example for this language yet.
+```
+```javascript
+// No example for this language yet.
+```
+```python
+# No example for this language yet.
+```
+```php
+// No example for this language yet.
+```
 
 Our customer was successfully verified! Other customers, however, may require additional verification. Continue reading for instructions on providing additional information to verify these customers.
 
@@ -128,6 +176,18 @@ Authorization: Bearer pBA9fVDBEyYZCEsLf/wKehyh1RTpzjUj5KzIRfDi0wKTii7DqY
   "tin": "202-99-1516"
 }
 ```
+```ruby
+# No example for this language yet.
+```
+```javascript
+// No example for this language yet.
+```
+```python
+# No example for this language yet.
+```
+```php
+// No example for this language yet.
+```
 
 Check the customer’s status again. The customer will either be verified or in the `document` or `suspended` state.
 
@@ -145,12 +205,36 @@ curl -X POST
 \ -F "file=@foo.png" 
 \ 'https://api-uat.dwolla.com/customers/132681FA-1B4D-4181-8FF2-619CA46235B1/documents'
 ```
+```ruby
+# No example for this language yet.
+```
+```javascript
+// No example for this language yet.
+```
+```python
+# No example for this language yet.
+```
+```php
+// No example for this language yet.
+```
 
 If the document was successfully uploaded, the response will be a HTTP 201/Created with the URL of the new document resource contained in the Location header.
 
 ```raw
 HTTP/1.1 201 Created
 Location: https://api-uat.dwolla.com/documents/11fe0bab-39bd-42ee-bb39-275afcc050d0
+```
+```ruby
+# No example for this language yet.
+```
+```javascript
+// No example for this language yet.
+```
+```python
+# No example for this language yet.
+```
+```php
+// No example for this language yet.
 ```
 
 You’ll also get a webhook with a `customer_verification_document_uploaded` event to let you know the document was successfully uploaded.
