@@ -2,73 +2,367 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>/guides/send-money/01-white-label-onboarding.html</loc>
-    <lastmod>2015-10-16T16:01:57-04:00</lastmod>
+    <lastmod>2015-10-22T21:17:02-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/send-money/02-fetch-funding-sources.html</loc>
-    <lastmod>2015-10-16T16:01:57-04:00</lastmod>
+    <lastmod>2015-10-22T21:17:02-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/reference/ach-clearing-times.html</loc>
-    <lastmod>2015-10-16T16:01:57-04:00</lastmod>
+    <loc>/resources/ach-clearing-times.html</loc>
+    <lastmod>2015-10-22T21:17:02-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/pages/api-docs.html</loc>
-    <lastmod>2015-10-16T16:01:57-04:00</lastmod>
+    <lastmod>2015-10-22T21:17:02-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>/resources/changelog.html</loc>
+    <lastmod>2015-10-22T21:17:02-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>/resources/customer-verification.html</loc>
+    <lastmod>2015-10-22T21:17:02-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/</loc>
-    <lastmod>2015-10-16T16:01:57-04:00</lastmod>
+    <lastmod>2015-10-22T21:17:02-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>/reference/</loc>
-    <lastmod>2015-10-16T16:01:57-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>/guides/receive-money/</loc>
-    <lastmod>2015-10-16T16:01:57-04:00</lastmod>
+    <loc>/guides/</loc>
+    <lastmod>2015-10-22T21:17:02-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/send-money/</loc>
-    <lastmod>2015-10-16T16:01:57-04:00</lastmod>
+    <lastmod>2015-10-22T21:17:02-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/guides/</loc>
-    <lastmod>2015-10-16T16:01:57-04:00</lastmod>
+    <loc>/guides/receive-money/</loc>
+    <lastmod>2015-10-22T21:17:02-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/transfer-money-between-users/</loc>
-    <lastmod>2015-10-16T16:01:57-04:00</lastmod>
+    <lastmod>2015-10-22T21:17:02-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>/resources/</loc>
+    <lastmod>2015-10-22T21:17:02-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>/resources/oauth-refresh-strategies.html</loc>
+    <lastmod>2015-10-22T21:17:02-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>/resources/sandbox.html</loc>
+    <lastmod>2015-10-22T21:17:02-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/pages/sdks.html</loc>
-    <lastmod>2015-10-16T16:01:57-04:00</lastmod>
+    <lastmod>2015-10-22T21:17:02-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/404.html</loc>
     <lastmod>2015-07-21T10:53:21-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/assets/css/images/icon_promotion-banner.png.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/assets/css/images/icon_storefront.png.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/assets/css/images/svg/dwolla.svg.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/assets/css/images/ui-bg_diagonals-thick_18_b81900_40x40.png.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/assets/css/images/ui-bg_diagonals-thick_20_666666_40x40.png.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/assets/css/images/ui-bg_flat_10_000000_40x100.png.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/assets/css/images/ui-bg_glass_100_f6f6f6_1x400.png.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/assets/css/images/ui-bg_glass_100_fdf5ce_1x400.png.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/assets/css/images/ui-bg_glass_65_ffffff_1x400.png.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/assets/css/images/ui-bg_gloss-wave_35_f6a828_500x100.png.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/assets/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/assets/css/images/ui-bg_highlight-soft_75_ffe45c_1x100.png.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/assets/css/images/ui-icons_222222_256x240.png.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/assets/css/images/ui-icons_228ef1_256x240.png.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/assets/css/images/ui-icons_ef8c08_256x240.png.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/assets/css/images/ui-icons_ffd27a_256x240.png.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/assets/css/images/ui-icons_ffffff_256x240.png.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/docs/funding/listing.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/docs/gateway/direct.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/docs/masspay/job/index.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/docs/masspay/jobs/items.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/docs/requests/request.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/docs/transactions/byid.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/docs/transactions/send.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/docs/users/account.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/docs/webhooks/requestcancelled.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/docs/webhooks/requestfulfilled.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/docs/webhooks/transactionreturned.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/docs/webhooks/transactionstatus.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/libraries.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/auth.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/button.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/gateway/direct.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/gateway/guest.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/gateway.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/guides/correlate_transactions.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/guides/create_application.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/guides/direct_limitations.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/guides/facilitator_fee.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/guides/masspay.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/guides/oauth_account_creation.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/guides/offsite_gateway.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/guides/receiving_money.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/guides/sandbox.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/guides/sending_money.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/guides/using_webhooks.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/guides/white_label.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/sandbox/admin.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/sandbox.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/statuses.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/testing.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/pages/webhooks.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/dev/token.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/old_devportal/index.html</loc>
+    <lastmod>2015-10-20T20:16:20-04:00</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>
