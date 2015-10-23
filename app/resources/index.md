@@ -6,7 +6,7 @@ description: "In-depth articles on Dwolla features and integration patterns."
 
 <h1>Tools</h1>
 <ul class="icon-links">
-    <li><a href="" class="icon-tools-sandbox">Sandbox</a></li>
+    <li><a href="/resources/sandbox.html" class="icon-tools-sandbox">Sandbox</a></li>
     <li><a href="" class="icon-tools-token-generator">Token generator</a></li>
     <li><a href="" class="icon-tools-change-log">Change log</a></li>
     <li><a href="" class="icon-tools-status">Status</a></li>
@@ -22,7 +22,7 @@ description: "In-depth articles on Dwolla features and integration patterns."
         <p>Best practices and recommendations for managing your tokens.</p>
     </li>
     <li>
-        <h3><a>Customer verifications</a></h3>
+        <h3><a href="/resources/customer-verification.html">Customer verification</a></h3>
         <p>Account verification states and possible reasons why an account could be placed in a given state.</p>
     </li>
     <li>
