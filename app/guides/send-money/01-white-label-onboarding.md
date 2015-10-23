@@ -123,5 +123,5 @@ The created funding source URL is returned in the location header.
 
 <nav class="pager-nav">
     <a href="./">Back</a>
-    <a href="">Next step: Transfer money to a recipient</a>
+    <a href="02-fetch-funding-sources.html">Next step: Transfer money to a recipient</a>
 </nav>

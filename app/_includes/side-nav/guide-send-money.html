@@ -2,29 +2,29 @@
     <h6>Follow the steps</h6>
     <ol>
         <li>
-            <a class="active" href="">Overview: send money to your users</a>
+            <a href="/guides/send-money" {% if page.guide.step == 'overview' %}class="active"{% endif %}>Overview: send money to your users</a>
             <div class="dot"></div>
             <ol>
                 <li>
-                    <a href="">Option 1: White Label</a>
+                    <a href="/guides/send-money/01-white-label-onboarding.html" {% if page.guide.step == '1a' %}class="active"{% endif %}>Option 1: White Label</a>
                     <div class="dot"></div>
                 </li>
                 <li>
-                    <a href="">Option 2: Redirect</a>
+                    <a href="/guides/send-money/01-direct-onboarding.html" {% if page.guide.step == '1b' %}class="active"{% endif %}>Option 2: Redirect</a>
                     <div class="dot"></div>
                 </li>
             </ol>
         </li>
         <li>
-            <a href="">Fetch funding sources</a>
+            <a href="/guides/send-money/02-fetch-funding-sources.html" {% if page.guide.step == '2' %}class="active"{% endif %}>Fetch funding sources</a>
             <div class="dot"></div>
         </li>
         <li>
-            <a href="">Create a transfer</a>
+            <a href="/guides/send-money/03-create-transfer.html" {% if page.guide.step == '3' %}class="active"{% endif %}>Create a transfer</a>
             <div class="dot"></div>
         </li>
         <li>
-            <a href="">Check Transfer</a>
+            <a href="/guides/send-money/04-check-transfer.html" {% if page.guide.step == '4' %}class="active"{% endif %}>Check transfer status</a>
             <div class="dot"></div>
         </li>
     </ol>
@@ -32,7 +32,7 @@
 <section class="side-nav__options">
     <h6>Options</h6>
     <ul>
-        <li><a href="" class="icon-sidenav-option">MassPay V1</a></li>
+        <li><a href="https://developers.dwolla.com/dev/pages/guides/masspay" target="_blank" class="icon-sidenav-option">MassPay V1</a></li>
         <li><a href="" class="icon-sidenav-option">Recurring and Scheduled V1</a></li>
     </ul>
 </section>
