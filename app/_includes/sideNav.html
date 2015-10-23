@@ -32,18 +32,18 @@
     <section>
         <h6>Tools</h6>
         <ul>
-            <li><a href="" class="active">Sandbox</a></li>
+            <li><a href="">Sandbox</a></li>
             <li><a href="">Token generator</a></li>
             <li><a href="">Change log</a></li>
             <li><a href="https://status.dwolla.com/" class="icon-sidenav-option">Status</a></li>
         </ul>
         <h6>Articles</h6>
         <ul>
-            <li><a href="">Account types</a></li>
-            <li><a href="">oAuth refresh strategies</a></li>
-            <li><a href="/resources/customer-verification.html">Customer verification</a></li>
-            <li><a href="">Transaction workflow</a></li>
-            <li><a href="">Require customer notifications</a></li>
+        {% for item in site.pages %}
+            {% if item.section == 'resources' && item.type == 'article' %}
+              <li><a href="{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.title }}</a></li>
+            {% endif %}
+        {% endfor %}
         </ul>
     </section>
 
