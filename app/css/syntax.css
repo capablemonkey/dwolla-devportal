@@ -67,4 +67,5 @@
 .highlight {
   font-family: monospace;
   font-size: 12pt;
+  color: #FFFFFF;  /* default color */
 }
