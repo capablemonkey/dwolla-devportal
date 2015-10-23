@@ -12,10 +12,10 @@ title:  "Step 2: Fetch funding sources"
 
 No matter which method you used to set up your customers, the remaining steps of sending money are the same. Please note the difference in terminology between the two onboarding experiences:
 
-Recipient:
-
-White Label Solution:   Customer
-Dwolla Direct:          Account
+| Solution | Recipient|
+|----------|----------|
+|White Label Solution|Customer|
+|Dwolla Direct|Account|
 
 Now that you’ve created a customer or an account and associated its funding source, you can initiate your first transfer. The transfer requires the following information:
 
