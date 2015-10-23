@@ -4,10 +4,27 @@
 # TEAM
 
     <name> -- <role> -- <twitter>
+    Jeremiah Wingett -- Designer Extraordinaire -- @jeremiahwingett
+    Melissa Cooper -- UX Lead, Project Lead, Everything Lead -- @mississa
+    Troy Blank -- Jedi Web Developer -- @troyblank
+    Laura Zander -- Copywriter, Grand Wizard of Clarification -- @lz
+    Christine Choi -- Copywriter, Grand Master of Phrases
+    Gordon Zheng -- Developer Relations Monkey 0 -- @capable_monkey
+    Spencer Hunter -- Developer Relations Monkey 1 -- @SpencerJHunter
+    David Stancu -- Developer Relations Monkey 2 -- @mach_kernel
 
 # THANKS
 
-    <name>
+    Brent Baker
+    Shea Daniels
+    Rocky Warren
+    Jared Delitt
+    Mike Stowe
+    Thomas Hart
+    Murtza Manzur
+    Connor Uhlman
+    Nate Smith
+
 
 # TECHNOLOGY COLOPHON
 
