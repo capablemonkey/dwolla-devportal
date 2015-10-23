@@ -1,7 +1,10 @@
 ---
 layout: twoColumn
 section: guides
-type: guide-step
+guide: 
+    name: send-money
+    step: 1a
+type: guide
 title:  "Option 1: White Label onboarding"
 ---
 

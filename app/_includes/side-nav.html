@@ -1,0 +1,15 @@
+<nav class="side-nav active">
+
+{% if page.url contains '/guides/' %}
+    {% include side-nav/guides.html %}
+{% endif %}
+
+{% if page.url contains '/resources/' %}
+    {% include side-nav/resources.html %}
+{% endif %}
+
+{% if page.guide.name == 'send-money' %}
+    {% include side-nav/guide-send-money.html %}
+{% endif %}
+
+</nav>

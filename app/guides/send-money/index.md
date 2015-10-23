@@ -1,5 +1,10 @@
 ---
 layout: twoColumn
+section: guides
+type: guide
+guide: 
+    name: send-money
+    step: overview
 title:  ACH transfers for your application
 description: Send payments from your application by utilizing our open API with no per transaction fees. 
 ---

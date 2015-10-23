@@ -1,0 +1,17 @@
+<section>
+    <h6>Tools</h6>
+    <ul>
+        <li><a href="/resources/sandbox.html" {%if page.url contains '/sandbox.html'%}class="active"{%endif%}>Sandbox</a></li>
+        <li><a href="">Token generator</a></li>
+        <li><a href="/resources/changelog.html" {%if page.url contains '/changelog.html'%}class="active"{%endif%}>Change log</a></li>
+        <li><a href="http://status.dwolla.com/" target="_blank" class="icon-sidenav-option">Status</a></li>
+    </ul>
+    <h6>Articles</h6>
+    <ul>
+    {% for item in site.pages %}
+        {% if item.section == 'resources' and item.type == 'article' %}
+          <li><a href="{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.title }}</a></li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+</section>
