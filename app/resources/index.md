@@ -18,7 +18,7 @@ description: "In-depth articles on Dwolla features and integration patterns."
         <p>The different types of Dwolla accounts and their respective setup workflows.</p>
     </li>
     <li>
-        <h3><a>oAuth refresh strategies</a></h3>
+        <h3><a href="/resources/oauth-refresh-strategies.html">OAuth refresh strategies</a></h3>
         <p>Best practices and recommendations for managing your tokens.</p>
     </li>
     <li>
