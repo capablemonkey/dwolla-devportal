@@ -1,46 +1,6 @@
 <!DOCTYPE html><html class=no-js><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>Transfer money between users | Dwolla Developers</title><meta name=description content=""><meta name=viewport content="width=device-width,initial-scale=1"><link rel=stylesheet href=/css/main.8138.css><link rel=stylesheet href="//fonts.googleapis.com/css?family=Roboto+Slab:300|Open+Sans:300,400,600,700"><script src=/js/head-scripts.32fa.js></script></head><body><!--[if lt IE 8]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--><header><div class="header__primary page-wrap"><div><a href="/" class="logo icon-logo-dwolla-white">Dwolla</a><div class=hamburger><a href=http://dwolla.com/register>Sign Up</a> <a class="btn primary js-hamburger">Menu</a></div></div><nav class=js-hamburger-nav><a href=https://www.dwolla.com/about>Product</a> <a href="">Developer</a> <a href="https://www.dwolla.com/contact?b=nav">Contact sales</a> <a href=http://dwolla.com/login>Log in</a> <a class="btn primary" href=http://dwolla.com/register>Sign Up</a></nav></div><nav class="header__secondary js-two-col-nav-toggle"><div class=page-wrap><a href="/guides/" class=active>Guides</a> <a href="/resources/">Resources</a> <a href=/pages/api-docs.html>API Docs</a> <a href=/pages/sdks.html class="no-nav js-two-col-no-toggle">SDKs</a><div class="custom-select custom-select--blue"><select name=select id=language_select><option value=raw>raw</option><option value=php>php</option><option value=ruby>ruby</option><option value=python>python</option><option value=javascript>javascript</option></select><div class=arrow></div></div></div></nav></header><div class=content><div class=cnt-two-col><div class=page-wrap><section class="cnt-two-col__nav js-two-col-nav"><nav class="side-nav active"><section class=side-nav__dropdown><h6>Choose a guide</h6><div class=picker><button id=js-sidenav-dropdown-button>Transfer money between users</button><div class="icon icon-side-nav-collapse-plus"></div><div class="icon icon-side-nav-collapse-minus"></div></div><nav id=js-sidenav-dropdown-nav><a href="">Launch: Production</a> <a href="">Send money to your users</a> <a href="">Receive money from your users</a> <a href="">Transfer money between users</a> <a href="">Webhooks</a></nav></section><!-- <section class="side-nav__api-ver">
-        <span>Api Versions:</span>
-        <div>
-            <a href="">V1</a>
-            <a href="" class="active">V2</a>
-        </div>
-    </section>
-
-    <section>
-        <ul>
-            <li>
-                <a href="" class="active">Introduction</a>
-                <ul>
-                    <li><a href="#making_requests">Making Requests</a></li>
-                    <li><a href="">Errors</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="">OAuth</a>
-                <ul>
-                    <li><a href="#making_requests">Making Requests</a></li>
-                    <li><a href="">Errors</a></li>
-                </ul>
-            </li>
-            <li><a href="">Customers</a></li>
-            <li><a href="">Documents</a></li>
-            <li><a class="active" href="">Funding Sources</a></li>
-            <li><a href="">Transfers</a></li>
-        </ul>
-    </section> 
-
-    <section class="side-nav__options">
-        <h6>Best practices</h6>
-        <ul>
-            <li><a href="" class="icon-sidenav-option">Get some help</a></li>
-            <li><a href="" class="icon-sidenav-option">Sandbox Environment</a></li>
-            <li><a href="" class="icon-sidenav-option">Documentation Powered by Slate</a></li>
-        </ul>
-    </section>
-
-    --></nav></section><section class=cnt-two-col__content><h1>Transfer money between users</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam enim mauris, sagittis sit amet tincidunt quis, cursus id justo. Etiam malesuada nunc nisi, sed pretium diam finibus id. Vivamus auctor ligula at euismod varius. Ut justo neque, pharetra ut lorem quis, accumsan cursus est. Nulla facilisi. Duis molestie laoreet cursus. Proin commodo ac felis scelerisque venenatis. Nunc eget dui venenatis, egestas tellus non, blandit magna. Donec vel magna justo.</p><p>In hac habitasse platea dictumst. Integer vehicula felis a varius fermentum. In erat augue, convallis at augue at, posuere faucibus libero. Integer id varius lectus. Aliquam malesuada ipsum at justo commodo, eu egestas augue vulputate. Duis convallis pulvinar sodales. Sed accumsan eget risus a hendrerit. Vivamus sollicitudin dictum aliquam. Aliquam sed pretium leo. Aliquam dapibus lorem nec lacus iaculis venenatis. Aliquam dapibus, lacus nec porta tincidunt, dui lorem tincidunt lorem, nec varius est erat sagittis dolor. Curabitur eu purus eget est bibendum consequat. Mauris nec felis tempor erat molestie pellentesque quis eget velit. Phasellus a leo dui.</p><div class="code-snippet js-code-snippet language-"><button class="btn alternative">copy</button><div class=code-snippet__selector><nav><button class=selector_switch id=raw>raw</button> <button class=selector_switch id=php>php</button> <button class=selector_switch id=ruby>ruby</button> <button class=selector_switch id=python>python</button> <button class=selector_switch id=javascript>javascript</button></nav></div><div class="code-snippet__cnt highlight"><pre><code class=language- data-lang=""><span class=p>{</span><span class=w>
+    <![endif]--><header><div class="header__primary page-wrap"><div><a href="/" class="logo icon-logo-dwolla-white">Dwolla</a><div class=hamburger><a href=http://dwolla.com/register>Sign Up</a> <a class="btn primary js-hamburger">Menu</a></div></div><nav class=js-hamburger-nav><a href=https://www.dwolla.com/about>Product</a> <a href="">Developer</a> <a href="https://www.dwolla.com/contact?b=nav">Contact sales</a> <a href=http://dwolla.com/login>Log in</a> <a class="btn primary" href=http://dwolla.com/register>Sign Up</a></nav></div><nav class="header__secondary js-two-col-nav-toggle"><div class=page-wrap><a href="/guides/" class=active>Guides</a> <a href="/resources/">Resources</a> <a href=/pages/api-docs.html>API Docs</a> <a href=/pages/sdks.html class="no-nav js-two-col-no-toggle">SDKs</a><div class="custom-select custom-select--blue"><select name=select id=language_select><option value=raw>raw</option><option value=php>php</option><option value=ruby>ruby</option><option value=python>python</option><option value=javascript>javascript</option></select><div class=arrow></div></div></div></nav></header><div class=content><div class=cnt-two-col><div class=page-wrap><section class="cnt-two-col__nav js-two-col-nav"><nav class="side-nav active"><section class=side-nav__dropdown><h6>Choose a guide</h6><div class=picker><button id=js-sidenav-dropdown-button>Transfer money between users</button><div class="icon icon-side-nav-collapse-plus"></div><div class="icon icon-side-nav-collapse-minus"></div></div><nav id=js-sidenav-dropdown-nav><a href="">Launch: Production</a> <a href="">Send money to your users</a> <a href="">Receive money from your users</a> <a href="">Transfer money between users</a> <a href="">Webhooks</a></nav></section></nav></section><section class=cnt-two-col__content><h1>Transfer money between users</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam enim mauris, sagittis sit amet tincidunt quis, cursus id justo. Etiam malesuada nunc nisi, sed pretium diam finibus id. Vivamus auctor ligula at euismod varius. Ut justo neque, pharetra ut lorem quis, accumsan cursus est. Nulla facilisi. Duis molestie laoreet cursus. Proin commodo ac felis scelerisque venenatis. Nunc eget dui venenatis, egestas tellus non, blandit magna. Donec vel magna justo.</p><p>In hac habitasse platea dictumst. Integer vehicula felis a varius fermentum. In erat augue, convallis at augue at, posuere faucibus libero. Integer id varius lectus. Aliquam malesuada ipsum at justo commodo, eu egestas augue vulputate. Duis convallis pulvinar sodales. Sed accumsan eget risus a hendrerit. Vivamus sollicitudin dictum aliquam. Aliquam sed pretium leo. Aliquam dapibus lorem nec lacus iaculis venenatis. Aliquam dapibus, lacus nec porta tincidunt, dui lorem tincidunt lorem, nec varius est erat sagittis dolor. Curabitur eu purus eget est bibendum consequat. Mauris nec felis tempor erat molestie pellentesque quis eget velit. Phasellus a leo dui.</p><div class="code-snippet js-code-snippet language-"><button class="btn alternative">copy</button><div class=code-snippet__selector><nav><button class=selector_switch id=raw>raw</button> <button class=selector_switch id=php>php</button> <button class=selector_switch id=ruby>ruby</button> <button class=selector_switch id=python>python</button> <button class=selector_switch id=javascript>javascript</button></nav></div><div class="code-snippet__cnt highlight"><pre><code class=language- data-lang=""><span class=p>{</span><span class=w>
     </span><span class=nt>"_links"</span><span class=p>:</span><span class=w> </span><span class=p>{</span><span class=w>
         </span><span class=nt>"destination"</span><span class=p>:</span><span class=w> </span><span class=p>{</span><span class=w>
             </span><span class=nt>"href"</span><span class=p>:</span><span class=w> </span><span class=s2>"https://api.dwolla.com/customers/07D59716-EF22-4FE6-98E8-F3190233DFB8"</span><span class=w>
