@@ -1,5 +1,7 @@
 ---
 layout: twoColumn
+section: resources
+type: article
 title:  "ACH Clearing Times"
 description: "Learn more about ACH clearing times on Dwolla."
 ---
