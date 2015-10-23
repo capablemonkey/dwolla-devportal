@@ -103,5 +103,5 @@ Now that you’ve got a newly created Direct account for your end user and an ac
 
 <nav class="pager-nav">
     <a href="./">Back</a>
-    <a href="02-fetch-funding-sources.html">Next step: Transfer money to a recipient</a>
+    <a href="02-fetch-funding-sources.html">Next step: Fetch funding sources</a>
 </nav>
