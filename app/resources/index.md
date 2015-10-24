@@ -30,7 +30,7 @@ description: "In-depth articles on Dwolla features and integration patterns."
         <p>A walkthrough of the ACH transfer process, including transactin states and processing times.</p>
     </li>
     <li>
-        <h3><a>Account types</a></h3>
+        <h3><a href="/resources/account-types.html">Account types</a></h3>
         <p>The different types of Dwolla accounts and their respective setup workflows.</p>
     </li>
 </ul>
