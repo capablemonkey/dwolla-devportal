@@ -3,7 +3,7 @@ layout: twoColumn
 section: resources
 type: article
 title:  "Customer verification"
-description: "Learn more the Dwolla White Label customer verification process."
+description: "Build bank transfers programmatically into your site or app. Learn about account verification and how to respond when additional information is required."
 ---
 
 # Customer Verification
