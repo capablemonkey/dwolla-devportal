@@ -21,7 +21,7 @@ In this guide, we’ll cover the key points of transferring money:
 
 ### Get set up with sandbox accounts
 
-Before you begin, be sure your sandbox accounts are already set up. 
+Before you begin, be sure your [Sandbox accounts](/guides/sandbox-setup) are already set up. 
 
 ### Choose the experience you want for your customers
 

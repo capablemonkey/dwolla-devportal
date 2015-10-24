@@ -8,6 +8,8 @@
                 Receive money from your users
             {% elsif page.url contains 'transfer-money-between-users' %}
                 Transfer money between users
+            {% elsif page.url contains 'sandbox-setup' %}
+                Set up sandbox
             {% else %}
                 Send money to your users
             {% endif %}
@@ -16,7 +18,7 @@
         <div class="icon icon-side-nav-collapse-minus"></div>
     </div>
     <nav id="js-sidenav-dropdown-nav">
-        <a href="">Set up sandbox</a>
+        <a href="/guides/sandbox-setup">Set up sandbox</a>
         <a href="/guides/send-money/">Send money to your users</a>
         <a href="/guides/receive-money/">Receive money from your users</a>
         <a href="/guides/transfer-money-between-users/">Transfer money between users</a>
