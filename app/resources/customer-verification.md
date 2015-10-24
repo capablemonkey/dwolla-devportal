@@ -2,7 +2,7 @@
 layout: twoColumn
 section: resources
 type: article
-title:  "Customer Verification"
+title:  "Customer verification"
 description: "Learn more the Dwolla White Label customer verification process."
 ---
 
