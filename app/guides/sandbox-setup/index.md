@@ -33,5 +33,6 @@ To get started, the first thing you need is a Sandbox account. You’ll be able 
 3. Create API credentials using the child sandbox account.
 
 <nav class="pager-nav">
+<a href="" style="display:none;"></a>
 <a href="01-create-master-account.html">Next step: Create a master Sandbox account</a>
 </nav>
