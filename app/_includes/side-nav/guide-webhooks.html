@@ -1,0 +1,25 @@
+<section class="steps-nav">
+    <h6>Follow the steps</h6>
+    <ol>
+        <li>
+            <a href="/guides/webhooks" {% if page.guide.step == 'overview' %}class="active"{% endif %}>Overview</a>
+            <div class="dot"></div>
+        </li>
+        <li>
+            <a href="/guides/webhooks/01-obtain-authorization.html" {% if page.guide.step == '1' %}class="active"{% endif %}>Obtain authorization</a>
+            <div class="dot"></div>
+        </li>
+        <li>
+            <a href="/guides/webhooks/02-create-subscription.html" {% if page.guide.step == '2' %}class="active"{% endif %}>Create a webhook subscription</a>
+            <div class="dot"></div>
+        </li>
+        <li>
+            <a href="/guides/webhooks/03-validating-webhooks.html" {% if page.guide.step == '3' %}class="active"{% endif %}>Validating webhooks</a>
+            <div class="dot"></div>
+        </li>
+        <li>
+            <a href="/guides/webhooks/04-process-webhooks.html" {% if page.guide.step == '4' %}class="active"{% endif %}>Processing webhooks</a>
+            <div class="dot"></div>
+        </li>
+    </ol>
+</section>

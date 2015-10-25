@@ -17,7 +17,7 @@ description: "View our comprehensive getting started guides."
       <h3>Transfer money betwen users</h3>
       <p>Facilitate white label ACH transfers between two distinct parties, e.g. for marketplace applications that connect buyers with sellers for bank to bank payments.</p>
   </a>
-  <a href="" class="icon-guides-web-hooks">
+  <a href="/guides/webhooks" class="icon-guides-web-hooks">
       <h3>Webhooks</h3>
       <p>Implement simple, real-time, event notifications regarding account and transaction status, and more.</p>
   </a>
