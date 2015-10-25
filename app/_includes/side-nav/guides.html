@@ -1,4 +1,4 @@
-<section class="side-nav__dropdown">
+<section class="side-nav__dropdown" {% unless page.url contains '/guides' %}style="display:none"{% endunless %}>
     <h6>Choose a guide</h6>
     <div class="picker" id="js-sidenav-dropdown-button">
         <button>
@@ -10,6 +10,8 @@
                 Transfer money between users
             {% elsif page.url contains 'sandbox-setup' %}
                 Set up sandbox
+            {% elsif page.url contains 'webhooks' %}
+                Webhooks
             {% else %}
                 Send money to your users
             {% endif %}

@@ -1,23 +1,7 @@
 <nav class="side-nav active">
-
-{% if page.url contains '/guides/' %}
-    {% include side-nav/guides.html %}
-{% endif %}
-
-{% if page.url contains '/resources/' %}
-    {% include side-nav/resources.html %}
-{% endif %}
-
-{% if page.guide.name == 'send-money' %}
-    {% include side-nav/guide-send-money.html %}
-{% endif %}
-
-{% if page.guide.name == 'sandbox-setup' %}
-    {% include side-nav/guide-sandbox-setup.html %}
-{% endif %}
-
-{% if page.guide.name == 'webhooks' %}
-    {% include side-nav/guide-webhooks.html %}
-{% endif %}
-
+{% include side-nav/guides.html %}
+{% include side-nav/resources.html %}
+{% include side-nav/guide-send-money.html %}
+{% include side-nav/guide-sandbox-setup.html %}
+{% include side-nav/guide-webhooks.html %}
 </nav>
