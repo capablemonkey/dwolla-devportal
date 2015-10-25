@@ -29,8 +29,4 @@ description: "In-depth articles on Dwolla features and integration patterns."
         <h3><a>Transaction workflow</a></h3>
         <p>A walkthrough of the ACH transfer process, including transactin states and processing times.</p>
     </li>
-    <li>
-        <h3><a href="/resources/account-types.html">Account types</a></h3>
-        <p>The different types of Dwolla accounts and their respective setup workflows.</p>
-    </li>
 </ul>
