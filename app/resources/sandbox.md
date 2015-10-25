@@ -29,12 +29,28 @@ description: "Learn more about our sandbox environment."
     </div>
 </section>
 
-<a class="btn secondary" href="">View setup guide</a>
+<a class="btn secondary" href="/guides/sandbox">View setup guide</a>
 
 # Setting transfer statuses
 
 ### Transfer Behavior in the Sandbox
 
-### Cancelled and Reclaimed
+Unlike Balance, Credit, or FiSync sourced transfers, which are processed instantaneously, Bank-sourced transfers exist in the Pending state for a few business days until they are `processed`, `failed`, `cancelled`, or `reclaimed`.
+
+The Sandbox environment does not replicate any ACH processes, so a `pending` transfer will not clear or fail automatically after a few business days as it would in production. It will simply remain in the `pending` state indefinitely.
+
+### `cancelled` and `reclaimed`
+
+As in the production environment, Sandbox transfers can be cancelled from either the sender's or the receiver's Dwolla account dashboard, or directly from the Sandbox Console interface. Only [traditional fully verified accounts](/resources/account-types.html)</a> are eligible to cancel transfers. 
+
+For Dwolla Direct integrations only, there are two scenarios in which a transfer can become `reclaimed`:
+- A payment is sent to a non-Dwolla-user's email address and has not been claimed by the sender's Reclaim period, which is by default 30 days.
+- A processed payment is reversed by Dwolla as a result of a dispute.
 
 ### Manipulation
+
+![Screenshot](/assets/images/sandbox-admin-manipulation.png)
+
+The Sandbox Console interface allows you to immediately trigger any of the four possible outcomes for a given transfer: `processed`, `failed`, `cancelled`, `reclaimed`. If subscribed to [webhooks](/guides/webhooks), when a transfer outcome is triggered, a webhook will be sent to your server which includes the corresponding created event.
+
+For more information on transfer statuses, read the [transaction workflow](/resources/transaction-workflow.html) article.
