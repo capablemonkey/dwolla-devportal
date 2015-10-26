@@ -13,11 +13,10 @@ description: Send payments from your application by utilizing our open API with 
 
 In this guide, we’ll cover the key points of transferring money:
 
-<ul class="bullet">
-    <li>Create a receiving customer for the funds</li>
-    <li>Associate a funding source (bank or credit union account) with the customer </li>
-    <li>Transfer fund to a customer's linked account.</li>
-</ul>
+
+- Create a receiving customer for the funds
+- Associate a funding source (bank or credit union account) with the customer 
+- Transfer fund to a customer's linked account.
 
 ### Get set up with sandbox accounts
 

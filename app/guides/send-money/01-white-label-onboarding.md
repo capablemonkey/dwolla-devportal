@@ -5,10 +5,10 @@ guide:
     name: send-money
     step: 1a
 type: guide
-title:  "Option 1: White Label onboarding"
+title:  "Step 1: White Label onboarding"
 ---
 
-# Create recipients using White Label solution
+# Step 1: Create recipients using White Label solution
 
 In this experience, end users create their accounts entirely within your application and you prompt for their bank or credit union account information. Dwolla will securely store this sensitive information for you. However, prior to passing data to Dwolla to create a Customer, you must obtain the user’s acceptance of Dwolla’s TOS and privacy policy.
 
@@ -122,6 +122,6 @@ Location: https://api-uat.dwolla.com/funding-sources/375c6781-2a17-476c-84f7-db7
 The created funding source URL is returned in the location header.
 
 <nav class="pager-nav">
-    <a href="./">Back</a>
+    <a href="./">Back: Overview</a>
     <a href="02-fetch-funding-sources.html">Next step: Fetch funding sources</a>
 </nav>

@@ -5,10 +5,10 @@ type: guide
 guide:
     name: send-money
     step: 1b
-title:  "Option 2: Direct Onboarding"
+title:  "Step 1: Direct Onboarding"
 ---
 
-# Option 2: Direct Onboarding
+# Step 1: Direct Onboarding
 
 In this experience, the end user is sent to Dwolla to create an account and then returned to your application using the OAuth flow. If you prefer that your customers not create Dwolla accounts, choose the White Label solution.
 
@@ -33,7 +33,7 @@ Example redirect with authorization code:
 `https://example.com/return?code=sZCE4BTG7Cw4O`
 
 ```raw
-POST https://api-uat.dwolla.com/oauth/v2/token
+POST https://uat.dwolla.com/oauth/v2/token
 Content-Type: application/json
 
 {
@@ -102,6 +102,6 @@ Be sure to use your application’s key and secret. You’ll require, at a minim
 Now that you’ve got a newly created Direct account for your end user and an access token which you’ll use to send money from your own account, let’s proceed to the next step.
 
 <nav class="pager-nav">
-    <a href="./">Back</a>
+    <a href="./">Back: Overview</a>
     <a href="02-fetch-funding-sources.html">Next step: Fetch funding sources</a>
 </nav>
