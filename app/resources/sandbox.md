@@ -49,7 +49,7 @@ For Dwolla Direct integrations only, there are two scenarios in which a transfer
 
 ### Manipulation
 
-![Screenshot](/assets/images/sandbox-admin-manipulation.png)
+![Screenshot](/images/sandbox-admin-manipulation.png)
 
 The Sandbox Console interface allows you to immediately trigger any of the four possible outcomes for a given transfer: `processed`, `failed`, `cancelled`, `reclaimed`. If subscribed to [webhooks](/guides/webhooks), when a transfer outcome is triggered, a webhook will be sent to your server which includes the corresponding created event.
 
