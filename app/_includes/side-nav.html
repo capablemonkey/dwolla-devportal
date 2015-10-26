@@ -1,7 +1,20 @@
-<nav class="side-nav active">
+<div class="close">
+    <button class="js-two-col-nav-close icon-cnt-two-col-close"></button>
+</div>
+<div class="language-picker">
+    <h6>Language</h6>
+    <div class="custom-select custom-select--blue">
+        <select id="select" name="select">
+            <option value="json">json</option> 
+            <option value="php" selected="">php</option>
+            <option value="ruby">ruby</option>
+            <option value="python">python</option>
+            <option value="node.js">node.js</option>
+        </select>
+        <div class="arrow"></div>
+    </div>
+</div>
+
+<!-- nav elements below should be in the same order of the secondary navigation -->
 {% include side-nav/guides.html %}
 {% include side-nav/resources.html %}
-{% include side-nav/guide-send-money.html %}
-{% include side-nav/guide-sandbox-setup.html %}
-{% include side-nav/guide-webhooks.html %}
-</nav>
