@@ -92,7 +92,7 @@
   width: 100% !important;
   height: 100% !important;
   border: none !important;
-  background: url(../../images/noise.png) repeat 0 0 !important;
+  background: url(/assets/images/noise.png) repeat 0 0 !important;
   padding-left: 1em !important;
   overflow: hidden !important;
   white-space: pre !important;
@@ -226,13 +226,13 @@
 }
 
 .syntaxhighlighter {
-  background: url(../../images/noise.png) repeat 0 0 !important;
+  background: url(/assets/images/noise.png) repeat 0 0 !important;
 }
 .syntaxhighlighter .line.alt1 {
-  background: url(../../images/noise.png) repeat 0 0 !important;
+  background: url(/assets/images/noise.png) repeat 0 0 !important;
 }
 .syntaxhighlighter .line.alt2 {
-  background: url(../../images/noise.png) repeat 0 0 !important;
+  background: url(/assets/images/noise.png) repeat 0 0 !important;
 }
 .syntaxhighlighter .line.highlighted.alt1, .syntaxhighlighter .line.highlighted.alt2 {
   background-color: #c3defe !important;
@@ -261,7 +261,7 @@
 }
 .syntaxhighlighter.collapsed .toolbar {
   color: #3f5fbf !important;
-  background: url(../../images/noise.png) repeat 0 0 !important;
+  background: url(/assets/images/noise.png) repeat 0 0 !important;
   border: 1px solid #d4d0c8 !important;
 }
 .syntaxhighlighter.collapsed .toolbar a {

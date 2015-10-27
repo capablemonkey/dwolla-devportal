@@ -69,7 +69,7 @@
   font-style: italic !important;
 }
 .syntaxhighlighter .line {
-  background: url(../../images/noise.png) repeat 0 0 !important;-space: pre !important;
+  background: url(/assets/images/noise.png) repeat 0 0 !important;-space: pre !important;
 }
 .syntaxhighlighter table {
   width: 100% !important;
@@ -92,10 +92,10 @@
   width: 100% !important;
   height: 100% !important;
   border: none !important;
-  background: background: url(../../images/noise.png) repeat 0 0 !important; !important;
+  background: background: url(/assets/images/noise.png) repeat 0 0 !important; !important;
   padding-left: 1em !important;
   overflow: hidden !important;
-  background: url(../../images/noise.png) repeat 0 0 !important;-space: pre !important;
+  background: url(/assets/images/noise.png) repeat 0 0 !important;-space: pre !important;
 }
 .syntaxhighlighter table td.gutter .line {
   text-align: right !important;
