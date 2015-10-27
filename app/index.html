@@ -11,7 +11,7 @@ description: Simple and powerful API for ACH transfers with no per transaction f
     <section class="cnt-one-col__banner banner">
         <div class="page-wrap">
             <h1 class="icon-home-api icon">Simple and powerful API for ACH transfers with no per transaction fees</h1>
-            <a href="developer_two-col-guides.html" class="btn primary large">View all guides</a>
+            <a href="/guides/" class="btn primary large">View all guides</a>
         </div>
         <div class="banner__background"></div>
     </section>
@@ -22,7 +22,7 @@ description: Simple and powerful API for ACH transfers with no per transaction f
             <button class="btn alternative">copy</button>
             <div class="code-snippet__selector">
                 <nav>
-                    <button class="active">json</button>
+                    <button class="active">curl</button>
                     <button>ruby</button>
                     <button>php</button>
                     <button>python</button>
@@ -60,39 +60,8 @@ file.append("data.txt");
         </section>
     </section>
     <div class="page-wrap">
-        <section class="reach-out">
-            <section class="reach-out__link">
-                <h3>Get answers</h3>
-                <a href="" class="icon-developer-community">Developer community</a>
-            </section>
-            <section class="reach-out__social">
-                <h3>Stay in touch</h3>
-                <a href="" class="icon-social-twitter"></a>
-                <a href="" class="icon-social-facebook"></a>
-                <a href="" class="icon-social-github"></a>
-            </section>
-            <section>
-                <h3>Get API updates</h3>
-                <ul class="fields-list js-infield-label">
-                    <li>
-                        <label for="email">Email</label>
-                        <input type="text" name="email" id="email" />
-                    </li>
-                    <li>
-                        <input type="submit" class="btn secondary" value="Subscribe to emails" />
-                    </li>
-                </ul>
-            </section>
-        </section>
+        {% include reach-out.html %}
     </div>
 </div>
-<!-- there is also a icon of icon-status-down -->
-<section class="status">
-    <h5>Status</h5>
-    <span class="icon-status-operational">
-        Production: <a href="">Operational</a>
-    </span>
-    <span class="icon-status-partially-degraded">
-        Sandbox: <a href="">Degraded performance</a>
-    </span>
-</section>
+
+{% include status-widget.html %}
