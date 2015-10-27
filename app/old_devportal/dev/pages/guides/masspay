@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Dwolla Developers | Dwolla</title>
+
+    <link href="../../../assets/css/header-footer.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/jquery.qtip.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/sh/shCore.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/sh/shCoreEclipse.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/highlight.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+
+    <meta http-equiv="Content-Language" content="en-us">
+    <meta name="description" content="Dwolla Developers's Portal">
+    <meta name="keywords" content="dwolla, api, dwolla api, money api, dwolla example code, dwolla examples, dwolla sample code, dwolla documentation, dwolla api documentation">
+    <meta name="robots" content="all">
+
+    <link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" />
+
+	  <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
+  </head>
+
+  <body>
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7TKTN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-K7TKTN');</script>
+    <!-- End Google Tag Manager -->
+
+    <div class="header">
+      <div class="inner-wrap">
+        <h1 class="logo-main"><a href="https://www.dwolla.com">Dwolla</a></h1>
+
+          <ul class="nav nav-primary">
+            <li><a href="http://blog.dwolla.com">Blog</a></li>
+            <li><a href="http://help.dwolla.com">Support</a></li>
+            <li><a href="https://www.dwolla.com/applications">Log in</a></li>
+            <li><a href="https://www.dwolla.com/applications/create" class="btn orange">Get API Key</a></li>
+          </ul>
+      </div>
+    </div>
+
+    <div id="wrap">
+      <div class="container">
+          
+<h2><span>Getting Started</span></h2>
+<h4></h4>
+
+
+<div id="docs" class="doc_page">
+	<div class="sidebar">
+	<div class="well" style="padding: 8px 0;">
+		<ul class="nav nav-list">
+			<li class="nav-header">
+				Developer Newsletter 
+			</li>
+			<li>
+			<!-- Begin MailChimp Signup Form -->
+			<div id="mc_embed_signup">
+			<form action="https://dwolla.us3.list-manage.com/subscribe/post?u=bd010d6cd015c558a27b4a232&amp;id=4e85ae585c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<div id="mc_embed_signup_scroll">
+
+			<div class="mc-field-group">
+			<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your e-mail!">
+			</div>
+			<div id="mce-responses" class="clear">
+			<div class="response" id="mce-error-response" style="display:none"></div>
+			<div class="response" id="mce-success-response" style="display:none"></div>
+			</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+			<div style="position: absolute; left: -5000px;"><input type="text" name="b_bd010d6cd015c558a27b4a232_4e85ae585c" tabindex="-1" value=""></div>
+			<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn orange"></div>
+			</div>
+			</form>
+			</div>
+			<script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+			<!--End mc_embed_signup-->
+			</li>
+		</ul>
+	</div>
+	<div class="well" style="padding: 8px 0;">
+		<ul class="nav nav-list">
+			<li class="nav-header">
+				Topics
+			</li>
+			<li 
+>
+				<a href="../../../index.html">
+					<i class="icon-screenshot"></i>
+					Getting Started
+				</a>
+			</li>
+			<li 
+>
+				<a href="../../docs/users/account" target="_blank">
+					<i class="icon-list-alt"></i>
+					API Documentation
+				</a>
+			</li>
+			<li>
+				<a href="http://status.dwolla.com" target="_blank">
+				    <i class="icon-fire"></i>
+				    API Status
+				</a>
+			</li>
+			<li 
+>
+				<a href="http://discuss.dwolla.com/category/api-support" target="_blank">
+					<i class="icon-comment"></i>
+					Help / Forum
+				</a>
+			</li>
+			<li>
+				<a href="https://www.dwolla.com/tos/dev" target="_blank">
+					<i class="icon-check"></i>
+					Developer TOS
+				</a>
+			</li>
+
+			<li class="nav-header">
+				Guides
+			</li>
+			<li 
+>
+				<a href="white_label">
+					<i class="icon-check"></i>
+					White Label: Transfer funds
+				</a>
+			</li>
+			<li 
+>
+				<a href="create_application">
+					<i class="icon-check"></i>
+					Generate API Credentials
+				</a>
+			</li>
+			<li 
+>
+				<a href="receiving_money">
+					<i class="icon-check"></i>
+					Accepting Payments
+				</a>
+			</li>
+			<li 
+>
+				<a href="sending_money">
+					<i class="icon-check"></i>
+					Sending Money
+				</a>
+			</li>
+			<li class="active"
+>
+				<a href="masspay">
+					<i class="icon-check"></i>
+					Sending Batch Payments
+				</a>
+			</li>
+			<li 
+>
+				<a href="facilitator_fee">
+					<i class="icon-check"></i>
+					Setting Facilitator Fees
+				</a>
+			</li>
+			<li 
+>
+				<a href="offsite_gateway">
+					<i class="icon-check"></i>
+					Off-Site Gateway Checkout
+				</a>
+			</li>
+			<li 
+>
+				<a href="sandbox">
+					<i class="icon-check"></i>
+					Sandbox: Getting Started
+				</a>
+			</li>
+			<li 
+>
+				<a href="using_webhooks">
+					<i class="icon-check"></i>
+					Using Webhooks
+				</a>
+			</li>
+
+			<li class="nav-header">
+				Integration Options
+			</li>
+			<li 
+>
+				<a href="../gateway">
+					<i class="icon-shopping-cart"></i>
+					Off-Site Gateway
+				</a>
+			</li>
+			<li 
+>
+				<a href="../auth">
+					<i class="icon-user"></i>
+					OAuth + REST API
+				</a>
+			</li>
+
+			<li class="nav-header">
+				Reference
+			</li>
+			<li 
+>
+				<a href="direct_limitations">
+					<i class="icon-download-alt"></i>
+					Direct Account Limitatons
+				</a>
+			</li>
+			<li 
+>
+				<a href="correlate_transactions">
+					<i class="icon-download-alt"></i>
+					Correlate Transaction IDs
+				</a>
+			</li>
+			<li 
+>
+				<a href="oauth_account_creation">
+					<i class="icon-bell"></i>
+					OAuth Account Creation
+				</a>
+			</li>
+			<li 
+>
+				<a href="../../docs/gateway/direct">
+					<i class="icon-arrow-right"></i>
+					Dwolla Direct
+				</a>
+			</li>
+			<li 
+>
+				<a href="../sandbox">
+					<i class="icon-hdd"></i>
+					Sandbox
+				</a>
+			</li>
+			
+			<li class="nav-header">
+				Tools
+			</li>
+			<li 
+>
+				<a href="../sandbox/admin">
+					<i class="icon-asterisk"></i>
+					Sandbox Admin
+				</a>
+			</li>
+			<li 
+>
+				<a href="../testing">
+					<i class="icon-road"></i>
+					Reflector Account
+				</a>
+			</li>
+			<li 
+>
+				<a href="../../token">
+					<i class="icon-pencil"></i>
+					Token Generator
+				</a>
+			</li>
+
+			<li>
+				<a href="../../docs/users/account">Looking for API Docs? &raquo;</a>
+			</li>
+
+		</ul>
+	</div>
+</div>
+
+
+	<div class="content">
+		<div class="guide">
+			<h2 id="sending-batch-payments">Sending Batch Payments</h2>
+<h4 id="overview">Overview</h4>
+<p><a href="../../docs/users/account#masspay">MassPay</a> can be used to disperse payments to many recipients.  A common use case is payroll.  For instance, WidgetCorp has 950 employees that they need to pay every month.  WidgetCorp has a transaction limit of $10,000; and each paycheck is going to be less than that amount, and cannot exceed that amount (though they can easily request a transaction <a href="http://help.dwolla.com/customer/portal/articles/1203279">limit increase</a>).  </p>
+<p>WidgetCorp will need an access token for their account in order to send a MassPay from their account.  Read more about <a href="../auth">OAuth here</a>.  Or, WidgetCorp can use the token generator <a href="../../token">here</a>.  The OAuth <a href="../auth#oauth-scopes">scopes</a> you&#39;ll need are: <code>Send</code>, <code>Funding</code>, and <code>Transactions</code>.</p>
+<p>Before we get started, you&#39;ll probably want to install one of our <a href="../../docs/users/account#helper-libraries">client libraries</a> on your server, which is where we&#39;ll be adding our code. </p>
+<h3 id="select-a-funding-source">Select a Funding Source</h3>
+<p>First, we&#39;ll need to identify the connected bank account from which WidgetCorp will fund their payroll disbursement. </p>
+<p><div class="codeContainer"></p>
+<pre><code class="lang-php">// We need the fundingSources class in order to do anything
+require &#39;../lib/fundingSources.php&#39;;
+$FS = new Dwolla\fundingSources();
+
+/**
+ * Get a list of funding sources associated
+ * with the account under the current OAuth token
+ */
+
+print_r($FS-&gt;get());
+</code></pre>
+<pre><code class="lang-ruby"># Include the Dwolla gem
+require &#39;rubygems&#39;
+require &#39;pp&#39;
+require &#39;dwolla&#39;
+
+# Include any required keys
+require &#39;./_keys.rb&#39;
+
+# Instantiate a new Dwolla User client
+# And, seed a previously generated access token
+Dwolla::token = @token
+
+#   Fetch all funding sources for the
+#   account associated with the provided
+#   OAuth token
+pp Dwolla::FundingSources.get
+</code></pre>
+<pre><code class="lang-python">from dwolla import fundingsources, constants
+
+# Configure the library (change these)
+constants.sandbox=True
+
+constants.client_id = &quot;Client Id goes here&quot;
+constants.client_secret = &quot;Client secret goes here&quot;
+constants.access_token = &quot;access token goes here&quot;
+constants.pin = 1234
+
+# Get a list of funding sources associated
+# with the account under the current OAuth token
+fundingSource.get()
+</code></pre>
+<pre><code class="lang-node">var cfg = require(&#39;./_config&#39;); 
+var Dwolla = require(&#39;dwolla-node&#39;)(cfg.apiKey, cfg.apiSecret);
+
+// Seed the user&#39;s OAuth token
+Dwolla.setToken(cfg.accessToken);
+
+// Use sandbox API environment
+Dwolla.sandbox = true;
+
+/**
+ *   Fetch all funding sources for the
+ *   account associated with the provided
+ *   OAuth token
+ **/
+
+Dwolla.fundingSources(function(err, data) {
+   if (err) { console.log(err); }
+   console.log(data);
+});
+</code></pre>
+<p></div></p>
+<p>WidgetCorp will be using their checking account named &quot;Wells Fargo Checking&quot;.  The ID of that funding source is <code>94c2a1f45853aa43a5c49ffaa7abd759</code>.  We will be using this <code>fundSource</code> ID when creating a Masspay job.</p>
+<h3 id="creating-a-list-of-payments">Creating a List of payments</h3>
+<p>Next, we&#39;ll need to generate a list of payments to be made, called <code>Items</code>.  An <code>Item</code> simply contains information about an individual payment you wish to create.  In this example list of <code>items</code>, WidgetCorp is paying their employees Joe Schmoe at his email joe@dwolla.com, and Jane Schmoe at her email jane@dwolla.com. We&#39;ll including a nice payment note to Joe and Jane(which is visible from their dwolla.com dashboard), as well as some optional metadata like their employee ID to help us identify this payment within our HR system.  Becuase we&#39;re sending the payment to their email addresses, we must specify <code>destinationType</code> to be <code>&quot;Email&quot;</code>. </p>
+<p><div class="codeContainer"></p>
+<pre><code class="lang-json">[
+  {
+      &quot;amount&quot;: 3750.00,
+      &quot;destination&quot;: &quot;joe@dwolla.com&quot;,
+      &quot;destinationType&quot;: &quot;Email&quot;,
+      &quot;notes&quot;: &quot;Monthly paycheck.  Thanks for your hard work&quot;,
+      &quot;metadata&quot;: {
+          &quot;department&quot;: &quot;Widget Engineering&quot;,
+        &quot;paycheckID&quot;: &quot;845&quot;,
+          &quot;employeeID&quot;: &quot;394830948&quot;
+      }
+  },
+  {
+      &quot;amount&quot;: 3850.00,
+      &quot;destination&quot;: &quot;jane@dwolla.com&quot;,
+      &quot;destinationType&quot;: &quot;Email&quot;,
+      &quot;notes&quot;: &quot;Monthly paycheck.  Thanks for your hard work&quot;,
+      &quot;metadata&quot;: {
+        &quot;department&quot;: &quot;Widget Engineering&quot;,
+        &quot;paycheckID&quot;: &quot;845&quot;,
+        &quot;employeeID&quot;: &quot;342680332&quot;
+    }
+}
+]
+</code></pre>
+<pre><code class="lang-php">$items = [
+  [
+    &#39;destination&#39; =&gt; &#39;joe@dwolla.com&#39;,
+    &#39;destinationType&#39; =&gt; &#39;Email&#39;,
+    &#39;amount&#39; =&gt; 3750.00,
+    &#39;notes&#39; =&gt; &#39;Monthly paycheck.  Thanks for your hard work&#39;
+  ],
+  [
+    &#39;destination&#39; =&gt; &#39;jane@dwolla.com&#39;,
+    &#39;destinationType&#39; =&gt; &#39;Email&#39;,
+    &#39;amount&#39; =&gt; 3850.00,
+    &#39;notes&#39; =&gt; &#39;Monthly paycheck.  Thanks for your hard work&#39;
+  ]
+];
+</code></pre>
+<pre><code class="lang-ruby">items = [
+  {
+    :amount =&gt; 3750.00,
+    :destination =&gt; &#39;joe@dwolla.com&#39;,
+    :destinationType =&gt; &#39;Email&#39;,
+    :notes =&gt; &#39;Monthly paycheck.  Thanks for your hard work&#39;
+    :metadata =&gt; {
+      &#39;department&#39; =&gt; &#39;Widget Engineering&#39;,
+      &#39;paycheckID&#39; =&gt; &#39;845&#39;,
+      &#39;employeeID&#39; =&gt; &#39;394830948&#39;
+    }
+  },
+  {
+    :amount =&gt; 3850.00,
+    :destination =&gt; &#39;jane@dwolla.com&#39;,
+    :destinationType =&gt; &#39;Email&#39;,
+    :notes =&gt; &#39;Monthly paycheck.  Thanks for your hard work&#39;,
+    :metadata =&gt; {
+      &#39;department&#39; =&gt; &#39;Widget Engineering&#39;,
+      &#39;paycheckID&#39; =&gt; &#39;845&#39;,
+      &#39;employeeID&#39; =&gt; &#39;342680332&#39;
+    }
+  }
+]
+</code></pre>
+<pre><code class="lang-python">items = [
+  {
+    amount: 3750.00,
+    destination: &#39;joe@dwolla.com&#39;,
+    destinationType: &#39;Email&#39;,
+    notes: &#39;Monthly paycheck.  Thanks for your hard work&#39;,
+    metadata: {
+      &#39;department&#39;: &#39;Widget Engineering&#39;,
+      &#39;paycheckID&#39;: &#39;845&#39;,
+      &#39;employeeID&#39;: &#39;394830948&#39;
+    }
+  },
+  {
+    amount: 3850.00,
+    destination: &#39;jane@dwolla.com&#39;,
+    destinationType: &#39;Email&#39;,
+    notes: &#39;Monthly paycheck.  Thanks for your hard work&#39;,
+    metadata: {
+      &#39;department&#39;: &#39;Widget Engineering&#39;,
+      &#39;paycheckID&#39;: &#39;845&#39;,
+      &#39;employeeID&#39;: &#39;342680332&#39;
+    }
+  }
+]
+</code></pre>
+<pre><code class="lang-node">var items = [
+  {
+    amount: 3750.00,
+    destination: &#39;joe@dwolla.com&#39;,
+    destinationType: &#39;Email&#39;,
+    notes: &#39;Monthly paycheck.  Thanks for your hard work&#39;,
+    metadata: {
+        &#39;department&#39;: &#39;Widget Engineering&#39;,
+        &#39;paycheckID&#39;: &#39;845&#39;,
+        &#39;employeeID&#39;: &#39;394830948&#39;
+    }
+  },
+  {
+    amount: 3850.00,
+    destination: &#39;jane@dwolla.com&#39;,
+    destinationType: &#39;Email&#39;,
+    notes: &#39;Monthly paycheck.  Thanks for your hard work&#39;,
+    metadata: {
+        &#39;department&#39;: &#39;Widget Engineering&#39;,
+        &#39;paycheckID&#39;: &#39;845&#39;,
+        &#39;employeeID&#39;: &#39;342680332&#39;
+    }
+  }
+];
+</code></pre>
+<p></div></p>
+<h3 id="creating-a-masspay-job">Creating a Masspay Job</h3>
+<p>Now we&#39;re ready to create the Job.  We&#39;ll also assign a custom identifier, &quot;Jan 31 payroll&quot; for this job so that we can recognize the job later.</p>
+<p>If the <code>Job</code> was created successfully, Dwolla will respond with the resulting <code>Job</code>&#39;s randomly generated <code>Id</code>, <code>Total</code> batch transaction amount, <code>Fees</code> sum of all incurred fees, its <code>Status</code> and an <code>ItemSummary</code>.  All jobs have a <code>Status</code> of <code>queued</code> at the time of creation.</p>
+<p>Be sure to store <code>Job.Id</code> to retrieve the job in the future and look up its status. </p>
+<p>Your MassPay <code>Job</code> will then be queued and processed.  As the service processes a <code>Job</code>, each <code>Item</code> is processed one ofter the other, at an average rate of about 0.5 sec. / item.  Therefore, you can expect a 1000-item MassPay Job to be completed in about 8 minutes.</p>
+<p><div class="codeContainer"></p>
+<pre><code class="lang-php">&lt;?php
+// We need the Masspay class in order to do anything
+require &#39;../lib/masspay.php&#39;;
+$MassPay = new Dwolla\MassPay();
+
+/**
+ * Create a MassPay job with two items to
+ * the Funding Source of the user associated with the current
+ * OAuth token.
+ */
+$fundsSource = &#39;94c2a1f45853aa43a5c49ffaa7abd759&#39;;
+
+$jobInfo = $MassPay-&gt;create($fundsSource, $items, [
+  &#39;assumeCosts&#39; =&gt; true
+]);
+?&gt;
+</code></pre>
+<pre><code class="lang-ruby"># Include the Dwolla gem
+require &#39;rubygems&#39;
+require &#39;pp&#39;
+require &#39;../lib/dwolla&#39;
+
+# Include any required keys
+require &#39;./_keys.rb&#39;
+
+# Instantiate a new Dwolla User client
+# And, seed a previously generated access token
+Dwolla::token = @token
+Dwolla::debug = true
+
+puts Dwolla::MassPay.create({
+  :fundsSource =&gt; &quot;94c2a1f45853aa43a5c49ffaa7abd759&quot;,
+  :pin =&gt; 1234,
+  :items =&gt; items,
+  :assumeCosts =&gt; true
+})
+</code></pre>
+<pre><code class="lang-python">from dwolla import masspay, constants
+
+# Configure the library (Change these)
+constants.sandbox=True
+
+constants.client_id = &quot;Client Id goes here&quot;
+constants.client_secret = &quot;Client secret goes here&quot;
+constants.access_token = &quot;access token goes here&quot;
+constants.pin = 1234
+
+# Create a MassPay job with two items to
+# the Balance of the user associated with the current
+# OAuth token.
+
+jobInfo = masspay.create(&#39;94c2a1f45853aa43a5c49ffaa7abd759&#39;, items)
+
+print info
+</code></pre>
+<pre><code class="lang-node">var dwolla = require(&#39;../lib/dwolla&#39;);
+var c = require(&#39;../config&#39;);
+
+var fS = &quot;94c2a1f45853aa43a5c49ffaa7abd759&quot;;
+
+// Optional parameters can be passed in place of null
+// View MassPay documentation here: https://developers.dwolla.com/dev/docs/masspay
+
+// Create MassPay job (masspay/create)
+dwolla.createMassPayJob(fS, &#39;1234&#39;, items, {
+  userJobId: &#39;Jan 31 Payroll&#39;,
+  assumeCosts: true     // sender will assume Dwolla transaction fees for each payment
+}, console.log);
+</code></pre>
+<p></div></p>
+<h3 id="checking-if-a-job-is-complete">Checking if a Job is Complete</h3>
+<p>Now that the Job has been created, WidgetCorp&#39;s system will need to periodically check to see if the job has been completed, and if so, if all the payments were successful.  There are no webhooks (yet) for MassPay jobs, so we will need to poll Dwolla.  We will use the <a href="../../docs/masspay/job/index.html">GET MassPay / Job</a> endpoint.</p>
+<p><div class="codeContainer"></p>
+<pre><code class="lang-php">$result = $MassPay-&gt;getJob(&#39;a3d7cbae-15a8-49ef-87c0-a4210168bbbf&#39;);
+</code></pre>
+<pre><code class="lang-ruby">puts Dwolla::MassPay.getJob(&#39;a3d7cbae-15a8-49ef-87c0-a4210168bbbf&#39;)
+</code></pre>
+<pre><code class="lang-python">masspay.getjob(jobInfo[&#39;Id&#39;])
+</code></pre>
+<pre><code class="lang-node">var jobId = &#39;a3d7cbae-15a8-49ef-87c0-a4210168bbbf&#39;;
+
+dwolla.getMassPayJob(jobId, function(err,result) {
+  console.log(result);
+});
+</code></pre>
+<p></div></p>
+<p>Example response:</p>
+<p><div class="codeContainer"></p>
+<pre><code class="lang-json">{
+  &quot;Success&quot;: true,
+  &quot;Message&quot;: &quot;Success&quot;,
+  &quot;Response&quot;: {
+    &quot;Id&quot;: &quot;a3d7cbae-15a8-49ef-87c0-a4210168bbbf&quot;,
+    &quot;UserJobId&quot;: &quot;Jan 31 payroll&quot;,
+    &quot;AssumeCosts&quot;: true,
+    &quot;FundingSource&quot;: &quot;94c2a1f45853aa43a5c49ffaa7abd759&quot;,
+    &quot;Total&quot;: 7600,
+    &quot;Fees&quot;: 0.5,
+    &quot;CreatedDate&quot;: &quot;2015-01-15T21:53:29Z&quot;,
+    &quot;Status&quot;: &quot;complete&quot;,
+    &quot;ItemSummary&quot;: {
+      &quot;Count&quot;: 2,
+      &quot;Completed&quot;: 2,
+      &quot;Successful&quot;: 2
+    }
+  }
+}
+</code></pre>
+<p></div></p>
+<p>If a job is currently being processed, its <code>Status</code> will be <code>processing</code> and its <code>ItemSummary</code> will indicate how many have been <code>Completed</code> so far, and how many of those were <code>Successful</code>.</p>
+<p>When a job is finished, it will have a <code>Status</code> of <code>complete</code>.</p>
+<h3 id="reconciliation">Reconciliation</h3>
+<p>Once the job is complete, we&#39;ll want to know the transaction IDs for each of the resulting payments so that we can let our employees know that their payment is on its way.  (Joe is infamous for being very impatient about receiving his paycheck).  To do this, we&#39;ll use the <a href="../../docs/masspay/jobs/items">MassPay / Items</a> endpoint to fetch the Items of our Job.</p>
+<p>Each Item has a status, a globally unique <code>ItemId</code>, a resulting <code>TransactionId</code>, and any <code>Error</code> encountered with attempting to process the <code>Item</code>.</p>
+<p><div class="codeContainer"></p>
+<pre><code class="lang-php">$jobItems = $MassPay-&gt;getJobItems($info[&#39;Id&#39;]);
+</code></pre>
+<pre><code class="lang-ruby">puts Dwolla::MassPay.getItems(&#39;a3d7cbae-15a8-49ef-87c0-a4210168bbbf&#39;)
+</code></pre>
+<pre><code class="lang-python">jobItems = masspay.getjobitems(jobInfo[&#39;Id&#39;])
+</code></pre>
+<pre><code class="lang-node">var jobId = &#39;a3d7cbae-15a8-49ef-87c0-a4210168bbbf&#39;;
+
+dwolla.getMassPayJobItems(jobId, function(err,jobItems) {
+  console.log(jobItems);
+});
+</code></pre>
+<p></div></p>
+<p>Example response: </p>
+<pre><code class="lang-json">{
+  &quot;Success&quot;: true,
+  &quot;Message&quot;: &quot;Success&quot;,
+  &quot;Response&quot;: [
+    {
+      &quot;JobId&quot;: &quot;a3d7cbae-15a8-49ef-87c0-a4210168bbbf&quot;,
+      &quot;ItemId&quot;: 484366,
+      &quot;Destination&quot;: &quot;joe@dwolla.com&quot;,
+      &quot;DestinationType&quot;: &quot;email&quot;,
+      &quot;Amount&quot;: 3750,
+      &quot;Status&quot;: &quot;success&quot;,
+      &quot;TransactionId&quot;: 812270,
+      &quot;Error&quot;: null,
+      &quot;CreatedDate&quot;: &quot;2015-01-15T21:53:29Z&quot;,
+      &quot;Metadata&quot;: {
+        &quot;department&quot;: &quot;Widget Engineering&quot;,
+        &quot;paycheckID&quot;: &quot;845&quot;,
+        &quot;employeeID&quot;: &quot;394830948&quot;
+      }
+    },
+    {
+      &quot;JobId&quot;: &quot;a3d7cbae-15a8-49ef-87c0-a4210168bbbf&quot;,
+      &quot;ItemId&quot;: 484367,
+      &quot;Destination&quot;: &quot;jane@dwolla.com&quot;,
+      &quot;DestinationType&quot;: &quot;email&quot;,
+      &quot;Amount&quot;: 3850,
+      &quot;Status&quot;: &quot;success&quot;,
+      &quot;TransactionId&quot;: 812273,
+      &quot;Error&quot;: null,
+      &quot;CreatedDate&quot;: &quot;2015-01-15T21:53:29Z&quot;,
+      &quot;Metadata&quot;: {
+        &quot;department&quot;: &quot;Widget Engineering&quot;,
+        &quot;paycheckID&quot;: &quot;845&quot;,
+        &quot;employeeID&quot;: &quot;342680332&quot;
+      }
+    }
+  ]
+}
+</code></pre>
+<h4 id="checking-resulting-transactions">Checking Resulting Transactions</h4>
+<p>An <code>Item</code> is distinct from the transaction which it creates.  When an Item has been processed and has a status of &quot;Success&quot;, that merely means that a transaction was created.  The transaction itself may or may not have been cleared successfully in the recipients account.  It is important for WidgetCorp to know whether or not that transaction was cleared as successful, for it could have failed because of an ACH error, such as a lack of sufficient funds in their bank account. For each Item, we will fetch the resulting Transaction resource using the the <a href="../../docs/transactions/byid">Transaction / Id</a> endpoint. </p>
+<p><strong>Example: Checking the transaction status of Joe&#39;s payment</strong></p>
+<p><div class="codeContainer"></p>
+<pre><code class="lang-php">// We need the Transactions class in order to do anything
+require &#39;../lib/transactions.php&#39;;
+$Transactions = new Dwolla\Transactions();
+
+$Transactions-&gt;info(&#39;812270&#39;));
+</code></pre>
+<pre><code class="lang-ruby">puts Dwolla::Transactions.get(812270)
+</code></pre>
+<pre><code class="lang-python">from dwolla import transactions, constants
+
+# Configure the library (change these)
+constants.sandbox=True
+
+constants.client_id = &quot;Client Id goes here&quot;
+constants.client_secret = &quot;Client secret goes here&quot;
+constants.access_token = &quot;access token goes here&quot;
+constants.pin = 1234
+
+# Get info for transaction ID &#39;812270&#39;.
+
+transactions.info(&#39;812270&#39;)
+</code></pre>
+<pre><code class="lang-node">/**
+ * Retrieve information about transaction ID &#39;812270&#39;
+ * from the user with the authorized OAuth token.
+ */
+
+Dwolla.transactionById(&#39;812270&#39;, function(err, data) {
+  if (err) { console.log(err); }
+  console.log(data);
+});
+</code></pre>
+<p></div></p>
+<p>That&#39;s it!</p>
+
+		</div>
+
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dwolladevelopers'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</div>
+</div>
+
+      </div>
+
+      <div class="page-footer">
+        <div class="inner-wrap">
+          <ul>
+            <li><a href="https://www.dwolla.com/about">About</a></li>
+            <li><a href="http://help.dwolla.com/">Support</a></li>
+            <li><a href="https://www.dwolla.com/individuals">Individuals</li>
+            <li><a href="https://www.dwolla.com/businesses">Businesses</a></li>
+            <li><a href="../../../index.html">Developers</a></li>
+            <li><a href="https://www.dwolla.com/fees">Fees</a></li>
+            <li><a href="https://www.dwolla.com/security">Security</a></li>
+            <li><a href="https://press.dwolla.com/">Press</a></li>
+            <li><a href="https://blog.dwolla.com/">Blog</a></li>
+            <li><a href="https://jobs.dwolla.com/">Careers</a></li>
+          </ul>
+          <p>&copy; <script>document.write(new Date().getFullYear())</script> Dwolla Inc. &nbsp;<a href="https://www.dwolla.com/privacy">Privacy</a>
+           <a href="https://www.dwolla.com/legal/tos/">Legal</a>
+           <a href="https://www.dwolla.com/legal/about-our-financial-institution-partner/">Dwolla, Inc. is an agent of its Financial Institution Partner(s)</a>
+           </p>
+        </div>
+      </div>
+    </div>
+
+		<script src="../../../assets/js/common.js"></script>
+
+		
+			
+			
+		<script src="../../../assets/js/dev.js"></script>
+			
+		
+
+    <!-- Chartbeat -->
+		<script type="text/javascript">
+		  var _sf_async_config = { uid: 22842, domain: 'developers.dwolla.com' };
+		  (function() {
+		    function loadChartbeat() {
+		      window._sf_endpt = (new Date()).getTime();
+		      var e = document.createElement('script');
+		      e.setAttribute('language', 'javascript');
+		      e.setAttribute('type', 'text/javascript');
+		      e.setAttribute('src',
+		        (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+		        "js/chartbeat.js");
+		      document.body.appendChild(e);
+		    };
+		    var oldonload = window.onload;
+		    window.onload = (typeof window.onload != 'function') ?
+		      loadChartbeat : function() { oldonload(); loadChartbeat(); };
+		  })();
+		</script>
+
+    <!-- adroll -->
+    <script type="text/javascript">
+    adroll_adv_id = "M574VFZAGJHU7MWRNRQZWP";
+    adroll_pix_id = "3L6XRQ72VVHLJPYJWIZGCE";
+    (function () {
+    var oldonload = window.onload;
+    window.onload = function(){
+       __adroll_loaded=true;
+       var scr = document.createElement("script");
+       var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+       scr.setAttribute('async', 'true');
+       scr.type = "text/javascript";
+       scr.src = host + "/j/roundtrip.js";
+       ((document.getElementsByTagName('head') || [null])[0] ||
+        document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+       if(oldonload){oldonload()}};
+    }());
+    </script>
+
+    <!-- google analytics -->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-30404064-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>

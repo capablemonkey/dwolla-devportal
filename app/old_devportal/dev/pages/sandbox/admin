@@ -4,13 +4,13 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Dwolla Developers | Dwolla</title>
 
-    <link href="assets/css/header-footer.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/jquery-ui.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/jquery.qtip.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/sh/shCore.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/sh/shCoreEclipse.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/highlight.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/header-footer.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/jquery.qtip.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/sh/shCore.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/sh/shCoreEclipse.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/highlight.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
 
     <meta http-equiv="Content-Language" content="en-us">
@@ -18,7 +18,7 @@
     <meta name="keywords" content="dwolla, api, dwolla api, money api, dwolla example code, dwolla examples, dwolla sample code, dwolla documentation, dwolla api documentation">
     <meta name="robots" content="all">
 
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" />
 
 	  <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
 
@@ -45,11 +45,11 @@
     <div id="wrap">
       <div class="container">
           
-<h2><span>Error /</span> 404</h2>
-<h4>Sorry, we couldn't find this page!</h4>
+<h2><span>API /</span> Sandbox Admin</h2>
+<h4>Sandbox Environment Admin Interface</h4>
 
 
-<div id="news" class="doc_page">
+<div id="docs" class="doc_page">
 	<div class="sidebar">
 	<div class="well" style="padding: 8px 0;">
 		<ul class="nav nav-list">
@@ -86,14 +86,14 @@
 			</li>
 			<li 
 >
-				<a href="index.html">
+				<a href="../../../index.html">
 					<i class="icon-screenshot"></i>
 					Getting Started
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/docs/users/account" target="_blank">
+				<a href="../../docs/users/account" target="_blank">
 					<i class="icon-list-alt"></i>
 					API Documentation
 				</a>
@@ -123,63 +123,63 @@
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/white_label">
+				<a href="../guides/white_label">
 					<i class="icon-check"></i>
 					White Label: Transfer funds
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/create_application">
+				<a href="../guides/create_application">
 					<i class="icon-check"></i>
 					Generate API Credentials
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/receiving_money">
+				<a href="../guides/receiving_money">
 					<i class="icon-check"></i>
 					Accepting Payments
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/sending_money">
+				<a href="../guides/sending_money">
 					<i class="icon-check"></i>
 					Sending Money
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/masspay">
+				<a href="../guides/masspay">
 					<i class="icon-check"></i>
 					Sending Batch Payments
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/facilitator_fee">
+				<a href="../guides/facilitator_fee">
 					<i class="icon-check"></i>
 					Setting Facilitator Fees
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/offsite_gateway">
+				<a href="../guides/offsite_gateway">
 					<i class="icon-check"></i>
 					Off-Site Gateway Checkout
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/sandbox">
+				<a href="../guides/sandbox">
 					<i class="icon-check"></i>
 					Sandbox: Getting Started
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/using_webhooks">
+				<a href="../guides/using_webhooks">
 					<i class="icon-check"></i>
 					Using Webhooks
 				</a>
@@ -190,14 +190,14 @@
 			</li>
 			<li 
 >
-				<a href="dev/pages/gateway">
+				<a href="../gateway">
 					<i class="icon-shopping-cart"></i>
 					Off-Site Gateway
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/auth">
+				<a href="../auth">
 					<i class="icon-user"></i>
 					OAuth + REST API
 				</a>
@@ -208,35 +208,35 @@
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/direct_limitations">
+				<a href="../guides/direct_limitations">
 					<i class="icon-download-alt"></i>
 					Direct Account Limitatons
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/correlate_transactions">
+				<a href="../guides/correlate_transactions">
 					<i class="icon-download-alt"></i>
 					Correlate Transaction IDs
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/oauth_account_creation">
+				<a href="../guides/oauth_account_creation">
 					<i class="icon-bell"></i>
 					OAuth Account Creation
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/docs/gateway/direct">
+				<a href="../../docs/gateway/direct">
 					<i class="icon-arrow-right"></i>
 					Dwolla Direct
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/sandbox">
+				<a href="../sandbox">
 					<i class="icon-hdd"></i>
 					Sandbox
 				</a>
@@ -245,30 +245,30 @@
 			<li class="nav-header">
 				Tools
 			</li>
-			<li 
+			<li class="active"
 >
-				<a href="dev/pages/sandbox/admin">
+				<a href="admin">
 					<i class="icon-asterisk"></i>
 					Sandbox Admin
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/testing">
+				<a href="../testing">
 					<i class="icon-road"></i>
 					Reflector Account
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/token">
+				<a href="../../token">
 					<i class="icon-pencil"></i>
 					Token Generator
 				</a>
 			</li>
 
 			<li>
-				<a href="dev/docs/users/account">Looking for API Docs? &raquo;</a>
+				<a href="../../docs/users/account">Looking for API Docs? &raquo;</a>
 			</li>
 
 		</ul>
@@ -276,9 +276,117 @@
 </div>
 
 
-	<div class="content" id="news-list">
+	<div class="content">
 
-    <div id="disqus_thread"></div>
+  <p>The <a href="https://sandbox-uat.dwolla.com/">Sandbox Admin</a> interface lets you batch create test users, manipulate transaction states, and manage your test users in the Sandbox environment.  It requires a sandbox account to use.  <a href="../sandbox">Read about the <b> Sandbox environment  &raquo;</b></a></p>
+
+  <p><a href="https://sandbox-uat.dwolla.com/">Go to Sandbox Admin &raquo;</a></p>
+
+<p class="section_header pad_top">Creating Users</p>
+      <div class="section">
+        <img class="screenshot" src="../../../assets/images/dev/sandbox/admin.png">
+        <p>Users are created by uploading a CSV containing details which you'd like to create each account with.  Each row describes a single account's Email address, Password, PIN, First name, Last name, Dwolla balance, Status ("verified" or "unverified"), in that order, delimited with a semicolon.</p>
+
+        <p>For example, uploading the following CSV would create 2 accounts, one of which would be a fully verified account for John Doe, with an initial balance of $5000 and PIN of 1234:</p>
+
+<pre>
+johndoe@gmail.com;Password1!;1234;John;Doe;5000;verified
+janedoe@gmail.com;Password1!;1234;Jane;Doeman;100;unverified
+</pre>
+
+        All accounts created will have these default characteristics:
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Street Address 1</td>
+            <td>81024 Disk Dr.</td>
+          </tr>
+          <tr>
+            <td>Street Address 2</td>
+            <td>Apartment 256</td>
+          </tr>
+          <tr>
+            <td>City</td>
+            <td>Circuit City</td>
+          </tr>
+          <tr>
+            <td>State</td>
+            <td>Iowa</td>
+          </tr>
+          <tr>
+            <td>ZIP</td>
+            <td>50309</td>
+          </tr>
+          <tr>
+            <td>Phone Number</td>
+            <td>None</td>
+          </tr>
+          <tr>
+            <td>Avatar</td>
+            <td>None</td>
+          </tr>
+          <tr>
+            <td>Funding Sources</td>
+            <td>First Midwestern Bank XXX6789 (verified)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      </div>
+
+      <p class="section_header pad_top">Setting Transaction Statuses</p>
+      <div class="section">
+        <p class="subsection_header">Transaction Behavior in the Sandbox</p>
+        <p>
+          Unlike Balance, Credit, or FiSync sourced transactions, which are processed instantaneously, Bank-sourced transactions exist in the <code>Pending</code> state for several business days until they are <code>Processed</code>, <code>Failed</code>, <code>Cancelled</code>, or <code>Reclaimed</code>.  For instance, it may take between 3 to 5 business days before a <code>Pending</code> transaction becomes <code>Processed</code> (which means it has cleared successfully).  For a transaction to become <code>Failed</code> in our production environment, Dwolla must receive notice from the ACH network (in the form of an ACH return code), a process which requires at least 1 day.  Therefore, a failed payment due to insufficient funds, can be in the <code>Pending</code> state for 3 business days until Dwolla receives notice that the transaction failed due to insufficient funds and its state is updated to <code>Failed</code>.
+        </p>
+        <p>The Sandbox environment does not replicate any ACH processes, so a <code>Pending</code> transaction will not clear or fail automatically after a few business days as it would in production.  It will simply remain in the <code>Pending</code> state indefinitely.</p>
+
+        <p class="subsection_header">Cancelled and Reclaimed</p>
+        <p>As in the production environment, transactions can be cancelled by either party from either the sender's or the receiver's  Dwolla account dashboard.  You may also cancel payments directly from the Sandbox Admin interface.</p>
+
+        <p>There are two scenarios in which a transaction can become <code>Reclaimed</code>: </p>
+
+        <ol>
+          <li>a payment is sent to a non-Dwolla user's email address or phone number and has not been claimed by the sender's Reclaim period, which is by default 30 days.</li>
+          <li>a processed payment is reversed by Dwolla as a result of a dispute.</li>
+        </ol>
+          
+        <p class="subsection_header">Manipulation</p>
+        <img class="screenshot" src="../../../assets/images/dev/sandbox/transactions.png">
+        <p>The Sandbox Admin interface allows you to immediately trigger any of the four possible transaction outcomes for a given transaction: <code>Processed</code>, <code>Failed</code>, <code>Cancelled</code>, <code>Reclaimed</code>. Since the Sandbox environment is an exact copy of our production environment, the typical events that would follow in our production environment will occur:</p>
+
+        <ol>
+          <li>Relevant email is sent. </li>
+          <li><a href="../webhooks">Webhook notification</a> is sent.</li>
+        </ol>
+      </div>
+    
+
+      <p class="section_header pad_top">Simulating Bank Deposits and Withdrawals</p>
+      <div class="section">
+        <img class="screenshot" src="../../../assets/images/dev/sandbox/withdraw.png">
+
+        <p>Bank deposits to and bank withdrawals from a Dwolla account are deposit and withdrawal type transactions, respectively.  As such, their transaction outcome can be triggered from the Sandbox Admin interface by selecting Process or Cancel.</p>
+
+        <p>To deposit money into a Dwolla account from the test bank account, Midwestern Bank XXX6789, initiate the deposit from the account dashboard and Process the resulting deposit transaction from the Sandbox Admin interface.  Withdrawals can be completed in the same way.</p>
+      </div>
+      
+
+
+      <p class="section_header pad_tp">Account Management</p>
+      <div class="section">
+        <img class="screenshot" src="../../../assets/images/dev/sandbox/deactivate.png">
+        <p>The Sandbox Admin interface allows you to deactivate any accounts you've created.  This is useful for understanding the user experience for a user whose account is disabled, and for a user attempting to send money to a user whose account is deactivated.</p>
+      </div>
+
+      <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'dwolladevelopers'; // required: replace example with your forum shortname
@@ -292,7 +400,12 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
+
+    </div>
+
+    </div>
+
+	</div>
 </div>
 
       </div>
@@ -304,7 +417,7 @@
             <li><a href="http://help.dwolla.com/">Support</a></li>
             <li><a href="https://www.dwolla.com/individuals">Individuals</li>
             <li><a href="https://www.dwolla.com/businesses">Businesses</a></li>
-            <li><a href="index.html">Developers</a></li>
+            <li><a href="../../../index.html">Developers</a></li>
             <li><a href="https://www.dwolla.com/fees">Fees</a></li>
             <li><a href="https://www.dwolla.com/security">Security</a></li>
             <li><a href="https://press.dwolla.com/">Press</a></li>
@@ -319,12 +432,12 @@
       </div>
     </div>
 
-		<script src="assets/js/common.js"></script>
+		<script src="../../../assets/js/common.js"></script>
 
 		
 			
 			
-		<script src="assets/js/dev.js"></script>
+		<script src="../../../assets/js/dev.js"></script>
 			
 		
 

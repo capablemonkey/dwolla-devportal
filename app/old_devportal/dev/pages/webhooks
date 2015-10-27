@@ -4,13 +4,13 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Dwolla Developers | Dwolla</title>
 
-    <link href="assets/css/header-footer.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/jquery-ui.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/jquery.qtip.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/sh/shCore.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/sh/shCoreEclipse.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/highlight.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/header-footer.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/jquery.qtip.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/sh/shCore.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/sh/shCoreEclipse.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/css/highlight.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
 
     <meta http-equiv="Content-Language" content="en-us">
@@ -18,7 +18,7 @@
     <meta name="keywords" content="dwolla, api, dwolla api, money api, dwolla example code, dwolla examples, dwolla sample code, dwolla documentation, dwolla api documentation">
     <meta name="robots" content="all">
 
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon" />
 
 	  <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
 
@@ -45,11 +45,11 @@
     <div id="wrap">
       <div class="container">
           
-<h2><span>Error /</span> 404</h2>
-<h4>Sorry, we couldn't find this page!</h4>
+<h2><span>API /</span> Webhooks</h2>
+<h4>Notification hooks</h4>
 
 
-<div id="news" class="doc_page">
+<div id="docs" class="doc_page">
 	<div class="sidebar">
 	<div class="well" style="padding: 8px 0;">
 		<ul class="nav nav-list">
@@ -86,14 +86,14 @@
 			</li>
 			<li 
 >
-				<a href="index.html">
+				<a href="../../index.html">
 					<i class="icon-screenshot"></i>
 					Getting Started
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/docs/users/account" target="_blank">
+				<a href="../docs/users/account" target="_blank">
 					<i class="icon-list-alt"></i>
 					API Documentation
 				</a>
@@ -123,63 +123,63 @@
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/white_label">
+				<a href="guides/white_label">
 					<i class="icon-check"></i>
 					White Label: Transfer funds
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/create_application">
+				<a href="guides/create_application">
 					<i class="icon-check"></i>
 					Generate API Credentials
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/receiving_money">
+				<a href="guides/receiving_money">
 					<i class="icon-check"></i>
 					Accepting Payments
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/sending_money">
+				<a href="guides/sending_money">
 					<i class="icon-check"></i>
 					Sending Money
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/masspay">
+				<a href="guides/masspay">
 					<i class="icon-check"></i>
 					Sending Batch Payments
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/facilitator_fee">
+				<a href="guides/facilitator_fee">
 					<i class="icon-check"></i>
 					Setting Facilitator Fees
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/offsite_gateway">
+				<a href="guides/offsite_gateway">
 					<i class="icon-check"></i>
 					Off-Site Gateway Checkout
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/sandbox">
+				<a href="guides/sandbox">
 					<i class="icon-check"></i>
 					Sandbox: Getting Started
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/using_webhooks">
+				<a href="guides/using_webhooks">
 					<i class="icon-check"></i>
 					Using Webhooks
 				</a>
@@ -190,14 +190,14 @@
 			</li>
 			<li 
 >
-				<a href="dev/pages/gateway">
+				<a href="gateway">
 					<i class="icon-shopping-cart"></i>
 					Off-Site Gateway
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/auth">
+				<a href="auth">
 					<i class="icon-user"></i>
 					OAuth + REST API
 				</a>
@@ -208,35 +208,35 @@
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/direct_limitations">
+				<a href="guides/direct_limitations">
 					<i class="icon-download-alt"></i>
 					Direct Account Limitatons
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/correlate_transactions">
+				<a href="guides/correlate_transactions">
 					<i class="icon-download-alt"></i>
 					Correlate Transaction IDs
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/oauth_account_creation">
+				<a href="guides/oauth_account_creation">
 					<i class="icon-bell"></i>
 					OAuth Account Creation
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/docs/gateway/direct">
+				<a href="../docs/gateway/direct">
 					<i class="icon-arrow-right"></i>
 					Dwolla Direct
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/sandbox">
+				<a href="sandbox">
 					<i class="icon-hdd"></i>
 					Sandbox
 				</a>
@@ -247,28 +247,28 @@
 			</li>
 			<li 
 >
-				<a href="dev/pages/sandbox/admin">
+				<a href="sandbox/admin">
 					<i class="icon-asterisk"></i>
 					Sandbox Admin
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/testing">
+				<a href="testing">
 					<i class="icon-road"></i>
 					Reflector Account
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/token">
+				<a href="../token">
 					<i class="icon-pencil"></i>
 					Token Generator
 				</a>
 			</li>
 
 			<li>
-				<a href="dev/docs/users/account">Looking for API Docs? &raquo;</a>
+				<a href="../docs/users/account">Looking for API Docs? &raquo;</a>
 			</li>
 
 		</ul>
@@ -276,9 +276,62 @@
 </div>
 
 
-	<div class="content" id="news-list">
+	<div class="content">
+		<p>Dwolla API consumer applications can subscribe to Webhook Notifications. These Notifications are messages pushed to a subscribed URL as specified by the application owner. Notifications act as a private messaging system giving the application owner messages related to events triggered or initiated by their application's usage of the Dwolla API. Use Notifications to track the progress of transactions tied to your consumer application without polling for information.</p>
 
-    <div id="disqus_thread"></div>
+		<p class="section_header pad_top">Available Notifications</p>
+		<div class="section">
+			<p>Click on any of the available types to see a detailed explanation of the notification:</p>
+			<ul>
+				<li><a href="../docs/webhooks/transactionstatus">Transaction Status</a> - receive webhook notifications when the status of a transaction that is associated with your application changes.</li>
+				<li><a href="../docs/webhooks/transactionreturned">Transaction Returned</a> - receive webhook notifications when a bank funded transaction fails.</li>
+				<li><a href="../docs/webhooks/requestfulfilled">Request Fulfilled</a> - receive webhook notifications when requests that were made using your application are fulfilled.</li>
+				<li><a href="../docs/webhooks/requestcancelled">Request Cancelled</a> - receive webhook notifications when pending requests that were made using your application are cancelled by either parties.</li>
+			</ul>
+		</div>
+
+		<p class="section_header" id="signatures">Webhook Signatures</p>
+		<div class="section">
+			<p>Every Webhook notification originating from Dwolla will be accompanied by a signature, so that you can validate the origin of the message. The signature will be posted in the X-Dwolla-Signature header, and is an HMAC hash of the request body salted using the consumer application secret.</p>
+			<p>Here's an example of validating a webhook signature using NodeJS:</p>
+<pre class="syntax_highlight">
+function validate_webhook_signature(body, secret, signature) {
+  var crypto = require('crypto');
+
+  hash = crypto
+    .createHmac('sha1', secret)
+    .update(body)
+    .digest('hex');
+
+  return (hash == signature);
+}
+</pre>
+		</div>
+
+		<p class="section_header">How Notifications Work</p>
+		<div class="section">
+			<p class="subsection_header">1. Dwolla sends a HTTP POST request</p>
+			<p>When you enable Notifications, Dwolla servers will automatically attempt to POST a request with a JSON body to the Notification Url(s) specified. The JSON contains standard properties defining the notification type and other information relevant to the notification type.</p>
+
+			<p>Although Notifications are asynchronous, the information sent with the request will always follow the corresponding information on Dwolla.com and, where exposed, the information available via the Dwolla API. For example, if you subscribe an application to transaction status Notifications, the status value sent via the Notification contains the same status you'd see on Dwolla.com or in a response from Dwolla's transactions API for the given transaction.</p>
+
+			<p class="subsection_header">2. Consumer application sends a HTTP response</p>
+			<p>Your server needs to be set up to receive the request from Dwolla at the publicly visible Notification URL(s) you've subscribed and needs to respond with an HTTP status code of OK (200), otherwise Dwolla assumes a temporary problem and immediately retries the POST request two times in succession.</p>
+		</div>
+
+		<p class="section_header">Setup Notifications</p>
+		<div class="section">
+			<p>Notifications are setup per application through the application's feature page by entering the URL(s) you'd like Dwolla to notify.</p>
+
+			<ul>
+				<li><a href="https://www.dwolla.com/applications">Create a Dwolla Consumer Application</a>.</li>
+				<li>View your applications.</li>
+				<li>Click 'Edit Features' link.</li>
+				<li>Set a URL for the notification type(s) you wish to subscribe to.</li>
+			</ul>
+		</div>
+
+		<div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'dwolladevelopers'; // required: replace example with your forum shortname
@@ -292,7 +345,7 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
+	</div>
 </div>
 
       </div>
@@ -304,7 +357,7 @@
             <li><a href="http://help.dwolla.com/">Support</a></li>
             <li><a href="https://www.dwolla.com/individuals">Individuals</li>
             <li><a href="https://www.dwolla.com/businesses">Businesses</a></li>
-            <li><a href="index.html">Developers</a></li>
+            <li><a href="../../index.html">Developers</a></li>
             <li><a href="https://www.dwolla.com/fees">Fees</a></li>
             <li><a href="https://www.dwolla.com/security">Security</a></li>
             <li><a href="https://press.dwolla.com/">Press</a></li>
@@ -319,12 +372,12 @@
       </div>
     </div>
 
-		<script src="assets/js/common.js"></script>
+		<script src="../../assets/js/common.js"></script>
 
 		
 			
 			
-		<script src="assets/js/dev.js"></script>
+		<script src="../../assets/js/dev.js"></script>
 			
 		
 

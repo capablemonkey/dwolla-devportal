@@ -4,13 +4,13 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Dwolla Developers | Dwolla</title>
 
-    <link href="assets/css/header-footer.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/jquery-ui.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/jquery.qtip.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/sh/shCore.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/sh/shCoreEclipse.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/highlight.css" rel="stylesheet" type="text/css">
+    <link href="../../header-footer.css" rel="stylesheet" type="text/css">
+    <link href="../../style.css" rel="stylesheet" type="text/css">
+    <link href="../../jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="../../jquery.qtip.css" rel="stylesheet" type="text/css">
+    <link href="../../sh/shCore.css" rel="stylesheet" type="text/css">
+    <link href="../../sh/shCoreEclipse.css" rel="stylesheet" type="text/css">
+    <link href="../../highlight.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
 
     <meta http-equiv="Content-Language" content="en-us">
@@ -18,7 +18,7 @@
     <meta name="keywords" content="dwolla, api, dwolla api, money api, dwolla example code, dwolla examples, dwolla sample code, dwolla documentation, dwolla api documentation">
     <meta name="robots" content="all">
 
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon" />
 
 	  <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
 
@@ -86,14 +86,14 @@
 			</li>
 			<li 
 >
-				<a href="index.html">
+				<a href="../../../../index.html">
 					<i class="icon-screenshot"></i>
 					Getting Started
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/docs/users/account" target="_blank">
+				<a href="../../../../dev/docs/users/account" target="_blank">
 					<i class="icon-list-alt"></i>
 					API Documentation
 				</a>
@@ -123,63 +123,63 @@
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/white_label">
+				<a href="../../../../dev/pages/guides/white_label">
 					<i class="icon-check"></i>
 					White Label: Transfer funds
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/create_application">
+				<a href="../../../../dev/pages/guides/create_application">
 					<i class="icon-check"></i>
 					Generate API Credentials
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/receiving_money">
+				<a href="../../../../dev/pages/guides/receiving_money">
 					<i class="icon-check"></i>
 					Accepting Payments
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/sending_money">
+				<a href="../../../../dev/pages/guides/sending_money">
 					<i class="icon-check"></i>
 					Sending Money
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/masspay">
+				<a href="../../../../dev/pages/guides/masspay">
 					<i class="icon-check"></i>
 					Sending Batch Payments
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/facilitator_fee">
+				<a href="../../../../dev/pages/guides/facilitator_fee">
 					<i class="icon-check"></i>
 					Setting Facilitator Fees
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/offsite_gateway">
+				<a href="../../../../dev/pages/guides/offsite_gateway">
 					<i class="icon-check"></i>
 					Off-Site Gateway Checkout
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/sandbox">
+				<a href="../../../../dev/pages/guides/sandbox">
 					<i class="icon-check"></i>
 					Sandbox: Getting Started
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/using_webhooks">
+				<a href="../../../../dev/pages/guides/using_webhooks">
 					<i class="icon-check"></i>
 					Using Webhooks
 				</a>
@@ -190,14 +190,14 @@
 			</li>
 			<li 
 >
-				<a href="dev/pages/gateway">
+				<a href="../../../../dev/pages/gateway">
 					<i class="icon-shopping-cart"></i>
 					Off-Site Gateway
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/auth">
+				<a href="../../../../dev/pages/auth">
 					<i class="icon-user"></i>
 					OAuth + REST API
 				</a>
@@ -208,35 +208,35 @@
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/direct_limitations">
+				<a href="../../../../dev/pages/guides/direct_limitations">
 					<i class="icon-download-alt"></i>
 					Direct Account Limitatons
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/correlate_transactions">
+				<a href="../../../../dev/pages/guides/correlate_transactions">
 					<i class="icon-download-alt"></i>
 					Correlate Transaction IDs
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/oauth_account_creation">
+				<a href="../../../../dev/pages/guides/oauth_account_creation">
 					<i class="icon-bell"></i>
 					OAuth Account Creation
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/docs/gateway/direct">
+				<a href="../../../../dev/docs/gateway/direct">
 					<i class="icon-arrow-right"></i>
 					Dwolla Direct
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/sandbox">
+				<a href="../../../../dev/pages/sandbox">
 					<i class="icon-hdd"></i>
 					Sandbox
 				</a>
@@ -247,28 +247,28 @@
 			</li>
 			<li 
 >
-				<a href="dev/pages/sandbox/admin">
+				<a href="../../../../dev/pages/sandbox/admin">
 					<i class="icon-asterisk"></i>
 					Sandbox Admin
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/testing">
+				<a href="../../../../dev/pages/testing">
 					<i class="icon-road"></i>
 					Reflector Account
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/token">
+				<a href="../../../../dev/token">
 					<i class="icon-pencil"></i>
 					Token Generator
 				</a>
 			</li>
 
 			<li>
-				<a href="dev/docs/users/account">Looking for API Docs? &raquo;</a>
+				<a href="../../../../dev/docs/users/account">Looking for API Docs? &raquo;</a>
 			</li>
 
 		</ul>
@@ -304,7 +304,7 @@
             <li><a href="http://help.dwolla.com/">Support</a></li>
             <li><a href="https://www.dwolla.com/individuals">Individuals</li>
             <li><a href="https://www.dwolla.com/businesses">Businesses</a></li>
-            <li><a href="index.html">Developers</a></li>
+            <li><a href="../../../../index.html">Developers</a></li>
             <li><a href="https://www.dwolla.com/fees">Fees</a></li>
             <li><a href="https://www.dwolla.com/security">Security</a></li>
             <li><a href="https://press.dwolla.com/">Press</a></li>
@@ -319,12 +319,12 @@
       </div>
     </div>
 
-		<script src="assets/js/common.js"></script>
+		<script src="../../../js/common.js"></script>
 
 		
 			
 			
-		<script src="assets/js/dev.js"></script>
+		<script src="../../../js/dev.js"></script>
 			
 		
 

@@ -4,13 +4,13 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Dwolla Developers | Dwolla</title>
 
-    <link href="assets/css/header-footer.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/jquery-ui.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/jquery.qtip.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/sh/shCore.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/sh/shCoreEclipse.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/highlight.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/header-footer.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/jquery.qtip.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/sh/shCore.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/sh/shCoreEclipse.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/highlight.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
 
     <meta http-equiv="Content-Language" content="en-us">
@@ -18,7 +18,7 @@
     <meta name="keywords" content="dwolla, api, dwolla api, money api, dwolla example code, dwolla examples, dwolla sample code, dwolla documentation, dwolla api documentation">
     <meta name="robots" content="all">
 
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon" />
 
 	  <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
 
@@ -45,11 +45,11 @@
     <div id="wrap">
       <div class="container">
           
-<h2><span>Error /</span> 404</h2>
-<h4>Sorry, we couldn't find this page!</h4>
+<h2><span>API /</span> Generate Token</h2>
+<h4>Use this tool to easily generate an API token for your Dwolla account</h4>
 
 
-<div id="news" class="doc_page">
+<div id="token" class="doc_page">
 	<div class="sidebar">
 	<div class="well" style="padding: 8px 0;">
 		<ul class="nav nav-list">
@@ -86,14 +86,14 @@
 			</li>
 			<li 
 >
-				<a href="index.html">
+				<a href="../index.html">
 					<i class="icon-screenshot"></i>
 					Getting Started
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/docs/users/account" target="_blank">
+				<a href="docs/users/account" target="_blank">
 					<i class="icon-list-alt"></i>
 					API Documentation
 				</a>
@@ -123,63 +123,63 @@
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/white_label">
+				<a href="pages/guides/white_label">
 					<i class="icon-check"></i>
 					White Label: Transfer funds
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/create_application">
+				<a href="pages/guides/create_application">
 					<i class="icon-check"></i>
 					Generate API Credentials
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/receiving_money">
+				<a href="pages/guides/receiving_money">
 					<i class="icon-check"></i>
 					Accepting Payments
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/sending_money">
+				<a href="pages/guides/sending_money">
 					<i class="icon-check"></i>
 					Sending Money
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/masspay">
+				<a href="pages/guides/masspay">
 					<i class="icon-check"></i>
 					Sending Batch Payments
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/facilitator_fee">
+				<a href="pages/guides/facilitator_fee">
 					<i class="icon-check"></i>
 					Setting Facilitator Fees
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/offsite_gateway">
+				<a href="pages/guides/offsite_gateway">
 					<i class="icon-check"></i>
 					Off-Site Gateway Checkout
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/sandbox">
+				<a href="pages/guides/sandbox">
 					<i class="icon-check"></i>
 					Sandbox: Getting Started
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/using_webhooks">
+				<a href="pages/guides/using_webhooks">
 					<i class="icon-check"></i>
 					Using Webhooks
 				</a>
@@ -190,14 +190,14 @@
 			</li>
 			<li 
 >
-				<a href="dev/pages/gateway">
+				<a href="pages/gateway">
 					<i class="icon-shopping-cart"></i>
 					Off-Site Gateway
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/auth">
+				<a href="pages/auth">
 					<i class="icon-user"></i>
 					OAuth + REST API
 				</a>
@@ -208,35 +208,35 @@
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/direct_limitations">
+				<a href="pages/guides/direct_limitations">
 					<i class="icon-download-alt"></i>
 					Direct Account Limitatons
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/correlate_transactions">
+				<a href="pages/guides/correlate_transactions">
 					<i class="icon-download-alt"></i>
 					Correlate Transaction IDs
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/oauth_account_creation">
+				<a href="pages/guides/oauth_account_creation">
 					<i class="icon-bell"></i>
 					OAuth Account Creation
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/docs/gateway/direct">
+				<a href="docs/gateway/direct">
 					<i class="icon-arrow-right"></i>
 					Dwolla Direct
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/sandbox">
+				<a href="pages/sandbox">
 					<i class="icon-hdd"></i>
 					Sandbox
 				</a>
@@ -247,28 +247,28 @@
 			</li>
 			<li 
 >
-				<a href="dev/pages/sandbox/admin">
+				<a href="pages/sandbox/admin">
 					<i class="icon-asterisk"></i>
 					Sandbox Admin
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/testing">
+				<a href="pages/testing">
 					<i class="icon-road"></i>
 					Reflector Account
 				</a>
 			</li>
-			<li 
+			<li class="active"
 >
-				<a href="dev/token">
+				<a href="token">
 					<i class="icon-pencil"></i>
 					Token Generator
 				</a>
 			</li>
 
 			<li>
-				<a href="dev/docs/users/account">Looking for API Docs? &raquo;</a>
+				<a href="docs/users/account">Looking for API Docs? &raquo;</a>
 			</li>
 
 		</ul>
@@ -276,9 +276,74 @@
 </div>
 
 
-	<div class="content" id="news-list">
+	<div class="content">
+		<p>Sometimes, you just need an access token to your own account, without going through the hassle of creating an entire OAuth flow. We hear ya. That's why we created a tool that lets you generate an access token with a Dwolla account.</p>
 
-    <div id="disqus_thread"></div>
+		
+
+		
+
+		<div id="token_generator">
+			<h4>Generate a token using your own app</h4>
+			<p>If you'd like to generate a token associated with your own application (perhaps so you can receive Webhook notifications for successful payments) provide your application credentials below and indicate the scopes you need. <b>Important:</b> Keep in mind that the access token generated will expire in 1 hour, so to maintain access be sure to <a href="pages/auth#refreshing-an-access-token">refresh</a> authorization.</p>
+			<p><b>Required: </b>You will need to set your <a href="https://www.dwolla.com/applications">created application's</a> OAuth Redirect URL to <code>https://developers.dwolla.com/dev/token/callback</code> before generating an access/refresh token pair. Reference this<a href="https://discuss.dwolla.com/t/action-required-oauth-redirect-uri-must-be-configured-in-application-settings/1605" target="_blank"> forum post</a> for more information on setting this field.</p>
+
+			<form action="https://developers.dwolla.com/dev/token/setcredentials" method="POST">
+				<div class="form-group">
+					<div class="input">
+						<input name="app_key" placeholder="Application Key">
+					</div>
+					<div class="input">
+						<input name="app_secret" placeholder="Application Secret">
+					</div>
+				</div>
+
+				<p>Scopes:</p>
+
+				<div class="checkbox">
+					<label for="scope-send"><input type="checkbox" name="Send" id="scope-send" value="true">Send</label>
+				</div>
+				<div class="checkbox">
+					<label for="scope-scheduled"><input type="checkbox" name="Scheduled" id="scope-scheduled" value="true">Scheduled</label>
+				</div>
+				<div class="checkbox">
+					<label for="scope-request"><input type="checkbox" name="Request" id="scope-request" value="true">Request</label>
+				</div>
+				<div class="checkbox">
+					<label for="scope-accountinfofull"><input type="checkbox" name="AccountInfoFull" id="scope-accountinfofull" value="true">AccountInfoFull</label>
+				</div>
+				<div class="checkbox">
+					<label for="scope-contacts"><input type="checkbox" name="Contacts" id="scope-contacts" value="true">Contacts</label>
+				</div>
+				<div class="checkbox">
+					<label for="scope-transactions"><input type="checkbox" name="Transactions" id="scope-transactions" value="true">Transactions</label>
+				</div>
+				<div class="checkbox">
+					<label for="scope-balance"><input type="checkbox" name="Balance" id="scope-balance" value="true">Balance</label>
+				</div>
+				<div class="checkbox">
+					<label for="scope-funding"><input type="checkbox" name="Funding" id="scope-funding" value="true">Funding</label>
+				</div>
+				<div class="checkbox">
+					<label for="scope-manageaccount"><input type="checkbox" name="ManageAccount" id="scope-manageaccount" value="true">ManageAccount</label>
+				</div>
+				<div class="checkbox">
+					<label for="scope-managecustomers"><input type="checkbox" name="ManageCustomers" id="scope-managecustomers" value="true">ManageCustomers (beta; your application may not have access to this scope!)</label>
+				</div>
+				<br>
+				<button formaction="/dev/token/setcredentials?env=prod" class="btn"><span>Production Environment</span></a>
+			<button formaction="/dev/token/setcredentials?env=sandbox" class="btn"><span>Sandbox Environment</span></a>
+			</form>
+		</div>
+
+		<div id="token_generator">
+			<h4>Generate a token using our generic app</h4>
+			<p>Click on one of the buttons below to generate an API token on either our Production environment (www) or Sandbox environment (uat).  The token you'll get will be associated with our generic Dwolla application. <br /><b>Note:</b> This generated token cannot be refreshed, thus limiting its viable use to 1 hour.</p>
+			<a href="https://www.dwolla.com/oauth/v2/authenticate?client_id=dxqKupCt6taRtj1HiEqlortg1xCsEbN8%2Bf5vhAZjmSFyWWd03h&response_type=code&redirect_uri=https://developers.dwolla.com/dev/token/callback?env=prod&scope=Balance%7CAccountInfoFull%7CSend%7CRequest%7CTransactions%7CContacts%7CFunding%7CManageAccount%7CScheduled" class="btn"><span>Production Environment</span></a>
+			<a href="https://uat.dwolla.com/oauth/v2/authenticate?client_id=PO%2BSzGAsZCE4BTG7Cw4OAL40Tpf1008mDjGBSVo6QLNfM4mD%2Ba&response_type=code&redirect_uri=https://developers.dwolla.com/dev/token/callback?env=sandbox&scope=Balance%7CAccountInfoFull%7CSend%7CRequest%7CTransactions%7CContacts%7CFunding%7CManageAccount%7CScheduled" class="btn"><span>Sandbox Environment</span></a>
+		</div>
+
+		<div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'dwolladevelopers'; // required: replace example with your forum shortname
@@ -292,8 +357,9 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
+	</div>
 </div>
+
 
       </div>
 
@@ -304,7 +370,7 @@
             <li><a href="http://help.dwolla.com/">Support</a></li>
             <li><a href="https://www.dwolla.com/individuals">Individuals</li>
             <li><a href="https://www.dwolla.com/businesses">Businesses</a></li>
-            <li><a href="index.html">Developers</a></li>
+            <li><a href="../index.html">Developers</a></li>
             <li><a href="https://www.dwolla.com/fees">Fees</a></li>
             <li><a href="https://www.dwolla.com/security">Security</a></li>
             <li><a href="https://press.dwolla.com/">Press</a></li>
@@ -319,12 +385,12 @@
       </div>
     </div>
 
-		<script src="assets/js/common.js"></script>
+		<script src="../assets/js/common.js"></script>
 
 		
 			
 			
-		<script src="assets/js/dev.js"></script>
+		<script src="../assets/js/dev.js"></script>
 			
 		
 

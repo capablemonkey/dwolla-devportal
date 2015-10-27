@@ -4,13 +4,13 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Dwolla Developers | Dwolla</title>
 
-    <link href="assets/css/header-footer.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/jquery-ui.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/jquery.qtip.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/sh/shCore.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/sh/shCoreEclipse.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/highlight.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/header-footer.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/jquery.qtip.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/sh/shCore.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/sh/shCoreEclipse.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/highlight.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
 
     <meta http-equiv="Content-Language" content="en-us">
@@ -18,7 +18,7 @@
     <meta name="keywords" content="dwolla, api, dwolla api, money api, dwolla example code, dwolla examples, dwolla sample code, dwolla documentation, dwolla api documentation">
     <meta name="robots" content="all">
 
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" />
 
 	  <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
 
@@ -45,11 +45,11 @@
     <div id="wrap">
       <div class="container">
           
-<h2><span>Error /</span> 404</h2>
-<h4>Sorry, we couldn't find this page!</h4>
+<h2><span>Getting Started</span></h2>
+<h4></h4>
 
 
-<div id="news" class="doc_page">
+<div id="docs" class="doc_page">
 	<div class="sidebar">
 	<div class="well" style="padding: 8px 0;">
 		<ul class="nav nav-list">
@@ -86,14 +86,14 @@
 			</li>
 			<li 
 >
-				<a href="index.html">
+				<a href="../../../index.html">
 					<i class="icon-screenshot"></i>
 					Getting Started
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/docs/users/account" target="_blank">
+				<a href="../../docs/users/account" target="_blank">
 					<i class="icon-list-alt"></i>
 					API Documentation
 				</a>
@@ -123,63 +123,63 @@
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/white_label">
+				<a href="white_label">
 					<i class="icon-check"></i>
 					White Label: Transfer funds
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/create_application">
+				<a href="create_application">
 					<i class="icon-check"></i>
 					Generate API Credentials
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/receiving_money">
+				<a href="receiving_money">
 					<i class="icon-check"></i>
 					Accepting Payments
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/sending_money">
+				<a href="sending_money">
 					<i class="icon-check"></i>
 					Sending Money
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/masspay">
+				<a href="masspay">
 					<i class="icon-check"></i>
 					Sending Batch Payments
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/facilitator_fee">
+				<a href="facilitator_fee">
 					<i class="icon-check"></i>
 					Setting Facilitator Fees
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/offsite_gateway">
+				<a href="offsite_gateway">
 					<i class="icon-check"></i>
 					Off-Site Gateway Checkout
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/sandbox">
+				<a href="sandbox">
 					<i class="icon-check"></i>
 					Sandbox: Getting Started
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/using_webhooks">
+				<a href="using_webhooks">
 					<i class="icon-check"></i>
 					Using Webhooks
 				</a>
@@ -190,14 +190,14 @@
 			</li>
 			<li 
 >
-				<a href="dev/pages/gateway">
+				<a href="../gateway">
 					<i class="icon-shopping-cart"></i>
 					Off-Site Gateway
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/auth">
+				<a href="../auth">
 					<i class="icon-user"></i>
 					OAuth + REST API
 				</a>
@@ -208,35 +208,35 @@
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/direct_limitations">
+				<a href="direct_limitations">
 					<i class="icon-download-alt"></i>
 					Direct Account Limitatons
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/correlate_transactions">
+				<a href="correlate_transactions">
 					<i class="icon-download-alt"></i>
 					Correlate Transaction IDs
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/guides/oauth_account_creation">
+				<a href="oauth_account_creation">
 					<i class="icon-bell"></i>
 					OAuth Account Creation
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/docs/gateway/direct">
+				<a href="../../docs/gateway/direct">
 					<i class="icon-arrow-right"></i>
 					Dwolla Direct
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/sandbox">
+				<a href="../sandbox">
 					<i class="icon-hdd"></i>
 					Sandbox
 				</a>
@@ -247,28 +247,28 @@
 			</li>
 			<li 
 >
-				<a href="dev/pages/sandbox/admin">
+				<a href="../sandbox/admin">
 					<i class="icon-asterisk"></i>
 					Sandbox Admin
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/pages/testing">
+				<a href="../testing">
 					<i class="icon-road"></i>
 					Reflector Account
 				</a>
 			</li>
 			<li 
 >
-				<a href="dev/token">
+				<a href="../../token">
 					<i class="icon-pencil"></i>
 					Token Generator
 				</a>
 			</li>
 
 			<li>
-				<a href="dev/docs/users/account">Looking for API Docs? &raquo;</a>
+				<a href="../../docs/users/account">Looking for API Docs? &raquo;</a>
 			</li>
 
 		</ul>
@@ -276,9 +276,82 @@
 </div>
 
 
-	<div class="content" id="news-list">
+	<div class="content">
+		<div class="guide">
+			<h2 id="oauth-account-creation">OAuth Account Creation</h2>
+<h4 id="overview">Overview</h4>
+<p>Dwolla has simplified the user on-boarding process by building account creation into the OAuth flow. Now your users can create a Dwolla account and attach a bank funding source inline with the capture of the user&#39;s permission, without abandoning your application flow.</p>
+<p>There are three ways to onboard new users, each with varying levels of required verification:</p>
+<ul>
+<li>Create a Dwolla Direct account with non-verified, receive-only bank funding source</li>
+<li>Create a Dwolla Direct account with instant bank account verification</li>
+<li>Create a Full Dwolla account with both identity and bank verification</li>
+</ul>
+<p>Dwolla Direct accounts were designed to provide a lightweight registration experience. In contrast to Full Dwolla accounts, full identity verification is not required for Dwolla Direct accounts. Because of this, they have certain restrictions within the Dwolla platform, e.g. Dwolla Direct accounts cannot hold a Dwolla balance. Read more about Direct account <a href="direct_limitations">limitations</a>. </p>
+<p>Give the experience a try:</p>
+<p><a class="btn orange" href="oauth_account_creation#" onclick="window.open('https://uat.dwolla.com/oauth/v2/authenticate?client_id=eM5d1vO1vqQTRRwKOeO%2B0p%2FiKc7nnSX1iDPaPzm4WisBVHuhKR&response_type=code&redirect_uri=https%3A%2F%2Fdwollademo.herokuapp.com%2Fapi%2Foauth%2Freturn&scope=AccountInfoFull%7CFunding%7CSend', '', 'width=700,height=700')" style="color:white; margin:auto; width:200px; display:block;" data-toggle="tooltip" data-placement="right" title="hint: make sure you're logged out of any account on uat.dwolla.com">Direct account w/ verified bank</a></p>
+<p>For more live examples see this <a href="https://dwollademo.herokuapp.com/api/oauth">sample application</a>. </p>
+<p><p class="section_header pad_top">User experience - Direct account</p>
+<div class="section" id="ux-direct"></p>
+<p><strong>Step 1</strong> From your application, the user is presented with Dwolla OAuth in a pop-up, or their window is redirected.</p>
+<p><strong>Step 2</strong> User is prompted to create a Dwolla Direct account (or log in with an existing Dwolla account). If Dwolla detects no prior user sessions from dwolla.com (checks cookies), the main call to action will be to create a new account. </p>
+<p><img src="../../../assets/images/dev/account-creation/1-CreateDirectAcct.png" alt="screenshot 1"></p>
+<p><strong>Step 3</strong> - User is asked to grant requested permissions to the application.</p>
+<p><img src="../../../assets/images/dev/account-creation/2-GrantPermissions.png" alt="screenshot 2"></p>
+<p><strong>Step 4</strong> - Adding a funding source
+There are two flows available for adding a funding source. If the user needs to be able to send money, be sure to request the <strong>Send</strong> scope, which will trigger the Instant Account Verification (IAV) process and allow the user to verify and connect a  funding source by entering their online banking credentials. Alternatively, if the user only needs to receive money, do not request the Send scope, but do request the Funding scope. This will trigger a flow where the user will add their bank or credit union account and routing numbers, but the IAV process will not be included.</p>
+<ul>
+<li>If <strong>Funding</strong> scope is requested but Send scope is <strong>not</strong>, send user through the flow to add a non-verified bank account.</li>
+</ul>
+<p><img src="../../../assets/images/dev/account-creation/3-AddNonVerifiedFS.png" alt="screenshot 3"></p>
+<ul>
+<li>If <strong>Send</strong> scope is requested, send the user through the IAV flow to add a verified bank.</li>
+</ul>
+<p><img src="../../../assets/images/dev/account-creation/4-BankSearch.png" alt="screenshot 4"></p>
+<p><strong>Note:</strong> An extensive list of popular U.S. financial institutions are supported by IAV. In the case that a user&#39;s bank account is not supported, they&#39;ll be unable to complete account creation.</p>
+<p><img src="../../../assets/images/dev/account-creation/5-BankLogin.png" alt="screenshot 5"></p>
+<p><img src="../../../assets/images/dev/account-creation/6-VerifyBank.png" alt="screenshot 6"></p>
+<p><strong>Note:</strong> there may be multifactor authentication (MFA) in this step, depending on the financial institution. Different kinds of MFA include:</p>
+<ul>
+<li>Question and answer</li>
+<li>Token (SMS or email verification code)</li>
+<li>CAPTCHA or security image</li>
+</ul>
+<p><img src="../../../assets/images/dev/account-creation/7-SelectBankAcct.jpg" alt="screenshot 7"></p>
+<p><strong>Step 5</strong> - Submit and verify bank information 
+Once the user selects submit and verify on their bank information, they are then redirected back to your site where you will receive an access token and refresh token pair.</p>
+<p><strong>Step 6</strong> - Redirect user back to application</p>
+<p></div></p>
+<p><p class="section_header pad_top">User experience - full Dwolla account</p>
+<div class="section" style="display:none" id="ux-full"></p>
+<p><strong>Step 1</strong> - From your application, the user is presented with Dwolla OAuth in a pop-up, or their window is redirected.</p>
+<p><strong>Step 2</strong> - User is prompted to create a Dwolla account (or log in with an existing Dwolla account). If Dwolla detects no prior user sessions from dwolla.com (checks cookies), the main call to action will be to create a new account.</p>
+<p><img src="../../../assets/images/dev/account-creation/8-CreateAcct.png" alt="screenshot 8"> </p>
+<p><strong>Step 3</strong> - The user will then be prompted to select the type of account to create (Personal, Business, Government, Non-Profit). </p>
+<p><img src="../../../assets/images/dev/account-creation/9-SelectAcctType.png" alt="screenshot 9"></p>
+<p><strong>Step 4</strong> - The user will then be required to enter information that will be used to verify their identity. </p>
+<p><img src="../../../assets/images/dev/account-creation/10-BizReg.png" alt="screenshot 10"></p>
+<p><strong>Step 4-1</strong> - Business users may be asked for additional information to complete verification, depending on our ability to verify the information provided until this point. </p>
+<p><img src="../../../assets/images/dev/account-creation/12-Document.png" alt="screenshot 12"></p>
+<p><strong>Step 5</strong> - After completing account registration, the user will be asked to grant permissions to the application. If the Send scope is requested, they will be prompted to add a verified bank account via IAV. (This step can be skipped, and the user can choose to add a funding source later on dwolla.com.)</p>
+<p><img src="../../../assets/images/dev/account-creation/14-GrantPermissions.png" alt="screenshot 14"></p>
+<p><strong>Step 6</strong> - Add a bank or skip to complete the OAuth process</p>
+<p><img src="../../../assets/images/dev/account-creation/15-VerifiedBankSearch.png" alt="screenshot 15"></p>
+<p></div></p>
+<p><p class="section_header pad_top">Configuration</p>
+<div class="section" style="display:none" id="config"></p>
+<p>By default, Dwolla Direct account creation is enabled. Read more about Direct account <a href="direct_limitations">limitations</a>. </p>
+<p>If you request the <code>Send</code> scope in the request authorization URL, the user will be prompted to add a verified bank.</p>
+<p>If you request the <code>Funding</code> scope but not the <code>Send</code> scope, the user will be prompted to connect an unverified bank account eligible to receive funds but not send funds to other users.  </p>
+<h4 id="requiring-full-account-creation-">Requiring Full account creation:</h4>
+<p>To trigger full Dwolla account creation within the OAuth flow instead, set the parameter <code>verified_account</code> to <code>true</code> in the initial request for authorization. If you request the <code>Send</code> scope then the user will be prompted to add a verified bank after granting permissions to the application.</p>
+<p>Example URL format:</p>
+<p><code>https://www.dwolla.com/oauth/v2/authenticate?client_id={client_id}&amp;response_type=code&amp;redirect_uri={redirect_uri}&amp;scope={scope}&amp;verified_account=true</code></p>
+<p></div></p>
 
-    <div id="disqus_thread"></div>
+		</div>
+
+		<div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'dwolladevelopers'; // required: replace example with your forum shortname
@@ -292,7 +365,7 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
+	</div>
 </div>
 
       </div>
@@ -304,7 +377,7 @@
             <li><a href="http://help.dwolla.com/">Support</a></li>
             <li><a href="https://www.dwolla.com/individuals">Individuals</li>
             <li><a href="https://www.dwolla.com/businesses">Businesses</a></li>
-            <li><a href="index.html">Developers</a></li>
+            <li><a href="../../../index.html">Developers</a></li>
             <li><a href="https://www.dwolla.com/fees">Fees</a></li>
             <li><a href="https://www.dwolla.com/security">Security</a></li>
             <li><a href="https://press.dwolla.com/">Press</a></li>
@@ -319,12 +392,12 @@
       </div>
     </div>
 
-		<script src="assets/js/common.js"></script>
+		<script src="../../../assets/js/common.js"></script>
 
 		
 			
 			
-		<script src="assets/js/dev.js"></script>
+		<script src="../../../assets/js/dev.js"></script>
 			
 		
 

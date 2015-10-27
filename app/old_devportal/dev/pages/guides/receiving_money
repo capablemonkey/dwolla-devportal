@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Dwolla Developers | Dwolla</title>
+
+    <link href="../../../assets/css/header-footer.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/jquery.qtip.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/sh/shCore.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/sh/shCoreEclipse.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/css/highlight.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+
+    <meta http-equiv="Content-Language" content="en-us">
+    <meta name="description" content="Dwolla Developers's Portal">
+    <meta name="keywords" content="dwolla, api, dwolla api, money api, dwolla example code, dwolla examples, dwolla sample code, dwolla documentation, dwolla api documentation">
+    <meta name="robots" content="all">
+
+    <link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" />
+
+	  <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
+  </head>
+
+  <body>
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7TKTN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-K7TKTN');</script>
+    <!-- End Google Tag Manager -->
+
+    <div class="header">
+      <div class="inner-wrap">
+        <h1 class="logo-main"><a href="https://www.dwolla.com">Dwolla</a></h1>
+
+          <ul class="nav nav-primary">
+            <li><a href="http://blog.dwolla.com">Blog</a></li>
+            <li><a href="http://help.dwolla.com">Support</a></li>
+            <li><a href="https://www.dwolla.com/applications">Log in</a></li>
+            <li><a href="https://www.dwolla.com/applications/create" class="btn orange">Get API Key</a></li>
+          </ul>
+      </div>
+    </div>
+
+    <div id="wrap">
+      <div class="container">
+          
+<h2><span>Getting Started</span></h2>
+<h4></h4>
+
+
+<div id="docs" class="doc_page">
+	<div class="sidebar">
+	<div class="well" style="padding: 8px 0;">
+		<ul class="nav nav-list">
+			<li class="nav-header">
+				Developer Newsletter 
+			</li>
+			<li>
+			<!-- Begin MailChimp Signup Form -->
+			<div id="mc_embed_signup">
+			<form action="https://dwolla.us3.list-manage.com/subscribe/post?u=bd010d6cd015c558a27b4a232&amp;id=4e85ae585c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<div id="mc_embed_signup_scroll">
+
+			<div class="mc-field-group">
+			<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your e-mail!">
+			</div>
+			<div id="mce-responses" class="clear">
+			<div class="response" id="mce-error-response" style="display:none"></div>
+			<div class="response" id="mce-success-response" style="display:none"></div>
+			</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+			<div style="position: absolute; left: -5000px;"><input type="text" name="b_bd010d6cd015c558a27b4a232_4e85ae585c" tabindex="-1" value=""></div>
+			<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn orange"></div>
+			</div>
+			</form>
+			</div>
+			<script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+			<!--End mc_embed_signup-->
+			</li>
+		</ul>
+	</div>
+	<div class="well" style="padding: 8px 0;">
+		<ul class="nav nav-list">
+			<li class="nav-header">
+				Topics
+			</li>
+			<li 
+>
+				<a href="../../../index.html">
+					<i class="icon-screenshot"></i>
+					Getting Started
+				</a>
+			</li>
+			<li 
+>
+				<a href="../../docs/users/account" target="_blank">
+					<i class="icon-list-alt"></i>
+					API Documentation
+				</a>
+			</li>
+			<li>
+				<a href="http://status.dwolla.com" target="_blank">
+				    <i class="icon-fire"></i>
+				    API Status
+				</a>
+			</li>
+			<li 
+>
+				<a href="http://discuss.dwolla.com/category/api-support" target="_blank">
+					<i class="icon-comment"></i>
+					Help / Forum
+				</a>
+			</li>
+			<li>
+				<a href="https://www.dwolla.com/tos/dev" target="_blank">
+					<i class="icon-check"></i>
+					Developer TOS
+				</a>
+			</li>
+
+			<li class="nav-header">
+				Guides
+			</li>
+			<li 
+>
+				<a href="white_label">
+					<i class="icon-check"></i>
+					White Label: Transfer funds
+				</a>
+			</li>
+			<li 
+>
+				<a href="create_application">
+					<i class="icon-check"></i>
+					Generate API Credentials
+				</a>
+			</li>
+			<li class="active"
+>
+				<a href="receiving_money">
+					<i class="icon-check"></i>
+					Accepting Payments
+				</a>
+			</li>
+			<li 
+>
+				<a href="sending_money">
+					<i class="icon-check"></i>
+					Sending Money
+				</a>
+			</li>
+			<li 
+>
+				<a href="masspay">
+					<i class="icon-check"></i>
+					Sending Batch Payments
+				</a>
+			</li>
+			<li 
+>
+				<a href="facilitator_fee">
+					<i class="icon-check"></i>
+					Setting Facilitator Fees
+				</a>
+			</li>
+			<li 
+>
+				<a href="offsite_gateway">
+					<i class="icon-check"></i>
+					Off-Site Gateway Checkout
+				</a>
+			</li>
+			<li 
+>
+				<a href="sandbox">
+					<i class="icon-check"></i>
+					Sandbox: Getting Started
+				</a>
+			</li>
+			<li 
+>
+				<a href="using_webhooks">
+					<i class="icon-check"></i>
+					Using Webhooks
+				</a>
+			</li>
+
+			<li class="nav-header">
+				Integration Options
+			</li>
+			<li 
+>
+				<a href="../gateway">
+					<i class="icon-shopping-cart"></i>
+					Off-Site Gateway
+				</a>
+			</li>
+			<li 
+>
+				<a href="../auth">
+					<i class="icon-user"></i>
+					OAuth + REST API
+				</a>
+			</li>
+
+			<li class="nav-header">
+				Reference
+			</li>
+			<li 
+>
+				<a href="direct_limitations">
+					<i class="icon-download-alt"></i>
+					Direct Account Limitatons
+				</a>
+			</li>
+			<li 
+>
+				<a href="correlate_transactions">
+					<i class="icon-download-alt"></i>
+					Correlate Transaction IDs
+				</a>
+			</li>
+			<li 
+>
+				<a href="oauth_account_creation">
+					<i class="icon-bell"></i>
+					OAuth Account Creation
+				</a>
+			</li>
+			<li 
+>
+				<a href="../../docs/gateway/direct">
+					<i class="icon-arrow-right"></i>
+					Dwolla Direct
+				</a>
+			</li>
+			<li 
+>
+				<a href="../sandbox">
+					<i class="icon-hdd"></i>
+					Sandbox
+				</a>
+			</li>
+			
+			<li class="nav-header">
+				Tools
+			</li>
+			<li 
+>
+				<a href="../sandbox/admin">
+					<i class="icon-asterisk"></i>
+					Sandbox Admin
+				</a>
+			</li>
+			<li 
+>
+				<a href="../testing">
+					<i class="icon-road"></i>
+					Reflector Account
+				</a>
+			</li>
+			<li 
+>
+				<a href="../../token">
+					<i class="icon-pencil"></i>
+					Token Generator
+				</a>
+			</li>
+
+			<li>
+				<a href="../../docs/users/account">Looking for API Docs? &raquo;</a>
+			</li>
+
+		</ul>
+	</div>
+</div>
+
+
+	<div class="content">
+		<div class="guide">
+			<h2 id="accepting-payments">Accepting Payments</h2>
+<h4 id="overview">Overview</h4>
+<p>There are two ways to leverage the API to receive payments for your application or e-commerce website. The Off-Site Gateway provides a simple, mobile-friendly checkout experience hosted by Dwolla -- just describe an order or invoice and send the user off to complete their payment. The other methods uses the REST API&#39;s <em>Send</em> flow to collect money from customers.</p>
+<h3 id="1-off-site-gateway-approach">1. Off-Site Gateway Approach</h3>
+<p>The Off-Site Gateway flow allows you to easily collect payments for invoices and online orders.  The flow is as follows:</p>
+<ol>
+<li>You provide Dwolla with checkout information, such as order total, item names, descriptions, and facilitator fees.</li>
+<li>You redirect your customer to Dwolla, where they review order details and are prompted to pay.</li>
+<li>When the form is submitted, we redirect them to a URL of your choice.</li>
+</ol>
+<p>The <a href="../gateway">Off-Site Gateway</a> flow can be implemented in two different ways: <a href="../gateway#submit-directly">Submit Directly</a> and <a href="../gateway#server-to-server">Server to Server</a>, which accomplish the same thing but apply to different situations. The distinction between these two workflows is where the checkout session is initiated: <em>client-side</em> or <em>server-side</em>.  Implementing the Gateway is as easy as:</p>
+<p><div class="codeContainer"></p>
+<pre><code class="lang-ruby">require &#39;dwolla&#39;
+
+# Set API credentials
+Dwolla::api_key = &#39;Your Application Key&#39;
+Dwolla::api_secret = &#39;Your Application Secret&#39;
+
+# Where should Dwolla send the user after they check out or cancel?
+Dwolla::OffsiteGateway.redirect = &#39;http://dwolla.com/payment_redirect&#39;
+
+# Add a product to the purchase order
+Dwolla::OffsiteGateway.add_product(&#39;Macbook Air&#39;, &#39;13&quot; Macbook Air; Model #0001&#39;, 499.99, 1)
+
+# Generate a checkout URL; pass in the recipient&#39;s Dwolla ID
+pp Dwolla::OffsiteGateway.get_checkout_url(&#39;812-734-7288&#39;)
+
+# =&gt; &quot;https://www.dwolla.com/payment/checkout/a66d4ae0-d116-435c-b9ca-22f5bb8c8a53&quot;
+</code></pre>
+<pre><code class="lang-python">from dwolla import checkouts
+
+# Step 1: Create checkout session with items from
+# http://docs.dwolla.com/#checkouts
+
+test = checkouts.create({
+    &#39;orderItems&#39;: {
+        frozenset({
+            &#39;name&#39;: &#39;Prime Rib Sandwich&#39;,
+            &#39;description&#39;: &#39;A somewhat tasty non-vegetarian sandwich&#39;,
+            &#39;quantity&#39;: &#39;1&#39;,
+            &#39;price&#39;: &#39;15.00&#39;
+        })
+    },
+    &#39;destinationId&#39;: &#39;812-740-4294&#39;,
+    &#39;total&#39;: 15.00,
+    &#39;notes&#39;: &#39;blahhh&#39;,
+    &#39;metadata&#39;: frozenset({
+        &#39;key1&#39;: &#39;something&#39;,
+        &#39;key2&#39;: &#39;another thing&#39;
+    })})
+
+# Step 2: Verify the recently created checkout
+
+checkouts.get(test[&#39;CheckoutId&#39;])
+
+# Step 3: Complete the checkout
+
+checkouts.complete(&#39;Order ID here&#39;)
+
+# Step 4: Verify gateway signature
+
+checkouts.verify(&#39;YOUR SIGNATURE HERE&#39;, &#39;YOUR CHECKOUT ID HERE&#39;, 4.50)
+</code></pre>
+<pre><code class="lang-php">&lt;?php
+
+/**
+ * An official Guzzle based wrapper for the Dwolla API.
+ * The following is a quick-start example for the Checkouts class,
+ * which encapsulates methods for all offsite-gateway related endpoints.
+ */
+
+// We need the Checkouts class in order to do anything
+require &#39;../lib/checkouts.php&#39;;
+$Checkouts = new Dwolla\Checkouts();
+
+/**
+ * Optional:
+ *
+ * DwollaPHP has a very rudimentary shopping-cart
+ * function. You can &quot;make&quot; your own cart and the
+ * library will automatically calculate totals for you.
+ *
+ * For the purpose of this example, we will add two
+ * cups of coffee to our cart.
+ */
+$Checkouts-&gt;addToCart(&quot;Coffee 1&quot;, &quot;Mmm, fresh!&quot;, 2.25, 1);
+$Checkouts-&gt;addToCart(&quot;Coffee 2&quot;, &quot;Another coffee!&quot;, 2.25, 1);
+
+/**
+ * Step 1:
+ *
+ * Create a checkout session with the cart you have
+ * just created. The array passed in contains members of the
+ * `purchaseOrder` parameter. The second array marks this as a
+ * `test` in order to...well...test.
+ */
+$test = $Checkouts-&gt;create(
+    [ &#39;destinationId&#39; =&gt; &#39;812-111-7219&#39; ],
+    [ &#39;redirect&#39; =&gt; &#39;http://requestb.in/1fglpx81&#39; ]
+);
+print_r($test);
+
+/**
+ * Step 2:
+ *
+ * Verify the status of the recently created checkout.
+ */
+print_r($Checkouts-&gt;get($test[&#39;CheckoutId&#39;]));
+
+/**
+ * Step 3:
+ *
+ * Complete the checkout.
+ */
+print_r($Checkouts-&gt;complete(&#39;YOUR ORDER ID HERE&#39;));
+
+/**
+ * Step 4:
+ *
+ * Verify gateway signature
+ */
+print_r($Checkouts-&gt;verify(&#39;YOUR SIGNATURE HERE&#39;, &#39;YOUR CHECKOUT ID HERE&#39;, 4.50));
+?&gt;
+</code></pre>
+<p></div></p>
+<p>Customers who don&#39;t already have Dwolla accounts are prompted to create a lightweight <a href="../gateway/guest">Dwolla Direct</a> account. Within seconds, a user can attach a verified bank account and complete a payment. This feature is enabled by default.</p>
+<h4 id="payment-buttons">Payment buttons</h4>
+<script src="https://www.dwolla.com/scripts/button.min.js" class="dwolla_button" type="text/javascript" data-key="IiScE2XEs2bka2ufaUX6/fL1do3ayR1qsSfdqAYy/bRiKjk3G+" data-redircet="http://www.nasa.org/simple" data-label="Simple Payment Button ($1.00)" data-name="Simple Product" data-description="Simple Description" data-amount="1.00" data-guest-checkout="true" data-type="simple">
+</script>
+
+<p><a href="../button">Payment buttons</a> are built on top of the Off-Site Gateway and allow you to implement a checkout experience by copying and pasting a Javascript snippet into your website. These buttons are designed for simple payments, such as donations or tips. For more robust applications like an e-commerce store, consider integrating directly with the Gateway.</p>
+<p><div class="codeContainer"></p>
+<pre><code class="lang-html">&lt;script src=&quot;https://www.dwolla.com/scripts/button.min.js&quot; 
+    class=&quot;dwolla_button&quot; 
+    type=&quot;text/javascript&quot; 
+    data-key=&quot;IiScE2XEs2bka2ufaUX6/fL1do3ayR1qsSfdqAYy/bRiKjk3G+&quot; 
+    data-redirect=&quot;http://www.nasa.org/simple&quot; 
+    data-label=&quot;Simple Payment Button ($1.00)&quot; 
+    data-name=&quot;Simple Product&quot; 
+    data-description=&quot;Simple Description&quot; 
+    data-amount=&quot;1.00&quot; 
+    data-guest-checkout=&quot;true&quot; 
+    data-type=&quot;simple&quot;&gt;
+&lt;/script&gt;
+</code></pre>
+<p></div></p>
+<h4 id="example">Example</h4>
+<p>For an example of an Off-Site Gateway implementation, visit this <a href="https://forms.dwollalabs.com/sample-form">Dwolla Forms sample form</a>, fill in your name, and click <em>Continue</em>.</p>
+<h3 id="2-oauth-send-approach">2. OAuth + Send Approach</h3>
+<p>With this method, you gain authorization from your users to send money to your account then make an API call to create the payment. Compared to accepting money via the Gateway, this method allows you total control over the user experience by keeping them on your website or in your application.  Unlike the Gateway, however, this method does not support Guest transactions.  In other words, this method requires your customers to have existing Dwolla accounts.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6vYXPL15-as" frameborder="0" allowfullscreen></iframe>
+
+<p>Through OAuth, the user grants your Application the ability to act on their behalf. In this case, you ask the user to let you send money on their behalf. Once you have authorization, Dwolla issues a never-expiring, unlimited-use OAuth token, a string which represents the user&#39;s authorization. You then utilize the Send endpoint, which takes the previously generated OAuth token, the user&#39;s PIN, and a payment amount. You will need to ask the user for their PIN.</p>
+<p>From there, you&#39;ll utilize the <a href="../../docs/transactions/send">Send endpoint</a>, which takes the previously generated OAuth token, the user&#39;s PIN, and a payment amount amount.  You will need to ask the user for their PIN.</p>
+<p><div class="codeContainer"></p>
+<pre><code class="lang-ruby">require &#39;dwolla&#39;
+
+# Set a previously generated OAuth token
+Dwolla::token = &quot;Some OAuth token here&quot;
+
+transactionId = Dwolla::Transactions.send({
+    :destinationId =&gt; &#39;812-626-8794&#39;, 
+    :amount =&gt; 1.00, 
+    :pin =&gt; 9999 
+    })
+
+puts transactionId
+
+# =&gt; &quot;5118272&quot;
+</code></pre>
+<p></div></p>
+<p><em>A note about PIN security: as per our <a href="https://www.dwolla.com/tos/dev">Developer TOS</a>, you are allowed to store a user&#39;s PIN for future use or convenience (perhaps for making automated, recurring payments), but you must: a) Receive explicit permission from the user to do so (for instance, with a checkbox), b) encrypt the PIN in storage, and c) give the user a way to delete the PIN from your system/application/storage.</em></p>
+<p>Send allows you to specify a funding source to fund the transaction. If you submit a Send request with an instant funding source like Balance or Credit with insufficient funds, the request will fail. Transactions with non-instant funding sources such as bank accounts will not fail with an insufficient balance because it’s not possible for Dwolla to verify the balance of a bank account at the time of payment initiation.</p>
+<p>For an example implementation of this method, check out this <a href="https://github.com/Dwolla/dwolla-sample-rails-app">sample Ruby on Rails application</a>.</p>
+
+		</div>
+
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dwolladevelopers'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</div>
+</div>
+
+      </div>
+
+      <div class="page-footer">
+        <div class="inner-wrap">
+          <ul>
+            <li><a href="https://www.dwolla.com/about">About</a></li>
+            <li><a href="http://help.dwolla.com/">Support</a></li>
+            <li><a href="https://www.dwolla.com/individuals">Individuals</li>
+            <li><a href="https://www.dwolla.com/businesses">Businesses</a></li>
+            <li><a href="../../../index.html">Developers</a></li>
+            <li><a href="https://www.dwolla.com/fees">Fees</a></li>
+            <li><a href="https://www.dwolla.com/security">Security</a></li>
+            <li><a href="https://press.dwolla.com/">Press</a></li>
+            <li><a href="https://blog.dwolla.com/">Blog</a></li>
+            <li><a href="https://jobs.dwolla.com/">Careers</a></li>
+          </ul>
+          <p>&copy; <script>document.write(new Date().getFullYear())</script> Dwolla Inc. &nbsp;<a href="https://www.dwolla.com/privacy">Privacy</a>
+           <a href="https://www.dwolla.com/legal/tos/">Legal</a>
+           <a href="https://www.dwolla.com/legal/about-our-financial-institution-partner/">Dwolla, Inc. is an agent of its Financial Institution Partner(s)</a>
+           </p>
+        </div>
+      </div>
+    </div>
+
+		<script src="../../../assets/js/common.js"></script>
+
+		
+			
+			
+		<script src="../../../assets/js/dev.js"></script>
+			
+		
+
+    <!-- Chartbeat -->
+		<script type="text/javascript">
+		  var _sf_async_config = { uid: 22842, domain: 'developers.dwolla.com' };
+		  (function() {
+		    function loadChartbeat() {
+		      window._sf_endpt = (new Date()).getTime();
+		      var e = document.createElement('script');
+		      e.setAttribute('language', 'javascript');
+		      e.setAttribute('type', 'text/javascript');
+		      e.setAttribute('src',
+		        (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+		        "js/chartbeat.js");
+		      document.body.appendChild(e);
+		    };
+		    var oldonload = window.onload;
+		    window.onload = (typeof window.onload != 'function') ?
+		      loadChartbeat : function() { oldonload(); loadChartbeat(); };
+		  })();
+		</script>
+
+    <!-- adroll -->
+    <script type="text/javascript">
+    adroll_adv_id = "M574VFZAGJHU7MWRNRQZWP";
+    adroll_pix_id = "3L6XRQ72VVHLJPYJWIZGCE";
+    (function () {
+    var oldonload = window.onload;
+    window.onload = function(){
+       __adroll_loaded=true;
+       var scr = document.createElement("script");
+       var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+       scr.setAttribute('async', 'true');
+       scr.type = "text/javascript";
+       scr.src = host + "/j/roundtrip.js";
+       ((document.getElementsByTagName('head') || [null])[0] ||
+        document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+       if(oldonload){oldonload()}};
+    }());
+    </script>
+
+    <!-- google analytics -->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-30404064-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>
