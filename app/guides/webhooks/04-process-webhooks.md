@@ -116,7 +116,7 @@ No example for this language yet.
 
 Now that we have the `transfer`, we can take a look at the `_links` object and retrieve the `customers` that need to be notified. From here, you can make a call to `customers/{id}` to retrieve their e-mail addresses (or to your own database) so that you can send your notification message.
 
-Hooray!  You've learned the basics of webhooks.
+That's it! You’ve learned the basics of webhooks. 
 
 <nav class="pager-nav">
     <a href="./03-validating-webhooks.html">Back: Validating webhooks</a>

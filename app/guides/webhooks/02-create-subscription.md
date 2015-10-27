@@ -14,7 +14,7 @@ Each application can have multiple subscriptions associated to it. While one sub
 
 To make the following request, we need to use the `access_token` we just previously obtained. Security considerations:
 
-Your webhook endpoint should only be accessible over SSL (https)
+Your webhook endpoint should only be accessible over SSL (https).
 Your subscription should include a random, secret key, only known by your application. This secret key should be securely stored and used later when validating the authenticity of the webhook request from Dwolla.
  
 
@@ -41,7 +41,7 @@ No example for this language yet.
 No example for this language yet.
 ```
 
-You can retrieve your newly created subscription by its ID
+You can retrieve your newly created subscription by its ID:
 
 ```ruby
 require 'dwolla_swagger'

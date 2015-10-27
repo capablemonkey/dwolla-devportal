@@ -75,7 +75,7 @@ No example for this language yet.
 ```
 
 #### Step 2: Check for duplicate events
-The `topic` field of an event holds [a description](http://docsv2.dwolla.com/#events) of the event (think of it as you would the subject of an e-mail message). The `webhook` itself contains _links the the resource impacted by the event that can be used to retrieve more information about the webhook you have received. 
+The `topic` field of an event holds [a description](http://docsv2.dwolla.com/#events) of the event, which is similar the subject of an e-mail message.  The `webhook` itself contains _links the the resource impacted by the event that can be used to retrieve more information about the webhook you have received. 
 
 **NOTE**: The `event` must be retrieved with a `client_credentials` granted access_token.
 
@@ -102,7 +102,7 @@ No example for this language yet.
 No example for this language yet.
 ```
 
-Multiple webhooks are fired for `Transfer` events, that is, two `transfer_created` events with different URLs will be fired, one for each customer. To avoid doing any business logic twice, you would have to check if you have already received a webhook relating to the `Transfer` resource responsible for the event.  To do this, keep a queue of events in a database and check to see if an `Event` has the same `self` resource location in `_links` as another event. If not, process the logic for that event. An example could look like this.
+Multiple webhooks are fired for `Transfer` events; that is, two `transfer_created` events with different URLs will be fired, one for each customer. To avoid doing any business logic twice, check to see if you have already received a webhook relating to the `Transfer` resource responsible for the event. To do this, keep a queue of events in a database and check to see if an `Event` has the same `self` resource location in `_links` as another event. If not, process the logic for that event. An example could look like this.
 
 ```ruby
 check_db = ActiveRecord::Base.connection.execute("SELECT * FROM EVENTS WHERE SELF = #{event[:_links][:self].to_s}")

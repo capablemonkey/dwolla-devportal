@@ -46,5 +46,5 @@ Each webhook sent by the Dwolla API contains an `Event` with `_links` to: the as
 
 <nav class="pager-nav">
     <a href="" style="display:none;"></a>
-    <a href="01-obtain-authorization.html">Next step: Create a webhook subscription</a>
+    <a href="01-obtain-authorization.html">Next step: Obtain authorization</a>
 </nav>
