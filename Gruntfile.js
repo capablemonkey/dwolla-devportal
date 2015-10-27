@@ -255,6 +255,22 @@ module.exports = function (grunt) {
           src: '**/*.css',
           dest: '.tmp/css'
         }]
+      },
+      stageOldDevportal: {
+        files: [{
+          expand: true,
+          cwd: 'old-devportal/',
+          src: '**',
+          dest: '.jekyll/'
+        }]
+      },
+      distOldDevportal: {
+        files: [{
+          expand: true,
+          cwd: 'old-devportal/',
+          src: '**',
+          dest: 'dist/'
+        }]
       }
     },
     filerev: {
@@ -314,6 +330,7 @@ module.exports = function (grunt) {
       server: [
         'sass',
         'copy:stageCss',
+
         'jekyll:server'
       ],
       dist: [
@@ -334,6 +351,7 @@ module.exports = function (grunt) {
       'concurrent:server',
       'autoprefixer:dist',
       'browserSync:server',
+      'copy:stageOldDevportal',
       'watch'
     ]);
   });
@@ -374,7 +392,8 @@ module.exports = function (grunt) {
     'svgmin',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'copy:distOldDevportal'
     ]);
 
   grunt.registerTask('deploy', [
