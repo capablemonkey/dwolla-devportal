@@ -5,7 +5,7 @@
 //   css: css
 //   sass: _scss
 //   javascript: js
-//   images: img
+//   images: images
 //   fonts: fonts
 
 module.exports = function (grunt) {
@@ -56,7 +56,7 @@ module.exports = function (grunt) {
             '.tmp/css/**/*.css',
             '{.tmp,<%= yeoman.app %>}/js/**/*.js',
             '{<%= yeoman.app %>}/_bower_components/**/*.js',
-            '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
+            '<%= yeoman.app %>/images/**/*.{gif,jpg,jpeg,png,svg,webp}'
           ]
         },
         options: {
@@ -84,7 +84,7 @@ module.exports = function (grunt) {
             '.tmp/css/**/*.css',
             '{.tmp,<%= yeoman.app %>}/js/**/*.js',
             '{<%= yeoman.app %>}/_bower_components/**/*.js',
-            '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
+            '<%= yeoman.app %>/images/**/*.{gif,jpg,jpeg,png,svg,webp}'
           ]
         },
         options: {
@@ -168,7 +168,7 @@ module.exports = function (grunt) {
     },
     usemin: {
       options: {
-        assetsDirs: ['<%= yeoman.dist %>', '<%= yeoman.dist %>/img']
+        assetsDirs: ['<%= yeoman.dist %>', '<%= yeoman.dist %>/images']
       },
       html: ['<%= yeoman.dist %>/**/*.html'],
       css: ['<%= yeoman.dist %>/css/**/*.css']
@@ -234,7 +234,7 @@ module.exports = function (grunt) {
             // Jekyll processes and moves HTML and text files.
             // Usemin moves CSS and javascript inside of Usemin blocks.
             // Copy moves asset files and directories.
-            'img/**/*',
+            'images/**/*',
             'fonts/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
             '!**/_*{,/**}',
@@ -282,7 +282,7 @@ module.exports = function (grunt) {
           src: [
             '<%= yeoman.dist %>/js/**/*.js',
             '<%= yeoman.dist %>/css/**/*.css',
-            '<%= yeoman.dist %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}',
+            '<%= yeoman.dist %>/images/**/*.{gif,jpg,jpeg,png,svg,webp}',
             '<%= yeoman.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}'
           ]
         }]
