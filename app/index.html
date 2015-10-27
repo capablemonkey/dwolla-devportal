@@ -1,12 +1,98 @@
 ---
 layout: page
 title: Developers Home
+bodyClass: home
 description: Simple and powerful API for ACH transfers with no per transaction fees. Get up and running in fifteen minutes to start sending and receiving funds.
 ---
+<div class="cnt-one-col">
+    <section class="cnt-two-col__nav js-two-col-nav">
+        {% include side-nav.html %}
+    </section>
+    <section class="cnt-one-col__banner banner">
+        <div class="page-wrap">
+            <h1 class="icon-home-api icon">Simple and powerful API for ACH transfers with no per transaction fees</h1>
+            <a href="developer_two-col-guides.html" class="btn primary large">View all guides</a>
+        </div>
+        <div class="banner__background"></div>
+    </section>
+    <section class="hover-box cnt-one-col__hover-box page-wrap">
+        <h2>Try it out</h2>
+        <p>Test any endpoint with a simple CURL request.</p>
+        <div class="code-snippet js-code-snippet">
+            <button class="btn alternative">copy</button>
+            <div class="code-snippet__selector">
+                <nav>
+                    <button class="active">json</button>
+                    <button>ruby</button>
+                    <button>php</button>
+                    <button>python</button>
+                    <button>node.js</button>
+                    <button>java</button>
+                </nav>
+            </div>
+            <div class="code-snippet__cnt">
+                <pre><code class="language-javascript">// Get profile directory.
+var file = Components.classes["@mozilla.org/file/directory_service;1"].
+       getService(Components.interfaces.nsIProperties).
+       get("ProfD", Components.interfaces.nsIFile);
+// Or using Services.jsm and Ci = Components.interfaces
+var file = Services.dirsvc.get("ProfD", Ci.nsIFile);
 
-<div class="page-wrap">
-  <h1>Simple and powerful API for ACH transfers with no per transaction fees</h1>
+// Append the file name.
+file.append("data.txt");
 
-  <p>Get up and running in fifteen minutes to start sending and receiving ACH bank transfers in your application.</p>
+// Note: "file" is an object that implements nsIFile. If you want the
+// file system path, use file.path</code></pre>
+            </div>
+        </div>
+        <p><em>Paste this code to your command line and hit return to see the response</em></p>
+        <section class="split-options">
+            <div>
+                <h3 class="icon-home-sandbox">Set up sandbox</h3>
+                <p>uat.dwolla.com</p>
+                <a href="https://uat.dwolla.com" class="btn secondary large">Test our service</a>
+            </div>
+            <div>
+                <h3 class="icon-home-launch">Launch in production</h3>
+                <p>www.dwolla.com</p>
+                <a href="https://www.dwolla.com" class="btn secondary large">Get API key</a>
+            </div>
+        </section>
+    </section>
+    <div class="page-wrap">
+        <section class="reach-out">
+            <section class="reach-out__link">
+                <h3>Get answers</h3>
+                <a href="" class="icon-developer-community">Developer community</a>
+            </section>
+            <section class="reach-out__social">
+                <h3>Stay in touch</h3>
+                <a href="" class="icon-social-twitter"></a>
+                <a href="" class="icon-social-facebook"></a>
+                <a href="" class="icon-social-github"></a>
+            </section>
+            <section>
+                <h3>Get API updates</h3>
+                <ul class="fields-list js-infield-label">
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" />
+                    </li>
+                    <li>
+                        <input type="submit" class="btn secondary" value="Subscribe to emails" />
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </div>
 </div>
-
+<!-- there is also a icon of icon-status-down -->
+<section class="status">
+    <h5>Status</h5>
+    <span class="icon-status-operational">
+        Production: <a href="">Operational</a>
+    </span>
+    <span class="icon-status-partially-degraded">
+        Sandbox: <a href="">Degraded performance</a>
+    </span>
+</section>
