@@ -34,16 +34,16 @@ Accept: application/vnd.dwolla.v1.hal+json
 Authorization: Bearer 0Sn0W6kzNicvoWhDbQcVSKLRUpGjIdlPSEYyrHqrDDoRnQwE7Q
 ```
 ```ruby
-# No example for this language yet.
+# No current SDK coverage for this method. Coming soon.
 ```
 ```javascript
-// No example for this language yet.
+// No current SDK coverage for this method. Coming soon.
 ```
 ```python
-# No example for this language yet.
+# No current SDK coverage for this method. Coming soon.
 ```
 ```php
-// No example for this language yet.
+// No current SDK coverage for this method. Coming soon.
 ```
 
 Response:
@@ -58,7 +58,7 @@ Response:
 }
 ```
 ```ruby
-# No example for this language yet.
+# No SDK coverage
 ```
 ```javascript
 // No example for this language yet.
@@ -78,21 +78,27 @@ Accept: application/vnd.dwolla.v1.hal+json
 Authorization: Bearer 0Sn0W6kzNicvoWhDbQcVSKLRUpGjIdlPSEYyrHqrDDoRnQwE7Q
 ```
 ```ruby
-# No example for this language yet.
+my_account = DwollaSwagger::AccountsApi.id('https://api-uat.dwolla.com/accounts/0270baed-dda5-46d0-b074-e7f3d478896f')
 ```
 ```javascript
 // No example for this language yet.
 ```
 ```python
-# No example for this language yet.
+accounts_api = dwollaswagger.AccountsApi(client)
+my_account = accounts_api.id('https://api-uat.dwolla.com/accounts/0270baed-dda5-46d0-b074-e7f3d478896f')
 ```
 ```php
-// No example for this language yet.
+<?php
+$accountsApi = new SwaggerClient\AccountsApi($apiClient);
+$myAccount = $accountsApi->id('https://api-uat.dwolla.com/accounts/0270baed-dda5-46d0-b074-e7f3d478896f')
+?>
 ```
 
-Response:
+Response (view schema in 'raw'): 
 
 ```raw
+Schema
+
 {
   "_links": {
     "self": {
@@ -116,19 +122,24 @@ Response:
 }
 ```
 ```ruby
-# No example for this language yet.
+# Access desired information in response object fields
+p my_account.name # => "President Appleseed"
 ```
 ```javascript
 // No example for this language yet.
 ```
 ```python
-# No example for this language yet.
+# Access desired information in response object fields
+print(my_account.name) # => "President Appleseed"
 ```
 ```php
-// No example for this language yet.
+<?php
+# Access desired information in response object fields
+print($myAccount->name) # => "President Appleseed"
+?>
 ```
 
-Then, follow the `_links.funding-sources` link:
+Then, follow the `_links.funding-sources` link, or if you're using an SDK, just re-use `_links.account` (the location of the account resource):
 
 ```raw
 GET https://api-uat.dwolla.com/accounts/4BB512E4-AD4D-4F7E-BFD0-A232007F21A1/funding-sources
@@ -136,19 +147,23 @@ Accept: application/vnd.dwolla.v1.hal+json
 Authorization: Bearer 0Sn0W6kzNicvoWhDbQcVSKLRUpGjIdlPSEYyrHqrDDoRnQwE7Q
 ```
 ```ruby
-# No example for this language yet.
+funding_sources = DwollaSwagger::FundingsourcesApi.get_account_funding_sources('https://api-uat.dwolla.com/accounts/0270baed-dda5-46d0-b074-e7f3d478896f')
 ```
 ```javascript
 // No example for this language yet.
 ```
 ```python
-# No example for this language yet.
+funding_api = dwollaswagger.FundingsourcesApi(client)
+funding_sources = funding_api.id('https://api-uat.dwolla.com/accounts/0270baed-dda5-46d0-b074-e7f3d478896f')
 ```
 ```php
-// No example for this language yet.
+<?php
+$fundingApi = new SwaggerClient\FundingsourcesApi($apiClient);
+$fundingSources = $fundingApi->id('https://api-uat.dwolla.com/accounts/0270baed-dda5-46d0-b074-e7f3d478896f')
+?>
 ```
 
-Response: 
+Response (view schema in 'raw'): 
 
 ```raw
 {
@@ -197,16 +212,21 @@ Response:
 }
 ```
 ```ruby
-# No example for this language yet.
+# Access desired information in response object fields
+p funding_sources._embedded # => Ruby Hash of _embedded contents in schema
 ```
 ```javascript
 // No example for this language yet.
 ```
 ```python
-# No example for this language yet.
+# Access desired information in response object fields
+print(funding_sources._embedded) # => Python Dict of _embedded contents in schema
 ```
 ```php
-// No example for this language yet.
+<?php
+# Access desired information in response object fields
+print($fundingSources->_embedded) # => PHP associative array of _embedded contents in schema
+?>
 ```
 
 <nav class="pager-nav">
