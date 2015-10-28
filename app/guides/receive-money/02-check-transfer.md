@@ -75,5 +75,5 @@ That’s it! You’ve successfully received money from a user. Please continue t
 
 <nav class="pager-nav">
     <a href="./">Back: Overview</a>
-    <a href="/guides/webhooks">Next: Webhooks</a>
+    <a href="/guides/webhooks">Next guide: Webhooks</a>
 </nav>
