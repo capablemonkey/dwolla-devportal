@@ -13,39 +13,7 @@ description: Use this guide to start sending payments from your application by u
 
 Now that you’ve got accounts set up in the Sandbox environment, you can enable sandbox mode if you’re using one of our SDKs.
 
-## Dwolla Connect
-
-```raw
-not available
-```
-```javascript
-// Instantiate a Dwolla API client
-var Dwolla = require('dwolla-node')(['{CLIENT_ID}', '{CLIENT_SECRET}']);
-
-// Use the Sandbox API environment, instead of production
-Dwolla.sandbox = true;
-```
-```ruby
-Dwolla::sandbox = true
-```
-```python
-# Import everything from the dwolla package
-from dwolla import *
-
-# Configure the library 
-constants.sandbox=False
-```
-```php
-<?php
-# Do this for every Dwolla\`Endpoint`() class 
-$Account = new Dwolla\Account();
-
-$Account->settings->sandbox = true;
-```
-
-## Dwolla White Label
-
-To use the sandbox environment with our white-label SDKs, just provide `https://api-uat.dwolla.com/` as the hostname.
+To use the sandbox environment with our white label SDKs, just provide `https://api-uat.dwolla.com/` as the hostname.
 
 ```raw
 not available
