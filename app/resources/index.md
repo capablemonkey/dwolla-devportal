@@ -14,7 +14,7 @@ description: "In-depth articles on Dwolla features and integration patterns."
 <h1>Articles</h1>
 <ul class="article-list">
     <li>
-        <h3><a>Account types</a></h3>
+        <h3><a href="/resources/account-types.html">Account types</a></h3>
         <p>The different types of Dwolla accounts and their respective setup workflows.</p>
     </li>
     <li>
@@ -26,7 +26,7 @@ description: "In-depth articles on Dwolla features and integration patterns."
         <p>Account verification states and possible reasons why an account could be placed in a given state.</p>
     </li>
     <li>
-        <h3><a>Transaction workflow</a></h3>
-        <p>A walkthrough of the ACH transfer process, including transactin states and processing times.</p>
+        <h3><a href="/resources/transfer-workflow.html">Transfer workflow</a></h3>
+        <p>A walkthrough of the ACH transfer process, including transfer statuses and processing times.</p>
     </li>
 </ul>
