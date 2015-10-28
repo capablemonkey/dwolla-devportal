@@ -11,11 +11,13 @@ description: Use this guide to start sending payments from your application by u
 
 # Create a child account to create your application
 
-Now that you have a master Sandbox account, you can create a child account which will create your application.
+Now that you’re logged into the Sandbox Admin tool, you can create a child account. This child account typically represents your main account in Dwolla’s production environment which you’ll use to send funds from, collect funds, and if applicable, create White Label customers. You’ll also use this account to create your application.
 
-1. Go to https://sandbox.uat.dwolla.com/. You will be prompted with to login with your master account.
-2. Once logged into the Sandbox admin tool, you can create child accounts by uploading a .csv file with test data. Download the sample file to get started and make a .csv with a few accounts and upload it to the site. 
-3. Once these child accounts are created, you can use the email addresses and passwords uploaded via the .csv to login to the sandbox.
+You can create child accounts by uploading a .csv file with test data. Download the sample file to get started and make a .csv with one account and upload it.
+
+![Screenshot of Sandbox Admin](/images/sandbox-guide-admin.png "Screenshot of Sandbox Admin")
+
+Once the child account is created, you can use the email address and password you specified in the .csv to login at uat.dwolla.com.  Any transactions associated with the child account can be manipulated in the Sandbox Admin Tool.
 
 <nav class="pager-nav">
     <a href="./">Back: Create a master Sandbox account</a>
