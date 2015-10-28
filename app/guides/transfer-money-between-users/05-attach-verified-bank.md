@@ -100,7 +100,7 @@ Location: https://api-uat.dwolla.com/funding-sources/e52006c3-7560-4ff1-99d5-b0f
 // No example for this language yet.
 ```
 
-In production, you’d have to wait until the micro-deposits have posted to the bank account, but for this guide, we can use the following values, which always work in the sandbox environment:
+In the Dwolla production environment, you’d have to wait until the micro-deposits actually post to the bank account, but for this guide we can use the following values, which always work in the Sandbox environment:
 
 `amount1`: `0.03`
 
