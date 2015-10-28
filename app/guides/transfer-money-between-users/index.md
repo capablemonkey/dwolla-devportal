@@ -1,33 +1,42 @@
 ---
 layout: twoColumn
-title:  "Transfer money between users"
+section: guides
+type: guide
+guide: 
+    name: transfer-money-between-users
+    step: overview
+title:  Transfer money between customers in your application
+description: Transfer money between customers within your application by utilizing our open API with no per transaction fees.
 ---
 
-# Transfer money between users
+# Overview: Transfer money between your users
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam enim mauris, sagittis sit amet tincidunt quis, cursus id justo. Etiam malesuada nunc nisi, sed pretium diam finibus id. Vivamus auctor ligula at euismod varius. Ut justo neque, pharetra ut lorem quis, accumsan cursus est. Nulla facilisi. Duis molestie laoreet cursus. Proin commodo ac felis scelerisque venenatis. Nunc eget dui venenatis, egestas tellus non, blandit magna. Donec vel magna justo.
+The most common scenario for this guide is to facilitate marketplace payments between your customers--to allow your buyers to send money to your sellers. 
 
-In hac habitasse platea dictumst. Integer vehicula felis a varius fermentum. In erat augue, convallis at augue at, posuere faucibus libero. Integer id varius lectus. Aliquam malesuada ipsum at justo commodo, eu egestas augue vulputate. Duis convallis pulvinar sodales. Sed accumsan eget risus a hendrerit. Vivamus sollicitudin dictum aliquam. Aliquam sed pretium leo. Aliquam dapibus lorem nec lacus iaculis venenatis. Aliquam dapibus, lacus nec porta tincidunt, dui lorem tincidunt lorem, nec varius est erat sagittis dolor. Curabitur eu purus eget est bibendum consequat. Mauris nec felis tempor erat molestie pellentesque quis eget velit. Phasellus a leo dui.
+In this guide, we’ll cover the key points of transferring money:
 
-```
-{
-    "_links": {
-        "destination": {
-            "href": "https://api.dwolla.com/customers/07D59716-EF22-4FE6-98E8-F3190233DFB8"
-        },
-        "source": {
-            "href": "https://api.dwolla.com/funding-sources/707177c3-bf15-4e7e-b37c-55c3898d9bf4"
-        }
-    },
-    "amount": {
-        "currency": "USD",
-        "value": "1.00"
-    },
-    "metadata": {
-        "foo": "bar",
-        "baz": "boo"
-    }
-}
-```
+ - Create a verified customer who will receive the transfer
+ - Create an unverified customer who will send the transfer
+ - Associate a verified funding source (bank or credit union account) with the  sender
+ - Associate an unverified funding source (bank or credit union account) with  recipient
+ - Transfer funds from the sender’s funding source to the recipient’s funding  source
 
-Integer egestas, quam sed elementum dictum, nulla ipsum lobortis eros, in lacinia nisl lectus venenatis elit. Nunc tincidunt vehicula urna at sollicitudin. Nam molestie semper nisi vitae varius. In neque urna, vestibulum lacinia semper ut, dictum ac nisi. Sed egestas eleifend lacinia. Maecenas dapibus est ac dolor gravida malesuada et nec leo. Aenean porta arcu sed nisi maximus lobortis. Nullam quis viverra metus, nec egestas odio. Mauris id ante iaculis, scelerisque diam sit amet, blandit erat. Sed nec interdum augue. Ut sed euismod turpis. Donec auctor neque sit amet est placerat blandit. Vivamus consectetur augue eu massa tincidunt, in rutrum mauris feugiat. Duis placerat sapien tortor, non dictum eros feugiat quis. Sed porta purus mi, eu egestas justo lacinia nec. Nulla aliquam libero nec arcu eleifend efficitur varius eu nunc.
+
+### Get set up with sandbox accounts
+
+Before you begin, be sure your [Sandbox accounts](/guides/sandbox-setup) are already set up. 
+
+### Verified and unverified customers
+Here are some rules to keep in mind:
+
+1. With a transfer of money, at least one party must be identity-verified, either the sender or the receiver. In a marketplace, it’s best to have the seller go through the identity verification process to allow the buyer to complete a transaction with minimal friction. However, it’s your decision about which party you require identity verification from, either the sender or the receiver.
+2. The sender must have a verified funding source. Unverified funding sources can only receive money, not send.
+
+In this guide, we’ll create two customers: one to represent a seller and one to represent a buyer. In this scenario, the seller, Jane Merchant, is a verified customer with an unverified funding source. The buyer, Joe Consumer, is an unverified customer with a verified funding source.
+
+Please note that this is a suggested approach, but that there are other ways you can implement your marketplace transfers. For instance, both the sender and the receiver (or buyer and seller) could be verified customers, and both could have verified funding sources. Or, you could have the sender undergo identity verification but not the recipient.  
+
+<nav class="pager-nav">
+<a href="" style="display:none;"></a>
+<a href="01-access-token.html">Next step: Generate an access token</a>
+</nav>
