@@ -45,16 +45,16 @@ Content-Type: application/json
 }
 ```
 ```ruby
-# No example for this language yet.
+# No V2 SDK support for handling OAuth.
 ```
 ```javascript
-// No example for this language yet.
+// No V2 SDK support for handling OAuth.
 ```
 ```python
-# No example for this language yet.
+# No V2 SDK support for handling OAuth.
 ```
 ```php
-// No example for this language yet.
+// No V2 SDK support for handling OAuth.
 ```
 
 Response:
@@ -76,16 +76,16 @@ Response:
 }
 ```
 ```ruby
-# No example for this language yet.
+# No V2 SDK support for handling OAuth.
 ```
 ```javascript
-// No example for this language yet.
+// No V2 SDK support for handling OAuth.
 ```
 ```python
-# No example for this language yet.
+# No V2 SDK support for handling OAuth.
 ```
 ```php
-// No example for this language yet.
+// No V2 SDK support for handling OAuth.
 ```
 
 You won’t need to use the access token for the Dwolla Direct user, all we need from the above response is their account URL.

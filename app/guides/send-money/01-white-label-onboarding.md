@@ -32,40 +32,108 @@ Authorization: Bearer 0Sn0W6kzNicvoWhDbQcVSKLRUpGjIdlPSEYyrHqrDDoRnQwE7Q
   "email": "johndoe@email.com",
   "ipAddress": "127.0.0.1"
 }
-```
-```ruby
-# No example for this language yet.
-```
-```javascript
-// No example for this language yet.
-```
-```python
-# No example for this language yet.
-```
-```php
-// No example for this language yet.
-```
 
-Response:
-
-```raw
 HTTP/1.1 201 Created
-Location: https://api-uat.dwolla.com/customers/C7F300C0-F1EF-4151-9BBE-005005AC3747
+Location: https://api-uat.dwolla.com/customers/AB443D36-3757-44C1-A1B4-29727FB3111C
 ```
 ```ruby
-# No example for this language yet.
+new_customer = DwollaSwagger::CustomersApi.create({:body => {
+  :firstName => 'Bob',
+  :lastName => 'Merchant',
+  :email => 'bmerchant@nomail.net',
+  :type => 'personal',
+  :address => '99-99 33rd St',
+  :city => 'Some City',
+  :state => 'NY',
+  :postalCode => '11101',
+  :dateOfBirth => '1970-01-01',
+
+  # For the first attempt, only 
+  # the last 4 digits of SSN required
+
+  # If the entire SSN is provided, 
+  # it will still be accepted
+
+  :ssn => '1234'}})
+
+p new_customer # => https://api-uat.dwolla.com/customers/AB443D36-3757-44C1-A1B4-29727FB3111C
 ```
 ```javascript
 // No example for this language yet.
 ```
 ```python
-# No example for this language yet.
+customers_api = dwollaswagger.CustomersApi(client)
+
+new_customer = customers_api.create(body = {'firstName': 'Bob', 
+                                            'lastName': 'Merchant',
+                                            'email': 'bmerchant@nomail.net',
+                                            'type': 'personal',
+                                            'address': '99-99 33rd St',
+                                            'city': 'Some City', 
+                                            'state': 'NY',
+                                            'postalCode': '11101',
+                                            'dateOfBirth': '1970-01-01', 
+
+                                            # For the first attempt, only 
+                                            # the last 4 digits of SSN required
+
+                                            # If the entire SSN is provided, 
+                                            # it will still be accepted
+                                            'ssn': '1234'})
+
+print(new_customer) # => https://api-uat.dwolla.com/customers/AB443D36-3757-44C1-A1B4-29727FB3111C
 ```
 ```php
-// No example for this language yet.
+<?php
+$customersApi = new DwollaSwagger\CustomersApi($apiClient);
+
+$new_customer = $customersApi->create([
+  'firstName' => 'Bob',
+  'lastName' => 'Merchant',
+  'email' => 'bmerchant@nomail.net',
+  'type' => 'personal',
+  'address' => '99-99 33rd St',
+  'city' => 'Some City',
+  'state' => 'NY',
+  'postalCode' => '11101',
+  'dateOfBirth' => '1970-01-01',
+
+  # For the first attempt, only 
+  # the last 4 digits of SSN required
+
+  # If the entire SSN is provided, 
+  # it will still be accepted
+  'ssn' => '1234'
+]);
+
+print($new_customer); # => https://api-uat.dwolla.com/customers/AB443D36-3757-44C1-A1B4-29727FB3111C
+?>
+```
+```java
+CustomersApi cApi = new CustomersApi(a);
+
+CreateCustomer newCustomerData = new CreateCustomer();
+
+myNewCust.setFirstName("Bob");
+myNewCust.setLastName("Merchant");
+myNewCust.setEmail("bmerchant@nomail.com");
+myNewCust.setType("personal");
+myNewCust.setAddress("99-99 33rd St");
+myNewCust.setCity("Some City");
+myNewCust.setState("NY");
+myNewCust.setPostalCode("11101");
+myNewCust.setDateOfBirth("1970-01-01");
+
+try {
+    Unit$ r = cApi.create(myNewCust);
+    System.out.println(r.getLocationHeader()); // => https://api-uat.dwolla.com/customers/AB443D36-3757-44C1-A1B4-29727FB3111C
+}
+catch (Exception e) {
+    System.out.println("Something's up!");
+}
 ```
 
-When the customer is created, you’ll receive the customer URL in the location header.
+When the customer is created, you’ll receive the customer URL in the location header. If using an SDK, the location will be returned to you upon calling `create()`.
 
 *Important*: Provide the IP address of the end-user accessing your application as the ipAddress parameter. This enhances Dwolla’s  ability to detect fraud. Sending random, hardcoded, or incorrect information in the ipAddress field will cause delays or throttling of requests.
 
@@ -86,37 +154,46 @@ Authorization: Bearer 0Sn0W6kzNicvoWhDbQcVSKLRUpGjIdlPSEYyrHqrDDoRnQwE7Q
     "type": "checking",
     "name": "John Doe - Checking"
 }
-```
-```ruby
-# No example for this language yet.
-```
-```javascript
-// No example for this language yet.
-```
-```python
-# No example for this language yet.
-```
-```php
-// No example for this language yet.
-```
 
-Response:
-
-```raw
 HTTP/1.1 201 Created
 Location: https://api-uat.dwolla.com/funding-sources/375c6781-2a17-476c-84f7-db7d2f6ffb31
 ```
 ```ruby
-# No example for this language yet.
+new_fs = DwollaSwagger::FundingsourcesApi.create_customer_funding_source \ 
+('https://api-uat.dwolla.com/customers/AB443D36-3757-44C1-A1B4-29727FB3111C', {:body => {
+                                                    :routingNumber => '222222226',
+                                                    :accountNumber => '123456789',
+                                                    :type => 'checking',
+                                                    :name => 'John Doe - Checking'
+                                                 }})
+
+p new_fs # => https://api-uat.dwolla.com/funding-sources/375c6781-2a17-476c-84f7-db7d2f6ffb31
 ```
 ```javascript
 // No example for this language yet.
 ```
 ```python
-# No example for this language yet.
+funding_api = dwollaswagger.FundingsourcesApi(client)
+
+new_fs = funding_api.create_customer_funding_source('https://api-uat.dwolla.com/customers/AB443D36-3757-44C1-A1B4-29727FB3111C', body = {"routingNumber": "222222226",
+        "accountNumber": "123456789",
+        "type": "checking",
+        "name": "John Doe - Checking"})
+
+p new_fs # => https://api-uat.dwolla.com/funding-sources/375c6781-2a17-476c-84f7-db7d2f6ffb31
 ```
 ```php
-// No example for this language yet.
+<?php
+$fundingApi = new DwollaSwagger\FundingsourcesApi($apiClient);
+
+$new_fs = $fundingApi->createCustomerFundingSource(
+       ["routingNumber": "222222226",
+        "accountNumber": "123456789",
+        "type": "checking",
+        "name": "John Doe - Checking"], "https://api-uat.dwolla.com/customers/AB443D36-3757-44C1-A1B4-29727FB3111C");
+
+print($new_fs); # => https://api-uat.dwolla.com/funding-sources/375c6781-2a17-476c-84f7-db7d2f6ffb31
+?>
 ```
 
 The created funding source URL is returned in the location header.
