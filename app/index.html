@@ -18,33 +18,9 @@ description: Simple and powerful API for ACH transfers with no per transaction f
     <section class="hover-box cnt-one-col__hover-box page-wrap">
         <h2>Try it out</h2>
         <p>Test any endpoint with a simple CURL request.</p>
-        <div class="code-snippet js-code-snippet">
-            <button class="btn alternative">copy</button>
-            <div class="code-snippet__selector">
-                <nav>
-                    <button class="active">curl</button>
-                    <button>ruby</button>
-                    <button>php</button>
-                    <button>python</button>
-                    <button>node.js</button>
-                    <button>java</button>
-                </nav>
-            </div>
-            <div class="code-snippet__cnt">
-                <pre><code class="language-javascript">// Get profile directory.
-var file = Components.classes["@mozilla.org/file/directory_service;1"].
-       getService(Components.interfaces.nsIProperties).
-       get("ProfD", Components.interfaces.nsIFile);
-// Or using Services.jsm and Ci = Components.interfaces
-var file = Services.dirsvc.get("ProfD", Ci.nsIFile);
 
-// Append the file name.
-file.append("data.txt");
-
-// Note: "file" is an object that implements nsIFile. If you want the
-// file system path, use file.path</code></pre>
-            </div>
-        </div>
+        {% include home-page-code-snippet.html %}
+    
         <p><em>Paste this code to your command line and hit return to see the response</em></p>
         <section class="split-options">
             <div>
