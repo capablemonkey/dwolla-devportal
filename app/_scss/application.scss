@@ -1,63 +1,12 @@
-@import "style-tiles/sass/developer";
+@import "../_bower_components/style-tiles/sass/developer";
 @import "base";
 
-.navigation {
+img {
   width: 100%;
-  height: 100px;
-  background-color: lightgray;
+}
 
-  .wrap {
-    width: 1024px;
-    position: absolute;
-    z-index: 5;
-    top: 100px;
-    left: 50%;
-    margin-left: -512px;
+.code-snippet {
+  code {
+    color: #f8f8f2;
   }
-
-  .super-sections {
-    padding-top: 40px;
-    transition: height 0.8s;
-    float: right;
-
-    a {
-      margin-right: 100px;
-      text-decoration: none;
-      opacity: 0.5;
-      font-weight: 600;
-    }
-
-    a:last-child {
-      margin: 0;
-    }
-
-    a.btn {
-      opacity: 1;
-    }
-}
-}
-
-.content {
-}
-
-.reference-list-item {
-  margin-bottom: 20px;
-
-  a.item-title {
-    font-weight: 600;
-  }
-
-  p.item-description {
-
-  }
-}
-
-.page {
-  padding-left: 200px;
-  padding-right: 200px;
-}
-
-iframe#iframe_slate {
-  width: 100%;
-  height: 600px;
 }

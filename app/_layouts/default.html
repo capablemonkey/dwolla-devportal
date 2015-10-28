@@ -3,14 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ page.title }} | Dwolla Developers</title>
+    <title>{{ page.title }} | Dwolla API</title>
     <meta name="description" content="{{ page.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- build:css({app,.tmp}) /css/main.css -->
     <link rel="stylesheet" href="/_bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="/css/syntax.css">
-    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/application.css">
     <link rel="stylesheet" href="/_bower_components/icons/dist/base/icons.data.svg.css">
     <link rel="stylesheet" href="/_bower_components/icons/dist/developer/icons.data.svg.css">
@@ -26,7 +25,7 @@
 
 
   </head>
-  <body>
+  <body {% if page.bodyClass %}class="{{ page.bodyClass }}"{% endif %}>
     <!--[if lt IE 8]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -38,9 +37,36 @@
     <div class="content">
         {{ content }}
     </div>
+
+    <section class="big-disclaimer">
+        <div class="page-wrap">
+            <h5>Financial institutions play an important role in the Dwolla network.</h5>
+            <p>Dwolla, Inc. is an agent of Veridian Credit Union and all funds associated with your account in the Dwolla network are held in a pooled account at Veridian Credit Union. These funds are not eligible for individual insurance, and may not be eligible for share insurance by the National Credit Union Share Insurance Fund. Dwolla, Inc. is the operator of a software platform that communicates user instructions for funds transfers to Veridian Credit Union.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="page-wrap">
+            <nav>
+                <a href="https://www.dwolla.com/pricing?b=footer">Pricing</a>
+                <a href="https://www.dwolla.com/contact?b=footer">Contact sales</a>
+                <a href="http://help.dwolla.com/">Support</a>
+                <a href="https://www.dwolla.com/security">Security</a>
+                <a href="http://blog.dwolla.com/">Blog</a>
+                <a href="http://press.dwolla.com/">Press</a>
+                <a href="https://www.dwolla.com/careers">Careers</a>
+            </nav>
+            <nav class="disclaimer">
+                <span>© 2015 Dwolla, Inc</span>
+                <a href="https://legal.dwolla.com/privacy/">Privacy</a>
+                <a href="https://legal.dwolla.com/tos/">Legal</a>
+                <a href="https://legal.dwolla.com/about-our-financial-institution-partner/">Dwolla, Inc. is an agent of its Financial Institution Partner(s)</a>
+            </nav>
+        </div>
+    </footer>
     
     {% include scripts.html %}
-    {% include googleanalytics.html %}
+    {% include google-analytics.html %}
 
   </body>
 </html>

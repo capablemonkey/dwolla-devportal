@@ -5,7 +5,7 @@
 //   css: css
 //   sass: _scss
 //   javascript: js
-//   images: img
+//   images: images
 //   fonts: fonts
 
 module.exports = function (grunt) {
@@ -56,7 +56,7 @@ module.exports = function (grunt) {
             '.tmp/css/**/*.css',
             '{.tmp,<%= yeoman.app %>}/js/**/*.js',
             '{<%= yeoman.app %>}/_bower_components/**/*.js',
-            '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
+            '<%= yeoman.app %>/images/**/*.{gif,jpg,jpeg,png,svg,webp}'
           ]
         },
         options: {
@@ -84,7 +84,7 @@ module.exports = function (grunt) {
             '.tmp/css/**/*.css',
             '{.tmp,<%= yeoman.app %>}/js/**/*.js',
             '{<%= yeoman.app %>}/_bower_components/**/*.js',
-            '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
+            '<%= yeoman.app %>/images/**/*.{gif,jpg,jpeg,png,svg,webp}'
           ]
         },
         options: {
@@ -119,17 +119,12 @@ module.exports = function (grunt) {
     },
     sass: {
       dist: {
-        options: {
-          style: 'expanded',
-          loadPath: '<%= yeoman.app %>/_bower_components/'
-        },
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.app %>/_scss/',
-          src: ['**/*.scss'],
-          dest: '.tmp/css/',
-          ext: '.css'
-        }]
+        expand: true,
+        cwd: '<%= yeoman.app %>/_scss/',
+        src: ['**/*.scss'],
+        dest: '.tmp/css/',
+        ext: '.css',
+        extDot: 'last'
       }
     },
     autoprefixer: {
@@ -173,7 +168,7 @@ module.exports = function (grunt) {
     },
     usemin: {
       options: {
-        assetsDirs: ['<%= yeoman.dist %>', '<%= yeoman.dist %>/img']
+        assetsDirs: ['<%= yeoman.dist %>', '<%= yeoman.dist %>/images']
       },
       html: ['<%= yeoman.dist %>/**/*.html'],
       css: ['<%= yeoman.dist %>/css/**/*.css']
@@ -239,7 +234,7 @@ module.exports = function (grunt) {
             // Jekyll processes and moves HTML and text files.
             // Usemin moves CSS and javascript inside of Usemin blocks.
             // Copy moves asset files and directories.
-            'img/**/*',
+            'images/**/*',
             'fonts/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
             '!**/_*{,/**}',
@@ -260,6 +255,22 @@ module.exports = function (grunt) {
           src: '**/*.css',
           dest: '.tmp/css'
         }]
+      },
+      stageOldDevportal: {
+        files: [{
+          expand: true,
+          cwd: 'old-devportal/',
+          src: '**',
+          dest: '.jekyll/'
+        }]
+      },
+      distOldDevportal: {
+        files: [{
+          expand: true,
+          cwd: 'old-devportal/',
+          src: '**',
+          dest: 'dist/'
+        }]
       }
     },
     filerev: {
@@ -271,7 +282,7 @@ module.exports = function (grunt) {
           src: [
             '<%= yeoman.dist %>/js/**/*.js',
             '<%= yeoman.dist %>/css/**/*.css',
-            '<%= yeoman.dist %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}',
+            '<%= yeoman.dist %>/images/**/*.{gif,jpg,jpeg,png,svg,webp}',
             '<%= yeoman.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}'
           ]
         }]
@@ -280,7 +291,7 @@ module.exports = function (grunt) {
     buildcontrol: {
       dist: {
         options: {
-          remote: 'git@github.com:capablemonkey/dwolla-devportal.git',
+          remote: 'git@github.com:Dwolla/developer-portal.git',
           branch: 'gh-pages',
           commit: true,
           push: true
@@ -319,6 +330,7 @@ module.exports = function (grunt) {
       server: [
         'sass',
         'copy:stageCss',
+
         'jekyll:server'
       ],
       dist: [
@@ -339,6 +351,7 @@ module.exports = function (grunt) {
       'concurrent:server',
       'autoprefixer:dist',
       'browserSync:server',
+      'copy:stageOldDevportal',
       'watch'
     ]);
   });
@@ -379,7 +392,8 @@ module.exports = function (grunt) {
     'svgmin',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'copy:distOldDevportal'
     ]);
 
   grunt.registerTask('deploy', [

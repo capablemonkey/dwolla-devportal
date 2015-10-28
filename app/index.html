@@ -1,13 +1,43 @@
 ---
 layout: page
 title: Developers Home
+bodyClass: home
 description: Simple and powerful API for ACH transfers with no per transaction fees. Get up and running in fifteen minutes to start sending and receiving funds.
 ---
+<div class="cnt-one-col">
+    <section class="cnt-two-col__nav js-two-col-nav">
+        {% include side-nav.html %}
+    </section>
+    <section class="cnt-one-col__banner banner">
+        <div class="page-wrap">
+            <h1 class="icon-home-api icon">Simple and powerful API for ACH transfers with no per transaction fees</h1>
+            <a href="/guides/" class="btn primary large">View all guides</a>
+        </div>
+        <div class="banner__background"></div>
+    </section>
+    <section class="hover-box cnt-one-col__hover-box page-wrap">
+        <h2>Try it out</h2>
+        <p>Test any endpoint with a simple CURL request.</p>
 
-<h1>Simple and powerful API for ACH transfers with no per transaction fees</h1>
+        {% include home-page-code-snippet.html %}
+    
+        <p><em>Paste this code to your command line and hit return to see the response</em></p>
+        <section class="split-options">
+            <div>
+                <h3 class="icon-home-sandbox">Set up sandbox</h3>
+                <p>uat.dwolla.com</p>
+                <a href="https://uat.dwolla.com" class="btn secondary large">Test our service</a>
+            </div>
+            <div>
+                <h3 class="icon-home-launch">Launch in production</h3>
+                <p>www.dwolla.com</p>
+                <a href="https://www.dwolla.com" class="btn secondary large">Get API key</a>
+            </div>
+        </section>
+    </section>
+    <div class="page-wrap">
+        {% include reach-out.html %}
+    </div>
+</div>
 
-<p>Get up and running in fifteen minutes to start sending and receiving ACH bank transfers in your application.</p>
-
-{% for house in site.houses %}
-  <article><time>{{ house.date | date_to_string }}</time> &raquo; <a href="{{ house.url }}">{{ house.title }}</a></article>
-{% endfor %}
+{% include status-widget.html %}

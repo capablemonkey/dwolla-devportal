@@ -1,0 +1,48 @@
+<nav class="side-nav {% if page.url contains '/guides' %}active{% endif %}">
+    <section id="js-sidenav-dropdown" class="side-nav__dropdown {% if page.url contains '/guides/index.html' %}open{% endif %}" >
+        <h6>Choose a guide</h6>
+        <div class="picker" id="js-sidenav-dropdown-button">
+            <button>
+                {% if page.url contains 'send-money' %}
+                    Send money to your users
+                {% elsif page.url contains 'receive-money' %}
+                    Receive money from your users
+                {% elsif page.url contains 'transfer-money-between-users' %}
+                    Transfer money between users
+                {% elsif page.url contains 'sandbox-setup' %}
+                    Set up sandbox
+                {% elsif page.url contains 'webhooks' %}
+                    Webhooks
+                {% else %}
+                    Please select a guide
+                {% endif %}
+            </button>
+            <div class="icon icon-side-nav-collapse-plus"></div>
+            <div class="icon icon-side-nav-collapse-minus"></div>
+        </div>
+        <nav id="js-sidenav-dropdown-nav">
+            {% unless page.url contains '/guides/sandbox-setup/' %}
+                <a href="/guides/sandbox-setup/">Set up sandbox</a>
+            {% endunless %}
+            {% unless page.url contains '/guides/send-money/' %}
+                <a href="/guides/send-money/">Send money to your users</a>
+            {% endunless %}
+            {% unless page.url contains '/guides/receive-money/' %}
+                <a href="/guides/receive-money/">Receive money from your users</a>
+            {% endunless %}
+            {% unless page.url contains '/guides/transfer-money-between-users/' %}
+                <a href="/guides/transfer-money-between-users/">Transfer money between users</a>
+            {% endunless %}
+            {% unless page.url contains '/guides/webhooks/' %}
+                <a href="/guides/webhooks/">Webhooks</a>
+            {% endunless %}
+        </nav>
+    </section>
+
+    {% include side-nav/guide-send-money.html %}
+    {% include side-nav/guide-receive-money.html %}
+    {% include side-nav/guide-sandbox-setup.html %}
+    {% include side-nav/guide-webhooks.html %}
+    {% include side-nav/guide-transfer-money-between-users.html %}
+</nav>
+
