@@ -4,7 +4,7 @@ section: guides
 type: guide
 guide:
     name: transfer-money-between-users
-    step: 7
+    step: '7'
 title:  "Step 7: Check the status of your transfer"
 ---
 

@@ -4,7 +4,7 @@ section: guides
 type: guide
 guide:
     name: transfer-money-between-users
-    step: 2
+    step: '2'
 title:  "Step 2: Creating a verified customer"
 ---
 

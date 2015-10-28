@@ -4,7 +4,7 @@ section: guides
 type: guide
 guide:
     name: transfer-money-between-users
-    step: 3
+    step: '3'
 title:  "Step 3: Attach an unverified funding source"
 ---
 

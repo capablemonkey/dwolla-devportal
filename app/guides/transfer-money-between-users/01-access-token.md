@@ -4,7 +4,7 @@ section: guides
 type: guide
 guide:
     name: transfer-money-between-users
-    step: 1
+    step: '1'
 title:  "Step 1: Generate an access token"
 ---
 

@@ -4,7 +4,7 @@ section: guides
 type: guide
 guide:
     name: transfer-money-between-users
-    step: 6
+    step: '6'
 title:  "Step 6: Create a transfer"
 ---
 
