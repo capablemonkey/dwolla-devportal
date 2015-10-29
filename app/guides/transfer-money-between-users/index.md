@@ -29,7 +29,7 @@ Before you begin, be sure your [Sandbox accounts](/guides/sandbox-setup) are alr
 ### Verified and unverified Customers
 Here are some rules to keep in mind:
 
-1. With a transfer of money, at least one party must complete the [identity verification process](/resources/customer-verification.html), either the sender or the receiver. It’s your decision about which party completes the identity verification process, either the sender or the receiver, based on your business model.  Note that you may want to have both parties complete the identity verification process.
+1. With a transfer of money, at least one party must complete the [identity verification process](/resources/customer-verification.html), either the sender or the receiver. It’s your decision about which party completes this process, based on your business model, and you may want to have both parties complete the identity verification process.
 2. The sender must have a verified funding source. Unverified funding sources can only receive money, not send.
 
 In this guide, we’ll create two Customers: one to represent a seller and one to represent a buyer. In this scenario, the seller, Jane Merchant, is a verified Customer with an unverified funding source. The buyer, Joe Buyer, is an unverified Customer with a verified funding source.
