@@ -14,7 +14,7 @@ description: Use this guide to start sending payments from your application by u
 Create API credentials using your child Sandbox account.
 
 1. Login to [https://uat.dwolla.com/applications/](https://uat.dwolla.com/applications/) to create an application with your child Sandbox account. 
-2. Provide relevant information about your application. A majority of the fields (Payment Callback URL, and Payment Redirect URL) can be set programmatically when developing your integration. "Application Name", “OAuth Callback URL” and agreeing to the Terms of Service are required at this point.
+2. Provide relevant information about your application. A majority of the fields (Payment Callback URL, and Payment Redirect URL) can be set programmatically when developing your integration. “Application Name” and “OAuth Callback URL” are required at this point.
 3. Submit to receive your API Key and Secret. 
 
 <nav class="pager-nav">

@@ -29,7 +29,7 @@ To get started, the first thing you need is a Sandbox account. You’ll be able 
 ## Overview
 
 1. Create a master Sandbox account with a valid email address belonging to you.
-2. Use your master account and the Sandbox Admin interface to create a child account with funds and attached bank accounts.
+2. Use your master account and the Sandbox Console interface to create a child account with funds and attached bank accounts.
 3. Create API credentials using the child sandbox account.
 
 <nav class="pager-nav">
