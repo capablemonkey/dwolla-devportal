@@ -57,10 +57,10 @@ end
 not available
 ```
 ```javascript
-var verifyGatewaySignature = function(proposed_signature, webhook_secret, amount) {
+var verifyGatewaySignature = function(proposed_signature, webhook_secret) {
   var crypto    = require('crypto')
   , secret      = 'API_SECRET_HERE'
-  , text        = webhook_secret + '&' + amount + '&' + order_id
+  , text        = webhook_secret
   , hash;
 
 hash = crypto.createHmac('sha1', secret).update(text).digest('hex');
@@ -69,21 +69,18 @@ return proposed_signature === hash;
 }
 ```
 ```python
-def verify_gateway_signature(proposed_signature, webhook_secret, amount):
+def verify_gateway_signature(proposed_signature, webhook_secret):
   import hmac
   import hashlib
 
-  raw = '%s&%.2f' % (webhook_secret, amount)
-  signature = hmac.new(client_secret, raw, hashlib.sha1).hexdigest()
+  signature = hmac.new(client_secret, webhook_secret, hashlib.sha1).hexdigest()
 
   return True if (signature == proposed_signature) else False
 ```
 ```php
 <?php
-function verifyGatewaySignature($proposedSignature, $webhookSecret, $amount) {
-    $amount = number_format($amount, 2);
-    $signature = hash_hmac("sha1", "{$webhookSecret}&{$amount}", $apiSecret);
-
+function verifyGatewaySignature($proposedSignature, $webhookSecret) {
+    $signature = hash_hmac("sha1", $webhookSecret, $apiSecret);
     return $signature == $proposedSignature;
 }
 ?>
