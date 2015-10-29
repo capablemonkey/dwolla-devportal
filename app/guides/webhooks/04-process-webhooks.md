@@ -9,24 +9,6 @@ title: Webhooks
 description: Webhooks for payments within your application by utilizing our open API with no per transaction fees. 
 ---
 
-# Processing webhooks
-
-## Pro-tips
-
-It is important to consider that multiple webhooks are fired for the same action on certain events. For example, multiple webhooks are fired for `Transfer` events, that is, two `transfer_created` events with different resource IDs (and, by extension, resource URLs) will be fired, one for each customer. To avoid doing any business logic twice, you would have to check if you have already received a webhook relating to the `Transfer` resource responsible for the event.
-
-To do this, keep a queue of events in a database and check to see if an `Event` has the same `self` resource location in `_links` as another event. If not, process the logic for that event. To illustrate, this is how a developer would implement this using Ruby and the ActiveRecord ORM. 
-
-##### Ruby/ActiveRecord
-```rubynoselect
-check_db = ActiveRecord::Base.connection.execute("SELECT * FROM EVENTS WHERE SELF = #{event[:_links][:self].to_s}")
-
-# check_db will be an array of rows returned
-unless check_db.length() == 0
-    # do something
-end
-```
-
 ## Example Scenario
 
 Let's assume that you have a webhook subscription and Dwolla has just delivered the following payload to your specified endpoint:

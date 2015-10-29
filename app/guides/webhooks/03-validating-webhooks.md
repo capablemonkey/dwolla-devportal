@@ -13,7 +13,11 @@ description: Webhooks for payments within your application by utilizing our open
 
 Assume that your integration is an online marketplace, and that a customer just placed an order on your site. A few days after the customer initiated their payment, your application receives this webhook.
 
-```raw
+The `topic` field of an event holds [a description](http://docsv2.dwolla.com/#events) of the event, which is similar the subject of an e-mail message.  The `webhook` itself contains _links the the resource impacted by the event that can be used to retrieve more information about the webhook you have received. 
+
+**NOTE**: The `event` must be retrieved with a `client_credentials` granted access_token.
+
+```jsonnoselect
 {
   "id": "2c311238-b9ef-4763-b1cb-03e1aa651227",
   "resourceId": "0089A051-9B79-E511-80DB-0AA34A9B2388",
@@ -31,19 +35,6 @@ Assume that your integration is an online marketplace, and that a customer just 
     }
   }
 }
-
-```
-```ruby
-No example for this language yet.
-```
-```javascript
-No example for this language yet.
-```
-```python
-No example for this language yet.
-```
-```php
-No example for this language yet.
 ```
 
 #### Step 1: Authenticating the webhook request
@@ -75,54 +66,19 @@ No example for this language yet.
 ```
 
 #### Step 2: Check for duplicate events
-The `topic` field of an event holds [a description](http://docsv2.dwolla.com/#events) of the event, which is similar the subject of an e-mail message.  The `webhook` itself contains _links the the resource impacted by the event that can be used to retrieve more information about the webhook you have received. 
 
-**NOTE**: The `event` must be retrieved with a `client_credentials` granted access_token.
+It is important to consider that multiple webhooks are fired for the same action on certain events. For example, multiple webhooks are fired for `Transfer` events, that is, two `transfer_created` events with different resource IDs (and, by extension, resource URLs) will be fired, one for each customer. To avoid doing any business logic twice, you would have to check if you have already received a webhook relating to the `Transfer` resource responsible for the event.
 
-```ruby
-require 'dwolla_swagger'
+To do this, keep a queue of events in a database and check to see if an `Event` has the same `self` resource location in `_links` as another event. If not, process the logic for that event. To illustrate, this is how a developer would implement this using Ruby and the ActiveRecord ORM. 
 
-## Assuming Rails-style POST parameter
-if params[:webhook] == 'transfer_completed'
-  event = DwollaSwagger::EventsApi.id(params[:webhook][:eventId])
-elsif params[:webhook] == 'another_event'
-  "..."
-end
-```
-```raw
-No example for this language yet.
-```
-```javascript
-No example for this language yet.
-```
-```python
-No example for this language yet.
-```
-```php
-No example for this language yet.
-```
-
-Multiple webhooks are fired for `Transfer` events; that is, two `transfer_created` events with different URLs will be fired, one for each customer. To avoid doing any business logic twice, check to see if you have already received a webhook relating to the `Transfer` resource responsible for the event. To do this, keep a queue of events in a database and check to see if an `Event` has the same `self` resource location in `_links` as another event. If not, process the logic for that event. An example could look like this.
-
-```ruby
+##### Ruby/ActiveRecord
+```rubynoselect
 check_db = ActiveRecord::Base.connection.execute("SELECT * FROM EVENTS WHERE SELF = #{event[:_links][:self].to_s}")
 
 # check_db will be an array of rows returned
 unless check_db.length() == 0
     # do something
 end
-```
-```raw
-No example for this language yet.
-```
-```javascript
-No example for this language yet.
-```
-```python
-No example for this language yet.
-```
-```php
-No example for this language yet.
 ```
 
 <nav class="pager-nav">
