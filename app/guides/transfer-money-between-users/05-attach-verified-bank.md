@@ -10,7 +10,7 @@ title:  "Step 5: Attach a verified funding source"
 
 # Step 5: Attach a verified funding source
 
-Next we will attach a verified funding source for Joe Buyer, and we’ll need to verify the funding source using micro-deposits. This method takes at least a day to complete, as we must wait for the user to tell us the micro-deposit amounts after they appear in their bank statement.
+Next we will attach a verified funding source for Joe Buyer, and we’ll need to verify the funding source using micro-deposits. This method takes at least a day to complete, as we must wait for the user to tell us the micro-deposit amounts after they appear in their bank statement or online transaction history.
 
 Create a funding source, as you did before:
 
