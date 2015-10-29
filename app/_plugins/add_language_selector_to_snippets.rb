@@ -8,7 +8,8 @@ module Jekyll
         # provided to WithRouge#block_code
         module WithRouge
           def block_code(code, lang)
-            code = "<pre>#{super}</pre>"
+            # TODO: figure out more idiomatic way to do this
+            nohide = false
 
             # Selector
             selector = "<div class=\"code-snippet__selector\">
@@ -20,6 +21,18 @@ module Jekyll
                   <button class=\"selector_switch\" id=\"javascript\">javascript</button>
               </nav>
             </div>"
+
+            if lang.is_a?(String)
+              if lang.include?('noselect')
+                lang['noselect'] = ''
+                selector = ''
+                nohide = true
+              end
+            end
+
+            code = "<pre>#{super}</pre>"
+
+            lang = lang + 'nohide' if nohide
 
             # Button
             button = "<button class=\"btn alternative\">copy</button>"         
