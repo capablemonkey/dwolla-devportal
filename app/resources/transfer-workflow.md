@@ -19,7 +19,7 @@ A normal ACH transfer workflow includes the following statuses:
 
 Between the ACH transfer statuses of “pending” and “processed” there are three other transfer statuses which can occur: “cancelled”, “failed”, and “reclaimed.” 
 
-- **Cancelled:** If a transfer’s status changes from “pending” to “cancelled”, this means that the transfer was cancelled. A transfer can be cancelled by a Traditional CIP Verified account. See “timetables for transfers in and out of the network” below for available cancellation windows.
+- **Cancelled:** If a transfer’s status changes from “pending” to “cancelled”, this means that the transfer was cancelled. A transfer can be cancelled by a Traditional CIP Verified account. See "Bank to Dwolla network" and "Dwolla network to bank" below for available cancellation windows. 
 - **Failed:** If a transfer failed to clear successfully (usually as a result of an ACH reject), the transfer’s status will be “failed”. Transfers can fail for a number of reasons, e.g. insufficient funds, invalid account number, no account/unable to locate account, etc. Note: in rare cases, a “processed” transfer may later on get returned as “failed”.
 - **Reclaimed:** If a transfer failed because the recipient did not claim the money after 30 days (or a custom reclaim period set by the sender), the transfer status will be marked as “reclaimed.” “Reclaimed” does not apply when transferring to White Label Customers.
 
