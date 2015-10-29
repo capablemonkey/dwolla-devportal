@@ -16,5 +16,5 @@ Use your application’s key and secret and select the scopes needed for your ap
 
 <nav class="pager-nav">
     <a href="./">Back: Overview</a>
-    <a href="02-create-verified-customer.html">Next step: Create a transfer</a>
+    <a href="02-create-verified-customer.html">Next step: Create a verified customer</a>
 </nav>
