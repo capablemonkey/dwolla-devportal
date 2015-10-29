@@ -10,14 +10,14 @@ title:  "Step 2: Fetch funding sources"
 
 # Step 2: Fetch funding sources
 
-No matter which method you used to set up your customers, the remaining steps of sending money are the same. Please note the difference in terminology between the two onboarding experiences:
+No matter which method you used to set up your Customers, the remaining steps of sending money are the same. Please note the difference in terminology between the two onboarding experiences:
 
 | Solution | Recipient|
 |----------|----------|
 |White Label Solution|Customer|
 |Dwolla Direct|Account|
 
-Now that you’ve created a customer or an account and associated its funding source, you can initiate your first transfer. The transfer requires the following information:
+Now that you’ve created a Customer or an Account and associated its funding source, you can initiate your first transfer. The transfer requires the following information:
 
 - The funding source to pull the funds from (your linked bank account)
 - The recipient to push the funds to
@@ -139,7 +139,7 @@ print($myAccount->name) # => "President Appleseed"
 ?>
 ```
 
-Then, follow the `_links.funding-sources` link, or if you're using an SDK, just re-use `_links.account` (the location of the account resource):
+Then, follow the `_links.funding-sources` link, or if you're using an SDK, just re-use `_links.account` (the location of the Account resource):
 
 ```raw
 GET https://api-uat.dwolla.com/accounts/4BB512E4-AD4D-4F7E-BFD0-A232007F21A1/funding-sources
