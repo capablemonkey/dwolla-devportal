@@ -35,8 +35,10 @@ Regardless of which option you implement, the first step is to create recipients
 <nav class="decision-nav">
 <div>
     <a href="01-white-label-onboarding.html">White Label</a>
+    <p>You capture customer data and pass it to Dwolla.</p>
 </div>
 <div>
-    <a href="01-direct-onboarding.html">Dwolla's ready made onboarding</a>
+    <a href="01-direct-onboarding.html">Dwolla Direct</a>
+    <p>Dwolla captures your customers data.</p>
 </div>
 </nav>
