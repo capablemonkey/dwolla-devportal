@@ -11,7 +11,7 @@ description: "View our comprehensive getting started guides."
   </a>
   <a href="/guides/receive-money" class="icon-guides-receive">
       <h3>Receive money from your users</h3>
-      <p>Accept ACH transfers. Covers both white label and Dwolla Direct integrations. Learn about recurring payments and offsite gateway.</p>
+      <p>Accept ACH transfers. Covers both white label and Dwolla Direct integrations.</p>
   </a>
   <a href="/guides/transfer-money-between-users" class="icon-guides-transfer">
       <h3>Transfer money betwen users</h3>
