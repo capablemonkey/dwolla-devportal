@@ -19,5 +19,5 @@ Create API credentials using your child Sandbox account.
 
 <nav class="pager-nav">
     <a href="./">Back: Create a child Sandbox account</a>
-    <a href="04-enable-sdk-sandbox-mode.html">Next step: Enable sandbox mode for SDKs</a>
+    <a href="04-enable-sdk-sandbox-mode.html">Next step: Enable Sandbox mode for SDKs</a>
 </nav>
