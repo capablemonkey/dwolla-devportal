@@ -17,6 +17,7 @@ The `topic` field of an event holds [a description](http://docsv2.dwolla.com/#ev
 
 **NOTE**: The `event` must be retrieved with a `client_credentials` granted access_token.
 
+##### JSON
 ```jsonnoselect
 {
   "id": "2c311238-b9ef-4763-b1cb-03e1aa651227",
@@ -53,16 +54,37 @@ payload_body)
 end
 ```
 ```raw
-No example for this language yet.
+not available
 ```
 ```javascript
-No example for this language yet.
+var verifyGatewaySignature = function(proposed_signature, webhook_secret, amount) {
+  var crypto    = require('crypto')
+  , secret      = 'API_SECRET_HERE'
+  , text        = webhook_secret + '&' + amount + '&' + order_id
+  , hash;
+
+hash = crypto.createHmac('sha1', secret).update(text).digest('hex');
+
+return proposed_signature === hash;
+}
 ```
 ```python
-No example for this language yet.
+def verify_gateway_signature(proposed_signature, webhook_secret, amount):
+  import hmac
+  import hashlib
+
+  raw = '%s&%.2f' % (webhook_secret, amount)
+  signature = hmac.new(client_secret, raw, hashlib.sha1).hexdigest()
+
+  return True if (signature == proposed_signature) else False
 ```
 ```php
-No example for this language yet.
+function verifyGatewaySignature($proposedSignature, $webhookSecret, $amount) {
+    $amount = number_format($amount, 2);
+    $signature = hash_hmac("sha1", "{$webhookSecret}&{$amount}", $apiSecret);
+
+    return $signature == $proposedSignature;
+}
 ```
 
 #### Step 2: Check for duplicate events
