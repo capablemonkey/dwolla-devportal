@@ -10,14 +10,14 @@ title:  "Step 1: White Label onboarding"
 
 # Step 1: Create recipients using White Label solution
 
-In this experience, end users create their accounts entirely within your application and you prompt for their bank or credit union account information. Dwolla will securely store this sensitive information for you. However, prior to passing data to Dwolla to create a Customer, you must obtain the user’s acceptance of Dwolla’s TOS and privacy policy.
+In this experience, end users create their accounts entirely within your application and you prompt for their bank or credit union account information. Dwolla will securely store this sensitive information.
 
-### Step 1. Create an access token.
+### Step A. Create an access token.
 Log into your child sandbox account and go here: [https://developers.dwolla.com/dev/token](https://developers.dwolla.com/dev/token)
 
 Use your application’s key and secret and select the scopes needed for your application. For example, select: Send, Funding, Transactions, and ManageCustomers. With these scopes, you can complete the OAuth flow, which issues you an access and refresh token pair that contains the proper scopes for creating and managing customers. More detail is available in [API docs](https://docsv2.dwolla.com/#oauth).
 
-### Step 2: Create a customer
+### Step B. Create a customer
 
 Create a customer for each user you’d like to transfer funds to. At a minimum, provide the user’s full name, email address, and IP address to create the customer. More detail is available in [API docs](https://docsv2.dwolla.com/#customers).
 
@@ -137,7 +137,7 @@ When the customer is created, you’ll receive the customer URL in the location 
 
 *Important*: Provide the IP address of the end-user accessing your application as the ipAddress parameter. This enhances Dwolla’s  ability to detect fraud. Sending random, hardcoded, or incorrect information in the ipAddress field will cause delays or throttling of requests.
 
-### Step 3: Attach a funding source to the customer
+### Step C. Attach a funding source to the customer
 
 The next step is to attach a bank or credit union account to the customer by providing the bank account’s routing number, account number, and account type. 
 
