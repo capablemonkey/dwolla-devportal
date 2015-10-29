@@ -23,7 +23,7 @@ Authorization: Bearer 0Sn0W6kzNicvoWhDbQcVSKLRUpGjIdlPSEYyrHqrDDoRnQwE7Q
 
 <span class=k>print</span><span class=p>(</span><span class=n>subscription</span><span class=p>)</span> <span class=c># =&gt; https://api-uat.dwolla.com/webhook-subscriptions/5af4c10a-f6de-4ac8-840d-42cb65454216</span>
 </code></pre></div></div><div class="code-snippet js-code-snippet language-php"><button class="btn alternative">copy</button><div class=code-snippet__selector><nav><button class=selector_switch id=raw>raw</button> <button class=selector_switch id=php>php</button> <button class=selector_switch id=ruby>ruby</button> <button class=selector_switch id=python>python</button> <button class=selector_switch id=javascript>javascript</button></nav></div><div class="code-snippet__cnt highlight"><pre><code class=language-php data-lang=php><span class=cp>&lt;?php</span>
-<span class=nv>$webhookApi</span> <span class=o>=</span> <span class=k>new</span> <span class=nx>SwaggerClient\WebhooksubscriptionsApi</span><span class=p>(</span><span class=nv>$apiClient</span><span class=p>);</span>
+<span class=nv>$webhookApi</span> <span class=o>=</span> <span class=k>new</span> <span class=nx>DwollaSwagger\WebhooksubscriptionsApi</span><span class=p>(</span><span class=nv>$apiClient</span><span class=p>);</span>
 <span class=nv>$subscription</span> <span class=o>=</span> <span class=nv>$webhookApi</span><span class=o>-&gt;</span><span class=na>create</span><span class=p>(</span><span class=k>array</span> <span class=p>(</span>
   <span class=s1>'url'</span> <span class=o>=&gt;</span> <span class=s1>'http://myapplication.com/webhooks'</span><span class=p>,</span>
   <span class=s1>'secret'</span> <span class=o>=&gt;</span> <span class=s1>'sshhhhhh'</span><span class=p>,</span>
@@ -55,7 +55,7 @@ Authorization: Bearer 0Sn0W6kzNicvoWhDbQcVSKLRUpGjIdlPSEYyrHqrDDoRnQwE7Q
 
 <span class=k>print</span><span class=p>(</span><span class=n>retrieved</span><span class=o>.</span><span class=n>created</span><span class=p>)</span> <span class=c># =&gt; 2015-10-28T16:20:47+00:00</span>
 </code></pre></div></div><div class="code-snippet js-code-snippet language-php"><button class="btn alternative">copy</button><div class=code-snippet__selector><nav><button class=selector_switch id=raw>raw</button> <button class=selector_switch id=php>php</button> <button class=selector_switch id=ruby>ruby</button> <button class=selector_switch id=python>python</button> <button class=selector_switch id=javascript>javascript</button></nav></div><div class="code-snippet__cnt highlight"><pre><code class=language-php data-lang=php><span class=cp>&lt;?php</span>
-<span class=nv>$webhookApi</span> <span class=o>=</span> <span class=k>new</span> <span class=nx>SwaggerClient\WebhooksubscriptionsApi</span><span class=p>(</span><span class=nv>$apiClient</span><span class=p>);</span>
+<span class=nv>$webhookApi</span> <span class=o>=</span> <span class=k>new</span> <span class=nx>DwollaSwagger\WebhooksubscriptionsApi</span><span class=p>(</span><span class=nv>$apiClient</span><span class=p>);</span>
 <span class=nv>$retrieved</span> <span class=o>=</span> <span class=nv>$webhookApi</span><span class=o>-&gt;</span><span class=na>id</span><span class=p>(</span><span class=nx>subscription</span><span class=p>);</span>
 
 <span class=k>print</span><span class=p>(</span><span class=nv>$retrieved</span><span class=p>);</span> <span class=c1># =&gt; 2015-10-28T16:20:47+00:00

@@ -88,7 +88,7 @@ Location: https://api-uat.dwolla.com/transfers/d76265cd-0951-e511-80da-0aa34a9b2
   <span class=p>),</span>
 <span class=p>);</span>
 
-<span class=nv>$transferApi</span> <span class=o>=</span> <span class=k>new</span> <span class=nx>SwaggerClient\TransfersApi</span><span class=p>(</span><span class=nv>$apiClient</span><span class=p>);</span>
+<span class=nv>$transferApi</span> <span class=o>=</span> <span class=k>new</span> <span class=nx>DwollaSwagger\TransfersApi</span><span class=p>(</span><span class=nv>$apiClient</span><span class=p>);</span>
 <span class=nv>$myAccount</span> <span class=o>=</span> <span class=nv>$transferApi</span><span class=o>-&gt;</span><span class=na>create</span><span class=p>(</span><span class=nv>$transfer_request</span><span class=p>);</span>
 
 <span class=k>print</span><span class=p>(</span><span class=nv>$xfer</span><span class=p>);</span> <span class=c1># =&gt; https://api-uat.dwolla.com/transfers/d76265cd-0951-e511-80da-0aa34a9b2388
