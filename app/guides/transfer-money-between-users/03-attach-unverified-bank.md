@@ -23,39 +23,55 @@ Authorization: Bearer 0Sn0W6kzNicvoWhDbQcVSKLRUpGjIdlPSEYyrHqrDDoRnQwE7Q
     "routingNumber": "222222226",
     "accountNumber": "123456789",
     "type": "checking",
-    "name": "John Doe - Checking"
+    "name": "Jane Merchant - Checking"
 }
-```
-```ruby
-# No example for this language yet.
-```
-```javascript
-// No example for this language yet.
-```
-```python
-# No example for this language yet.
-```
-```php
-// No example for this language yet.
-```
 
-Response:
-
-```raw
 HTTP/1.1 201 Created
 Location: https://api-uat.dwolla.com/funding-sources/375c6781-2a17-476c-84f7-db7d2f6ffb31
 ```
 ```ruby
-# No example for this language yet.
+customer = 'https://api.dwolla.com/customers/AB443D36-3757-44C1-A1B4-29727FB3111C/funding-sources'
+
+new_fs = DwollaSwagger::FundingsourcesApi.create_customer_funding_source(customer, {
+  "routingNumber" => "222222226",
+  "accountNumber" => "123456789",
+  "type" => "checking",
+  "name" => "Jane Merchant - Checking"
+})
+
+p new_fs # => https://api-uat.dwolla.com/funding-sources/375c6781-2a17-476c-84f7-db7d2f6ffb31
 ```
 ```javascript
 // No example for this language yet.
 ```
 ```python
-# No example for this language yet.
+fs_api = dwollaswagger.FundingsourcesApi(client)
+
+customer = 'https://api.dwolla.com/customers/AB443D36-3757-44C1-A1B4-29727FB3111C/funding-sources'
+
+new_fs = fs_api.create_customer_funding_source(customer, {
+    "routingNumber": "222222226",
+    "accountNumber": "123456789",
+    "type": "checking",
+    "name": "Jane Merchant - Checking"
+})
+
+print(new_fs) # => https://api-uat.dwolla.com/funding-sources/375c6781-2a17-476c-84f7-db7d2f6ffb31
 ```
 ```php
-// No example for this language yet.
+<?php
+$fsApi = new DwollaSwagger\FundingsourcesApi($apiClient);
+
+$customer = 'https://api.dwolla.com/customers/AB443D36-3757-44C1-A1B4-29727FB3111C/funding-sources'
+$new_fs = $fsApi->create_customer_funding_source($customer, array (
+  'routingNumber' => '222222226',
+  'accountNumber' => '123456789',
+  'type' => 'checking',
+  'name' => 'Jane Merchant - Checking',
+));
+
+print($new_fs); # => https://api-uat.dwolla.com/funding-sources/375c6781-2a17-476c-84f7-db7d2f6ffb31
+?>
 ```
 
 The created funding source URL is returned in the location header.

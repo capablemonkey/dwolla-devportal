@@ -109,7 +109,7 @@ $transfer_request = array (
   ),
 );
 
-$transferApi = new SwaggerClient\TransfersApi($apiClient);
+$transferApi = new DwollaSwagger\TransfersApi($apiClient);
 $myAccount = $transferApi->create($transfer_request);
 
 print($xfer); # => https://api-uat.dwolla.com/transfers/d76265cd-0951-e511-80da-0aa34a9b2388
