@@ -79,12 +79,14 @@ def verify_gateway_signature(proposed_signature, webhook_secret, amount):
   return True if (signature == proposed_signature) else False
 ```
 ```php
+<?php
 function verifyGatewaySignature($proposedSignature, $webhookSecret, $amount) {
     $amount = number_format($amount, 2);
     $signature = hash_hmac("sha1", "{$webhookSecret}&{$amount}", $apiSecret);
 
     return $signature == $proposedSignature;
 }
+?>
 ```
 
 #### Step 2: Check for duplicate events
