@@ -10,7 +10,7 @@ title:  "Step 5: Attach a verified funding source"
 
 # Step 5: Attach a verified funding source
 
-Next we will attach a verified funding source for Joe Consumer, and we’ll need to verify the funding source using micro-deposits. This method takes at least a day to complete, as we must wait for the user to tell us the micro-deposit amounts after they appear in their bank statement.
+Next we will attach a verified funding source for Joe Buyer, and we’ll need to verify the funding source using micro-deposits. This method takes at least a day to complete, as we must wait for the user to tell us the micro-deposit amounts after they appear in their bank statement.
 
 Create a funding source, as you did before:
 
@@ -136,7 +136,7 @@ Accept: application/vnd.dwolla.v1.hal+json
 // No example for this language yet.
 ```
 
-Great! Joe Consumer’s funding source is now verified and ready to send money from.
+Great! Joe Buyer’s funding source is now verified and ready to send money from.
 
 <nav class="pager-nav">
     <a href="./04-create-unverified-customer.html">Back: Create an unverified customer</a>

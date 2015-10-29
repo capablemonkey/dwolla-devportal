@@ -33,7 +33,7 @@ No example for this language yet.
 // No example for this language yet.
 ```
 
-That’s it!  You’ve successfully transferred money from Joe Consumer to Jane Merchant. Please continue to the Webhooks guide for information on implementing notifications for your customers about the transfer.
+That’s it!  You’ve successfully transferred money from Joe Buyer to Jane Merchant. Please continue to the Webhooks guide for information on implementing notifications for your customers about the transfer.
 
 <nav class="pager-nav">
     <a href="06-create-transfer.html">Back: Overview</a>

@@ -10,7 +10,7 @@ title:  "Step 4: Creating an unverified customer"
 
 # Step 4: Creating an unverified Customer
 
-Now that we’ve created a customer for Jane Merchant and associated a funding source, we’ll do the same for Joe Consumer, but this time we’ll create an unverified customer, and a verified funding source which is capable of sending money.
+Now that we’ve created a customer for Jane Merchant and associated a funding source, we’ll do the same for Joe Buyer, but this time we’ll create an unverified customer, and a verified funding source which is capable of sending money.
 
 Provide the user’s full name, email address, and IP address to create the customer. More detail is available in [API docs](https://docsv2.dwolla.com/#customers). 
 
@@ -21,7 +21,7 @@ Accept: application/vnd.dwolla.v1.hal+json
 Authorization: Bearer 0Sn0W6kzNicvoWhDbQcVSKLRUpGjIdlPSEYyrHqrDDoRnQwE7Q
 {
   "firstName": "Joe",
-  "lastName": "Consumer",
+  "lastName": "Buyer",
   "email": "joe@email.com",
   "ipAddress": "127.0.0.1"
 }

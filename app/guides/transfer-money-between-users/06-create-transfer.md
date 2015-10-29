@@ -10,7 +10,7 @@ title:  "Step 6: Create a transfer"
 
 # Step 6: Create a transfer
 
-[Create a transfer](https://docsv2.dwolla.com/#transfers) by specifying Joe Consumer’s funding source as the source and Jane Merchant’s funding source as the destination. 
+[Create a transfer](https://docsv2.dwolla.com/#transfers) by specifying Joe Buyer’s funding source as the source and Jane Merchant’s funding source as the destination. 
 
 ```ruby
 require 'dwolla_swagger'

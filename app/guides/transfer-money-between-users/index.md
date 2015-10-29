@@ -29,10 +29,10 @@ Before you begin, be sure your [Sandbox accounts](/guides/sandbox-setup) are alr
 ### Verified and unverified Customers
 Here are some rules to keep in mind:
 
-1. With a transfer of money, at least one party must be identity-verified, either the sender or the receiver. In a marketplace, it’s best to have the seller go through the identity verification process to allow the buyer to complete a transaction with minimal friction. However, it’s your decision about which party you require identity verification from, either the sender or the receiver.
+1. With a transfer of money, at least one party must complete the [identity verification process](/resources/customer-verification.html), either the sender or the receiver. It’s your decision about which party completes the identity verification process, either the sender or the receiver, based on your business model.  Note that you may want to have both parties complete the identity verification process.
 2. The sender must have a verified funding source. Unverified funding sources can only receive money, not send.
 
-In this guide, we’ll create two Customers: one to represent a seller and one to represent a buyer. In this scenario, the seller, Jane Merchant, is a verified Customer with an unverified funding source. The buyer, Joe Consumer, is an unverified Customer with a verified funding source.
+In this guide, we’ll create two Customers: one to represent a seller and one to represent a buyer. In this scenario, the seller, Jane Merchant, is a verified Customer with an unverified funding source. The buyer, Joe Buyer, is an unverified Customer with a verified funding source.
 
 Please note that this is a suggested approach, but that there are other ways you can implement your marketplace transfers. For instance, both the sender and the receiver (or buyer and seller) could be verified Customers, and both could have verified funding sources. Or, you could have the sender undergo identity verification but not the recipient.  
 
