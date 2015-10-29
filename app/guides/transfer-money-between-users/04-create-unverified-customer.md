@@ -20,10 +20,10 @@ Content-Type: application/vnd.dwolla.v1.hal+json
 Accept: application/vnd.dwolla.v1.hal+json
 Authorization: Bearer 0Sn0W6kzNicvoWhDbQcVSKLRUpGjIdlPSEYyrHqrDDoRnQwE7Q
 {
-  "firstName": "John",
-  "lastName": "Doe",
-  "email": "johndoe@email.com",
-  "ipAddress": "127.0.0.1"
+"firstName": "Joe", 
+"lastName": "Buyer",
+"email": "jbuyer@mail.net",
+"type": "personal"
 }
 
 HTTP/1.1 201 Created
@@ -34,20 +34,7 @@ new_customer = DwollaSwagger::CustomersApi.create({:body => {
   :firstName => 'Joe',
   :lastName => 'Buyer',
   :email => 'jbuyer@mail.net',
-  :type => 'personal',
-  :address => '99-99 33rd St',
-  :city => 'Some City',
-  :state => 'NY',
-  :postalCode => '11101',
-  :dateOfBirth => '1970-01-01',
-
-  # For the first attempt, only 
-  # the last 4 digits of SSN required
-
-  # If the entire SSN is provided, 
-  # it will still be accepted
-
-  :ssn => '1234'}})
+  :type => 'personal'}})
 
 p new_customer # => https://api-uat.dwolla.com/customers/247B1BD8-F5A0-4B71-A898-F62F67B8AE1C
 ```
@@ -60,19 +47,7 @@ customers_api = dwollaswagger.CustomersApi(client)
 new_customer = customers_api.create(body = {'firstName': 'Joe', 
                                             'lastName': 'Buyer',
                                             'email': 'jbuyer@mail.net',
-                                            'type': 'personal',
-                                            'address': '99-99 33rd St',
-                                            'city': 'Some City', 
-                                            'state': 'NY',
-                                            'postalCode': '11101',
-                                            'dateOfBirth': '1970-01-01', 
-
-                                            # For the first attempt, only 
-                                            # the last 4 digits of SSN required
-
-                                            # If the entire SSN is provided, 
-                                            # it will still be accepted
-                                            'ssn': '1234'})
+                                            'type': 'personal'})
 
 print(new_customer) # => https://api-uat.dwolla.com/customers/247B1BD8-F5A0-4B71-A898-F62F67B8AE1C
 ```
@@ -84,19 +59,7 @@ $new_customer = $customersApi->create([
   'firstName' => 'Joe',
   'lastName' => 'Buyer',
   'email' => 'jbuyer@mail.net',
-  'type' => 'personal',
-  'address' => '99-99 33rd St',
-  'city' => 'Some City',
-  'state' => 'NY',
-  'postalCode' => '11101',
-  'dateOfBirth' => '1970-01-01',
-
-  # For the first attempt, only 
-  # the last 4 digits of SSN required
-
-  # If the entire SSN is provided, 
-  # it will still be accepted
-  'ssn' => '1234'
+  'type' => 'personal'
 ]);
 
 print($new_customer); # => https://api-uat.dwolla.com/customers/247B1BD8-F5A0-4B71-A898-F62F67B8AE1C
@@ -111,11 +74,6 @@ myNewCust.setFirstName("Joe");
 myNewCust.setLastName("Buyer");
 myNewCust.setEmail("jbuyer@mail.com");
 myNewCust.setType("personal");
-myNewCust.setAddress("99-99 33rd St");
-myNewCust.setCity("Some City");
-myNewCust.setState("NY");
-myNewCust.setPostalCode("11101");
-myNewCust.setDateOfBirth("1970-01-01");
 
 try {
     Unit$ r = cApi.create(myNewCust);
