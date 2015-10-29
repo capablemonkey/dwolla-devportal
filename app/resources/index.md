@@ -15,15 +15,15 @@ description: "In-depth articles on Dwolla features and integration patterns."
 <ul class="article-list">
     <li>
         <h3><a href="/resources/account-types.html">Account types</a></h3>
-        <p>The different types of Dwolla accounts and their respective setup workflows.</p>
+        <p>The different types of Dwolla accounts and their transfer limits and eligibility.</p>
+    </li>
+    <li>
+        <h3><a href="/resources/customer-verification.html">Customer verification</a></h3>
+        <p>Account verification statuses and how to respond when additional information is required.</p>
     </li>
     <li>
         <h3><a href="/resources/oauth-refresh-strategies.html">OAuth refresh strategies</a></h3>
         <p>Best practices and recommendations for managing your tokens.</p>
-    </li>
-    <li>
-        <h3><a href="/resources/customer-verification.html">Customer verification</a></h3>
-        <p>Account verification states and possible reasons why an account could be placed in a given state.</p>
     </li>
     <li>
         <h3><a href="/resources/transfer-workflow.html">Transfer workflow</a></h3>

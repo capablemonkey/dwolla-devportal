@@ -5,12 +5,12 @@ type: guide
 guide:
     name: send-money
     step: 1b
-title:  "Step 1: Direct Onboarding"
+title:  "Step 1: Direct onboarding"
 ---
 
-# Step 1: Direct Onboarding
+# Step 1: Direct onboarding
 
-In this experience, the end user is sent to Dwolla to create an account and then returned to your application using the OAuth flow. If you prefer that your users not create traditional Dwolla accounts, choose the White Label solution.
+In this experience, we’ve added the account creation and the ability to add funding source within our co-branded OAuth flow.
 
 
 ### Step A. Construct OAuth authorization request URL.

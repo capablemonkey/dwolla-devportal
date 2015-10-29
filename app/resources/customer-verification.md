@@ -6,7 +6,7 @@ title:  "Customer verification"
 description: "Build bank transfers programmatically into your site or app. Learn about account verification and how to respond when additional information is required."
 ---
 
-# Customer Verification
+# Customer verification
 
 This article will walk through the Customer verification workflow for white label integrations. For more information about white label, please [contact sales](https://www.dwolla.com/contact).
 

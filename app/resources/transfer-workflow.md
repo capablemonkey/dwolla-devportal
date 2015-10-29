@@ -19,7 +19,7 @@ A normal ACH transfer workflow includes the following statuses:
 
 Between the ACH transfer statuses of “pending” and “processed” there are three other transfer statuses which can occur: “cancelled”, “failed”, and “reclaimed.” 
 
-- **Cancelled:** If a transfer’s status changes from “pending” to “cancelled”, this means that the transfer was cancelled. A transfer can be cancelled by a Traditional CIP Verified account. See "Bank to Dwolla network" and "Dwolla network to bank" below for available cancellation windows. 
+- **Cancelled:** If a transfer’s status changes from “pending” to “cancelled”, this means that the transfer was cancelled. A transfer can be cancelled by a [Traditional CIP Verified account](/resources/account-types.html). See "Bank to Dwolla network" and "Dwolla network to bank" below for available cancellation windows. 
 - **Failed:** If a transfer failed to clear successfully (usually as a result of an ACH reject), the transfer’s status will be “failed”. Transfers can fail for a number of reasons, e.g. insufficient funds, invalid account number, no account/unable to locate account, etc. Note: in rare cases, a “processed” transfer may later on get returned as “failed”.
 - **Reclaimed:** If a transfer failed because the recipient did not claim the money after 30 days (or a custom reclaim period set by the sender), the transfer status will be marked as “reclaimed.” “Reclaimed” does not apply when transferring to White Label Customers.
 
@@ -38,7 +38,7 @@ This can be compared to typical Standard ACH transfer times of T+3 to T+4—depe
 
 The timetables for transfers in and out of the Dwolla network are:
 
-#### Bank to Dwolla Network
+#### Bank to Dwolla network
 
 | Source        | Transfer time     |
 |:------------- |:----------------- |
@@ -46,9 +46,9 @@ The timetables for transfers in and out of the Dwolla network are:
 | Next Day ACH  | 1-2 business days |
 | Standard ACH  | 3-5 business days |
 
-* Transfers into the Dwolla network, including transfers that pass through the Dwolla network to another user’s bank account, can be cancelled by a CIP verified account at any point until 4pm CT on that same business day if initiated prior to 1PM CT. If a transfer was initiated after 1pm CT, it can be cancelled anytime before 4pm CT on the following business day.
+* Transfers into the Dwolla network, including transfers that pass through the Dwolla network to another user’s bank account, can be cancelled by a [Traditional CIP Verified account](/resources/account-types.html) at any point until 4pm CT on that same business day if initiated prior to 1PM CT. If a transfer was initiated after 1pm CT, it can be cancelled anytime before 4pm CT on the following business day.
 
-#### Dwolla Network to Bank
+#### Dwolla network to bank
 
 | Source                     | Transfer time     |
 |:-------------------------- |:----------------- |
@@ -65,4 +65,4 @@ There are numerous reasons transfers can fail, a few of which are outlined below
 - **No Account/Unable to Locate Account:** The recipient of a transfer has closed their bank account or has incorrectly entered their bank account/routing number when attaching their funding source to their account.
 - **Customer Advises Not Authorized:** The owner of a bank account has told their bank that this transfer was unauthorized.
 
-When a bank transfer fails from a verified account (e.g. Traditional CIP Verified or White Label Verified Customer) to a recipient, funds will return to the sending account’s Dwolla balance. For other transfer scenarios, funds will return to the source bank account.
+When a bank transfer fails from a verified account (e.g. [Traditional CIP Verified](/resources/account-types.html) or [White Label Verified Customer](/resources/account-types.html) to a recipient, funds will return to the sending account’s Dwolla balance. For other transfer scenarios, funds will return to the source bank account.

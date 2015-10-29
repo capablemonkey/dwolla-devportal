@@ -10,7 +10,7 @@ title:  "Step 1: Direct onboarding"
 
 # Step 1: Create a Dwolla Direct account for the payer
 
-In this experience, the end user is sent to Dwolla to create an account and then returned to your application using the OAuth flow. If you prefer that your customers not create Dwolla accounts, choose the White Label solution.
+In this experience, the end user is sent to Dwolla to create an account and then returned to your application using the OAuth flow. If you prefer that your customers not create Dwolla accounts, choose the white label solution.
 
 ### Step A. Construct OAuth authorization request URL.
 
@@ -25,9 +25,9 @@ Example URL:
 
 `https://uat.dwolla.com/oauth/v2/authenticate?client_id=PO%2BSzGAsZCE4BTG7Cw4OAL40Tpf1008mDjGBSVo6QLNfM4mD%2Ba&response_type=code&redirect_uri=https://example.com/return&scope=Balance%7CAccountInfoFull%7CSend%7CRequest%7CTransactions%7CContacts%7CFunding%7CManageAccount%7CScheduled`
 
-### Step B. Redirect back to your application & generate access token
+### Step B. Redirect back to your application and generate access token
 
-The customer will complete their profile and attach a funding source.  After that, they will be prompted to grant your application permission to access the new account and transfer funds from it.  Once the customer agrees, they’ll be redirected back to the redirect_uri you specified in the previous step with a querystring parameter named `code` -- this is an authorization code.  The last step in the OAuth process is to exchange this authorization code for an access token.
+The customer will complete their profile and attach a verified funding source.  After that, they will be prompted to grant your application permission to access the new account and transfer funds from it.  Once the customer agrees, they’ll be redirected back to the redirect_uri you specified in the previous step with a querystring parameter named `code` -- this is an authorization code.  The last step in the OAuth process is to exchange this authorization code for an access token.
 
 Example redirect with authorization code:
 

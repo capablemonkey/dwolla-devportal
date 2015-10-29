@@ -6,7 +6,7 @@ title:  OAuth refresh stategies
 description: "Best practices for managing your access tokens."
 ---
 
-# OAuth Refresh Strategies
+# OAuth refresh strategies
 
 Dwolla’s implementation of the [OAuth 2.0](https://tools.ietf.org/html/rfc6749) standard uses short-lived access tokens and long-lived refresh tokens. When a user account grants authorization to your application, Dwolla will issue an access token which expires in 1 hour and a refresh token which expires in 60 days. You’ll likely want to access a user account for longer than 1 hour, which means you’ll want to implement a way to refresh authorization. 
 
