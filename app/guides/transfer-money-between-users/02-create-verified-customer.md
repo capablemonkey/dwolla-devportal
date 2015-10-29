@@ -5,10 +5,10 @@ type: guide
 guide:
     name: transfer-money-between-users
     step: '2'
-title:  "Step 2: Creating a verified customer"
+title:  "Step 2: Create a verified customer"
 ---
 
-# Step 2: Creating a verified Customer
+# Step 2: Create a verified Customer
 
 First, we’ll create a verified customer for Jane Merchant.
 
