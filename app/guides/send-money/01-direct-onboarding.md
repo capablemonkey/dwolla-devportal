@@ -94,7 +94,7 @@ You won’t need to use the access token for the Dwolla Direct user, all we need
 
 Next, you’ll need to generate an access token for your own account, which you’ll use to transfer funds from your account to the newly created Direct account.
 
-Go here: [https://developers.dwolla.com/dev/token](https://developers.dwolla.com/dev/token
+Go here: [http://dwolla-token.herokuapp.com](http://dwolla-token.herokuapp.com
 )
 
 Be sure to use your application’s key and secret. You’ll require, at a minimum, the Send and Funding scope in order to send funds from your own account.  Important: this access token will allow you to send money from your own account, so be sure to securely store it.

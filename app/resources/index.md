@@ -7,7 +7,7 @@ description: "In-depth articles on Dwolla features and integration patterns."
 <h1>Tools</h1>
 <ul class="icon-links">
     <li><a href="/resources/sandbox.html" class="icon-tools-sandbox">Sandbox</a></li>
-    <li><a href="" class="icon-tools-token-generator">Token generator</a></li>
+    <li><a href="http://dwolla-token.herokuapp.com" class="icon-tools-token-generator">Token generator</a></li>
     <li><a href="/resources/changelog.html" class="icon-tools-change-log">Change log</a></li>
     <li><a href="http://status.dwolla.com" target="_blank" class="icon-tools-status">Status</a></li>
 </ul>

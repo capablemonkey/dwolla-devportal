@@ -12,7 +12,7 @@ title:  "Step 1: Direct onboarding"
 
 In this experience, the end user is sent to Dwolla to create an account and then returned to your application using the OAuth flow. If you prefer that your customers not create Dwolla accounts, choose the White Label solution.
 
-### Step 1. Construct OAuth authorization request URL.
+### Step A. Construct OAuth authorization request URL.
 
 Create a URL to send the user to in order to create a new Dwolla Direct account.  When the user has created a Direct account, they’ll be prompted to give your application permission to access their account, and if they agree, they will be redirected back to your application.  [Read about OAuth](https://docsv2.dwolla.com/#request-user-authorization).
 
@@ -25,7 +25,7 @@ Example URL:
 
 `https://uat.dwolla.com/oauth/v2/authenticate?client_id=PO%2BSzGAsZCE4BTG7Cw4OAL40Tpf1008mDjGBSVo6QLNfM4mD%2Ba&response_type=code&redirect_uri=https://example.com/return&scope=Balance%7CAccountInfoFull%7CSend%7CRequest%7CTransactions%7CContacts%7CFunding%7CManageAccount%7CScheduled`
 
-### Step 2: Redirect back to your application & generate access token
+### Step B. Redirect back to your application & generate access token
 
 The customer will complete their profile and attach a funding source.  After that, they will be prompted to grant your application permission to access the new account and transfer funds from it.  Once the customer agrees, they’ll be redirected back to the redirect_uri you specified in the previous step with a querystring parameter named `code` -- this is an authorization code.  The last step in the OAuth process is to exchange this authorization code for an access token.
 
@@ -89,7 +89,7 @@ Response:
 // No example for this language yet.
 ```
 
-### Step 3: get list of customer’s funding sources
+### Step C. Get list of customer’s funding sources
 
 Using the access token we just generated, we’ll need to get the funding source ID of the bank account we’d like to use to fund the transfer.  
 
@@ -154,7 +154,7 @@ No example for this language yet.
 No example for this language yet.
 ```
 
-### Step 4: make transfer to your account id
+### Step D. Create a transfer to your account
 
 Finally, you can create a transfer from the payer’s bank account to your own account.  
 
