@@ -89,7 +89,7 @@ my_account = accounts_api.id('https://api-uat.dwolla.com/accounts/0270baed-dda5-
 ```
 ```php
 <?php
-$accountsApi = new SwaggerClient\AccountsApi($apiClient);
+$accountsApi = new DwollaSwagger\AccountsApi($apiClient);
 $myAccount = $accountsApi->id('https://api-uat.dwolla.com/accounts/0270baed-dda5-46d0-b074-e7f3d478896f')
 ?>
 ```
@@ -158,7 +158,7 @@ funding_sources = funding_api.id('https://api-uat.dwolla.com/accounts/0270baed-d
 ```
 ```php
 <?php
-$fundingApi = new SwaggerClient\FundingsourcesApi($apiClient);
+$fundingApi = new DwollaSwagger\FundingsourcesApi($apiClient);
 $fundingSources = $fundingApi->id('https://api-uat.dwolla.com/accounts/0270baed-dda5-46d0-b074-e7f3d478896f')
 ?>
 ```

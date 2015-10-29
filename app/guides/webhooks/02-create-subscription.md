@@ -50,7 +50,7 @@ print(subscription) # => https://api-uat.dwolla.com/webhook-subscriptions/5af4c1
 ```
 ```php
 <?php
-$webhookApi = new SwaggerClient\WebhooksubscriptionsApi($apiClient);
+$webhookApi = new DwollaSwagger\WebhooksubscriptionsApi($apiClient);
 $subscription = $webhookApi->create(array (
   'url' => 'http://myapplication.com/webhooks',
   'secret' => 'sshhhhhh',
@@ -95,7 +95,7 @@ print(retrieved.created) # => 2015-10-28T16:20:47+00:00
 ```
 ```php
 <?php
-$webhookApi = new SwaggerClient\WebhooksubscriptionsApi($apiClient);
+$webhookApi = new DwollaSwagger\WebhooksubscriptionsApi($apiClient);
 $retrieved = $webhookApi->id(subscription);
 
 print($retrieved); # => 2015-10-28T16:20:47+00:00
