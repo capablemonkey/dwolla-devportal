@@ -266,7 +266,7 @@ Great! The funding source should now be verified.
 
 ### Step E: Create a transfer
 
-Once the customer has verified their funding source, we can transfer funds from their bank account to your Dwolla account.   You’ll need to supply your access token from step 1, the customer’s ID from step 2, and the customer’s funding source ID from step 3:
+Once the customer has verified their funding source, we can transfer funds from their bank account to your Dwolla account.   You’ll need to supply your access token from step A, the customer’s ID from step B, and the customer’s funding source ID from step C:
 
 ```raw
 POST https://api-uat.dwolla.com/transfers
