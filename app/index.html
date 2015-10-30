@@ -35,6 +35,7 @@ sampleRuby: >
     }
 
     xfer = DwollaSwagger::TransfersApi.create({:body => transfer_request})
+
     p xfer # => https://api-uat.dwolla.com/transfers/d76265cd-0951-e511-80da-0aa34a9b2388
     ```
 
@@ -96,6 +97,7 @@ samplePython: >
     }
 
     transfers_api = dwollaswagger.TransfersApi(client)
+
     xfer = transfers_api.create(body=transfer_request)
 
     print(xfer) # => https://api-uat.dwolla.com/transfers/d76265cd-0951-e511-80da-0aa34a9b2388
@@ -107,7 +109,9 @@ samplePHP: >
     <?php
 
     DwollaSwagger\Configuration::$auth_token = 'elq7kponDPk4iT5DUllTIHL5H5vhZCORKLQ6aB3jfkfSnqSNw6';
+
     $apiClient = new DwollaSwagger\ApiClient("https://api-uat.dwolla.com/");
+
     $transfer_request = array (
       '_links' => 
       array (
@@ -133,6 +137,7 @@ samplePHP: >
     );
 
     $transferApi = new DwollaSwagger\TransfersApi($apiClient);
+    
     $myAccount = $transferApi->create($transfer_request);
 
     print($xfer); # => https://api-uat.dwolla.com/transfers/d76265cd-0951-e511-80da-0aa34a9b2388
