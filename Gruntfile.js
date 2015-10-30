@@ -22,7 +22,8 @@ module.exports = function (grunt) {
     // Configurable paths
     yeoman: {
       app: 'app',
-      dist: 'dist'
+      dist: 'dist',
+      baseURL: 'https://devint.dwolla.com/api'
     },
     watch: {
       sass: {
@@ -197,7 +198,8 @@ module.exports = function (grunt) {
     cssmin: {
       dist: {
         options: {
-          check: 'gzip'
+          check: 'gzip',
+          dest: '/<%= yeoman.dist %>/css'
         }
       }
     },
@@ -268,6 +270,14 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: 'old-devportal/',
+          src: '**',
+          dest: 'dist/'
+        }]
+      },
+      fixUseminForBaseURL: {
+        files: [{
+          expand: true,
+          cwd: 'dist/<%= yeoman.baseURL %>',
           src: '**',
           dest: 'dist/'
         }]
@@ -393,7 +403,8 @@ module.exports = function (grunt) {
     'filerev',
     'usemin',
     'htmlmin',
-    'copy:distOldDevportal'
+    'copy:distOldDevportal',
+    'copy:fixUseminForBaseURL' // very hacky!! -- must edit app.baseURL when config.yml baseurl changes
     ]);
 
   grunt.registerTask('deploy', [
