@@ -8,19 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- build:css({app,.tmp}) /css/main.css -->
-    <link rel="stylesheet" href="https://devint.dwolla.com/api/_bower_components/normalize-css/normalize.css">
-    <link rel="stylesheet" href="https://devint.dwolla.com/api/css/syntax.css">
-    <link rel="stylesheet" href="https://devint.dwolla.com/api/css/application.css">
-    <link rel="stylesheet" href="https://devint.dwolla.com/api/_bower_components/icons/dist/base/icons.data.svg.css">
-    <link rel="stylesheet" href="https://devint.dwolla.com/api/_bower_components/icons/dist/developer/icons.data.svg.css">
-    <link rel="stylesheet" href="https://devint.dwolla.com/api/_bower_components/icons/dist/guides/icons.data.svg.css">
+    <link rel="stylesheet" href="/_bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/application.css">
+    <link rel="stylesheet" href="/_bower_components/icons/dist/base/icons.data.svg.css">
+    <link rel="stylesheet" href="/_bower_components/icons/dist/developer/icons.data.svg.css">
+    <link rel="stylesheet" href="/_bower_components/icons/dist/guides/icons.data.svg.css">
     <!-- endbuild -->
 
-    <link rel="stylesheet" href="https://devint.dwolla.com/api//fonts.googleapis.com/css?family=Roboto+Slab:300|Open+Sans:300,400,600,700">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab:300|Open+Sans:300,400,600,700">
 
     <!-- build:js(app) /js/head-scripts.js -->
     <!-- Replace with a custom modernizer build for production -->
-    <script src="https://devint.dwolla.com/api/_bower_components/modernizr/modernizr.js"></script>
+    <script src="/_bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
 
