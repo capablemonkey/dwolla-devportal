@@ -485,7 +485,7 @@ Now that you’ve got a newly created Direct account for your end user and an ac
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 <script>window.jQuery || document.write('<script src="/_bower_components/jquery/jquery.min.js"><\/script>')</script>
-<!-- build:js(app) /js/script.js -->
+<!-- build:js(app) https://devint.dwolla.com/api/js/script.js -->
 <script src="/js/plugins.js"></script>
 <script src="/js/main.js"></script>
 <script src="/_bower_components/style-tiles/dist/js/developer.js"></script>
