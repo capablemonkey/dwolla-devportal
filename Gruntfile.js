@@ -168,8 +168,7 @@ module.exports = function (grunt) {
     },
     usemin: {
       options: {
-        assetsDirs: ['<%= yeoman.dist %>', '<%= yeoman.dist %>/images'],
-        root: '{{site.baseurl}}'
+        assetsDirs: ['<%= yeoman.dist %>', '<%= yeoman.dist %>/images']
       },
       html: ['<%= yeoman.dist %>/**/*.html'],
       css: ['<%= yeoman.dist %>/css/**/*.css']

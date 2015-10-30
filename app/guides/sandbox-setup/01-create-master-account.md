@@ -13,11 +13,11 @@ description: Use this guide to start sending payments from your application by u
 
 In order to use the Sandbox Console tool, you must create a Sandbox account. Once you have this account, you can login to the Sandbox Console tool to create and manage accounts in Dwolla’s Sandbox environment and to test transfer states. Go to: <a target="_blank" href="https://sandbox-uat.dwolla.com/">sandbox-uat.dwolla.com</a>.  
 
-![Screenshot of Register screen]({{site.baseurl}}/images/sandbox-guide-register.png "Register screen")
+![Screenshot of Register screen](/images/sandbox-guide-register.png "Register screen")
 
 You’ll be prompted to create a Dwolla Direct account, which is your master Sandbox account. Remember the email and password for this account because you’ll need it to log into the Sandbox Console tool in the future. When you’re creating your Sandbox account, please use only fake information, other than your email address. Note that Dwolla doesn’t validate any personal identifying information in the registration form. Do not use identifying information for yourself or any other person.
 
-![Screenshot of Bank screen]({{site.baseurl}}/images/sandbox-guide-bank.png "Bank screen")
+![Screenshot of Bank screen](/images/sandbox-guide-bank.png "Bank screen")
 
 When prompted to add a bank account, select any bank and fill in fake login information. Once you press “Agree and Continue” you’ll have created your master Sandbox account and be logged into the Sandbox Console tool automatically. 
 
