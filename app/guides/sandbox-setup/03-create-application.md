@@ -18,6 +18,6 @@ Create API credentials using your child Sandbox account.
 3. Submit to receive your API Key and Secret. 
 
 <nav class="pager-nav">
-    <a href="./">Back: Create a child Sandbox account</a>
+    <a href="./02-create-child-account.html">Back: Create a child Sandbox account</a>
     <a href="04-enable-sdk-sandbox-mode.html">Next step: Enable Sandbox mode for SDKs</a>
 </nav>

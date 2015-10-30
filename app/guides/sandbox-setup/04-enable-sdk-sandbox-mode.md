@@ -39,6 +39,6 @@ $apiClient = new DwollaSwagger\ApiClient("https://api-uat.dwolla.com/");
 You’re all set! With Sandbox mode enabled, you’re ready to start sending money in the Sandbox. 
 
 <nav class="pager-nav">
-    <a href="./">Back: Create an application</a>
+    <a href="./03-create-application.html">Back: Create an application</a>
     <a href="/guides/send-money">Next guide: Send money to your users</a>
 </nav>
