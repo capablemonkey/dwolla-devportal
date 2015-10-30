@@ -18,16 +18,16 @@ First, you should have [an active webhook subscription](/guides/webhooks/).  Inf
 
 ## Quick overview
 
- 1. Create a verified personal Customer.
- 2. Check the status of the personal Customer.
- 3. If necessary, retry verification.
- 4. If necessary, upload a photo document.
+ 1. Create a verified personal Customer
+ 2. Check the status of the personal Customer
+ 3. If necessary, retry verification
+ 4. If necessary, upload a photo document
 
 ### Create a verified personal Customer
 
 To create a verified personal Customer, use the [Create Customer](https://docsv2.dwolla.com/#new-customer) endpoint:
 
-```rawnoselect
+```raw
 POST /customers
 Content-Type: application/vnd.dwolla.v1.hal+json
 Accept: application/vnd.dwolla.v1.hal+json
@@ -51,7 +51,6 @@ Authorization: Bearer pBA9fVDBEyYZCEsLf/wKehyh1RTpzjUj5KzIRfDi0wKTii7DqY
 HTTP/1.1 201 Created
 Location: https://api.dwolla.com/customers/FC451A7A-AE30-4404-AB95-E3553FCD733F
 ```
-<<<<<<< HEAD
 ```ruby
 new_customer = DwollaSwagger::CustomersApi.create({:body => {
       "firstName" => "Gordon",
@@ -115,42 +114,24 @@ $newCustomer = $customersApi->create(array (
 print($newCustomer); # => https://api.dwolla.com/customers/FC451A7A-AE30-4404-AB95-E3553FCD733F
 ?>
 ```
-=======
->>>>>>> 1da09d607a8cf6200f78c106e2ced15bb982699e
 
 You’ll need to provide the Customer’s full name, email address, home address, date of birth, and the last four digits of their taxpayer identification number (for individuals, this is their Social Security Number).
 
 Once you submit this request, Dwolla will perform some initial validation to check for formatting issues such as an invalid date of birth, invalid email format, etc. If successful, the response will be a HTTP 201/Created with the URL of the new Customer resource contained in the `Location` header.
 
-<<<<<<< HEAD
-=======
-```rawnoselect
-HTTP/1.1 201 Created
-Location: https://api.dwolla.com/customers/FC451A7A-AE30-4404-AB95-E3553FCD733F
-```
-
->>>>>>> 1da09d607a8cf6200f78c106e2ced15bb982699e
 ### Check the status of the personal Customer
 
 The successful creation of a Customer doesn’t necessarily mean the Customer is verified. When a Customer has been successfully verified by Dwolla, their status will be set to `verified`.
 
 Let’s check to see if the Customer was successfully verified or not. We are going to use the location of the Customer resource that we just created, which is in `new_customer`.
 
-```rawnoselect
+```raw
 GET https://api.dwolla.com/customers/FC451A7A-AE30-4404-AB95-E3553FCD733F
 Content-Type: application/vnd.dwolla.v1.hal+json
 Accept: application/vnd.dwolla.v1.hal+json
 Authorization: Bearer pBA9fVDBEyYZCEsLf/wKehyh1RTpzjUj5KzIRfDi0wKTii7DqY
-<<<<<<< HEAD
 
 HTTP 200 OK
-=======
-```
-
-Response: 
-
-```rawnoselect
->>>>>>> 1da09d607a8cf6200f78c106e2ced15bb982699e
 {
   "_links": {
     "self": {
@@ -178,7 +159,6 @@ Response:
   "created": "2015-09-29T19:47:28.920Z"
 }
 ```
-<<<<<<< HEAD
 ```ruby
 retrieved_customer = DwollaSwagger::CustomersApi.get_customer(new_customer)
 
@@ -203,8 +183,6 @@ $retrievedCustomer = $customersApi->getCustomer($newCustomer);
 print($newCustomer->verified); # => true
 ?>
 ```
-=======
->>>>>>> 1da09d607a8cf6200f78c106e2ced15bb982699e
 
 Our Customer was successfully verified! Other Customers, however, may require additional verification. Continue reading for instructions on providing additional information to verify these Customers.
 
@@ -212,7 +190,7 @@ Our Customer was successfully verified! Other Customers, however, may require ad
 
 If the Customer has a status of `retry`, some information may have been miskeyed. You have one more opportunity to correct any mistakes. This time, you’ll need to provide the customer’s full SSN.
 
-```rawnoselect
+```raw
 POST /customers/132681FA-1B4D-4181-8FF2-619CA46235B1
 Content-Type: application/vnd.dwolla.v1.hal+json
 Accept: application/vnd.dwolla.v1.hal+json
@@ -233,7 +211,6 @@ Authorization: Bearer pBA9fVDBEyYZCEsLf/wKehyh1RTpzjUj5KzIRfDi0wKTii7DqY
   "tin": "202-99-1516"
 }
 ```
-<<<<<<< HEAD
 ```ruby
 retry_customer = DwollaSwagger::CustomersApi.create({:body => {
       "firstName" => "Gordon",
@@ -297,8 +274,6 @@ $retryCustomer = $customersApi->create(array (
 print($retryCustomer); # => https://api.dwolla.com/customers/FC451A7A-AE30-4404-AB95-E3553FCD733F
 ?>
 ```
-=======
->>>>>>> 1da09d607a8cf6200f78c106e2ced15bb982699e
 
 Check the Customer’s status again. The Customer will either be verified or in the `document` or `suspended` state.
 
@@ -306,7 +281,7 @@ Check the Customer’s status again. The Customer will either be verified or in 
 
 If the customer has a status of `document`, then you'll need to upload a photo of the customer's U.S. passport, state driver's license, or other U.S. government-issued photo ID. Use the Create a document endpoint for that. The document will then be reviewed by Dwolla.  
 
-```rawnoselect
+```raw
 curl -X POST 
 \ -H "Authorization: Bearer tJlyMNW6e3QVbzHjeJ9JvAPsRglFjwnba4NdfCzsYJm7XbckcR" 
 \ -H "Accept: application/vnd.dwolla.v1.hal+json" 
@@ -315,7 +290,6 @@ curl -X POST
 \ -F "documentType=passport" 
 \ -F "file=@foo.png" 
 \ 'https://api-uat.dwolla.com/customers/132681FA-1B4D-4181-8FF2-619CA46235B1/documents'
-<<<<<<< HEAD
 
 HTTP/1.1 201 Created
 Location: https://api-uat.dwolla.com/documents/11fe0bab-39bd-42ee-bb39-275afcc050d0
@@ -332,16 +306,6 @@ Location: https://api-uat.dwolla.com/documents/11fe0bab-39bd-42ee-bb39-275afcc05
 ```php
 // No SDK support. Coming soon
 ```
-=======
-```
-
-If the document was successfully uploaded, the response will be a HTTP 201/Created with the URL of the new document resource contained in the Location header.
-
-```rawnoselect
-HTTP/1.1 201 Created
-Location: https://api-uat.dwolla.com/documents/11fe0bab-39bd-42ee-bb39-275afcc050d0
-```
->>>>>>> 1da09d607a8cf6200f78c106e2ced15bb982699e
 
 If the document was successfully uploaded, the response will be a HTTP 201/Created with the URL of the new document resource contained in the Location header.
 
