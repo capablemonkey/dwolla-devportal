@@ -33,7 +33,7 @@ Example redirect with authorization code:
 
 `https://example.com/return?code=sZCE4BTG7Cw4O`
 
-```jsonnoselect
+```rawnoselect
 POST https://uat.dwolla.com/oauth/v2/token
 Content-Type: application/json
 
