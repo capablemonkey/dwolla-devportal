@@ -13,4 +13,5 @@ description: "Keep track of changes to the Dwolla API and official SDKs."
 <ul class="bullet">
     <li>Launched the new developer portal!</li>
 </ul>
+<hr>
 </section>
