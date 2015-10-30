@@ -17,9 +17,9 @@ You can create child accounts by uploading a .csv file with test data. Download 
 
 ![Screenshot of Sandbox Console](/images/sandbox-guide-admin.png "Screenshot of Sandbox Console")
 
-Once the child account is created, you can use the email address and password you specified in the .csv to login at uat.dwolla.com.  Any transactions associated with the child account can be manipulated in the Sandbox Console Tool.
+Once the child account is created, you can use the email address and password you specified in the .csv to login at [uat.dwolla.com](https://uat.dwolla.com).  Any transactions associated with the child account can be manipulated in the Sandbox Console Tool.
 
 <nav class="pager-nav">
-    <a href="./">Back: Create a master Sandbox account</a>
+    <a href="./01-create-master-account.html">Back: Create a master Sandbox account</a>
     <a href="03-create-application.html">Next step: Create an application</a>
 </nav>
