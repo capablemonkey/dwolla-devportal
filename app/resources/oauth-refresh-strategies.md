@@ -8,7 +8,7 @@ description: "Best practices for managing your access tokens."
 
 # OAuth refresh strategies
 
-Dwolla’s implementation of the [OAuth 2.0](https://tools.ietf.org/html/rfc6749) standard uses short-lived access tokens and long-lived refresh tokens. When a user account grants authorization to your application, Dwolla will issue an access token which expires in 1 hour and a refresh token which expires in 60 days. You’ll likely want to access a user account for longer than 1 hour, which means you’ll want to implement a way to refresh authorization. 
+Dwolla’s implementation of the <a href="https://tools.ietf.org/html/rfc6749" target="_blank">OAuth 2.0</a> standard uses short-lived access tokens and long-lived refresh tokens. When a user account grants authorization to your application, Dwolla will issue an access token which expires in 1 hour and a refresh token which expires in 60 days. You’ll likely want to access a user account for longer than 1 hour, which means you’ll want to implement a way to refresh authorization. 
 
 **Note**: A user account can represent your own account or an account that belongs to a user of your application. Follow these strategies even if you’re only using OAuth in order to access  your own account via the API.
 
@@ -20,7 +20,8 @@ There are two recommended strategies for managing short-lived access tokens. If 
 
 You set up a cron job that runs in the background every hour to refresh each user account’s OAuth access token. Refreshing authorization would happen behind the scenes as a backend process. You would first query your database for tokens that are about to expire, make a POST request to refresh authorization, and update your database to include the newly refreshed token pair. Note: Be prepared to handle errors gracefully while the cron job is running. 
 
-```
+##### Node.JS Example
+```javascriptnoselect
 var cron = require('cron');
 var cronJob = cron.job("0 */55 * * * *", function() {
     User.find({

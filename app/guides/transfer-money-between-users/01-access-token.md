@@ -10,9 +10,9 @@ title:  "Step 1: Generate an access token"
 
 # Step 1: Generate an access token for your account
 
-Log into your child Sandbox account and go here: [http://dwolla-token.herokuapp.com](http://dwolla-token.herokuapp.com)
+Go to the <a href="http://dwolla-token.herokuapp.com" target="_blank">token generator</a>. 
 
-Use your application’s key and secret and select the scopes needed for your application. For example, select: Send, Funding, Transactions, and ManageCustomers. With these scopes, you can complete the OAuth flow, which issues you an access and refresh token pair that contains the proper scopes for creating and managing customers. More detail is available in the [API docs](https://docsv2.dwolla.com/#oauth).
+Use your application’s key and secret and select the following scopes: Send, Funding, Transactions, and ManageCustomers. When you get to the OAuth login log in screen, log in with your child Sandbox account. Once you agree to the permissions, you'll receive an access and refresh token pair that contains the proper scopes for creating and managing customers. More detail is available in [API docs](https://docsv2.dwolla.com/#oauth).
 
 <nav class="pager-nav">
     <a href="./">Back: Overview</a>

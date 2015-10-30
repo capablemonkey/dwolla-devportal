@@ -38,7 +38,7 @@ The `topic` field of an event holds [a description](http://docsv2.dwolla.com/#ev
 }
 ```
 
-#### Step 1: Authenticating the webhook request
+#### Step A. Authenticating the webhook request
 Before we process any data from the webhook we’ll want to validate that the request really came from Dwolla and not someone pretending to be Dwolla. Dwolla signs each webhook request with the `secret` you passed in when you created the webhook subscription. The signature is contained in the `X-Request-Signature` header and is a SHA-1 HMAC hash of the request body with the key being your webhook secret.
 
 You can validate the webhook by generating the same SHA-1 HMAC hash and comparing it to the signature sent with the payload.
@@ -86,7 +86,7 @@ function verifyGatewaySignature($proposedSignature, $webhookSecret, $payloadBody
 ?>
 ```
 
-#### Step 2: Check for duplicate events
+#### Step B. Check for duplicate events
 
 It is important to consider that multiple webhooks are fired for the same action on certain events. For example, multiple webhooks are fired for `Transfer` events, that is, two `transfer_created` events with different resource IDs (and, by extension, resource URLs) will be fired, one for each customer. To avoid doing any business logic twice, you would have to check if you have already received a webhook relating to the `Transfer` resource responsible for the event.
 

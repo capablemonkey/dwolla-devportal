@@ -9,7 +9,7 @@ title: Webhooks
 description: Webhooks for payments within your application by utilizing our open API with no per transaction fees. 
 ---
 
-## Example Scenario
+## Example scenario
 
 Let's assume that you have a webhook subscription and Dwolla has just delivered the following payload to your specified endpoint:
 

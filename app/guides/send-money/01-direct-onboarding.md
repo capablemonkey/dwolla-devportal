@@ -32,7 +32,7 @@ Example redirect with authorization code:
 
 `https://example.com/return?code=sZCE4BTG7Cw4O`
 
-```raw
+```rawnoselect
 POST https://uat.dwolla.com/oauth/v2/token
 Content-Type: application/json
 
@@ -44,22 +44,10 @@ Content-Type: application/json
   "redirect_uri": "https://example.com/return"
 }
 ```
-```ruby
-# No V2 SDK support for handling OAuth.
-```
-```javascript
-// No V2 SDK support for handling OAuth.
-```
-```python
-# No V2 SDK support for handling OAuth.
-```
-```php
-// No V2 SDK support for handling OAuth.
-```
 
 Response:
 
-```raw
+```jsonnoselect
 {
   "_links": {
     "account": {
@@ -75,18 +63,6 @@ Response:
   "account_id": "4bb512e4-ad4d-4f7e-bfd0-a232007f21a1"
 }
 ```
-```ruby
-# No V2 SDK support for handling OAuth.
-```
-```javascript
-// No V2 SDK support for handling OAuth.
-```
-```python
-# No V2 SDK support for handling OAuth.
-```
-```php
-// No V2 SDK support for handling OAuth.
-```
 
 You won’t need to use the access token for the Dwolla Direct user, all we need from the above response is their account URL.
 
@@ -94,8 +70,7 @@ You won’t need to use the access token for the Dwolla Direct user, all we need
 
 Next, you’ll need to generate an access token for your own account, which you’ll use to transfer funds from your account to the newly created Direct account.
 
-Go here: [http://dwolla-token.herokuapp.com](http://dwolla-token.herokuapp.com
-)
+Go to the <a href="http://dwolla-token.herokuapp.com" target="_blank">token generator</a>.
 
 Be sure to use your application’s key and secret. You’ll require, at a minimum, the Send and Funding scope in order to send funds from your own account.  Important: this access token will allow you to send money from your own account, so be sure to securely store it.
 
