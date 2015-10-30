@@ -5,7 +5,7 @@
     "normalize-css": "~3.0.1",
     "jquery": "~1.11.1",
     "modernizr": "~2.8.3",
-    "style-tiles": "https://stash.dwolla.net/scm/fe/style-tiles.git#master",
+    "style-tiles": "https://stash.dwolla.net/scm/fe/style-tiles.git#^0.x.x",
     "icons": "https://stash.dwolla.net/scm/fe/icons.git#^0.x.x"
   }
 }
