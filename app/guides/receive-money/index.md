@@ -14,7 +14,7 @@ description: Receive payments from your application by utilizing our open API wi
 In this guide, we’ll cover the key points of collecting money from your customers by utilizing our open API with no per transaction fees.
 
 - Create a sending customer for the funds
-- Associated a verified funding source (bank or credit union account) with the customer
+- Associate a verified funding source (bank or credit union account) with the customer
 - Transfer funds from the customer’s linked account 
 
 Prerequisite: complete the [Getting started guide](/guides/sandbox-setup) and have [Traditional CIP-Verified Dwolla account](/resources/account-types.html).
