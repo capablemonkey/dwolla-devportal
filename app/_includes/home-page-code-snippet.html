@@ -40,6 +40,12 @@ curl -X POST -H "Authorization: Bearer elq7kponDPk4iT5DUllTIHL5H5vhZCORKLQ6aB3jf
             </div><div class="code-snippet__cnt highlight"><pre style="text-align: left;"><code class="language-ruby" data-lang="ruby"><span class="c1">
 require 'dwolla_swagger'
 
+DwollaSwagger::Swagger.configure do |config|
+    config.auth_token = 'elq7kponDPk4iT5DUllTIHL5H5vhZCORKLQ6aB3jfkfSnqSNw6'
+    config.host = 'api-uat.dwolla.com'
+    config.base_path = '/'
+end
+
 transfer_request = {
       "_links" => {
         "destination" => {
@@ -71,7 +77,19 @@ p xfer # => https://api-uat.dwolla.com/transfers/d76265cd-0951-e511-80da-0aa34a9
                   <button class="selector_switch" id="javascript">javascript</button>
               </nav>
             </div><div class="code-snippet__cnt highlight"><pre style="text-align: left;"><code class="language-javascript" data-lang="javascript"><span class="c1">
-            This one's you Gordon
+var client = require('swagger-client');
+
+var ACCESS_TOKEN = 'elq7kponDPk4iT5DUllTIHL5H5vhZCORKLQ6aB3jfkfSnqSNw6';
+
+var swagger = new client({
+  url: 'https://api-uat.dwolla.com/swagger.json',
+  authorizations: {
+    headerAuth: new client.ApiKeyAuthorization('Authorization', 'Bearer ' + ACCESS_TOKEN, 'header')
+  },
+  success: function() {
+    swagger.customers.list();
+  }
+});
             </span>
 </code></pre></div></div><div class="code-snippet js-code-snippet language-python"><button class="btn alternative">copy</button><div class="code-snippet__selector">
               <nav>
@@ -82,6 +100,10 @@ p xfer # => https://api-uat.dwolla.com/transfers/d76265cd-0951-e511-80da-0aa34a9
                   <button class="selector_switch" id="javascript">javascript</button>
               </nav>
             </div><div class="code-snippet__cnt highlight"><pre style="text-align: left;"><code class="language-python" data-lang="python"><span class="c">import dwollaswagger
+
+dwollaswagger.configuration.auth_token = 'elq7kponDPk4iT5DUllTIHL5H5vhZCORKLQ6aB3jfkfSnqSNw6'
+
+client = dwollaswagger.ApiClient('https://api-uat.dwolla.com')
 
 transfer_request = {
     "_links": {
@@ -116,7 +138,10 @@ print(xfer) # => https://api-uat.dwolla.com/transfers/d76265cd-0951-e511-80da-0a
                   <button class="selector_switch" id="javascript">javascript</button>
               </nav>
             </div><div class="code-snippet__cnt highlight"><pre style="text-align: left;"><code class="language-php" data-lang="php">
+            
 <?php
+DwollaSwagger\Configuration::$auth_token = 'elq7kponDPk4iT5DUllTIHL5H5vhZCORKLQ6aB3jfkfSnqSNw6';
+$apiClient = new DwollaSwagger\ApiClient("https://api-uat.dwolla.com/");
 $transfer_request = array (
   '_links' => 
   array (
