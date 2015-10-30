@@ -15,7 +15,7 @@ To subscribe to webhooks, you must first obtain client authorization via OAuth. 
 
 **NOTE**: Currently, the Dwolla/Swagger SDKs do not contain the capability to do this, so you must use an external REST client. We are working on resolving this. 
 
-```raw
+```jsonnoselect
 POST /oauth/v2/token
 Content-Type: application/json
 
@@ -25,40 +25,16 @@ Content-Type: application/json
   "grant_type": "client_credentials"
 }
 ```
-```ruby
-No example for this language yet.
-```
-```javascript
-No example for this language yet.
-```
-```python
-No example for this language yet.
-```
-```php
-No example for this language yet.
-```
 
 Response:
 
-```raw
+```jsonnoselect
 {
   "access_token": "(...)",
   "token_type": "bearer",
   "expires_in": 3600,
   "scope": "AccountInfoFull|ManageAccount|Contacts|Transactions|Balance|Send|Request|Funding"
 }
-```
-```ruby
-No example for this language yet.
-```
-```javascript
-No example for this language yet.
-```
-```python
-No example for this language yet.
-```
-```php
-No example for this language yet.
 ```
 
 <nav class="pager-nav">
