@@ -22,7 +22,7 @@ In this guide, we’ll cover the key points of transferring money:
  - Transfer funds from the sender’s funding source to the recipient’s funding  source
 
 
-### Get set up with sandbox accounts
+### Get set up with Sandbox accounts
 
 Before you begin, be sure your [Sandbox accounts](/guides/sandbox-setup) are already set up. 
 

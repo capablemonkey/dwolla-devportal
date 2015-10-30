@@ -31,14 +31,19 @@ Regardless of which option you implement, the first step is to create recipients
 ### Next step: Choose your onboarding experience
 
 *After this step you will be directed back to step 2 where the remaining process is the same.*
-
 <nav class="decision-nav">
-<div>
-    <a href="01-white-label-onboarding.html">White Label</a>
-    <p>You capture customer data and pass it to Dwolla.</p>
-</div>
-<div>
-    <a href="01-direct-onboarding.html">Dwolla Direct</a>
-    <p>Dwolla captures your customers data.</p>
-</div>
+    <div>
+        <a href="01-white-label-onboarding.html">
+            <div class="icon-decision-nav-white-label"></div>
+            White Label
+        </a>
+        <p>You capture customer data and pass it to Dwolla.</p>
+    </div>
+    <div>
+        <a href="01-direct-onboarding.html">
+            <div class="icon-decision-nav-direct"></div>
+            Dwolla Direct
+        </a>
+        <p>Dwolla captures your customers data.</p>
+    </div>
 </nav>

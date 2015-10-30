@@ -40,5 +40,5 @@ You’re all set! With Sandbox mode enabled, you’re ready to start sending mon
 
 <nav class="pager-nav">
     <a href="./">Back: Create an application</a>
-    <a href="/guides/send-money">Next guide: send money to your users</a>
+    <a href="/guides/send-money">Next guide: Send money to your users</a>
 </nav>

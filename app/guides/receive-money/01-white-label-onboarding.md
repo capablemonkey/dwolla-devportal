@@ -5,14 +5,14 @@ guide:
     name: receive-money
     step: 1a
 type: guide
-title:  "Step 1: White Label onboarding"
+title:  "Step 1: White label onboarding"
 ---
 
-# Step 1: Create a customer using the White Label solution
+# Step 1: Create a customer using the white label solution
 
 ### Step 1: Create an access token.
 
-Log into your child sandbox account and go [here](http://dwolla-token.herokuapp.com) to get a token. Use your application’s key and secret and select the scopes needed for your application. For example, select: Send, Funding, Transactions, and ManageCustomers. With these scopes, you can complete the OAuth flow, which issues you an access and refresh token pair that contains the proper scopes for creating and managing customers.
+Log into your child Sandbox account and go [here](http://dwolla-token.herokuapp.com) to get a token. Use your application’s key and secret and select the scopes needed for your application. For example, select: Send, Funding, Transactions, and ManageCustomers. With these scopes, you can complete the OAuth flow, which issues you an access and refresh token pair that contains the proper scopes for creating and managing customers.
 
 ### Step 2: Create a customer
 

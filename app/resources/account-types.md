@@ -2,15 +2,15 @@
 layout: twoColumn
 section: resources
 type: article
-title:  "Types of accounts"
+title:  "Account types"
 description: "Build bank transfers programmatically into your site or app. Learn about the different types of Dwolla accounts, transfer limits, and eligibility."
 ---
 
-# Account Types
+# Account types
 
 Before designing your integration, you’ll want to be aware of the different account types that exist on the Dwolla platform as well as their capabilities. A key difference between Traditional accounts and White Label Customer accounts outlined below is the onboarding user experience as well as the interaction with Dwolla. Traditional accounts access dwolla.com to manage their account, whereas White Label Customer accounts are managed entirely by the Traditional account that creates them. Regardless of whether your application interacts with Traditional accounts or White Label Customer accounts, it’s important to note that in a transfer of money between two parties at least one account must be Customer Identity Program (CIP) verified. In addition, we also require CIP verification as a part of a customer holding funds in the Dwolla network. 
 
-## Traditional Accounts
+## Traditional accounts
 
 A Traditional account can be established prior to interacting with your application by signing up on dwolla.com, or can be created directly inline with the capture of the user's permission via Dwolla’s OAuth flow. In both of these cases, Dwolla facilitates the onboarding process and (if necessary) additional identity verification.
 
@@ -22,7 +22,7 @@ A Traditional CIP Verified Dwolla account maintains full access to the Dwolla pl
 
 A Direct account is a lightweight account that maintains partial platform capabilities. This type of account requires only a username and password with no added CIP verification steps. Since identity vetting is not required, a Direct account may only transact with a CIP verified account: (1) Traditional CIP Verified or (2) White Label Verified Customer. 
 
-## White Label Customer Accounts
+## White Label Customer accounts
 
 A White Label Customer account is created programmatically by a Partner’s Traditional CIP Verified account via the endpoint “Create New Customer”. All required account information will be handled via the API and the White Label Customer will interact directly with the Traditional CIP Verified account to manage their account.
 

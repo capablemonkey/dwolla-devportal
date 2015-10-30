@@ -5,15 +5,15 @@ guide:
     name: send-money
     step: 1a
 type: guide
-title:  "Step 1: White Label onboarding"
+title:  "Step 1: White label onboarding"
 ---
 
-# Step 1: Create recipients using White Label solution
+# Step 1: Create recipients using white label solution
 
 In this experience, end users create their accounts entirely within your application and you prompt for their bank or credit union account information. Dwolla will securely store this sensitive information.
 
 ### Step A. Create an access token.
-Log into your child sandbox account and go here: [https://developers.dwolla.com/dev/token](http://dwolla-token.herokuapp.com)
+Log into your child Sandbox account and go here: [https://developers.dwolla.com/dev/token](http://dwolla-token.herokuapp.com)
 
 Use your application’s key and secret and select the scopes needed for your application. For example, select: Send, Funding, Transactions, and ManageCustomers. With these scopes, you can complete the OAuth flow, which issues you an access and refresh token pair that contains the proper scopes for creating and managing customers. More detail is available in [API docs](https://docsv2.dwolla.com/#oauth).
 

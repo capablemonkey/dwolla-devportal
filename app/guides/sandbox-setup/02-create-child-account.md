@@ -11,7 +11,7 @@ description: Use this guide to start sending payments from your application by u
 
 # Create a child account to create your application
 
-Now that you’re logged into the Sandbox Console tool, you can create a child account. This child account typically represents your main account in Dwolla’s production environment which you’ll use to send funds from, collect funds, and if applicable, create White Label customers. You’ll also use this account to create your application.
+Now that you’re logged into the Sandbox Console tool, you can create a child account. This child account typically represents your main account in Dwolla’s production environment which you’ll use to send funds from, collect funds, and if applicable, create White Label Customers. You’ll also use this account to create your application.
 
 You can create child accounts by uploading a .csv file with test data. Download the sample file to get started and make a .csv with one account and upload it.
 
