@@ -10,11 +10,11 @@ title:  "Step 1: White label onboarding"
 
 # Step 1: Create a customer using the white label solution
 
-### Step 1: Create an access token.
+### Step A: Create an access token.
 
 Log into your child Sandbox account and go [here](http://dwolla-token.herokuapp.com) to get a token. Use your application’s key and secret and select the scopes needed for your application. For example, select: Send, Funding, Transactions, and ManageCustomers. With these scopes, you can complete the OAuth flow, which issues you an access and refresh token pair that contains the proper scopes for creating and managing customers.
 
-### Step 2: Create a customer
+### Step B: Create a customer
 
 Create a customer for the user that is going to pay you. At a minimum, provide the user’s full name and email address to create the customer. 
 
@@ -93,7 +93,7 @@ When the customer is created, you’ll receive the customer URL in the location 
 **Important**: Provide the IP address of the end-user accessing your application as the ipAddress parameter. This enhances Dwolla’s ability to detect fraud. Sending random, hardcoded, or incorrect information in the ipAddress field will cause delays or throttling of requests.
 
 
-### Step 3: Attach a funding source to the customer
+### Step C: Attach a funding source to the customer
 
 The next step is to attach a bank or credit union account to the customer by providing the bank account’s routing number, account number, and account type. 
 
@@ -159,7 +159,7 @@ print($new_fs); # => https://api-uat.dwolla.com/funding-sources/13C38DF2-6D2C-46
 
 The bank or credit union account details are securely stored with Dwolla. You’ll use the funding source ID to reference the bank account in the coming steps when you create a bank transfer from this bank account to your account. The funding source ID is found in the location header of the response, e.g. 375c6781-2a17-476c-84f7-db7d2f6ffb31.
 
-### Step 4: Verify funding source
+### Step D: Verify funding source
 
 Then, we’ll need to trigger micro-deposits. We will use the `new_fs` variable which holds to location of the new Funding Source and pass it over to the `micro_deposits()` function. You will know that the request was successful if no exception is thrown, as `fundingsources/micro-deposits` returns no data other than `HTTP 200` upon successful request. 
 
@@ -264,7 +264,7 @@ $fsApi->verify_micro_deposits_exist($new_fs, array (
 
 Great! The funding source should now be verified.
 
-### Step 5: Create a transfer
+### Step E: Create a transfer
 
 Once the customer has verified their funding source, we can transfer funds from their bank account to your Dwolla account.   You’ll need to supply your access token from step 1, the customer’s ID from step 2, and the customer’s funding source ID from step 3:
 
