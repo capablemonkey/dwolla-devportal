@@ -55,7 +55,7 @@ The timetables for transfers in and out of the Dwolla network are:
 | FiSync                     | Instant           |
 | ACH (Next Day or Standard) | 1-2 business days |
 
-* Transfers out of the Dwolla network can be cancelled at any point until 3pm CT on that same business day if the transfer was initiated prior to 1PM CT. If a transfer was initiated after 1pm CT, it can be cancelled anytime before 4pm CT on the following business day. **Note:** You must contact Dwolla support at 1-888-289-8744 to cancel transfers going out of the Dwolla Network.
+* Transfers out of the Dwolla network can be cancelled at any point until 3pm CT on that same business day if the transfer was initiated prior to 1PM CT. If a transfer was initiated after 1pm CT, it can be cancelled anytime before 3pm CT on the following business day. **Note:** You must contact Dwolla support at 1-888-289-8744 to cancel transfers going out of the Dwolla Network.
 
 ## Transfer failures
 
@@ -65,4 +65,4 @@ There are numerous reasons transfers can fail, a few of which are outlined below
 - **No Account/Unable to Locate Account:** The recipient of a transfer has closed their bank account or has incorrectly entered their bank account/routing number when attaching their funding source to their account.
 - **Customer Advises Not Authorized:** The owner of a bank account has told their bank that this transfer was unauthorized.
 
-When a bank transfer fails from a verified account (e.g. [Traditional CIP Verified](/resources/account-types.html) or [White Label Verified Customer](/resources/account-types.html) to a recipient, funds will return to the sending account’s Dwolla balance. For other transfer scenarios, funds will return to the source bank account.
+When a bank transfer fails from a verified account (e.g. [Traditional CIP Verified](/resources/account-types.html) or [White Label Verified Customer](/resources/account-types.html) to a recipient), funds will return to the sending account’s Dwolla balance. For other transfer scenarios, funds will return to the source bank account.
