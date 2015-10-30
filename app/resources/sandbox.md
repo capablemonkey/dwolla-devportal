@@ -28,7 +28,7 @@ description: "Learn more about our Sandbox environment."
     </div>
 </section>
 
-<a class="btn secondary" href="/guides/sandbox">View setup guide</a>
+<a class="btn secondary" href="/guides/sandbox-setup">View setup guide</a>
 
 # Setting transfer statuses
 
