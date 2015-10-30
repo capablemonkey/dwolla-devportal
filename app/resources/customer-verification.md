@@ -18,10 +18,10 @@ First, you should have [an active webhook subscription](/guides/webhooks/).  Inf
 
 ## Quick overview
 
- 1. Create a verified personal Customer
- 2. Check the status of the personal Customer
- 3. If necessary, retry verification
- 4. If necessary, upload a photo document
+ 1. Create a verified personal Customer.
+ 2. Check the status of the personal Customer.
+ 3. If necessary, retry verification.
+ 4. If necessary, upload a photo document.
 
 ### Create a verified personal Customer
 
