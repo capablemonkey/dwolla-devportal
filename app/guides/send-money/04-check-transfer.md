@@ -86,5 +86,5 @@ That’s it! You’ve successfully transferred money to a recipient. Please cont
 
 <nav class="pager-nav">
     <a href="03-create-transfer.html">Back: Create a transfer</a>
-    <a href="/guides/webhooks">Next guide: Webhooks</a>
+    <a href="{{site.baseurl}}/guides/webhooks">Next guide: Webhooks</a>
 </nav>

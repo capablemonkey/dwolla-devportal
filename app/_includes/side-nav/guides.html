@@ -22,19 +22,19 @@
         </div>
         <nav id="js-sidenav-dropdown-nav">
             {% unless page.url contains '/guides/sandbox-setup/' %}
-                <a href="/guides/sandbox-setup/">Set up Sandbox</a>
+                <a href="{{site.baseurl}}/guides/sandbox-setup/">Set up Sandbox</a>
             {% endunless %}
             {% unless page.url contains '/guides/send-money/' %}
-                <a href="/guides/send-money/">Send money to your users</a>
+                <a href="{{site.baseurl}}/guides/send-money/">Send money to your users</a>
             {% endunless %}
             {% unless page.url contains '/guides/receive-money/' %}
-                <a href="/guides/receive-money/">Receive money from your users</a>
+                <a href="{{site.baseurl}}/guides/receive-money/">Receive money from your users</a>
             {% endunless %}
             {% unless page.url contains '/guides/transfer-money-between-users/' %}
-                <a href="/guides/transfer-money-between-users/">Transfer money between users</a>
+                <a href="{{site.baseurl}}/guides/transfer-money-between-users/">Transfer money between users</a>
             {% endunless %}
             {% unless page.url contains '/guides/webhooks/' %}
-                <a href="/guides/webhooks/">Webhooks</a>
+                <a href="{{site.baseurl}}/guides/webhooks/">Webhooks</a>
             {% endunless %}
         </nav>
     </section>
