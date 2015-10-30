@@ -79,7 +79,7 @@
 <div class="language-picker">
     <h6>Language</h6>
     <div class="custom-select custom-select--blue">
-        <select id="select" name="select">
+        <select id="language_select" name="select">
             <option value="raw">raw</option> 
             <option value="php" selected="">php</option>
             <option value="ruby">ruby</option>
