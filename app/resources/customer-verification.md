@@ -47,69 +47,91 @@ Authorization: Bearer pBA9fVDBEyYZCEsLf/wKehyh1RTpzjUj5KzIRfDi0wKTii7DqY
   "dateOfBirth": "1990-07-11",
   "tin": "1516"
 }
+
+HTTP/1.1 201 Created
+Location: https://api.dwolla.com/customers/FC451A7A-AE30-4404-AB95-E3553FCD733F
 ```
 ```ruby
-# No example for this language yet.
+new_customer = DwollaSwagger::CustomersApi.create({:body => {
+      "firstName" => "Gordon",
+       "lastName" => "Zheng",
+          "email" => "gordon+15@dwolla.com",
+      "ipAddress" => "10.10.10.10",
+           "type" => "personal",
+       "address1" => "6680 Forest Ave.",
+       "address2" => "Apt 4F",
+           "city" => "Ridgewood",
+          "state" => "NY",
+     "postalCode" => "11385",
+    "dateOfBirth" => "1990-07-11",
+            "tin" => "1516"
+}})
+
+p new_customer # => https://api.dwolla.com/customers/FC451A7A-AE30-4404-AB95-E3553FCD733F
 ```
 ```javascript
 // No example for this language yet.
 ```
 ```python
-# No example for this language yet.
+customers_api = dwollaswagger.CustomersApi(client)
+
+new_customer = customers_api.create(body = {
+  "firstName": "Gordon",
+  "lastName": "Zheng",
+  "email": "gordon+15@dwolla.com",
+  "ipAddress": "10.10.10.10",
+  "type": "personal",
+  "address1": "6680 Forest Ave.",
+  "address2": "Apt 4F",
+  "city": "Ridgewood",
+  "state": "NY",
+  "postalCode": "11385",
+  "dateOfBirth": "1990-07-11",
+  "tin": "1516"
+})
+
+print(new_customer) # => https://api.dwolla.com/customers/FC451A7A-AE30-4404-AB95-E3553FCD733F
 ```
 ```php
-// No example for this language yet.
+<?php
+$customersApi = DwollaSwagger\CustomersApi($apiClient);
+
+$newCustomer = $customersApi->create(array (
+  'firstName' => 'Gordon',
+  'lastName' => 'Zheng',
+  'email' => 'gordon+15@dwolla.com',
+  'ipAddress' => '10.10.10.10',
+  'type' => 'personal',
+  'address1' => '6680 Forest Ave.',
+  'address2' => 'Apt 4F',
+  'city' => 'Ridgewood',
+  'state' => 'NY',
+  'postalCode' => '11385',
+  'dateOfBirth' => '1990-07-11',
+  'tin' => '1516',
+));
+
+print($newCustomer); # => https://api.dwolla.com/customers/FC451A7A-AE30-4404-AB95-E3553FCD733F
+?>
 ```
 
 You’ll need to provide the Customer’s full name, email address, home address, date of birth, and the last four digits of their taxpayer identification number (for individuals, this is their Social Security Number).
 
 Once you submit this request, Dwolla will perform some initial validation to check for formatting issues such as an invalid date of birth, invalid email format, etc. If successful, the response will be a HTTP 201/Created with the URL of the new Customer resource contained in the `Location` header.
 
-```raw
-HTTP/1.1 201 Created
-Location: https://api.dwolla.com/customers/FC451A7A-AE30-4404-AB95-E3553FCD733F
-```
-```ruby
-# No example for this language yet.
-```
-```javascript
-// No example for this language yet.
-```
-```python
-# No example for this language yet.
-```
-```php
-// No example for this language yet.
-```
-
 ### Check the status of the personal Customer
 
 The successful creation of a Customer doesn’t necessarily mean the Customer is verified. When a Customer has been successfully verified by Dwolla, their status will be set to `verified`.
 
-Let’s check to see if the Customer was successfully verified or not:
+Let’s check to see if the Customer was successfully verified or not. We are going to use the location of the Customer resource that we just created, which is in `new_customer`.
 
 ```raw
 GET https://api.dwolla.com/customers/FC451A7A-AE30-4404-AB95-E3553FCD733F
 Content-Type: application/vnd.dwolla.v1.hal+json
 Accept: application/vnd.dwolla.v1.hal+json
 Authorization: Bearer pBA9fVDBEyYZCEsLf/wKehyh1RTpzjUj5KzIRfDi0wKTii7DqY
-```
-```ruby
-# No example for this language yet.
-```
-```javascript
-// No example for this language yet.
-```
-```python
-# No example for this language yet.
-```
-```php
-// No example for this language yet.
-```
 
-Response: 
-
-```raw
+HTTP 200 OK
 {
   "_links": {
     "self": {
@@ -138,16 +160,28 @@ Response:
 }
 ```
 ```ruby
-# No example for this language yet.
+retrieved_customer = DwollaSwagger::CustomersApi.get_customer(new_customer)
+
+p retrieved_customer.verified # => true
 ```
 ```javascript
 // No example for this language yet.
 ```
 ```python
-# No example for this language yet.
+customers_api = dwollaswagger.CustomersApi(client)
+
+retrieved_customer = customers_api.get_customer(new_customer)
+
+print(retrieved_customer.verified) # => True
 ```
 ```php
-// No example for this language yet.
+<?php
+$customersApi = DwollaSwagger\CustomersApi($apiClient);
+
+$retrievedCustomer = $customersApi->getCustomer($newCustomer);
+
+print($newCustomer->verified); # => true
+?>
 ```
 
 Our Customer was successfully verified! Other Customers, however, may require additional verification. Continue reading for instructions on providing additional information to verify these Customers.
@@ -178,16 +212,67 @@ Authorization: Bearer pBA9fVDBEyYZCEsLf/wKehyh1RTpzjUj5KzIRfDi0wKTii7DqY
 }
 ```
 ```ruby
-# No example for this language yet.
+retry_customer = DwollaSwagger::CustomersApi.create({:body => {
+      "firstName" => "Gordon",
+       "lastName" => "Zheng",
+          "email" => "gordon+15@dwolla.com",
+      "ipAddress" => "10.10.10.10",
+           "type" => "personal",
+       "address1" => "221 Corrected Address St..",
+       "address2" => "Fl 8",
+           "city" => "Ridgewood",
+          "state" => "NY",
+     "postalCode" => "11385",
+    "dateOfBirth" => "1990-07-11",
+            "tin" => "202-99-1516"
+}})
+
+p retry_customer # => https://api.dwolla.com/customers/FC451A7A-AE30-4404-AB95-E3553FCD733F
 ```
 ```javascript
 // No example for this language yet.
 ```
 ```python
-# No example for this language yet.
+customers_api = dwollaswagger.CustomersApi(client)
+
+retry_customer = customers_api.create(body = {
+  "firstName": "Gordon",
+  "lastName": "Zheng",
+  "email": "gordon+15@dwolla.com",
+  "ipAddress": "10.10.10.10",
+  "type": "personal",
+  "address1": "221 Corrected Address St..",
+  "address2": "Fl 8",
+  "city": "Ridgewood",
+  "state": "NY",
+  "postalCode": "11385",
+  "dateOfBirth": "1990-07-11",
+  "tin": "202-99-1516"
+})
+
+print(retry_customer) # => https://api.dwolla.com/customers/FC451A7A-AE30-4404-AB95-E3553FCD733F
 ```
 ```php
-// No example for this language yet.
+<?php
+$customersApi = DwollaSwagger\CustomersApi($apiClient);
+
+$retryCustomer = $customersApi->create(array (
+  'firstName' => 'Gordon',
+  'lastName' => 'Zheng',
+  'email' => 'gordon+15@dwolla.com',
+  'ipAddress' => '10.10.10.10',
+  'type' => 'personal',
+  'address1' => '221 Corrected Address St..',
+  'address2' => 'Fl 8',
+  'city' => 'Ridgewood',
+  'state' => 'NY',
+  'postalCode' => '11385',
+  'dateOfBirth' => '1990-07-11',
+  'tin' => '202-99-1516',
+););
+
+print($retryCustomer); # => https://api.dwolla.com/customers/FC451A7A-AE30-4404-AB95-E3553FCD733F
+?>
 ```
 
 Check the Customer’s status again. The Customer will either be verified or in the `document` or `suspended` state.
@@ -205,38 +290,24 @@ curl -X POST
 \ -F "documentType=passport" 
 \ -F "file=@foo.png" 
 \ 'https://api-uat.dwolla.com/customers/132681FA-1B4D-4181-8FF2-619CA46235B1/documents'
-```
-```ruby
-# No example for this language yet.
-```
-```javascript
-// No example for this language yet.
-```
-```python
-# No example for this language yet.
-```
-```php
-// No example for this language yet.
-```
 
-If the document was successfully uploaded, the response will be a HTTP 201/Created with the URL of the new document resource contained in the Location header.
-
-```raw
 HTTP/1.1 201 Created
 Location: https://api-uat.dwolla.com/documents/11fe0bab-39bd-42ee-bb39-275afcc050d0
 ```
 ```ruby
-# No example for this language yet.
+# No SDK support. Coming soon
 ```
 ```javascript
-// No example for this language yet.
+// No SDK support. Coming soon
 ```
 ```python
-# No example for this language yet.
+# No SDK support. Coming soon
 ```
 ```php
-// No example for this language yet.
+// No SDK support. Coming soon
 ```
+
+If the document was successfully uploaded, the response will be a HTTP 201/Created with the URL of the new document resource contained in the Location header.
 
 You’ll also get a webhook with a `customer_verification_document_uploaded` event to let you know the document was successfully uploaded.
 
