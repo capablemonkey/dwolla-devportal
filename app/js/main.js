@@ -51,5 +51,6 @@ $(document).ready(function() {
       updateBodySelectors(this.id);
       // change global language selector as well:
       $('#language_select').val(this.id);
+      sessionStorage.setItem('current_language', $('#language_select :selected').val());
     });
 });
