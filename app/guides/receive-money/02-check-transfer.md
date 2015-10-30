@@ -18,28 +18,34 @@ Accept: application/vnd.dwolla.v1.hal+json
 Authorization: Bearer 0Sn0W6kzNicvoWhDbQcVSKLRUpGjIdlPSEYyrHqrDDoRnQwE7Q
 ```
 ```ruby
-# No example for this language yet.
+transfer = DwollaSwagger::TransfersApi.by_id('https://api-uat.dwolla.com/transfers/d76265cd-0951-e511-80da-0aa34a9b2388')
 ```
 ```javascript
 // No example for this language yet.
 ```
 ```python
-# No example for this language yet.
+transfer_api = dwollaswagger.TransfersApi(client)
+transfer = transfer_api.by_id('https://api-uat.dwolla.com/transfers/d76265cd-0951-e511-80da-0aa34a9b2388')
 ```
 ```php
-// No example for this language yet.
+<?php
+$transferApi = new DwollaSwagger\TransfersApi($apiClient);
+$transfer = $transferApi->by_id('https://api-uat.dwolla.com/transfers/d76265cd-0951-e511-80da-0aa34a9b2388')
+?>
 ```
 
-Response:
+Response (view schema in 'raw'):
 
 ```raw
+Schema
+
 {
   "_links": {
     "self": {
       "href": "https://api-uat.dwolla.com/transfers/D76265CD-0951-E511-80DA-0AA34A9B2388"
     },
     "source": {
-      "href": "https://api-uat.dwolla.com/accounts/DCBB698D-BEE7-4F79-8576-E4301BDC57FC"
+      "href": "https://api-uat.dwolla.com/customers/AB443D36-3757-44C1-A1B4-29727FB3111C"
     },
     "destination": {
       "href": "https://api-uat.dwolla.com/customers/C7F300C0-F1EF-4151-9BBE-005005AC3747"
@@ -51,26 +57,26 @@ Response:
     "value": "225.00",
     "currency": "USD"
   },
-  "created": "2015-09-02T00:30:25.580Z",
-  "metadata": {
-    "customerId": "8675309",
-    "notes": "For work completed on Sept. 1, 2015"
-  }
+  "created": "2015-09-02T00:30:25.580Z"
 }
 ```
 ```ruby
-# No example for this language yet.
+# Access desired information in response object fields
+p transfer.status # => pending
 ```
 ```javascript
 // No example for this language yet.
 ```
 ```python
-# No example for this language yet.
+# Access desired information in response object fields
+print(transfer.status) # => pending
 ```
 ```php
-// No example for this language yet.
+<?php
+# Access desired information in response object fields
+print($transfer->status) # => pending
+?>
 ```
-
 That’s it! You’ve successfully received money from a user. Please continue to the Webhooks guide for information on implementing notifications for your customers about the transfer.
 
 <nav class="pager-nav">
