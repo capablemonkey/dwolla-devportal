@@ -15,7 +15,7 @@ To subscribe to webhooks, you must first obtain client authorization via OAuth. 
 
 **NOTE**: Currently, the Dwolla/Swagger SDKs do not contain the capability to do this, so you must use an external REST client. We are working on resolving this. 
 
-```jsonnoselect
+```noselect
 POST /oauth/v2/token
 Content-Type: application/json
 
