@@ -27,7 +27,7 @@ redcarpet:
 
 highlighter: rouge
 
-baseurl: https://dwolla.com/api
+baseurl: https://devint.dwolla.com/api
 
 gems:
   - jekyll-sitemap
