@@ -11,7 +11,7 @@ description: Use this guide to start sending payments from your application by u
 
 # Create a master Sandbox account
 
-In order to use the Sandbox Console tool, you must create a Sandbox account. Once you have this account, you can login to the Sandbox Console tool to create and manage accounts in Dwolla’s Sandbox environment and to test transfer states. Go to: https://sandbox-uat.dwolla.com/.  
+In order to use the Sandbox Console tool, you must create a Sandbox account. Once you have this account, you can login to the Sandbox Console tool to create and manage accounts in Dwolla’s Sandbox environment and to test transfer states. Go to: <a target="_blank" href="https://sandbox-uat.dwolla.com/">sandbox-uat.dwolla.com</a>.  
 
 ![Screenshot of Register screen](/images/sandbox-guide-register.png "Register screen")
 
