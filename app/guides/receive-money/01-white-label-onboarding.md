@@ -12,7 +12,9 @@ title:  "Step 1: White label onboarding"
 
 ### Step A: Create an access token.
 
-Log into your child Sandbox account and go [here](http://dwolla-token.herokuapp.com) to get a token. Use your application’s key and secret and select the scopes needed for your application. For example, select: Send, Funding, Transactions, and ManageCustomers. With these scopes, you can complete the OAuth flow, which issues you an access and refresh token pair that contains the proper scopes for creating and managing customers.
+Go to the <a href="http://dwolla-token.herokuapp.com" target="_blank">token generator</a>. 
+
+Use your application’s key and secret and select the following scopes: Send, Funding, Transactions, and ManageCustomers. When you get to the OAuth login log in screen, log in with your child Sandbox account. Once you agree to the permissions, you'll receive an access and refresh token pair that contains the proper scopes for creating and managing customers. More detail is available in [API docs](https://docsv2.dwolla.com/#oauth).
 
 ### Step B: Create a customer
 
