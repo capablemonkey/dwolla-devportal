@@ -7,11 +7,11 @@ description: "View our comprehensive getting started guides."
 <nav class="big-grid-nav">
   <a href="/guides/send-money" class="icon-guides-send">
       <h3>Send money to your users</h3>
-      <p>Send ACH transfers. Choose custom (white label) onboarding or Dwolla Direct account creation. Learn about MassPay and recurring</p>
+      <p>Send ACH transfers. Choose custom (white label) onboarding or Dwolla Direct account creation.</p>
   </a>
   <a href="/guides/receive-money" class="icon-guides-receive">
-      <h3>Recieve money from your users</h3>
-      <p>Accept ACH transfers. Covers both white label and Dwolla Direct integrations. Learn about recurring payments and offsite gateway.</p>
+      <h3>Receive money from your users</h3>
+      <p>Accept ACH transfers. Covers both white label and Dwolla Direct integrations.</p>
   </a>
   <a href="/guides/transfer-money-between-users" class="icon-guides-transfer">
       <h3>Transfer money betwen users</h3>

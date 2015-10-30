@@ -2,7 +2,7 @@
     <h6>Follow the steps</h6>
     <ol>
         <li>
-            <a href="/guides/send-money" {% if page.guide.step == 'overview' %}class="active"{% endif %}>Overview: send money to your users</a>
+            <a href="/guides/send-money" {% if page.guide.step == 'overview' %}class="active"{% endif %}>Overview: Send money to your users</a>
             <div class="dot"></div>
             <ol>
                 <li>
@@ -32,7 +32,7 @@
 <section class="side-nav__options" {% unless page.url contains '/guides/send-money' %}style="display:none"{% endunless %}>
     <h6>Options</h6>
     <ul>
-        <li><a href="https://developers.dwolla.com/dev/pages/guides/masspay" target="_blank" class="icon-sidenav-option">MassPay V1</a></li>
-        <li><a href="" class="icon-sidenav-option">Recurring and Scheduled V1</a></li>
+        <li class="external-link"><a href="https://developers.dwolla.com/dev/pages/guides/masspay" target="_blank"><span class="icon-sidenav-option">MassPay V1</span></a></li>
+        <li class="external-link"><a href=""><span class="icon-sidenav-option">Recurring and Scheduled V1</span></a></li>
     </ul>
 </section>

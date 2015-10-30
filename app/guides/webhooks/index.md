@@ -11,7 +11,6 @@ description: Webhooks for payments within your application by utilizing our open
 
 # Webhooks
 
-## What is a webhook?
 A webhook is a means of notifying a third-party application of the occurrence of an event with some relevant information. In the Dwolla V2 API, webhooks are currently triggered by the following resources: 
 
 - Customers
@@ -21,7 +20,7 @@ A webhook is a means of notifying a third-party application of the occurrence of
 Each webhook sent by the Dwolla API contains an `Event` with `_links` to: the associated resource, account associated with the event, and the customer associated with the event (if applicable). It is important to note that a single API request can trigger multiple webhooks to be fired, e.g. initiating a transfer from an Account to Customer can create the events `transfer_created` and `customer_transfer_created`.
 
 ### Example webhook payload
-```json
+```jsonnoselect
 {
   "id": "80d8ff7d-7e5a-4975-ade8-9e97306d6c15",
   "resourceId": "36E9DCB2-889B-4873-8E52-0C9404EA002A",

@@ -3,6 +3,160 @@ layout: page
 title: Developers Home
 bodyClass: home
 description: Simple and powerful API for ACH transfers with no per transaction fees. Get up and running in fifteen minutes to start sending and receiving funds.
+
+sampleRuby: >
+    ```ruby 
+
+    require 'dwolla_swagger'
+
+    DwollaSwagger::Swagger.configure do |config|
+        config.auth_token = 'elq7kponDPk4iT5DUllTIHL5H5vhZCORKLQ6aB3jfkfSnqSNw6'
+        config.host = 'api-uat.dwolla.com'
+        config.base_path = '/'
+    end
+
+    transfer_request = {
+          "_links" => {
+            "destination" => {
+                "href" => "https://api-uat.dwolla.com/funding-sources/929e1066-3ad0-4799-9f0d-30121f71375d"
+            },
+                 "source" => {
+                "href" => "https://api-uat.dwolla.com/funding-sources/617c9d7f-84a8-4e1b-8bb5-831db7fde136"
+            }
+        },
+          "amount" => {
+            "currency" => "USD",
+               "value" => "9.00"
+        },
+        "metadata" => {
+            "foo" => "bar",
+            "baz" => "boo"
+        }
+    }
+
+    xfer = DwollaSwagger::TransfersApi.create({:body => transfer_request})
+    p xfer # => https://api-uat.dwolla.com/transfers/d76265cd-0951-e511-80da-0aa34a9b2388
+    ```
+
+sampleRaw: >
+    ```raw
+
+    curl -X POST -H "Authorization: Bearer elq7kponDPk4iT5DUllTIHL5H5vhZCORKLQ6aB3jfkfSnqSNw6" \
+    -H "Content-Type: application/vnd.dwolla.v1.hal+json" \
+    -H "Accept: application/vnd.dwolla.v1.hal+json" \
+    -d '{
+        "_links": {
+            "destination": {
+                "href": "https://api-uat.dwolla.com/funding-sources/929e1066-3ad0-4799-9f0d-30121f71375d"
+                
+            },
+            "source": {
+                "href": "https://api-uat.dwolla.com/funding-sources/617c9d7f-84a8-4e1b-8bb5-831db7fde136"
+            }
+        },
+        "amount": {
+            "currency": "USD",
+            "value": "9.00"
+        },
+        "metadata": {
+            "foo": "bar",
+            "baz": "boo"
+        }
+    }' 'https://api-uat.dwolla.com/transfers' -v
+
+    ```
+
+samplePython: >
+    ```python
+
+    import dwollaswagger
+
+
+    dwollaswagger.configuration.auth_token = 'elq7kponDPk4iT5DUllTIHL5H5vhZCORKLQ6aB3jfkfSnqSNw6'
+
+    client = dwollaswagger.ApiClient('https://api-uat.dwolla.com')
+
+    transfer_request = {
+        "_links": {
+            "destination": {
+                "href": "https://api-uat.dwolla.com/funding-sources/929e1066-3ad0-4799-9f0d-30121f71375d"
+            },
+            "source": {
+                "href": "https://api-uat.dwolla.com/funding-sources/617c9d7f-84a8-4e1b-8bb5-831db7fde136"
+            }
+        },
+        "amount": {
+            "currency": "USD",
+            "value": "9.00"
+        },
+        "metadata": {
+            "foo": "bar",
+            "baz": "boo"
+        }
+    }
+
+    transfers_api = dwollaswagger.TransfersApi(client)
+    xfer = transfers_api.create(body=transfer_request)
+
+    print(xfer) # => https://api-uat.dwolla.com/transfers/d76265cd-0951-e511-80da-0aa34a9b2388
+    ```
+
+samplePHP: >
+    ```php 
+
+    <?php
+
+    DwollaSwagger\Configuration::$auth_token = 'elq7kponDPk4iT5DUllTIHL5H5vhZCORKLQ6aB3jfkfSnqSNw6';
+    $apiClient = new DwollaSwagger\ApiClient("https://api-uat.dwolla.com/");
+    $transfer_request = array (
+      '_links' => 
+      array (
+        'destination' => 
+        array (
+          'href' => 'https://api-uat.dwolla.com/funding-sources/929e1066-3ad0-4799-9f0d-30121f71375d',
+        ),
+        'source' => 
+        array (
+          'href' => 'https://api-uat.dwolla.com/funding-sources/617c9d7f-84a8-4e1b-8bb5-831db7fde136',
+        ),
+      ),
+      'amount' => 
+      array (
+        'currency' => 'USD',
+        'value' => '9.00',
+      ),
+      'metadata' => 
+      array (
+        'foo' => 'bar',
+        'baz' => 'boo',
+      ),
+    );
+
+    $transferApi = new DwollaSwagger\TransfersApi($apiClient);
+    $myAccount = $transferApi->create($transfer_request);
+
+    print($xfer); # => https://api-uat.dwolla.com/transfers/d76265cd-0951-e511-80da-0aa34a9b2388
+    ?>
+    ```
+
+sampleJavascript: >
+    ```javascript
+
+    var client = require('swagger-client');
+
+    var ACCESS_TOKEN = 'elq7kponDPk4iT5DUllTIHL5H5vhZCORKLQ6aB3jfkfSnqSNw6';
+
+    var swagger = new client({
+      url: 'https://api-uat.dwolla.com/swagger.json',
+      authorizations: {
+        headerAuth: new client.ApiKeyAuthorization('Authorization', 'Bearer ' + ACCESS_TOKEN, 'header')
+      },
+      success: function() {
+        swagger.customers.list();
+      }
+    });
+
+    ```
 ---
 <div class="cnt-one-col">
     <section class="cnt-two-col__nav js-two-col-nav">
@@ -17,21 +171,25 @@ description: Simple and powerful API for ACH transfers with no per transaction f
     </section>
     <section class="hover-box cnt-one-col__hover-box page-wrap">
         <h2>Try it out</h2>
-        <p>Test any endpoint with a simple CURL request.</p>
 
-        {% include home-page-code-snippet.html %}
+        <div style="text-align: left">
+            {{ page.sampleRuby | markdownify }}
+            {{ page.sampleJavascript | markdownify }}
+            {{ page.sampleRaw | markdownify }}
+            {{ page.samplePython | markdownify }}
+            {{ page.samplePHP | markdownify }}
+        </div>
     
-        <p><em>Paste this code to your command line and hit return to see the response</em></p>
         <section class="split-options">
             <div>
-                <h3 class="icon-home-sandbox">Set up sandbox</h3>
+                <h3 class="icon-home-sandbox">Set up Sandbox</h3>
                 <p>uat.dwolla.com</p>
-                <a href="https://uat.dwolla.com" class="btn secondary large">Test our service</a>
+                <a href="/resources/sandbox.html" class="btn secondary large">Test our service</a>
             </div>
             <div>
                 <h3 class="icon-home-launch">Launch in production</h3>
                 <p>www.dwolla.com</p>
-                <a href="https://www.dwolla.com" class="btn secondary large">Get API key</a>
+                <a href="https://www.dwolla.com/applications/create" class="btn secondary large">Get API key</a>
             </div>
         </section>
     </section>

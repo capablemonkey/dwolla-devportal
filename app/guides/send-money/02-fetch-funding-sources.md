@@ -10,14 +10,14 @@ title:  "Step 2: Fetch funding sources"
 
 # Step 2: Fetch funding sources
 
-No matter which method you used to set up your customers, the remaining steps of sending money are the same. Please note the difference in terminology between the two onboarding experiences:
+No matter which method you used to set up your Customers, the remaining steps of sending money are the same. Please note the difference in terminology between the two onboarding experiences:
 
 | Solution | Recipient|
 |----------|----------|
-|White Label Solution|Customer|
+|White label solution|Customer|
 |Dwolla Direct|Account|
 
-Now that you’ve created a customer or an account and associated its funding source, you can initiate your first transfer. The transfer requires the following information:
+Now that you’ve created a Customer or an Account and associated its funding source, you can initiate your first transfer. The transfer requires the following information:
 
 - The funding source to pull the funds from (your linked bank account)
 - The recipient to push the funds to
@@ -26,109 +26,7 @@ Dwolla uses URLs to represent relations between resources. Therefore, you’ll n
 
 ### Fetch a list of available funding sources
 
-Use the [List Funding Sources (Account)](https://docsv2.dwolla.com/#list-funding-sources-account) endpoint to fetch a list of your own funding sources. You first need to fetch the root resource to determine the URL from which to get the funding source list.
-
-```raw
-GET https://api-uat.dwolla.com/
-Accept: application/vnd.dwolla.v1.hal+json
-Authorization: Bearer 0Sn0W6kzNicvoWhDbQcVSKLRUpGjIdlPSEYyrHqrDDoRnQwE7Q
-```
-```ruby
-# No example for this language yet.
-```
-```javascript
-// No example for this language yet.
-```
-```python
-# No example for this language yet.
-```
-```php
-// No example for this language yet.
-```
-
-Response:
-
-```raw
-{
-  "_links": {
-    "account": {
-      "href": "https://api-uat.dwolla.com/accounts/4bb512e4-ad4d-4f7e-bfd0-a232007f21a1"
-    }
-  }
-}
-```
-```ruby
-# No example for this language yet.
-```
-```javascript
-// No example for this language yet.
-```
-```python
-# No example for this language yet.
-```
-```php
-// No example for this language yet.
-```
-
-Then, follow the `_links.account` link:
-
-```raw
-GET https://api-uat.dwolla.com/accounts/dcbb698d-bee7-4f79-8576-e4301bdc57fc
-Accept: application/vnd.dwolla.v1.hal+json
-Authorization: Bearer 0Sn0W6kzNicvoWhDbQcVSKLRUpGjIdlPSEYyrHqrDDoRnQwE7Q
-```
-```ruby
-# No example for this language yet.
-```
-```javascript
-// No example for this language yet.
-```
-```python
-# No example for this language yet.
-```
-```php
-// No example for this language yet.
-```
-
-Response:
-
-```raw
-{
-  "_links": {
-    "self": {
-      "href": "https://api-uat.dwolla.com/accounts/4BB512E4-AD4D-4F7E-BFD0-A232007F21A1"
-    },
-    "receive": {
-      "href": "https://api-uat.dwolla.com/transfers"
-    },
-    "funding-sources": {
-      "href": "https://api-uat.dwolla.com/accounts/4BB512E4-AD4D-4F7E-BFD0-A232007F21A1/funding-sources"
-    },
-    "transfers": {
-      "href": "https://api-uat.dwolla.com/accounts/4BB512E4-AD4D-4F7E-BFD0-A232007F21A1/transfers"
-    },
-    "send": {
-      "href": "https://api-uat.dwolla.com/transfers"
-    }
-  },
-  "id": "4BB512E4-AD4D-4F7E-BFD0-A232007F21A1",
-  "name": "President Appleseed"
-}
-```
-```ruby
-# No example for this language yet.
-```
-```javascript
-// No example for this language yet.
-```
-```python
-# No example for this language yet.
-```
-```php
-// No example for this language yet.
-```
-
-Then, follow the `_links.funding-sources` link:
+Use the [List Funding Sources (Account)](https://docsv2.dwolla.com/#list-funding-sources-account) endpoint to fetch a list of your own funding sources. 
 
 ```raw
 GET https://api-uat.dwolla.com/accounts/4BB512E4-AD4D-4F7E-BFD0-A232007F21A1/funding-sources
@@ -136,19 +34,23 @@ Accept: application/vnd.dwolla.v1.hal+json
 Authorization: Bearer 0Sn0W6kzNicvoWhDbQcVSKLRUpGjIdlPSEYyrHqrDDoRnQwE7Q
 ```
 ```ruby
-# No example for this language yet.
+funding_sources = DwollaSwagger::FundingsourcesApi.get_account_funding_sources('https://api-uat.dwolla.com/accounts/0270baed-dda5-46d0-b074-e7f3d478896f')
 ```
 ```javascript
 // No example for this language yet.
 ```
 ```python
-# No example for this language yet.
+funding_api = dwollaswagger.FundingsourcesApi(client)
+funding_sources = funding_api.id('https://api-uat.dwolla.com/accounts/0270baed-dda5-46d0-b074-e7f3d478896f')
 ```
 ```php
-// No example for this language yet.
+<?php
+$fundingApi = new DwollaSwagger\FundingsourcesApi($apiClient);
+$fundingSources = $fundingApi->id('https://api-uat.dwolla.com/accounts/0270baed-dda5-46d0-b074-e7f3d478896f')
+?>
 ```
 
-Response: 
+Response (view schema in 'raw'): 
 
 ```raw
 {
@@ -197,16 +99,21 @@ Response:
 }
 ```
 ```ruby
-# No example for this language yet.
+# Access desired information in response object fields
+p funding_sources._embedded # => Ruby Hash of _embedded contents in schema
 ```
 ```javascript
 // No example for this language yet.
 ```
 ```python
-# No example for this language yet.
+# Access desired information in response object fields
+print(funding_sources._embedded) # => Python Dict of _embedded contents in schema
 ```
 ```php
-// No example for this language yet.
+<?php
+# Access desired information in response object fields
+print($fundingSources->_embedded) # => PHP associative array of _embedded contents in schema
+?>
 ```
 
 <nav class="pager-nav">

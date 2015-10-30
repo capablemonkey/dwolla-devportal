@@ -3,7 +3,7 @@ layout: twoColumn
 section: resources
 type: tool
 title:  "Sandbox"
-description: "Learn more about our sandbox environment."
+description: "Learn more about our Sandbox environment."
 ---
 
 <section class="side-by-side-compare">
@@ -14,7 +14,6 @@ description: "Learn more about our sandbox environment."
         <ul>
             <li>Use an exact replica of the production environment</li>
             <li>Test the Dwolla API without transferring real money</li>
-            <li>For learning, development, and automated testing</li>
         </ul>
     </div>
     <div>
@@ -29,11 +28,11 @@ description: "Learn more about our sandbox environment."
     </div>
 </section>
 
-<a class="btn secondary" href="/guides/sandbox">View setup guide</a>
+<a class="btn secondary" href="/guides/sandbox-setup">View setup guide</a>
 
 # Setting transfer statuses
 
-### Transfer Behavior in the Sandbox
+### Transfer behavior in the Sandbox
 
 Unlike Balance, Credit, or FiSync sourced transfers, which are processed instantaneously, Bank-sourced transfers exist in the Pending state for a few business days until they are `processed`, `failed`, `cancelled`, or `reclaimed`.
 
@@ -41,11 +40,12 @@ The Sandbox environment does not replicate any ACH processes, so a `pending` tra
 
 ### `cancelled` and `reclaimed`
 
-As in the production environment, Sandbox transfers can be cancelled from either the sender's or the receiver's Dwolla account dashboard, or directly from the Sandbox Console interface. Only [traditional fully verified accounts](/resources/account-types.html)</a> are eligible to cancel transfers. 
+As in the production environment, Sandbox transfers can be cancelled from either the sender's or the receiver's Dwolla account dashboard, or directly from the Sandbox Console interface. Only [Traditional CIP Verified Dwolla accounts](/resources/account-types.html)</a> are eligible to cancel transfers. 
 
 For Dwolla Direct integrations only, there are two scenarios in which a transfer can become `reclaimed`:
-- A payment is sent to a non-Dwolla-user's email address and has not been claimed by the sender's Reclaim period, which is by default 30 days.
-- A processed payment is reversed by Dwolla as a result of a dispute.
+
+1. A payment is sent to a non-Dwolla-user's email address and has not been claimed by the sender's Reclaim period, which is by default 30 days.
+2. A processed payment is reversed by Dwolla as a result of a dispute.
 
 ### Manipulation
 

@@ -18,21 +18,27 @@ Accept: application/vnd.dwolla.v1.hal+json
 Authorization: Bearer 0Sn0W6kzNicvoWhDbQcVSKLRUpGjIdlPSEYyrHqrDDoRnQwE7Q
 ```
 ```ruby
-# No example for this language yet.
+transfer = DwollaSwagger::TransfersApi.by_id('https://api-uat.dwolla.com/transfers/d76265cd-0951-e511-80da-0aa34a9b2388')
 ```
 ```javascript
 // No example for this language yet.
 ```
 ```python
-# No example for this language yet.
+transfer_api = dwollaswagger.TransfersApi(client)
+transfer = transfer_api.by_id('https://api-uat.dwolla.com/transfers/d76265cd-0951-e511-80da-0aa34a9b2388')
 ```
 ```php
-// No example for this language yet.
+<?php
+$transferApi = new DwollaSwagger\TransfersApi($apiClient);
+$transfer = $transferApi->by_id('https://api-uat.dwolla.com/transfers/d76265cd-0951-e511-80da-0aa34a9b2388')
+?>
 ```
 
-Response:
+Response (view schema in 'raw'):
 
 ```raw
+Schema
+
 {
   "_links": {
     "self": {
@@ -59,16 +65,21 @@ Response:
 }
 ```
 ```ruby
-# No example for this language yet.
+# Access desired information in response object fields
+p transfer.status # => pending
 ```
 ```javascript
 // No example for this language yet.
 ```
 ```python
-# No example for this language yet.
+# Access desired information in response object fields
+print(transfer.status) # => pending
 ```
 ```php
-// No example for this language yet.
+<?php
+# Access desired information in response object fields
+print($transfer->status) # => pending
+?>
 ```
 
 That’s it! You’ve successfully transferred money to a recipient. Please continue to the Webhooks guide for information on implementing notifications for your customers about the transfer.
