@@ -43,8 +43,9 @@ The Sandbox environment does not replicate any ACH processes, so a `pending` tra
 As in the production environment, Sandbox transfers can be cancelled from either the sender's or the receiver's Dwolla account dashboard, or directly from the Sandbox Console interface. Only [Traditional CIP Verified Dwolla accounts](/resources/account-types.html)</a> are eligible to cancel transfers. 
 
 For Dwolla Direct integrations only, there are two scenarios in which a transfer can become `reclaimed`:
-- A payment is sent to a non-Dwolla-user's email address and has not been claimed by the sender's Reclaim period, which is by default 30 days.
-- A processed payment is reversed by Dwolla as a result of a dispute.
+
+1. A payment is sent to a non-Dwolla-user's email address and has not been claimed by the sender's Reclaim period, which is by default 30 days.
+2. A processed payment is reversed by Dwolla as a result of a dispute.
 
 ### Manipulation
 
