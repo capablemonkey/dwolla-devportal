@@ -32,7 +32,7 @@ Example redirect with authorization code:
 
 `https://example.com/return?code=sZCE4BTG7Cw4O`
 
-```raw
+```jsonnoselect
 POST https://uat.dwolla.com/oauth/v2/token
 Content-Type: application/json
 
@@ -44,22 +44,10 @@ Content-Type: application/json
   "redirect_uri": "https://example.com/return"
 }
 ```
-```ruby
-# No V2 SDK support for handling OAuth.
-```
-```javascript
-// No V2 SDK support for handling OAuth.
-```
-```python
-# No V2 SDK support for handling OAuth.
-```
-```php
-// No V2 SDK support for handling OAuth.
-```
 
 Response:
 
-```raw
+```jsonnoselect
 {
   "_links": {
     "account": {
@@ -74,18 +62,6 @@ Response:
   "scope": "balance|accountinfofull|send|request|transactions|contacts|funding|manageaccount|scheduled",
   "account_id": "4bb512e4-ad4d-4f7e-bfd0-a232007f21a1"
 }
-```
-```ruby
-# No V2 SDK support for handling OAuth.
-```
-```javascript
-// No V2 SDK support for handling OAuth.
-```
-```python
-# No V2 SDK support for handling OAuth.
-```
-```php
-// No V2 SDK support for handling OAuth.
 ```
 
 You won’t need to use the access token for the Dwolla Direct user, all we need from the above response is their account URL.
