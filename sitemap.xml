@@ -2,235 +2,235 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>/guides/transfer-money-between-users/01-access-token.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/sandbox-setup/01-create-master-account.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/send-money/01-direct-onboarding.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/receive-money/01-direct-onboarding.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/webhooks/01-obtain-authorization.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/send-money/01-white-label-onboarding.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/receive-money/01-white-label-onboarding.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/receive-money/02-check-transfer.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/sandbox-setup/02-create-child-account.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/webhooks/02-create-subscription.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/transfer-money-between-users/02-create-verified-customer.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/send-money/02-fetch-funding-sources.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/transfer-money-between-users/03-attach-unverified-bank.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/sandbox-setup/03-create-application.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/send-money/03-create-transfer.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/webhooks/03-validating-webhooks.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/send-money/04-check-transfer.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/transfer-money-between-users/04-create-unverified-customer.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/sandbox-setup/04-enable-sdk-sandbox-mode.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/webhooks/04-process-webhooks.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/transfer-money-between-users/05-attach-verified-bank.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/transfer-money-between-users/06-create-transfer.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/transfer-money-between-users/07-check-transfer.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/resources/account-types.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/pages/api-docs.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/resources/changelog.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/resources/customer-verification.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>/guides/send-money/</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/transfer-money-between-users/</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/webhooks/</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/resources/</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/sandbox-setup/</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/guides/receive-money/</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/resources/oauth-refresh-strategies.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/resources/sandbox.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/pages/sdks.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>/resources/transfer-workflow.html</loc>
-    <lastmod>2015-10-29T23:10:34-04:00</lastmod>
+    <lastmod>2015-10-30T00:10:00-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
