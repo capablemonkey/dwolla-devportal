@@ -25,7 +25,7 @@ function updateBodySelectors(show) {
 
 $(document).ready(function() {
     if (!sessionStorage.getItem('current_language')) {
-      $('#language_select').val('ruby');
+      $('.language_select').val('ruby');
       updateSnippets('ruby');
       sessionStorage.setItem('current_language', 'ruby');
       updateBodySelectors('ruby');
@@ -33,15 +33,17 @@ $(document).ready(function() {
     else {
       var current_language = sessionStorage.getItem('current_language');
       updateSnippets(current_language);
-      $('#language_select').val(current_language);
+      $('.language_select').val(current_language);
       updateBodySelectors(current_language);
     }
 
     // Update value of language selector on change
-    $('#language_select').change(function () {
-      sessionStorage.setItem('current_language', $('#language_select :selected').val());
-      updateSnippets($('#language_select :selected').val());
-      updateBodySelectors($('#language_select :selected').val());
+    $('.language_select').change(function () {
+      // set both top tier nav (mobile, desktop) to same lang
+      $('.language_select').val($(this).val());
+      sessionStorage.setItem('current_language', $(this).val());
+      updateSnippets($(this).val());
+      updateBodySelectors($(this).val());
     });
 
     // If someone switches the language on page, just swap
@@ -50,7 +52,7 @@ $(document).ready(function() {
       updateSnippets(this.id);
       updateBodySelectors(this.id);
       // change global language selector as well:
-      $('#language_select').val(this.id);
-      sessionStorage.setItem('current_language', $('#language_select :selected').val());
+      $('.language_select').val(this.id);
+      sessionStorage.setItem('current_language', $('.language_select :selected').val());
     });
 });
