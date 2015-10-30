@@ -15,5 +15,3 @@ description: "Keep track of changes to the Dwolla API and official SDKs."
 </ul>
 <hr>
 </section>
-
-{% include reach-out.html %}

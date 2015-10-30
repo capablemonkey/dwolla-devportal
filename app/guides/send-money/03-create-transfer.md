@@ -10,7 +10,7 @@ title:  "Step 3: Create a transfer"
 
 # Step 3: Create a transfer
 
-Create a [transfer](https://docsv2.dwolla.com/#transfers) by specifying your funding source as the **source** and the customer as the **destination**.
+Create a [transfer](https://docsv2.dwolla.com/#transfers) by specifying your funding source as the **source** and the Customer or Account as the **destination**.
 
 ```raw
 POST https://api-uat.dwolla.com/transfers
